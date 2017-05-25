@@ -1,0 +1,584 @@
+<section xml:id="section-3B-polynomial-functions">
+  <title>Polynomial Functions</title>
+<!-- Source URL: http://www.wallace.ccfaculty.org/book/Beginning_and_Intermediate_Algebra.pdf
+Saylor URL: http://www.saylor.org/courses/ma001/
+Attributed to: Tyler Wallace
+Saylor.org,  pages 192-193-->
+<introduction>
+  <p>Objectives:
+    <ul>
+      <li>Evaluate, add, subtract and multiply polynomials.</li>
+      <li>Identify graphs of polynomial functions.</li>
+      <li>Determine the degree and  intercepts of polynomial functions.</li>
+    </ul>
+  </p>
+  <p>Many applications in mathematics have to do with what are called polynomials. Polynomials are made up of terms. Terms are a product of numbers and/or variables. For example, <m>5x</m>, <m>2y^3</m>, <m>-4</m>  and <m>ab^3c</m> are all terms. Each term has a <term>coefficient,</term> the number, and a <term>degree,</term> the power of the variable in the term <ndash /> if there is more than one variable, then the degree is the sum of the exponents on the variables.</p>
+  <example xml:id="example-term-coefficients-degrees">
+      <title>Term Coefficients and Degrees</title>
+      <p>Determine the coefficient and the degree of each example term: </p>
+      <table>
+      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
+        <col right="minor" />
+        <col right="minor" />
+        <col halign="left"/>
+        <!--  -->
+        <row bottom = "major">
+            <cell>Term</cell>
+            <cell>Coefficient</cell>
+            <cell>Degree</cell>
+        </row>
+        <row bottom = "minor">
+            <cell><m>5x</m></cell>
+            <cell><m>5</m></cell>
+            <cell><m>1</m> since <m>x=x^1</m></cell>
+        </row>
+        <row bottom = "minor">
+            <cell><m>2y^3</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+        </row>
+        <row bottom = "minor">
+            <cell><m>-4</m></cell>
+            <cell><m>-4</m></cell>
+            <cell><m>0</m> since <m>-4=-4(1)</m> and <m>1=x^0</m></cell>
+        </row>
+        <row bottom = "minor">
+            <cell><m>ab^3 c</m></cell>
+            <cell><m>1</m> (why?)</cell>
+            <cell><m>5</m> since <m>ab^3c = a^1b^3c^1</m> and <m>1+3+1=5\checkmark</m></cell>
+        </row>
+      </tabular>
+    </table>
+  </example>
+  <p>Terms are connected to each other by addition or subtraction. Expressions are often named based on the number of terms in them. A <term>monomial</term> has one term, such as <m>3x^2.</m> A  <term>binomial</term> has two terms, such as <m>a^2 - b^2.</m> A <term>trinomial</term> has three terms, such as <m>ax^2 + bx + c.</m> The term <term>polynomial</term> means many terms. Monomials, binomials, trinomials, and expressions with more terms all fall under the umbrella of <q>polynomials.</q> The term with the largest degree is called the <term>leading term</term> of the polynomial and the degree of the leading term is called the <term>degree of the polynomial</term>.</p>
+  <example xml:id="example-polynomial-leading-term-degree">
+      <title>Polynomial Leading Terms and Degrees</title>
+      <p>Determine the leading term and the degree of each example polynomial:</p>
+      <table>
+      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
+        <col right="minor" halign="left" />
+        <col right="minor" />
+        <col />
+        <!--  -->
+        <row bottom = "major">
+            <cell>Polynomial</cell>
+            <cell>Leading Term</cell>
+            <cell>Degree</cell>
+        </row>
+        <row bottom = "minor">
+            <cell><m>1.12x^2 + 5.4x - 1.7</m></cell>
+            <cell><m>1.12x^2</m></cell>
+            <cell><m>2</m></cell>
+        </row>
+        <row bottom = "minor">
+            <cell><m>21 + 3w^4-w^2</m></cell>
+            <cell><m>3w^4</m></cell>
+            <cell><m>4</m></cell>
+        </row>
+        <row bottom = "minor">
+            <cell><m>10+2x+4xy- 7xy^2</m></cell>
+            <cell><m>7xy^2</m></cell>
+            <cell><m>3</m></cell>
+        </row>
+        <row bottom = "minor">
+            <cell><m>5x+2</m></cell>
+            <cell><m>5x</m></cell>
+            <cell><m>1</m></cell>
+        </row>
+        <row bottom = "minor">
+            <cell><m>-4</m></cell>
+            <cell><m>-4</m></cell>
+            <cell><m>0</m></cell>
+        </row>
+      </tabular>
+    </table>
+  </example>
+  <p>If we know what the variable in a polynomial represents we can replace the variable with the number and evaluate the polynomial as shown in the following example:</p>
+  <example xml:id="example-polynomial-evaluation">
+      <title>Polynomial Evaluation</title>
+      <p>Evaluate  <m>2x^2 - 4x + 6</m> when <m>x = -4.</m></p>
+      <md>
+        <mrow>2x^2 - 4x + 6\amp\amp\amp\text{Replace variable \(x\) with \(-4\)}</mrow>
+        <mrow>2(-4)^2 - 4(-4) + 6\amp\amp\amp\text{Exponents first}</mrow>
+        <mrow>2(16) - 4(-4) + 6\amp\amp\amp\text{Multiplication (we can do all terms at once)}</mrow>
+        <mrow>32 + 16 + 6\amp\amp\amp\text{Add}</mrow>
+        <mrow>54\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md>
+  </example>
+  <p>It is important to be careful with negative variables and exponents. Remember the exponent only affects the number it is physically attached to. This means <m>-3^2 = -9</m> because the exponent is only attached to the <m>3.</m> Also, <m>(-3)^2=9</m> because the exponent is attached to the parentheses and affects everything inside. When we replace a variable with parentheses like in the previous example, the substituted value is in parentheses. So in the example,  <m>(-4)^2 = 16</m>. However, consider the next example.</p>
+  <example xml:id="example-polynomial-evaluation-2">
+      <title>Polynomial Evaluation</title>
+      <p>Evaluate  <m>-x^2 + 2x + 6</m> when <m>x =3.</m></p>
+      <md>
+        <mrow>-x^2 + 2x + 6\amp\amp\amp\text{Replace variable \(x\) with \(3\)}</mrow>
+        <mrow>-(3)^2 + 2(3) + 6\amp\amp\amp\text{Exponent only on the \(3\), not negative \(3\)}</mrow>
+        <mrow>-9 + 2(3) + 6\amp\amp\amp\text{Multiply}</mrow>
+        <mrow>-9 + 6 + 6\amp\amp\amp\text{Add}</mrow>
+        <mrow>3\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md>
+  </example>
+  <historical>
+    <title>World View Note</title>
+    <p>Ada Lovelace in 1842 described a Difference Engine that would be used to calculate values of polynomials. Her work became the foundation for what would become the modern computer (the programming language Ada was named in her honor) more than 100 years after her death from cancer.</p></historical>
+</introduction>
+
+<subsection>
+  <title>Adding and Subtracting Polynomials</title>
+  <p>Generally when working with polynomials we do not know the value of the variable, so we will try to simplify instead. The simplest operation with polynomials is addition. When adding polynomials we are simply combining like terms. Consider the following example:</p>
+  <example xml:id="example-polynomial-addition">
+      <title>Polynomial Addition</title>
+      <p>Add the two cubic polynomials.</p>
+      <md>
+        <mrow>(4x^3 - 2x + 8) + (3x^3 - 9x^2 - 11)\amp\amp\amp\text{Combine like terms:}</mrow>
+        <mrow>4x^3 + 3x^3 = 7x^3\amp\amp\amp\text{and }8-11=-3</mrow>
+        <mrow>7x^3 - 9x^2 - 2x - 3\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md>
+  </example>
+  <p>Generally final answers for polynomials are written so the exponents on the variable count down. <i>Example 3B-3</i> demonstrates this with the exponent counting down <m>3,</m> <m>2,</m> <m>1,</m> <m>0</m> (recall <m>x^0=1</m>). Note that this is not a rule for writing polynomials <ndash /> just an easy way to organize the terms and to make the degree of the polynomial clear. The polynomial in <xref ref="example-polynomial-addition" autoname="yes" /> could just as well be written as: <m> - 3 - 2x - 9x^2 + 7x^3</m> or <m> - 2x  + 7x^3 - 3 - 9x^2</m>, but then we have to "search" through the terms to determine the degree.</p>
+  <p>Subtracting polynomials is almost as fast. One extra step comes from the minus in front of the parentheses. When we have a negative in front of parentheses we distribute it through, changing the signs of everything inside. The same is done for the subtraction sign.</p>
+  <example xml:id="example-polynomial-subtraction">
+      <title>Polynomial Subtraction</title>
+      <p>Subtract the two quadratic polynomials.</p>
+      <md>
+        <mrow>(5x^2 - 2x + 7) - (3x^2 + 6x - 4)\amp\amp\amp\text{Distribute negative through second part}</mrow>
+        <mrow>5x^2 - 2x + 7 - 3x^2 - 6x + 4\amp\amp\amp\text{Combine like terms:}</mrow>
+        <mrow>5x^2 - 3x^2 =2x^2\text{ and }-2x - 6x = -8x\amp\amp\amp\text{and }7 + 4 = 11</mrow>
+        <mrow>2x^2 - 8x + 11\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md>
+  </example>
+  <p>Addition and subtraction can also be combined into the same problem as shown in this final example:</p>
+  <example xml:id="example-polynomial-addition-subtraction">
+      <title>Polynomial Addition and Subtraction</title>
+      <p>Simplify.</p>
+      <md>
+        <mrow>(2x^2 - 4x + 3) + (5x^2 - 6x + 1) - (x^2 - 9x + 8)\amp\amp\amp\text{Distribute negative through}</mrow>
+        <mrow>2x^2 - 4x + 3 + 5x^2 - 6x + 1 - x^2 + 9x - 8\amp\amp\amp\text{Combine like terms}</mrow>
+        <mrow>6x^2-x-4\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md>
+  </example>
+  </subsection>
+  <subsection>
+    <title>Multiplying Polynomials</title>
+    <p>Adding or subtracting polynomials is pretty straight forward <ndash /> just combine terms which have the same variables with the same degrees. Multiplying polynomials may seem complicated, but the basic idea is that you must <q>thoroughly</q> multiply them together <ndash /> every term in one must multiply every term in the other.</p>
+    <sidebyside widths="30% 65%" valign="middle">
+        <figure xml:id="figure-distributive-property"> <!--NEEDS TO BE formatted set3B-Polynomial-Functions-01.png-->
+          <image xml:id="distributive-property">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
+              \node (a) at (0,0) {\LARGE $(4x$};
+              \node (b) at (1,0) {\LARGE $+3)$};
+              \node (c) at (2,0) {\LARGE$(3x$};
+              \node (d) at (3,0) {\LARGE$-2)$};
+              \draw[->,shorten >=5pt,shorten <=5pt,out=70,in=110,distance=0.75cm,red,] (a.north) to (d.north);
+              \draw[->,shorten >=5pt,shorten <=5pt,out=60,in=110,distance=0.5cm,red] (a.north) to (c.north);
+              \draw[->,shorten >=1pt,shorten <=2pt,out=-70,in=-110,distance=0.5cm,blue,] (b.south) to (d.south);
+              \draw[->,shorten >=1pt,shorten <=2pt,out=-60,in=-110,distance=0.25cm,blue] (b.south) to (c.south);
+  \end{tikzpicture}]]></latex-image-code>
+          </image>
+        </figure>
+        <paragraphs>
+        <p>There are <m>4</m> multiplications when multiplying <m>(4x + 3) (3x - 2)</m>:</p>
+        <p>Notice that the term <m>4x</m> must be multiplied by both <m>3x</m> and <m>-2</m> (indicated by the red lines)</p>
+        <p>Notice that the term <m>3</m> must also be multiplied by both <m>3x</m> and <m>-2</m> (indicated by the blue lines)</p>
+      </paragraphs>
+        </sidebyside>
+    <p>In the next two examples, the multiplication is written out so that you may see how every term in the first polynomial multiplies every term in the second.  Sometimes you may see how to do the multiplication without writing down all the steps, but writing the steps helps make sure you get it right.</p>
+    <example xml:id="example-polynomial-multiplication-binomials">
+        <title>Polynomial Multiplication</title>
+        <p>Multiply <m>(4x + 3) (3x - 2).</m></p>
+        <md>
+          <mrow>4x(3x-2) + 3(3x-2)\amp\amp\amp\text{Each term of the first multiplies the second}</mrow>
+          <mrow>12x^2 -8x + 9x - 6\amp\amp\amp\text{Combine like terms}</mrow>
+          <mrow>12x^2 + x - 6\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
+    </example>
+    <example xml:id="example-polynomial-multiplication-trinomial">
+        <title>Polynomial Multiplication</title>
+        <p>Multiply <m>(x - 2) (4x^2 - x +5).</m></p>
+        <md>
+          <mrow>x(4x^2 - x +5) - 2(4x^2 - x +5)\amp\amp\amp\text{Each term of the first multiplies the second}</mrow>
+          <mrow>4x^3 - x^2 + 5x -8x^2 + 2x - 10\amp\amp\amp\text{Combine like terms}</mrow>
+          <mrow>4x^3 - 9x^2 + 7x - 10\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
+    </example>
+    <p>What happens if we multiply in the reverse order?</p>
+     <example xml:id="example-polynomial-multiplication-trinomial-reverse">
+        <title>Polynomial Multiplication (Reverse Order)</title>
+        <p>Multiply <m>(4x^2 - x +5)(x - 2) .</m></p>
+        <md>
+          <mrow>4x^2(x-2) - x(x-2) +5(x-2)\amp\amp\amp\text{Each term of the first multiplies the second}</mrow>
+          <mrow>4x^3 - 8x^2 - x^2 +2x + 5x - 10\amp\amp\amp\text{Combine like terms}</mrow>
+          <mrow>4x^3 - 9x^2 + 7x - 10\amp\amp\amp\text{We got the same thing <ndash /> that's good!}\checkmark</mrow>
+        </md>
+    </example>
+    <!--
+<p>You may notice that we are not going to cover dividing with polynomials in this course.  EXPLAIN WHY NOT?
+</p>
+-->
+  </subsection>
+  <subsection>
+    <title>Graphs of Polynomials</title>
+    <p>So far, we have considered the terminology of polynomials and how to combine them with addition, subtraction and multiplication.  Now let us consider them as functions. What does the graph of a polynomial look like? Here are a few examples:</p>
+    <sbsgroup widths="48% 48%" valign="middle">
+        <sidebyside>
+          <figure xml:id="figure-graph-4-polynomials-1">
+            <image xml:id="graph-4-polynomials-1">
+              <latex-image-code><![CDATA[\begin{tikzpicture} 
+                \draw[line width=0.55mm,black] (-5,0) -- (5,0);
+                \draw[line width=0.55mm,black] (0,-5) -- (0,5);
+                \node at (-5,-.2) {$-10$};
+                \node at (5,-.2) {$10$};
+                \node at (-.2,-.2) {$0$};
+                \node at (-.45,-5) {$-10$};
+                \node at (-.3,5) {$10$};
+                \draw[line width=0.75mm, domain=-1.5:1.5,smooth,variable=\x,red] plot ({\x},{2*(\x*\x)+.5});
+                \node at (0,-6) {\Large $f(x)=x^2+1$};
+              \end{tikzpicture}]]></latex-image-code>
+            </image>
+          </figure>
+          <figure xml:id="figure-graph-4-polynomials-2">
+            <image xml:id="graph-4-polynomials-2">i
+              <latex-image-code><![CDATA[\begin{tikzpicture} 
+                \draw[line width=0.55mm,black] (-5,0) -- (5,0);
+                \draw[line width=0.55mm,black] (0,-5) -- (0,5);
+                \node at (-5,-.2) {$-10$};
+                \node at (5,-.2) {$10$};
+                \node at (-.2,-.2) {$0$};
+                \node at (-.45,-5) {$-10$};
+                \node at (-.3,5) {$10$};
+                \draw[line width=0.75mm, domain=-2.:1.5,smooth,variable=\x,red] plot ({\x},{-2*(\x*\x)-\x+1});
+                \node at (0,-6) {\Large $g(x)=-x^2-x+2$};
+              \end{tikzpicture}]]></latex-image-code>
+            </image>
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="figure-graph-4-polynomials-3">
+            <image xml:id="graph-4-polynomials-3">
+              <latex-image-code><![CDATA[\begin{tikzpicture} 
+                \draw[line width=0.55mm,black] (-5,0) -- (5,0);
+                \draw[line width=0.55mm,black] (0,-5) -- (0,5);
+                \node at (-5,-.2) {$-10$};
+                \node at (5,-.2) {$10$};
+                \node at (-.2,-.2) {$0$};
+                \node at (-.45,-5) {$-10$};
+                \node at (-.3,5) {$10$};
+                \draw[line width=0.75mm, domain=-1.81:1.96,smooth,variable=\x,red] plot ({\x},{8/7*(\x*\x*\x)-2/7*\x*\x-1.5*\x});
+                \node at (0,-6) {\Large $h(x)=\frac{2}{7}x^3-\frac{1}{7}x^2-3x$};
+              \end{tikzpicture}]]></latex-image-code>
+            </image>
+          </figure>
+          <figure xml:id="figure-graph-4-polynomials-4">
+            <image xml:id="graph-4-polynomials-4">
+              <latex-image-code><![CDATA[\begin{tikzpicture} 
+                \draw[line width=0.55mm,black] (-5,0) -- (5,0);
+                \draw[line width=0.55mm,black] (0,-5) -- (0,5);
+                \node at (-5,-.2) {$-10$};
+                \node at (5,-.2) {$10$};
+                \node at (-.2,-.2) {$0$};
+                \node at (-.45,-5) {$-10$};
+                \node at (-.3,5) {$10$};
+                \draw[line width=0.75mm, domain=-.807:1.512,smooth,variable=\x,red] plot ({\x},{8*(\x*\x*\x*\x)-8*\x*\x*\x-4*\x*\x});
+                \node at (0,-6) {\Large $k(x)=x^4-2x^3-2x^2$};
+              \end{tikzpicture}]]></latex-image-code>
+            </image>
+          </figure>
+          
+        </sidebyside>
+      </sbsgroup>
+    <p>Each of these graphs look quite different from each other, but share some characteristics.
+      <ul>
+        <li>The graphs are all <q>connected</q> with smooth bends.  They do not look like piece-wise functions.</li>
+        <li>The domain of each consists of all real numbers. (Why?)</li>
+        <li>The <q>ends</q> of the graph eventually settles into an upward or downward curve. (Note: The graph doesn't really <q>end</q>, it continues indefinitely, but if you go out far enough, eventually it will consistently move in one direction, either up or down.)</li>
+        <li>The graphs all have one vertical intercept, but the number of horizontal intercepts varies from none to many.</li>
+      </ul>
+    </p>
+    <example xml:id="example-graph-xsq-plus-1">
+        <title>Graph Quadratic Polynomial</title>
+        <p>Consider the graph of <m>f(x) = x^2+1</m>. We'll use the low tech but effective method of plotting points: </p>
+        <sidebyside widths="30% 65%" valign="middle">
+          <table>
+      <tabular halign="center" >
+        <col right="minor" halign="right" />
+        <col />
+        <!--  -->
+        <row bottom = "minor">
+            <cell><m>x</m></cell>
+            <cell><m>y</m></cell>
+        </row>
+        <row>
+            <cell><m>-2</m></cell>
+            <cell><m>5</m></cell>
+        </row>
+        <row>
+            <cell><m>-1</m></cell>
+            <cell><m>2</m></cell>
+        </row>
+        <row>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+        </row>
+        <row>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+        </row>
+        <row>
+            <cell><m>2</m></cell>
+            <cell><m>5</m></cell>
+        </row>
+      </tabular>
+    </table>
+        <figure xml:id="figure-graph-xsq-plus-1"> <!--set3B-Polynomial_Functions_03.png-->
+          <image xml:id="graph-xsq-plus-1">
+            <latex-image-code><![CDATA[\begin{tikzpicture} 
+              \draw[step=1cm,gray,very thin] (-5.9,-1.9) grid (5.9,5.9);;
+              \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
+              \draw[line width=0.55mm,black,<->] (0,-1.9) -- (0,5.9);          
+              \draw[line width=0.55mm,black] (-4 cm,3pt) -- (-4 cm,-3pt);
+              \draw[line width=0.55mm,black] (4 cm,3pt) -- (4 cm,-3pt);
+              \draw[line width=0.55mm,black] (3pt,4 cm) -- (-3pt,4 cm);
+              \node at (-4,-.2) {$-4$};
+              \node at (4,-.2) {$4$};
+              \node at (-.2,-.2) {$0$};
+              \node at (-.3,4) {$4$};
+              \draw[line width=0.75mm, domain=-2.22:2.22,smooth,variable=\x,red] plot ({\x},{(\x*\x)+1});
+              \node at (2.5,1.5) {\Large $f(x)=x^2+1$};
+              \fill (-2,5) circle (.1cm);
+              \fill (-1,2) circle (.1cm);
+              \fill (0,1) circle (.1cm);
+              \fill (1,2) circle (.1cm);
+              \fill (2,5) circle (.1cm); 
+            \end{tikzpicture}]]></latex-image-code>
+          </image>
+        </figure>
+        </sidebyside>
+        <p>The <m>y</m>-intercept is at <m>y=1</m> and there is no <m>x</m>-intercept since the equation <m>0 = x^2+1</m> has no solution that is a real number. Notice that if we plot points for values of <m>x</m> further to the left of <m>-2</m>,  the function will produce large positive <m>y</m> values since any negative number squared is positive. If we try <m>x</m> values to  the right of <m>2</m>, we clearly get large positive values for <m>y</m>.  We are confident this graph extends  upward in both directions.<m>\checkmark</m></p>
+    </example>
+    <example xml:id="example-graph-negative-xsq-minus-x-plus-2">
+        <title>Graph Quadratic Polynomial</title>
+        <p>Consider the graph of <m>g(x) = -x^2-x+2</m>.</p>
+        <p>The <m>y</m>-intercept is easy to find:
+        <md>
+          <mrow>y \amp = -0^2 - 0 +2</mrow>
+          <mrow>y \amp = 2</mrow>
+        </md>
+      </p>
+      <p>The <m>x</m>-intercept takes a little more work:  How to find when <m>0 =-x^2-x+2</m>?  Here's when all that time you spent learning how to factor comes in handy.  We won't do a lot of factoring in this course and the "guess and check" method will be sufficient.
+      <md>
+        <mrow>0 \amp=-x^2-x+2\amp\amp\text{Multiply both sides by } -1</mrow>
+        <mrow>0 \amp =x^2+x-2\amp\amp\text{Let's focus on the polynomial and set up to factor}</mrow>
+      </md>
+      <md>
+        <mrow>(x + \Box  )(x +\Box  )\amp\text{We need values which multiply to get }-2</mrow>
+        <mrow>(x - 2 )(x + 1)\amp\text{Try \(-2\) and \(1\) and check to see if they work:}</mrow>
+      </md>
+      <md>
+        <mrow>(x - 2 )(x + 1)\amp =x(x + 1) - 2(x + 1)</mrow>
+        <mrow>\amp = x^2 + x - 2x - 2</mrow>
+        <mrow>\amp = x^2 - x - 2 \neq x^2+x-2</mrow>
+      </md>
+      <m>-2</m> and <m>1</m> don't work, so try <m>2</m> and <m>-1</m>:
+      <md>
+        <mrow>(x+2)(x-1) \amp  = x(x - 1) + 2(x - 1)\amp\amp</mrow>
+        <mrow>\amp = x^2 - x + 2x - 22\amp\amp</mrow>
+        <mrow>\amp = x^2 + x - 2\amp\amp\text{Bingo}</mrow>
+      </md>
+      Now, back to the equation: <m>0 =x^2+x-2= (x+2)(x-1)</m>.  The only way to get zero when two numbers are multiplied is for one of the numbers to be zero:
+      <md>
+        <mrow>x + 2 \amp = 0\amp\amp\text{or} \amp x -1\amp = 0</mrow>
+        <mrow>x \amp = -2\amp\amp\text{or} \amp x \amp = 1</mrow>
+      </md>
+      To see what the <q>end behavior</q> is,  note that the leading term produces values of much greater magnitude than the other terms in the polynomial. For example, when <m>x = 10</m>, the leading term makes: <m>-(10)^2=-100</m>. The rest of the polynomial only makes, <m>-(10)+2 = -8</m> and if we go just a little further out, say <m>x = 15</m>, compare the leading term's value to the rest of the polynomial:  <m>-(15)^2=-225</m> versus <m>-(15)+2 = -13</m>. What about the graph for negative values of <m>x</m>? Check out: <m>-(-15)^2=-225</m> versus <m>-(-15)+2 = 17</m>.  We can see that the leading term will produce negative <m>y</m>-values for <m>x</m> values to the far left or right. Our analysis shows that both ends of <m>g(x)</m> are downward having negative <m>y</m> values.</p>
+
+<!--
+<p>
+NOTE:  Usually we "read" a graph from left to right and in the case of <m>g(x)</m>, we'd say the <m>g(x)</m> is moving upward
+on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGHT WAY TO APPROACH IT .
+??????
+</p>
+-->
+      <sidebyside widths="35% 65%" valign="middle">
+          <p>Plotting a few more points gives the graph:</p>
+          <figure xml:id="figure-graph--negative-xsq-minus-x-plus-2"> <!--set3B-Polynomial_Functions_04.png-->
+              <image xml:id="graph--negative-xsq-minus-x-plus-2">
+                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                  \draw[step=1cm,gray,very thin] (-5.9,-4.9) grid (5.9,4.9);
+                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
+                  \draw[line width=0.55mm,black,<->] (0,-4.9) -- (0,4.9);
+                  \draw[line width=0.55mm,black] (-4 cm,3pt) -- (-4 cm,-3pt);
+                  \draw[line width=0.55mm,black] (4 cm,3pt) -- (4 cm,-3pt);
+                  \draw[line width=0.55mm,black] (3pt,4 cm) -- (-3pt,4 cm);
+                  \draw[line width=0.55mm,black] (3pt,-4 cm) -- (-3pt,-4 cm);
+                  \node at (-4,-.2) {$-4$};
+                  \node at (4,-.2) {$4$};
+                  \node at (-.2,-.2) {$0$};
+                  \node at (-.3,4) {$4$};
+                  \node at (-.3,-4) {$-4$};
+                  \draw[line width=0.75mm, domain=-3.17:2.17,smooth,variable=\x,red] plot ({\x},{(-1*\x*\x)-\x+2});
+                  \node at (2.2,2.5) {\Large $g(x)=-x^2-x+2$};
+                  \fill (-2,0) circle (.1cm);
+                  \fill (0,2) circle (.1cm);
+                  \fill (1,0) circle (.1cm); 
+                \end{tikzpicture}]]></latex-image-code>
+              </image>
+            </figure>
+        </sidebyside>
+    </example>
+    <example xml:id="example-graph-cubic">
+        <title>Graph Cubic Polynomial</title>
+        <p>Consider the graph <m>h(x) = \frac{2}{7}x^3-\frac{1}{7}x^2-3x.</m></p>
+        <p>It's easy to see that the <m>y</m>-intercept is at <m>y=0</m>. We need to factor the polynomial to find the <m>x</m>-intercepts. Here's a "tip of the day": factoring is easier if you factor out the denominators and anything else the terms have in common. Notice below that when we factor out the <m>\frac{1}{7}</m>, we have to adjust the <m>3</m> so that if the <m>\frac{1}{7}</m> were multiplied back in, we'd still have <m>3</m>.
+        <md>
+        <mrow>0 \amp = \frac{2}{7}x^3-\frac{1}{7}x^2-3x</mrow>
+        <mrow>\amp  = \frac{1}{7}x(2x^2-x-21)</mrow>
+        <mrow>\amp = \frac{1}{7}x(2x- 7)(x+3)</mrow>
+      </md>So, 
+      <md>
+        <mrow>\frac{1}{7}x\amp = 0\amp\amp\text{or}\amp 2x - 7 \amp = 0\amp\amp\text{or}\amp x + 3 \amp = 0</mrow>
+        <mrow>x\amp = 0\amp\amp\text{or}\amp x \amp = \frac{7}{2} \amp\amp\text{or}\amp x \amp = -3</mrow>
+      </md>
+      For the end behavior: The leading term is <m>\frac{2}{7}x^3</m>, the power <m>3</m>    will make negative <m>y</m> values for negative <m>x</m> values and positive <m>y</m> values    for positive <m>x</m> values.  The left end will be <q>down</q> and the right end will go <q>up</q>.</p>
+      <sidebyside widths="35% 65%" valign="middle">
+          <p>Plotting a few more points gives the graph:</p>
+          <figure xml:id="figure-graph-cubic"> <!--set3B-Polynomial_Functions_05.png-->
+              <image xml:id="graph-cubic">
+                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                  \draw[step=1cm,gray,very thin] (-5.9,-4.9) grid (5.9,4.9);
+                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
+                  \draw[line width=0.55mm,black,<->] (0,-4.9) -- (0,4.9);
+                  \draw[line width=0.55mm,black] (-4 cm,3pt) -- (-4 cm,-3pt);
+                  \draw[line width=0.55mm,black] (4 cm,3pt) -- (4 cm,-3pt);
+                  \draw[line width=0.55mm,black] (3pt,4 cm) -- (-3pt,4 cm);
+                  \draw[line width=0.55mm,black] (3pt,-4 cm) -- (-3pt,-4 cm);
+                  \node at (-4,-.2) {$-4$};
+                  \node at (4,-.2) {$4$};
+                  \node at (-.2,-.2) {$0$};
+                  \node at (-.3,4) {$4$};
+                  \node at (-.3,-4) {$-4$};
+                  \draw[line width=0.75mm, domain=-3.65:4.09,smooth,variable=\x,red] plot ({\x},{2/7*\x*\x*\x-\x*\x/7-3*\x});
+                  \node at (-3.5,3.5) {\Large $h(x)=\frac{2}{7}x^3-\frac{1}{7}x^2-3x$};
+                  \fill (-3,0) circle (.1cm);
+                  \fill (0,2) circle (.1cm);
+                  \fill (3.5,0) circle (.1cm); 
+                \end{tikzpicture}]]></latex-image-code>
+              </image>
+            </figure>
+        </sidebyside>
+    </example>
+    <example xml:id="example-graph-quartic">
+        <title>Graph Fourth-Degree Polynomial</title>
+        <p>Consider the graph <m>k(x) = x^4-2x^3-2x^2.</m></p>
+        <p>The <m>y</m>-intercept is at <m>y=0</m>, but we have a problem when trying to factor to find the <m>x</m>-intercepts:
+        <md>
+          <mrow>x^4-2x^3-2x^2 =  x^2(x^2 - 2x - 2)</mrow>
+        </md>
+        The only two combinations that multiply to get <m>-2</m> for a "nice" factorization are <m>1</m> and <m>-2</m>, or <m>-1</m> and <m>2</m>. Checking we see that
+        <md>
+          <mrow>(x + 1)(x - 2) = x^2 - x - 2\text{ and }(x - 1)(x + 2) = x^2 + x - 2</mrow>
+        </md>
+        But neither gives <m>x^2 - 2x - 2</m>.  Luckily, for quadratic polynomials, there is a formula which will give the solutions to equations like, <m>x^2 - 2x - 2 = 0</m>, the Quadratic Formula. We pause to recall what it says:</p>
+        <p><term>Quadratic Formula</term> For <m>ax^2 + bx + c = 0</m>, the solutions are found by
+        <mdn>
+        <mrow xml:id="quadratic-formula">x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+        </mrow>
+      </mdn></p>
+      <p>Now we may breathe easier, knowing we can still find the <m>x</m>-intercepts even if we can't factor the polynomial <ndash /> by the way the Quadratic formula works even if the polynomial factors nicely <ndash /> gives you something to think about!</p>
+      <p>Back to the graph: So far, we had <m>x^4-2x^3-2x^2 =  x^2(x^2 - 2x - 2)</m> which means
+      <md>
+        <mrow>x^2 = 0\text{ or }x^2 - 2x - 2 = 0</mrow>
+      </md>
+      and clearly, <m>x=0</m> is one of the <m>x</m>-intercepts.  Now, consider the <q>not so easy</q> to factor part: <m>x^2 - 2x - 2 = 0</m>.  Here, <m>a=1</m>, <m>b=-2</m> and <m>c=-2</m>. With help from the <term>Quadratic Formula</term>:
+      <md>
+        <mrow>x  \amp = \frac{-(-2) \pm \sqrt{(-2)^2-4(1)(-2)}}{2(1)}</mrow>
+        <mrow>\amp = \frac{2 \pm \sqrt{4+8}}{2}</mrow>
+        <mrow>\amp = \frac{2 \pm \sqrt{12}}{2}</mrow>
+        <mrow>x = \frac{2 + \sqrt{12}}{2}  \amp\text{ or }  x = \frac{2 - \sqrt{12}}{2}</mrow>
+      </md>
+      and using a calculator: <m>x = \frac{2 + \sqrt{12}}{2} \approx 2.732</m> or <m>x = \frac{2 - \sqrt{12}}{2} \approx -0.732</m>.  At last! We have the <m>x</m>-intercepts and we only need to determine the end behavior.  The leading term is <m>x^4</m> and any number raised to the <m>4</m>-th power produces a positive number. Hence, both ends are upward.</p>
+      <sidebyside widths="35% 65%" valign="middle">
+          <p>Plot a few more points and we are done:</p>
+          <figure xml:id="figure-graph-quartic"> <!--set3B-Polynomial_Functions_06.png-->
+              <image xml:id="graph-quartic">
+                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                  \draw[step=1cm,gray,very thin] (-5.9,-8.9) grid (5.9,1.9);
+                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
+                  \draw[line width=0.55mm,black,<->] (0,-8.9) -- (0,1.9);
+                  \draw[line width=0.55mm,black] (-4 cm,3pt) -- (-4 cm,-3pt);
+                  \draw[line width=0.55mm,black] (4 cm,3pt) -- (4 cm,-3pt);
+                  \draw[line width=0.55mm,black] (3pt,-4 cm) -- (-3pt,-4 cm);
+                  \draw[line width=0.55mm,black] (3pt,-8 cm) -- (-3pt,-8 cm);
+                  \node at (-4,-.2) {$-4$};
+                  \node at (4,-.2) {$4$};
+                  \node at (-.2,-.2) {$0$};
+                  \node at (-.35,-3.95) {$-4$};
+                  \node at (-.35,-7.95) {$-8$};
+                  \draw[line width=0.75mm, domain=-1.12:2.8,smooth,variable=\x,red] plot ({\x},{\x*\x*\x*\x-2*\x*\x*\x-2*\x*\x});
+                  \node at (-3.5,-6.5) {\Large $k(x)=x^4-2x^3-2x^2$};
+                  \fill (-.732,0) circle (.1cm);
+                  \fill (0,0) circle (.1cm);
+                  \fill (2.732,0) circle (.1cm); 
+                \end{tikzpicture}]]></latex-image-code>
+              </image>
+            </figure>
+        </sidebyside>
+    </example>
+    <example xml:id="example-quadratic-formula">
+        <title>Quadratic Formula</title>
+        <p>We should probably work a few problems with the <term>Quadratic Formula,</term> just for practice:
+          <ol label="a.">
+            <li><p>Solve: <m>x^2 + 3x = 1</m></p>
+            <p>First, we must rewrite this as an equivalent equation equalling <m>0</m>.  That is, subtract <m>1</m> from both sides of the equation.
+              <md>
+                <mrow>x^2 + 3x  \amp = 1</mrow>
+                <mrow>x^2 + 3x - 1 \amp = 0</mrow>
+              </md>
+              With just a few tries, we can see that we are not going to make a <m>3</m> from integers that multiply to get <m>-1</m>.  This indicates we must use the <term>Quadratic Formula</term>: <m>ax^2 + bx + c = 0</m>. For this particular equation we have <m>a=1</m>, <m>b=3</m> and <m>c=-1</m>:
+              <md>
+                <mrow>x\amp = \frac{-3 \pm \sqrt{3^2 - 4(1)(-1)}}{2(1)}</mrow>
+                <mrow>\amp = \frac{-3 \pm \sqrt{9 +4}}{2}</mrow>
+                <mrow>\amp = \frac{-3 \pm \sqrt{13}}{2}</mrow>
+              </md>
+              Remember that there are two values here.  We wrote <m>\pm</m> as a short-cut. The answers are: <m>x = \frac{-3 + \sqrt{13}}{2}</m>  or <m>x = \frac{-3 - \sqrt{13}}{2}.</m></p>
+            </li>
+            <li><p>Solve: <m>x^2 + x  + 5 = 0</m></p>
+            <p>Note that <m>a = 1</m>, <m>b = 1</m> and <m>c = 5:</m>
+              <md>
+                <mrow>x\amp = \frac{-1 \pm \sqrt{1^2 - 4(1)(5)}}{2(1)}</mrow>
+                <mrow>\amp = \frac{-1 \pm \sqrt{1 - 20}}{2}</mrow>
+                <mrow>\amp = \frac{-1 \pm \sqrt{-19}}{2}</mrow>
+              </md>
+              But, there is no real number that squares itself to get <m>-19.</m> Since the Quadratic Formula always finds the solution to a quadratic equation, there must not be any solutions for this equation. Our answer is: <m>\text{No solution}.</m></p>
+            </li>
+            <li><p>Solve: <m>8x^3 - 24x^2 + 18x = 0</m></p>
+            <p>This equation is not a quadratic, but if we factor it we get:  <m>2x(4x^2 - 12x + 9) = 0</m>. One solution is <m>x = 0</m> since we could have <m>2x=0</m>.  Using the quadratic formula for <m>4x^2 - 12x + 9=0</m> with <m>a=4</m>, <m>b=-12</m> and <m>c=9</m>:
+            <md>
+              <mrow>x\amp = \frac{-(-12) \pm \sqrt{(-12)^2 - 4(4)(9)}}{2(4)}</mrow>
+              <mrow>\amp = \frac{12 \pm \sqrt{144 - 144}}{8}</mrow>
+              <mrow>\amp = \frac{12 \pm \sqrt{0}}{8}</mrow>
+              <mrow>\amp = \frac{12}{8}</mrow>
+              <mrow>\amp = \frac{3}{2}</mrow>
+            </md>
+            Hence, the solutions are <m>x = 0</m> or <m>x = \frac{3}{2}</m>.  (Seems like we should have more solutions for all that work!)</p>
+            </li>
+          </ol>
+        </p>
+    </example>
+    <p><alert>Note:</alert> Why study polynomials?  What are they good for?  Many functions are difficult to calculate without a calculator or computer, for example, trigonometric functions.  How <em>DO</em> calculators or computers calculate values for these functions? The answer  is based on polynomials which are easier to calculate since they only involve multiplying and addition/subtraction. The graph  below shows how the polynomial <m>f(x) = x - \frac{1}{6}x^3 + \frac{1}{120}x^5</m> approximates the function <m>g(x) = \sin(x)</m> for <m>-3 \leq x \leq3</m>.</p>
+    <figure xml:id="figure-graph-sine-approx"> <!--set3B-Polynomial_Functions_07.png-->
+              <image xml:id="graph-sine-approx">
+                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                  \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0);
+                  \draw[line width=0.55mm,black,<->] (0,-4) -- (0,4);
+                  \foreach [evaluate=\x as \z using int(2*\x)] \x in {-5,...,5}
+                      \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\z$};
+                  \foreach [evaluate=\x as \y using int(2*\x)] \x in {-3,...,3}
+                      \draw[line width=0.55mm,black] (-3pt, \x cm) -- (3 pt, \x cm) node[shift={(-.75,0.05)}] {$\y$};
+                  \draw[line width=0.75mm, domain=-2.4:2.3,smooth,variable=\x,red] plot ({\x},{\x-2*\x*\x*\x/3+2*\x*\x*\x*\x*\x/15});
+                  \draw[dashed, line width=0.75mm, blue](-5.5, .5) cos (-4.71,0) sin (-3.93,-.5) cos (-3.14,0) sin (-2.36,.5) cos (-1.57,0) sin (-.785,-.5) cos (0,0) sin (.785,.5) cos (1.57,0) sin (2.36,-.5) cos (3.14,0) sin (3.93,.5) cos (4.71,0) sin (5.5, -.5);
+                  \node at (4,3.2) {\Large $f(x)=x - \frac{1}{6}x^3 + \frac{1}{120}x^5$};
+                  \node at (4, -1) {\Large $g(x)=\sin(x)$}; 
+                \end{tikzpicture}]]></latex-image-code>
+              </image>
+            </figure>
+  </subsection>
+</section>

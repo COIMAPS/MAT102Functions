@@ -1,0 +1,455 @@
+<section xml:id="section-2C-applications-102">
+  <title>Applications</title>
+<!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 83-85-->
+<introduction>
+  <p>Objectives:
+    <ul>
+      <li>Solve problems by creating and solving a linear equation.</li>
+      <li>Solve problems involving cost, revenue, and profit by creating and solving a linear equation.</li>
+      <li>Solve simultaneous equation word problems by creating and solving two simultaneous linear equations.</li>
+    </ul>
+  </p>
+  <p>Many students approach math with the attitude that <q>I can do the equations, but I'm just not a <sq>word problems</sq> person.</q> No offense, but that's like saying <q>I'm pretty good at handling a tennis racket, as long as there's no ball involved.</q> The only point of handling the tennis racket is to hit the ball. The only point of math equations is to solve problems. So if you find yourself in that category, try this sentence instead: <q>I've never been good at word problems. There must be something about them I don't understand, so I'll try to learn it.</q></p>
+  <p>Actually, many of the key ideas of understanding word problems were discussed in the very beginning of <xref ref="section-1A-function-concepts" autoname="yes" />, in the discussion of variable descriptions. So this might be a good time to quickly re-read that section. If you can correctly identify the variables, you're half-way through the hard part of a word problem.  The other half is translating the sentences of the problem into equations that use those variables.</p>
+</introduction>
+<subsection>
+  <title>Linear Models</title>
+  <p>In this section we focus on linear models. Linear means the equation which we use to model the situation is a line. A equation for a line has two components: slope and the vertical intercept. How do the slope and intercept apply to a situation? Let's work through a few examples, very carefully.</p>
+  <example xml:id="example-model-drive">
+      <title>Distance, Rate, and Time</title>
+      <p>Suppose your grandmother is driving to Pocatello from Caldwell on a Sunday afternoon. There won't be any slow downs for road work or rush hour traffic, so you figure she will be able to drive a steady <m>65</m> miles per hour once she's on the freeway.</p>
+      <p><ol label="a.">
+        <li><p>Let's write a linear function that models the distance she's travelled after leaving Caldwell. First, let's figure out what the variables should be. They should be the quantities we don't know, pertain to the problem and help get the model we are asked to find.  It's also a good idea to list what we know about the situation.
+          <table>
+            <tabular top="minor" bottom = "minor" halign="left" left="minor" right="minor">
+              <col right="minor" width="50%" halign="right" />
+              <col width="50%"/>
+              <!--  -->
+              <row bottom = "minor">
+                  <cell><p>We want to know the distance traveled:</p></cell>
+                  <cell><p>Let <m>d</m> be her distance from Caldwell</p></cell>
+              </row>
+              <row bottom = "minor">
+                  <cell><p>The distance depends on how long she's been driving:</p></cell>
+                  <cell><p>Let <m>t</m> be the number of hours driven</p></cell>
+              </row>
+              <row bottom = "minor">
+                  <cell colspan="2"><p>She will drive about <m>65</m> miles per hour.</p></cell>
+              </row>
+            </tabular>
+          </table>
+          Now, consider the situation. If you travel <m>65</m> miles per hour for <m>2</m> hours, how far do you go? A little common sense will tell you that the answer is <m>130</m> miles. This relationship is captured in the following equation: 
+          <md>
+            <mrow>d = rt</mrow>
+          </md>
+          where <m>d</m> is the distance traveled, <m>r</m> is the rate (or speed), and <m>t</m> is the time travelled. The equation we are looking for is:
+          <md>
+            <mrow>\text{Distance }&amp;=\text{ rate }\times\text{ time }</mrow>
+            <mrow>d &amp;= 65 t</mrow>
+          </md>
+          Notice this is a linear equation and since it is an equation for a line, we might ask: What is the <m>d</m>-intercept?   In this case, the distance she's travelled at the start of her trip (when <m>t=0</m>) is zero. Finally we have the equation for Granny's distance from Caldwell after <m>t</m> hours on the freeway: <m>d= 65t</m>.
+        </p></li>
+        <li><p>Let's find out how far she will be after <m>3\frac{1}{2}</m> hours on the road <ndash /> assuming she doesn't make any stops along the way. Let <m>t = 3.5</m> and calculuate <m>d</m>:
+          <md>
+            <mrow>d = 65(3.5) = 227.5</mrow>
+          </md>
+          She will have travelled <m>227.5</m> miles and since Pocatello is about <m>258</m> miles from Caldwell, she should just about be there after <m>3\frac{1}{2}</m> hours.<m>\checkmark</m>
+        </p></li>
+      </ol>
+    </p>
+  </example>
+  <p>So, if you know a situation is modeled with a linear function, in the statement of the problem, you need to find what you always need to know in order to find the equation for a line: the slope and the vertical intercept (the <m>y</m>-intercept if the dependent variable is <m>y</m>.) So, look through the problem to see if you can find the necessary pieces to calculate these two parts of the equation for a line. Try this one:</p>
+  <example xml:id="example-home-value">
+      <title>Home Value</title>
+      <p>Four years ago a house was purchased for <m>\$150,000</m>.  This year it's appraised value is <m>\$155,450</m>. Assume that the value of the house after its purchase is a linear function of time (in years).</p>
+      <p>
+        <ol label="a.">
+          <li><p>Find the function which models the value of the house <m>t</m> years since it was purchased.</p>
+          <p>Solution: If you didn't  notice that this function is supposed to be a line, you were not paying attention-read the problem over again!  Now, let's get to work.  There are two variables in this problem:
+            <table>
+            <tabular top="minor" bottom = "minor" halign="left" left="minor" right="minor">
+              <col right="minor" width="50%" halign="right" />
+              <col width="50%" />
+              <!--  -->
+              <row bottom = "minor">
+                  <cell><p>The value of the house:</p></cell>
+                  <cell><p><m>V=</m> The value of the house</p></cell>
+              </row>
+              <row bottom = "minor">
+                  <cell><p>The number of years since the house was purchased:</p></cell>
+                  <cell><p><m>t =</m> The number of years</p></cell>
+              </row>
+            </tabular>
+          </table>
+          Since the value depends on the amount of time after purchase, <m>V</m> is the dependent variable and <m>t</m> is the independent variable.  The slope may be calculated from two points on the line. Note that <m>t=0</m> represents when the house was purchased which gives us one point on the line: <m>(0,150000)</m>. Four years later we have another value, so a second point is <m>(4,155450)</m>.  We are pretty much set after we do the usual calculations to find the equation for a line:
+          <md>
+            <mrow>\text{slope} = \frac{155450 - 150000}{4 - 0} = 1362.5</mrow>
+          </md>
+          So far we know the equation looks like: <m>V = 1362.5 t + b</m>.  You could substitute one of the points and solve for <m>b</m>, but in this case the problem gives the vertical intercept: <m>150000</m> (the value of <m>V</m> when <m>t=0</m>).  So, without further effort, we know the function is
+          <md>
+            <mrow>V(t) = 1362.5 t + 150000.</mrow>
+          </md>
+          Now that we have a formula for the value of the house, we may answer questions like:
+          </p></li>
+          <li><p>According to this model, what will the house be worth in eight years?</p>
+          <p>Solution: Here <m>t=8</m>, so  <m>V(8) = 1362.5 (10) + 150000 = 160,900</m>. The model predicts the house will be worth <m>\$160,900</m> eight years from now.
+          </p></li>
+          <li><p>Now try this one: When will the house be worth <m>\$200,000</m>?</p>
+          <p>Solution: We want to know when the value will be 200,000. In this case, we know the value of <m>V</m> but not <m>t</m>.  Substitute  the <m>200000</m> for <m>V</m> and solve the equation for <m>t</m>:
+            <md>
+              <mrow>200000 &amp; = 1362.5 t + 150000</mrow>
+              <mrow>50000 &amp; = 1362.5 t</mrow>
+              <mrow>t &amp; = \frac{50000}{1362.5} \approx 36.7 \text{ years }</mrow>
+            </md>
+          </p></li>
+          <li><p>One more: How fast is the value of the house appreciating? (Note: <q>appreciating</q> means increasing in value and <q>depreciating</q> means decreasing in value.)</p>
+          <p>Solution:  Consider the slope calculation again, but this time with what the numbers represent:
+            <md>
+              <mrow>\text{slope} \amp = \frac{\$155,450 - \$150,000}{4  - 0 \text{ years}} \amp\amp </mrow>
+              <mrow>\amp = \frac{\$5450}{4 \text{ years}} \amp\amp \text{ Reduce the fraction}</mrow>
+              <mrow>\amp = \frac{\$1,362.50}{1 \text{ year }} \amp\amp</mrow>
+              <mrow>\amp \text{ or } \$1,362.50 \text{ per year}\amp\amp</mrow>
+            </md>
+            Since the slope is the change in the value per change in year, the value is increasing by <m> \$1,362.50</m> per year.<m>\checkmark</m>
+          </p></li>
+        </ol>
+      </p>
+  </example>
+  <example xml:id="example-annual-interest">
+      <title>Annual Interest</title>
+      <p>Money deposited in a savings certificate often earns interest at a higher rate than an ordinary savings account, but requires you leave the money in the certificate for a fixed amount of time.  Suppose you put money into a 12-month savings certificate with a yearly interest rate of <m>4\%</m>.</p>
+      <p>
+        <ol label="a.">
+          <li><p>Write an equation which takes a deposit amount and calculates the amount in the certificate after a year.</p>
+          <p>Solution: In this case, we don't know the beginning deposit amount and the final certificate value, so we'll let <m>A</m> be the amount we invest and <m>V</m> be the value at the end of 12 months.  To find the interest paid at the end of the year, we calculate <m>4\%</m> of the deposited amount:  <m>0.04A</m>.  To get the equation, we add the interest to the original amount to get the total value:
+          <md>
+            <mrow>V = A + 0.04A</mrow>
+          </md>
+          We could simplify this expression by factoring out the <m>A</m>:
+          <md>
+            <mrow>V \amp = (1+0.04)A</mrow>
+            <mrow>V \amp = 1.04A</mrow>
+          </md>
+          </p></li>
+          <li><p>What is the value of the certificate at the end of 12 months if <m>\$5000</m> is initially deposited?</p>
+          <p>Solution: <m>V = 1.04(5000) = 5200</m>, so it will be worth <m>\$5,200.</m>
+          </p></li>
+          <li><p>Solve the equation for <m>A</m>. What amount will you need to deposit in order to have <m>\$10,000</m> at the end of 12 <ndash /> months?</p>
+          <p>Solution: Solving for <m>A</m>:
+            <md>
+              <mrow>V &amp; = 1.04A</mrow>
+              <mrow>\frac{1}{1.04}V    &amp;= A</mrow>
+              <mrow>\text{So, }  A  &amp; = 0.961538 V </mrow>
+            </md>Note that the <m>0.961538</m> is slightly rounded from the exact value of <m>\frac{1}{1.04}</m> which means our answer may be a lttle off the actual amount.  To answer the question:
+            <md>
+              <mrow>A = 0.981538(10000) = 9615.38</mrow>
+            </md>
+            In this case, we can easily check our answer: <m>V = 1.04(9615.38) = 9999.9952</m> which rounds to <m>\$10,000.</m> I suppose if you really needed to make sure you had exactly <m>\$10,000</m> at the end of 12 months, you should have an extra penny saved up on the day you needed the money!<m>\checkmark</m>
+          </p></li>
+        </ol>
+      </p>
+  </example>
+  <subsubsection>
+    <title>Cost, Revenue and Profit</title>
+    <p>Three types of functions are central to many business models:
+      <ul>
+        <li><term>Cost functions:</term> The amount of money required to produce a product.  Cost funtions   usually consist of two parts.</li>
+        <ul>
+          <li>Fixed costs: Costs which don't change like the rent paid for office space.</li>
+          <li>Variable costs: Costs that depend on how many items are made. For example, the cost of the raw materials.</li>
+        </ul>
+        <li><term>Revenue:</term> The amount of money earned from selling a product. Usually, it's calculated by <m>(\text{Price of item } \times \text{ Number of items sold})</m>.</li>
+        <li><term>Profit:</term> The difference between the Revenue and Cost <ndash /> what you get to <q>take home</q>: <m>\text{Revenue} - \text{Cost}</m></li>
+      </ul></p>
+      <example xml:id="example-cost-revenue-profit">
+          <title>Cost, Revenue, and Profit</title>
+          <p>
+            <ol label="a.">
+              <li><p>Suppose you are selling tomatoes at a local farmer's market. Your fixed costs are <m>\$1000</m> and it costs <m>\$2</m> to produce each box of tomatoes <ndash /> I'm making this up by the way <ndash /> which you plan to sell for <m>\$15</m> per box. Clearly, your cost function is <ndash /> wait a minute, we need a variable for the number of boxes of tomatoes, say <m>b</m>:
+              <md>
+                <mrow>C(b) = 1000 + 2b</mrow>
+              </md>
+              and the revenue function is
+              <md>
+                <mrow>R(b) = 15b.</mrow>
+              </md>
+              The profit function is
+              <md>
+                <mrow>P(b) \amp = R(b) - C(b)</mrow>
+                <mrow>P(b) \amp = 15b - (1000+2b)</mrow>
+                <mrow>\amp = 13b - 1000.</mrow>
+              </md>Whew! We didn't even have to think too much about slope and vertical intercepts to find these equations, but we can see these functions are all linear, since they are of the form <q><m>y = mx + b.</m></q>  Notice that <q>slope</q> still matters here. For example, we can see that the Profit increases by <m>\$13</m> per box of tomatoes sold and the Profit's vertical intercept of <m>-1000</m> tells us that we are in debt for <m>\$1,000</m> when we start out with no boxes of tomatoes sold.
+              </p></li>
+              <li><p>In doing business, the <q>break-even</q> point is when the money you receive from selling your product is equal to the money it costs to make or supply your produce: Revenue equals Cost.</p>
+              <p>What is the break-even point for your tomato selling business?</p>
+              <p>Solution: We just need to find how many boxes of tomatoes makes the revenue equal to the cost
+              <md>
+              <mrow> R(b) \amp = C(b)</mrow>
+              <mrow>15b  \amp = 1000 + 2b</mrow>
+              <mrow>15b - 2b \amp = 1000</mrow>
+              <mrow>13b  \amp = 1000</mrow>
+              <mrow>b  \amp = 1000/13</mrow>
+              <mrow>b  \amp \approx 76.923</mrow>
+            </md>In this case, we cannot sell <m>0.923</m> of a box of tomatoes, so we'll need to sell <m>77</m> boxes to break even.</p>
+            <sidebyside widths="45% 50%" valign="middle">
+          <paragraphs>
+            <p>If you consider the break-even point in terms of the Revenue and Cost functions, it's the point the two graphs have in common (where they intersect).</p>
+            <p>This occurs at approximately <m>77.</m></p>
+        </paragraphs>
+    <figure xml:id="figure-graph-break-even"> <!--set2C-Applications_01.png-->
+              <image xml:id="graph-break-even">
+                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                      \draw[line width=0.55mm,black,<->] (-.5,0) -- (10,0) node[anchor=north west] {b};
+                      \draw[line width=0.55mm,black,<->] (0,-0.5) -- (0,10) node[anchor=south east] {money};
+                      \foreach [evaluate=\x as \z using int(10*\x)] \x in {1.5,3,4.5,6,7.5,9}
+                          \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\z$};
+                      \foreach [evaluate=\x as \y using int(200*\x)] \x in {2.5,5,7.5}
+                          \draw[line width=0.55mm,black] (-3pt, \x cm) -- (3 pt, \x cm) node[shift={(-.75,0.05)}] {$\y$};
+                      \draw[line width=0.75mm,red] (0,5)--(10,6);
+                      \node at (3,6) {\Large $C(x)=100+2b$};
+                      \draw[line width=0.75mm,green] (0,0)--(10,7.5);
+                      \node at (7,4) {\Large $R(b)=15b$}; 
+                      \end{tikzpicture}]]></latex-image-code>
+              </image>
+            </figure>
+        </sidebyside>
+        <p>Note that since we had already calculated the profit function, we could have used it to find our answer. If revenue equals cost, the profit will be zero. So, another way to look at the break-even point is when profit is zero:
+          <md>
+            <mrow>P(b) \amp = 0</mrow>
+            <mrow>13b - 1000  \amp = 0</mrow>
+            <mrow>13b  \amp = 1000</mrow>
+            <mrow>b  \amp = 1000/13</mrow>
+            <mrow>b  \amp \approx 76.923 \rightarrow 77 \text{ boxes}</mrow>
+          </md>See, we get the same answer.<m>\checkmark</m></p>
+              </li>
+            </ol>
+          </p>
+      </example>
+      <!-- Note that the break-even point is also the $b$ intercept#where the graph
+of the Profit function intersects the horizontal axis. ADD BACK IN IF WE CREATE A SEPARATE PROFIT GRAPH-->
+      <p>Remember, most of the time, the key to doing word problems for linear functions is to find what you need for the slope and vertical intercept. Now let's step it up by solving word problems involving simultaneous equations.</p>
+  </subsubsection> 
+</subsection>
+<subsection>
+  <title>Simultaneous Equation Word Problems</title>
+  <p>Now we will consider situations where two equations may be used to solve a problem.</p>
+  <example xml:id="example-coins">
+      <title>Number of Coins</title>
+      <p>A pile of dimes and quarters lies on the table in front of you. There are three more quarters than dimes. But the quarters are worth three times the amount that the dimes are worth. How many of each do you have?</p>
+      <p>
+        <ol>
+          <li><p><em>Identify and label the variables:</em></p>
+          <p>There are actually two different, valid ways to approach this problem. You could make a variable that represents the number of dimes; or you could have a variable that represents the value of the dimes. Either way will lead you to the right answer. However, it is vital to know which one you're doing! If you get confused half-way through the problem, you will end up with the wrong answer.</p>
+          <p>Let's try it this way:
+            <ul>
+              <li><m>d</m> is the number of dimes</li>
+              <li><m>q</m> is the number of quarters</li>
+            </ul></p></li>
+            <li><p><em>Translate the sentences in the problem into equations:</em></p>
+              <ul>
+                <li><q>There are three more quarters than dimes</q><m>\dashrightarrow q = d + 3</m></li>
+                <li><q>The quarters are worth three times the amount that the dimes are worth</q><m>\dashrightarrow 25q = 3 (10d)</m></li>
+                <li>This second equation relies on the fact that if you have <m>q</m> quarters, they are
+                      worth a total of <m>25q</m> cents and the <m>d</m> dimes are worth <m>10d</m> cents.</li>
+              </ul></li>
+            <li><p><em>Solve:</em></p>
+            <p>We can do this by elimination or substitution. Since the first equation is already solved for <m>q</m>, we substitute that into the second equation and then solve:
+              <md>
+                <mrow>25 (d + 3) = 3 (10d)</mrow>
+                <mrow>25d + 75 = 30d</mrow>
+                <mrow>75 = 5d</mrow>
+                <mrow>d = 15</mrow>
+              </md>
+              Since <m>q = d+3</m>, we have that
+              <md>
+                <mrow>q = 15 + 3 = 18.</mrow>
+              </md>
+              So, our answer to the question is: <q>You have <m>15</m> dimes and <m>18</m> quarters.</q>
+            </p></li>
+            <li><p><em>So, did it work?</em></p>
+            <p>The surest check is to go all the way back to the original problem-not the equations, but the words. We have concluded that there are <m>15</m> dimes and <m>18</m> quarters.</p>
+            <ul>
+              <li><p><q>There are three more quarters than dimes.</q> <m>\checkmark</m></p></li>
+              <li><p><q>The quarters are worth three times the amount that the dimes are worth.</q><m>\dashrightarrow</m> Well, the quarters are worth <m>18 \cdot 25 = \$4.50.</m> The dimes are worth <m>15 \cdot 10 = \$1.50.\checkmark</m></p></li>
+            </ul>
+          </li>
+        </ol></p>
+  </example>
+  <example xml:id="example-simultaneous-investments">
+      <title>Simultaneous Investments</title>
+      <p>When your grandmother got back from Pocatello, she got a scratch lottery ticket for her birthday which turned out to be a winner for <m>\$50,000.</m> Being a smart grandmother, she decided to invest the money.  Her friends tell her she should invest part of the money in noninsured bonds paying <m>12\%</m> annual interest. They are a bit risky, but the high interest might be worth it. The rest she plans to put into government-insured certificates paying <m>4\%</m> per year in interest. She wants to help you out in college and would like the investments to make <m>\$3000</m> per year. How much money should go into each investment?</p>
+      <p>
+        <ol>
+          <li><p><em>Identify and label the variables:</em></p>
+            <p>Let's collect what we know and need to know about this situation:
+              <ul>
+                <li>The amount to invest in the uninsured bonds, let's call this, <m>b</m></li>
+                <li>The amount in the certificates, call this, <m>c</m> </li>
+                <li><m>12\%</m> is the interest rate on the uninsured bonds: The interest earned is <m>0.12b</m>.</li>
+                <li> <m>4\%</m> is the interest rate on the certificates: The interest earned is <m>0.04c</m>.</li>
+              </ul>
+          </p></li>
+          <li><p><em>Translate the sentences in the problem into equations:</em>
+          <ul>
+            <li><q>She has a total of <m>\$50,000</m> to invest.</q> <m>\dashrightarrow b + c = 50000</m></li>
+            <li><q>The combined interest earned should equal <m>\$3000.</m> </q> <m>\dashrightarrow 0.12b + 0.04c = 3000</m></li>
+          </ul>
+          </p></li>
+            <li><p><em>Solve:</em></p>
+            <p>We can do this by elimination.
+              <md>
+                <mrow>b + c \amp = 50000 \amp\amp \text{Multiply thru by \(4\)}</mrow>
+                <mrow>0.12b + 0.04c  \amp = 3000 \amp\amp \text{Multiply thru by \(-100\)}</mrow>
+                <mrow>4b + 4c \amp = 200000 \amp\amp</mrow>
+                <mrow>+(\underline{-12b - 4c} \amp \underline{\,= -300000}) \amp\amp\text{Add the equations}</mrow>
+                <mrow>-8b \amp = -100000 \amp\amp\text{Divide by 8}</mrow>
+                <mrow>b \amp = \frac{-100000}{-8}  \amp\amp</mrow>
+                <mrow>b \amp = 12500\amp\amp</mrow>
+              </md>
+              This means
+              <md>
+                <mrow>12500 + c \amp = 50000</mrow>
+                <mrow>c \amp = 50000 - 12500</mrow>
+                <mrow>c  \amp  = 37500</mrow>
+              </md>
+              So, your grandmother should invest <m>\$12,500</m> in the uninsured bonds and <m>\$37,500</m> in the government-insured certificates.
+            </p></li>
+            <li><p><em>Check to make sure your solution is correct:</em>
+            <md>
+              <mrow>b+c\amp=12500  + 37500</mrow>
+              <mrow>\amp =50,000\checkmark\text{ We have the right total.}</mrow>
+              <mrow>0.12b + 0.04c\amp =0.12(12500 ) + 0.04(37500)</mrow>
+              <mrow>\amp= 1500 + 1500</mrow>
+              <mrow>\amp= 3000\checkmark\text{ She's going to earn the desired interest.}</mrow>
+            </md>
+          </p></li>
+        </ol>
+      </p>
+  </example>
+  <example xml:id="example-helicopter">
+      <title>Distance, Rate, Time, and Wind Speed</title>
+      <p>A helicopter transporting fire retardant during the Idaho fire season can travel 36 miles with the wind in 1.5 hours. On the return trip it carries fire crew and equipment against the wind, returning to base in 2 hours. Find the helicopter's rate in still air and the wind speed. Assume the weight of the helicopter's load is about equal on the outward and return trip and that it maintains the same still air speed.</p>
+      <p>Solution
+        <ol>
+          <li><p><em>Identify and label the variables:</em></p>
+          <p>In this problem, we want to know the speed of the helicopter and the speed of the wind.  We know the time and distance which brings to mind the relationship between these three quantities: Distance = Rate <m>\times</m> Time
+            <ul>
+              <li>Rate of the helicopter with no wind: <m>h</m></li>
+              <li>Rate of the wind: <m>w</m> </li>
+              <li>Rate of the helicopter with the wind (the wind increases the speed): <m>h+w</m></li>
+              <li>Time for the outward trip (with the wind): <m>1.5</m> hours</li>
+              <li>Rate of the helicopter pushing against the wind (it's overall speed is slower): <m>h-w</m>.</li>
+              <li>Time returning (against the wind): <m>2</m> hours</li>
+              <li>Both outward bound and return trips are <m>36</m> miles.</li>
+            </ul>
+          </p></li>
+          <li><p><em>Translate the sentences in the problem into equations:</em>
+          <ul>
+            <li>Equation for the distance with the wind <m>\dashrightarrow 36 = 1.5(h+w) = 1.5h+1.5w</m></li>
+            <li> Return trip against the wind <m>\dashrightarrow 36 = 2(h-w)=2h-2w</m></li>
+          </ul></p></li>
+          <li><p><em>Solve:</em></p>
+          <p>We can do this by elimination.
+            <md>
+              <mrow>36 \amp  =1.5h+1.5w \amp\amp\text{Multiply thru by \(2\)}</mrow>
+              <mrow>36  \amp = 2h-2w \amp\amp \text{Multiply thru by \(1.5\)}</mrow>
+              <mrow>72 \amp = 3h + 3w \amp\amp </mrow>
+              <mrow>+(\underline{54}  \amp \underline{\,= 3h-3w}) \amp\amp\text{Add the equations}</mrow>
+              <mrow>126 \amp = 6h \amp\amp </mrow>
+              <mrow>\frac{126}{6} \amp =  h \amp\amp </mrow>
+              <mrow>21 \amp = h\amp\amp</mrow>
+            </md>
+            This means
+            <md>
+              <mrow>36 \amp = 2(21) - 2w</mrow>
+              <mrow>36 \amp = 42 - 2w</mrow>
+              <mrow>-6  \amp  = -2w</mrow>
+              <mrow>3  \amp  = w</mrow>
+            </md>
+            We found that the helicopter's speed in still air is <m>21</m> miles per hour and the wind's speed is <m>3</m> miles per hour.</p></li>
+            <li><p><em>Check to make sure your solution is correct:</em>
+            <md>
+              <mrow>\text{With wind: }1.5(21+3) = 1.5(24) \amp= 36\checkmark</mrow>
+              <mrow>\text{Against wind: } 2(21-3) = 2(18) \amp= 36\checkmark</mrow>
+            </md>
+          </p></li>
+        </ol>
+      </p>
+    </example>
+    <p>Again, the key to solving problems is to identify what you are looking for (what is the question?), what you don't know (what do your variables represent?) and then constructing equations to describe the situations.  Once this is done, it's just a matter of working through the process of solving for the variables.  You can always know if your solution is correct by checking that it meets the conditions of the original problem. </p>
+
+<!--
+<h2>2C.2 Using Letters as Numbers</h2>
+There are some problems in substitution and elimination where letters are
+used in place of numbers. For instance, consider the following problem:</p>
+$$2y - ax = 7$$
+$$4y + 3ax = 9$$
+What do we do with those "$a$"s? Like any other variable, they simply represent an unknown number. As
+we solve for $x$, we will simply leave $$ as a variable.</p>
+
+<p>This problem lends itself more naturally to elimination than to substitution, so I will double the top equation
+and then subtract the two equations and solve.
+
+$$4y - 2ax = 14$$
+$$-\underline{(4y + 3ax = 9)}$$
+$$0y - 5ax = 5$$
+$$x =\frac{5}{-5a} = \frac{-1}{a}$$
+
+As always, we can solve for the second variable by plugging into either of our original equations.</p>
+$$2y - a \left( \frac{-1}{a}\right)= 7$$
+$$2y + 1 = 7$$
+$$y = 3$$
+There is no new math here, just elimination. The real trick is not to be spooked by the $a$, and do the math
+just like you did before.</p>
+<p>And what does that mean? It means we have found a solution that works for those two equations, regardless
+of a. We can now solve the following three problems (and an infinite number of others) without going
+through the hard work.</p>
+
+<p><table align="center" border="1" style="width:100%">
+  <tr>
+    <td>If $a = 5$,</td>
+    <td>If $a = 10$,</td>
+    <td>If $a = -3$,</td>
+  </tr>
+  <tr>
+    <td>The original equations become:</td>
+    <td>The original equations become:</td>
+    <td>The original equations become:</td>
+  </tr>
+<tr>
+    <td align="center">$2y - 5x = 7$</br>
+$4y + 15x = 9$</td>
+    <td align="center">$2y - 10x = 7$</br>
+$4y + 30x = 9$</td>
+    <td align="center">$2y + 3x = 7$</br>
+$4y - 9x = 9$</td>
+  </tr>
+<tr>
+    <td>And the solution is:</td>
+    <td>And the solution is:</td>
+    <td>And the solution is:</td>
+  </tr>
+<tr>
+    <td align="center"> $x = -\frac{1}{5}$, $y = 3$</td>
+    <td align="center"> $x = -\frac{1}{10}$, $y = 3$</td>
+    <td align="center"> $x = \frac{1}{3}$, $y = 3$</td>
+  </tr>
+</table></p>
+</example>
+
+
+<p>The whole point is that I did not have to solve those three problems by elimination, substitution, or
+anything else. All I had to do was plug $a$ into the general answer I had already found previously. If I had to
+solve a hundred such problems, I would have saved myself a great deal of time by going through the hard
+work once to find a general solution!</p>
+<p>Mathematicians use this trick all the time. If they are faced with many similar problems, they will attempt
+to find a general problem that encompasses all the specific problems, by using variables to replace the numbers
+that change. You will do this in an even more general way in the text, when you solve the "general"
+simultaneous equations where all the numbers are variables. Then you will have a formula that you can
+plug any pair of simultaneous equations into to find the answer at once. This formula would also make it
+very easy, for instance, to program a computer to solve simultaneous equations (computers are terrible at
+figuring things out, but they're great at formulas).</p>-->
+</subsection>
+</section> 

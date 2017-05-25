@@ -1,0 +1,548 @@
+<section xml:id="section-3C-radical-functions">
+  <title>Radical Functions</title>
+<!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 143-149-->
+<introduction>
+  <p>Objectives:
+    <ul>
+      <li>Evaluate radical functions.</li>
+      <li>Solve radical equations.</li>
+      <li>Identify intercepts, domains, and ranges of graphs of radical functions.</li>
+      <li>Calculate inverses of radical functions.</li>
+      <li>Identify compositions of general power and radical functions.</li>
+    </ul>
+  </p>
+  <p>The concept of a radical (or root) is a familiar one which we've used in earlier Units in this course. In this Module, we will start by reviewing properties of radicals and see how they become a way of understanding general power functions. We will brush up on our algebra skills by solving equations involving radicals and consider a new take on composing functions.  We will revisit graphing concepts such as finding intercepts and the domain and range for radical functions and general power function.</p>
+</introduction>
+  <subsection>
+    <title>Properties of Radicals</title>
+    <p>What is <m>\sqrt{x^2 + 9}</m>? Many students will answer quickly that the answer is <m>(x + 3)</m> and have a very difficult time believing this answer is wrong. But it is wrong.</p>
+    <p>For positive values of <m>x</m>, <m>\sqrt{x^2}</m> <em>is</em> <m>x</m> and <m>\sqrt{9}</m> <em>is</em> <m>3</m>, but <m>\sqrt{x^2 + 9}</m> is not <m>(x + 3).</m></p>
+    <p>Why not? Remember that <m>\sqrt{x^2 + 9}</m> is asking a question: <q>what <em>squared</em> gives the answer <m>x^2 + 9</m>?</q> So <m>(x + 3)</m> is not an answer, because <m>(x + 3)^2 = x^2 + 6x+9</m>, not <m>x^2 + 9</m>.</p>
+    <p>As an example, suppose <m>x = 4</m>. Substituting into <m>\sqrt{x^2 + 9}</m> gives <m>\sqrt{4^2 + 9} = \sqrt{25} = 5</m>. But substituting into <m>(x + 3)</m> gives, <m>(4 + 3) = 7</m>.  That is, when <m>x = 4</m>:
+      <md>
+        <mrow>\sqrt{x^2 + 9} = \sqrt{4^2 + 9} = \sqrt{25} = 5\neq 7 = (4+3)=(x+3)</mrow>
+      </md>
+    </p>
+    <p><alert>NOTE:</alert> If two numbers are added or subtracted under a square root, you cannot split them up. In symbols: <m>\sqrt{a + b} \neq \sqrt{a} + \sqrt{b}</m> or, to put it another way, <m>\sqrt{x^2 + y^2} \neq x + y.</m></p>
+    <p><m>\sqrt{x^2 + 9}</m> cannot, in fact, be simplified at all. It is a perfectly valid function, but cannot be rewritten in a simpler form.</p>
+    <p>How about <m>\sqrt{9x^2}</m>? By analogy to the previous discussion, you might expect that this cannot be simplified either. But in fact, it can be simplified:
+      <md>
+        <mrow>\sqrt{9x^2} = 3x</mrow>
+      </md>
+      Why? Again, <m>\sqrt{9x^2}</m> is asking <q>what squared gives the answer <m>9x^2</m>?</q> The answer is <m>3x</m> because <m>(3x)^2 = 9x^2.</m></p>
+      <p>Similarly, <m>\displaystyle \sqrt{\frac{9}{x^2}} = \frac{3}{x}</m> , because <m>\displaystyle \left(\frac{3}{x}\right)^2 = \frac{9}{x^2}</m>.</p>
+      <p>There are radicals (or roots) other than a square root: <m>\sqrt[3]{27}</m> means <q>what number raised to the third power gives <m>27</m></q>.  In this case, <m>3^3=27</m> so <m>\sqrt[3]{27} = 3</m>.  Similarly, <m>\sqrt[4]{16} = 2.</m></p>
+    </subsection>
+    <subsection>
+      <title>Radicals as Exponents</title>
+      <p>The way we generally consider exponents is as repeated multiplication: <m>10^6</m> means <m>10\cdot10\cdot10\cdot10\cdot10\cdot10</m>. But this definition of exponents does not enable us to answer questions such as:
+        <md>
+          <mrow>4^0\amp = ??</mrow>
+          <mrow>5^{-4}\amp =??</mrow>
+          <mrow>9^{1/2}\amp = ??</mrow>
+        </md>
+        You can't <q>multiply <m>9</m> by itself half a time</q> or <q>multiply <m>5</m> by itself <m>-4</m> times.</q> We need a different way of considering the exponent in these cases.</p>
+    <table>
+      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
+        <col right="minor" width="20%" />
+        <col right="minor" width="20%" />
+        <col right="minor" width="30%" />
+        <col  width="30%"/>
+        <!--  -->
+        <row bottom = "major">
+            <cell colspan = "4"><p>Definitions: When the exponent is not a positive integer</p></cell>
+        </row>
+        <row bottom = "major">
+            <cell><p>Zero Exponents</p></cell>
+            <cell><p>Negative Exponents</p></cell>
+            <cell><p>Fractional Exponents</p><p>(<m>1/n</m>)</p></cell>
+            <cell><p>Fractional Exponents</p><p>(<m>m/n</m>)</p></cell>
+        </row>
+        <row bottom = "minor">
+          <cell><p>Always <m>1</m></p></cell>
+          <cell><p>Go in the denominator</p></cell>
+          <cell><p>Act as a radical</p></cell>
+          <cell><p><m>m</m> is an exponent,</p>
+          <p><m>n</m> is a radical</p></cell>
+        </row>
+        <row bottom = "minor">
+          <cell><p><m>7^0 = 1</m></p></cell>
+          <cell><p><m>7^{-3} = \frac{1}{7^3} = \frac{1}{343}</m></p></cell>
+          <cell><p><m>9^{1/2} = \sqrt{9} = 3</m></p></cell>
+          <cell><p><m>8^{2/3}=\sqrt[3]{8^2}=4</m> or <m>(\sqrt[3]{8})^2=4</m></p>
+          <p>The order doesn't matter.</p></cell>
+        </row>
+        <row bottom = "minor">
+          <cell><p><m>9^0=1</m></p></cell>
+          <cell><p><m>x^{-5} = \frac{1}{x^5}</m></p></cell>
+          <cell><p><m>2^{1/2} = \sqrt{2}</m></p></cell>
+          <cell><p><m>8^{3/2} = \sqrt{8^3}</m> or <m>(\sqrt{8})^3</m></p></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>Note that you can combine these definitions. For instance, <m>8^{-2/3}</m> is a negative, fractional exponent. The negative exponent means, as always, "put me in the denominator." So we can write:
+      <md>
+        <mrow>8^{-2/3} = \frac{1}{8^{2/3}} = \frac{1}{(\sqrt[3]{8})^2} = \frac{1}{2^2} = \frac{1}{4}</mrow>
+      </md></p>
+      <subsubsection>
+        <title>OK, so why define exponents that way?</title>
+        <p>These are obviously not chosen to be the simplest possible definitions. But they are chosen to be consistent with the behavior of positive-integer exponents. One way to see that consistency is to consider the following progression:
+          <md>
+            <mrow>19^4 = 19 \cdot 19 \cdot 19 \cdot 1</mrow>
+            <mrow>19^3 = 19 \cdot 19 \cdot 19</mrow>
+            <mrow>19^2 = 19 \cdot 19</mrow>
+            <mrow>19^1 = 19</mrow>
+          </md>
+          What happens each time we decrease the exponent by <m>1</m>? Your first response might be <q>we have one less <m>19</m>.</q> But what is really happening, mathematically, to the numbers on the right? The answer is that, with each step, they are dividing by <m>19</m>. If you take <m>19 \cdot 19 \cdot 19 \cdot 19</m>, and divide it by <m>19</m>, you get <m>19 \cdot 19 \cdot 19</m>. Divide that by <m>19</m> again, and you get <m>19 \cdot 19</m> <m>\ldots</m> and so on. From this we can formulate the following principle for the powers of <m>19</m>:</p>
+          <p>Whenever you <em>subtract</em> <m>1</m> from the exponent, you <em>divide the answer</em> by <m>19.</m></p>
+          <p>As we said earlier, we want the behavior of our new exponents to be consistent with the behavior of the old (positive-integer) exponents. So we can continue this progression as follows:
+            <md>
+              <mrow>19^1 \amp =19</mrow>
+              <mrow>19^0 \amp =\frac{19}{19} = 1</mrow>
+              <mrow>19^{-1} \amp = \frac{1}{19}</mrow>
+              <mrow>19^{-2}  \amp = \frac{\frac{1}{19}}{19} = \frac{1}{19^2}</mrow>
+            </md>
+            <m>\ldots</m> and so on. We arrive at our definitions that anything to the zero power is <m>1</m> and negative exponents go to the denominator by simply requiring this progression to be consistent.</p>
+            <p>More rigorously, we can find all our exponent definitions by using the laws of exponents. For instance, what is <m>4^0</m>? We can approach this question indirectly by asking: what is <m>\dfrac{4^2}{4^2}</m>?
+            <ul>
+              <li>The second law of exponents tells us that <m>\dfrac{4^2}{4^2} = 4^{2-2}</m>, which is <m>4^0</m>.</li>
+              <li>But of course, <m>\dfrac{4^2}{4^2}</m> is just <m>\dfrac{16}{16}</m> , or <m>1</m>.</li>
+              <li>Since <m>\dfrac{4^2}{4^2}</m> is both <m>4^0</m> and <m>1</m>, <m>4^0</m> and <m>1</m> must be the same thing!</li>
+            </ul>
+          </p>
+          <p>The proofs given below all follow this pattern. They use the laws of exponents to rewrite expressions such as <m>\frac{4^2}{4^2}</m> , and go on to show how zero, negative, and fractional exponents must be defined. We started with the definition of an exponent for a positive integer, <m>10^6 = 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10</m>. From there, we developed the laws of exponents. Now we find that, if we want those same laws to apply to other kinds of exponents, there is only one correct way to define those other kinds of exponents.</p>
+    <table>
+      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
+        <col right="minor" width="20%" />
+        <col right="minor" width="30%" />
+        <col right="minor" width="25%" />
+        <col  width="25%"/>
+        <!--  -->
+        <row bottom = "major">
+            <cell colspan = "4"><p>Definitions: When the exponent is not a positive integer</p></cell>
+        </row>
+        <row bottom = "major">
+            <cell><p>Zero Exponents</p></cell>
+            <cell><p>Negative Exponents</p></cell>
+            <cell><p>Fractional Exponents</p><p>(<m>1/n</m>)</p></cell>
+            <cell><p>Fractional Exponents</p><p>(<m>m/n</m>)</p></cell>
+        </row>
+        <row bottom = "minor">
+          <cell><p>Always <m>1</m></p></cell>
+          <cell><p>Go in the denominator</p></cell>
+          <cell><p>Act as a radical</p></cell>
+          <cell><p><m>m</m> is an exponent,</p>
+          <p><m>n</m> is a radical</p></cell>
+        </row>
+        <row bottom = "minor">
+          <cell><p><m>\frac{4^2}{4^2} = 4^{2-2} = 0</m></p>
+          <p>but <m>\frac{4^2}{4^2} =\frac{16}{16} = 1</m></p>
+          <p>so <m>4^0</m> must be <m>1</m>!</p></cell>
+          <cell><p><m>\frac{10^1}{10^3} = 10^{1-3} = 10^{-2}</m>,</p>
+          <p>but <m>\frac{10^1}{10^3} = \frac{10}{10 \cdot 10 \cdot 10} = \frac{1}{10 \cdot 10}</m></p>
+          <p>so <m>10^{-2}</m> must be <m>\frac{1}{10^2}</m>.</p></cell>
+          <cell><p><m>(9^{\frac{1}{2}})^2 = 9^{\frac{1}{2} \cdot 2} = 9^1 = 9</m>.</p>
+          <p>So, what is <m>9^{\frac{1}{2}}</m>?</p>
+          <p>Well, when you square it, you get <m>9</m>.</p>
+          <p>So it must be <m>\sqrt{9}</m>, or <m>3</m>!</p></cell>
+          <cell><p><m>8^{\frac{2}{3}}=(8^{\frac{1}{3}})^2=(\sqrt[3]{8})^2</m></p>
+          <p>or <m>8^{\frac{2}{3}}=(8^2)^{\frac{1}{3}}=\sqrt[3]{8^2}</m></p></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>Hence, we may use radicals and rational exponents interchangably:</p>
+      <p><term>Radicals and Rational Exponents</term>:
+        <mdn>
+        <mrow xml:id="quadratic-formula">a^{\frac{n}{m}}=\left(\sqrt[m]{a} \right)^n
+        </mrow>
+      </mdn></p>
+      <p>The denominator of a rational exponent becomes the index on our radical, likewise the index on the radical becomes the denominator of the exponent. We can use this property to change any radical expression into an exponential expression.</p>
+      <example xml:id="example-radical-vs-rational-exponents">
+        <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 410 pg 310-->
+          <title>Compare Radical and Exponential Notation</title>
+          <md>
+            <mrow>\text{Index is the denominator: }\amp\left(\sqrt[5]{x} \right)^3 = x^{\frac{3}{5}}\amp\amp\left(\sqrt[6]{3x} \right)^5 = (3x)^{\frac{5}{6}}</mrow>
+            <mrow>\text{Negative exponents from reciprocals: }\amp\dfrac{1}{\left(\sqrt[7]{a} \right)^3} = a^{-\frac{3}{7}}\amp\amp\dfrac{1}{\left(\sqrt[3]{xy} \right)^2} = (xy)^{-\frac{2}{3}}</mrow>
+          </md>
+      </example>
+      <example xml:id="example-rewrite-radical"><!-- New one-->
+          <title>Convert Radical to Exponential Form</title>
+          <p>Rewrite the radical expression into exponent form.</p>
+          <md>
+            <mrow>3x\sqrt[3]{y^2}\amp\amp\amp\text{Index \(3\) is the denominator of the rational exponent}</mrow>
+            <mrow>3x y^{2/3}\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+          </md>   
+      </example>
+      <example xml:id="example-rewrite-radical-2"><!-- New one-->
+          <title>Convert Radical to Exponential Form</title>
+          <p>Rewrite the radical expression into exponent form. Simplify if possible.</p>
+          <md>
+            <mrow>\sqrt[4]{x^9}\amp\amp\amp\text{Index \(4\) is the denominator of the rational exponent}</mrow>
+            <mrow>\left({x^8x}\right)^\frac{1}{4}\amp\amp\amp\text{Rewrite the exponent }9=8+1,</mrow>
+            <mrow>\amp\amp\amp\text{write the product of two powers of }x</mrow>
+            <mrow>(x^8)^{\frac{1}{4}} x^\frac{1}{4}\amp\amp\amp\text{Apply the Power of a Power Rule (multiply exponents)}</mrow>
+            <mrow>x^2 x^\frac{1}{4}\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+          </md>   
+      </example>
+      <p>Now that we have a firm understanding of how to deal with expressions like <m>x^{n/m}</m> where <m>n</m> and <m>m</m> are integers, we could extend the idea to expressions like <m>x^r</m> where <m>r</m> is a real number. We will demonstrate how such a critter would be calculated, but not go into the mathematical underpinnings for the expression in this course. Let's see how one would go about calculating <m>2^\pi</m>. Recall that <m>\pi \approx 3.14159 \dots</m>. Consider
+        <md>
+          <mrow>2^3 \amp =8</mrow>
+          <mrow>2^{3.1} \amp =2^{\frac{31}{10}} =  \sqrt[10]{2^{31}} = 8.5741877 \dots</mrow>
+          <mrow>2^{3.14} \amp =2^{\frac{314}{100}} =  \sqrt[100]{2^{314}} = 8.815241 \dots</mrow>
+          <mrow>2^{3.141} \amp =2^{\frac{3141}{1000}} =  \sqrt[1000]{2^{3141}} = 8.821353 \dots</mrow>
+          <mrow>2^{3.1415} \amp =2^{\frac{31415}{10000}} =  \sqrt[10000]{2^{31415}} = 8.824411 \dots</mrow>
+          <mrow>2^{3.14159} \amp =2^{\frac{314159}{100000}} =  \sqrt[100000]{2^{314159}} = 8.824962 \dots</mrow>
+        </md>
+        As we use more digits of <m>\pi</m>, the digits of the result begin to stabilize.  Note that after the last calculation the first four digits haven't changed: <m>8.824</m>. We won't ever get an exact value for <m>2^\pi</m> since <m>\pi</m>'s digits don't repeat, but we can get as accurate a number as we need by using enough digits to calculate <m>2^\pi</m>.</p>
+        <p>We now have the idea of the general power function:</p>
+
+        <p><term>General Power Function</term> A general power function is of the form
+        <mdn>
+        <mrow xml:id="power-function">f(x) = x^n
+        </mrow>
+        where <m>n</m> is a real number.
+      </mdn></p>
+      <p>Of course, we can make new functions out of power functions. A recent example is the set of polynomials which are power functions with integer exponents which have been multiplied by numbers and added/subtracted together.</p>
+      <example xml:id="example-evaluate-radical-function">
+          <title>Evaluate Radical Function</title>
+          <p>Evaluate <m>f(x) = \sqrt[4]{x-2}</m> at the given points.
+          <ol label="a.">
+            <li><m>x = 5</m>: This is <m>f(5) = \sqrt[4]{5-2} = 3^{1/4} \approx 1.316074</m> using a calculator for the last step.</li>
+            <li><m>x = 1</m>: Here we have <m>f(1) = \sqrt[4]{1-2} = \sqrt[4]{-1}</m>, but no real number can multiply itself four times to get <m>-4</m>. <m>f(1)</m> is not defined.<m>\checkmark</m></li>
+          </ol>
+        </p>
+      </example>
+      </subsubsection>
+    </subsection>
+  <subsection>
+    <title>Radical Equations</title>
+    <p>When solving equations that involve radicals, begin by asking yourself: is there an <m>x</m> under the square root? The answer to this question will determine the way you approach the problem.</p>
+    <p>If there is not an <m>x</m> under the square root <ndash /> if only numbers are under the radicals <ndash /> you can solve much the same way you would solve with no radicals at all.</p>
+    <example xml:id="example-solve-radical-equation">
+        <title>Solve a Radical Equation</title>
+        <p>Solve a radical equation with no variables under square root.</p>
+        <md>
+          <mrow>\sqrt{2}x + 5\amp = 7 - \sqrt{3}x\amp\amp\text{Notice that there are no variables under a radical}</mrow>
+          <mrow>\sqrt{2}x +\sqrt{3}x\amp = 7 - 5\amp\amp\text{Get everything with an \(x\) on one side,}</mrow>
+          <mrow>\amp\amp\amp\text{everything else on the other}</mrow>
+          <mrow>x(\sqrt{2} +\sqrt{3})\amp = 2\amp\amp\text{Factor out the }x</mrow>
+          <mrow>\amp\amp\amp\text{Divide, to solve for }x</mrow>
+          <mrow>x\amp = \dfrac{2}{\sqrt{2}+\sqrt{3}}\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
+    </example>
+    <p>The key thing to note about such problems is that you do not have to square both sides of the equation. <m>\sqrt{ 2}</m> may look ugly, but it is just a number<ndash />you could find it on your calculator if you wanted to<ndash />it functions in the equation just the way that the number <m>10</m>, or <m>\frac{1}{3}</m> , or <m>\pi</m> would.</p>
+    <p>If there is an <m>x</m> under the square root, the problem is completely different. You will have to square both sides to get rid of the radical. However, there are two important notes about this kind of problem.
+      <ol>
+        <li>If possible, always get the radical alone, on one side of the equation, before squaring.</li>
+        <li>Squaring both sides can introduce false answers<ndash />so it is important to check your answers after solving!</li>
+      </ol>
+      Both of these principles are demonstrated in the following example.</p>
+      <example xml:id="example-solve-radical-equation-2">
+        <title>Solve a Radical Equation</title>
+        <p>Solve a radical equation with the variable under the square root.</p>
+        <p><alert>The Algebra Step</alert></p>
+        <md>
+          <mrow>\sqrt{x + 2} + 3x\amp = 5x + 1\amp\amp\text{Here, there is a variable under radical}</mrow>
+          <mrow>\sqrt{x + 2}\amp = 2x + 1\amp\amp\text{Isolate the radical on one side of the equation by subtracting }3x</mrow>
+          <mrow>x + 2\amp = (2x + 1)^2\amp\amp\text{Square both sides to remove the radical}</mrow>
+          <mrow>x + 2\amp = 4x^2 + 4x + 1\amp\amp\text{Multiply out. It looks like a quadratic equation now!}</mrow>
+          <mrow>0\amp = 4x^2 + 3x - 1\amp\amp\text{As always with quadratics, get everything on one side}</mrow>
+          <mrow>0\amp = (4x - 1) (x + 1)\amp\amp\text{Factor (the easiest way to solve quadratic equations)}</mrow>
+          <mrow>x\amp = \frac{1}{4}\text{ or }x = -1\amp\amp\text{Two solutions. Do they work? Check in the original equation!}</mrow>
+          </md>
+          <p><alert>The Check Step</alert></p>
+          <md>
+            <mrow>\underline{\text{Check: }}x = \frac{1}{4}:\amp\amp\amp\amp\underline{\text{Check: }}x = -1:\amp</mrow>
+            <mrow>\sqrt{\frac{1}{4}+2}+3(\frac{1}{4})?\amp =?5(\frac{1}{4})+1\amp\amp\amp\sqrt{-1+2}+3(-1)?\amp =?5(-1)+1</mrow>
+            <mrow>\sqrt{\frac{1}{4} + \frac{8}{4}}+ \frac{3}{4}?\amp =?\frac{5}{4} + 1\amp\amp\amp\sqrt{1} - 3?\amp =?-5 + 1</mrow>
+            <mrow>\sqrt{\frac{9}{4}}+\frac{3}{4}?\amp =? \frac{5}{4} + \frac{4}{4}\amp\amp\amp 1 - 3?\amp =? -5 + 1</mrow>
+            <mrow>\frac{3}{2} + \frac{3}{4}?\amp =? \frac{9}{4}\amp\amp\amp-2 \amp\neq -4\text{ Not equal!}</mrow>
+            <mrow>\frac{9}{4}\amp = \frac{9}{4}\text{ This one works.}\checkmark\amp\amp\amp\amp</mrow>
+          </md>
+      </example>
+      <p>So the algebra yielded two solutions: <m>\frac{1}{4}</m> and <m>-1</m>. Checking, however, we discover that only the first solution is valid. This problem demonstrates how important it is to check solutions whenever squaring both sides of an equation.</p>
+      <p>If variables under the radical occur more than once, you will have to go through this procedure multiple times. Each time, you isolate a radical and then square both sides.</p>
+      <!--  IF YOU WANT THIS ONE BACK IN, PROBLEMS LIKE THIS WILL NEED TO BE ADDED TO THE WEBWORK SET
+<h3>Example 3C-4:  Radical Equation with Variables under Square Roots Multiple Times</h3>
+<p><table style="width:75%">
+  <tr>
+    <td><m>\sqrt{x + 7} - \sqrt{x} = 1</m></td>
+    <td>Let's work one with variables under radicals multiple times</td>
+  </tr>
+  <tr>
+    <td><m>\sqrt{x + 7} = \sqrt{x} + 1</m></td>
+    <td>Isolate one radical. (I usually prefer to start with the bigger one.)</td>
+  </tr>
+<tr>
+    <td><m>x + 7 = (\sqrt{x} + 1)^2</m></td>
+    <td>Square both sides. </td>
+  </tr>
+  <tr>
+    <td><m>x + 7 = (\sqrt{x} + 1)(\sqrt{x} + 1)</m></td>
+    <td>It might be easier to see how to do the square this way.</td>
+  </tr>
+    <tr>
+    <td><m>x + 7 = x + \sqrt{x} + \sqrt{x} + 1</m></td>
+    <td>Note: <m>\sqrt{x}\sqrt{x}= (\sqrt{x})^2=x</m></td>
+  </tr>
+        <tr>
+    <td><m>x + 7 = x + 2\sqrt{x} + 1</m></td>
+    <td>The two-radical equation is now a one-radical equation.</td>
+  </tr>
+<tr>
+    <td><m>6 = 2\sqrt{x}</m></td>
+    <td>Isolate the remaining radical</td>
+  </tr>
+<tr>
+    <td><m>3 = \sqrt{x}</m></td>
+    <td>Square both sides again.</td>
+  </tr>
+<tr>
+    <td><m>9 = x</m></td>
+    <td>In this case, we end up with only one solution. But we still need to check it.</td>
+  </tr>
+</table></p>
+<p><table style="width:75%">
+  <tr>
+    <td>Check <m>x = 9</m></td>
+  </tr>
+  <tr>
+  <tr>
+    <td><m>\sqrt{9 + 7}- \sqrt{9}</m> <m>?=?</m> <m>1</m></td>
+  </tr>
+  <tr>
+    <td><m>\sqrt{16} - \sqrt{9}</m> <m>?=?</m> <m>1</m></td>
+  </tr>
+<tr>
+    <td><m>4 - 3 = 1</m> <m>\checkmark</m></td>
+
+  </tr>
+</table></p>
+<p>Remember, the key to this problem was recognizing that variables under the radical occurred in the original
+problem two times. That cued us that we would have to go through the process<ndash />isolate a radical,
+then square both sides<ndash />twice, before we could solve for <m>x</m>. And whenever you square both sides of the
+equation, it's vital to check your answer(s)!</p>
+-->
+      <subsubsection>
+        <title>When Good Math Leads to Bad Answers</title>
+        <p>Why is it that<ndash />when squaring both sides of an equation<ndash />perfectly good algebra can lead to invalid solutions? The answer is in the redundancy of squaring. Consider the following equation:
+          <md>
+            <mrow>-5 = 5\text{, is false.}</mrow>
+          </md>
+          But square both sides, and we get...
+          <md>
+            <mrow>25 = 25\text{, which is true!}</mrow>
+          </md>
+          So squaring both sides of a false equation can produce a true equation.</p>
+          <p>To see how this affects our equations, try plugging <m>x = -1</m> into the various steps of <xref ref="example-rewrite-radical-2" autoname="yes" />:</p>
+          <md>
+            <mrow>\sqrt{x + 2} + 3x\amp = 5x + 1\amp\amp\text{Does \(x = -1\) work here? No, it does not.}</mrow>
+            <mrow>\sqrt{x + 2}\amp = 2x + 1\amp\amp\text{How about here? No, \(x = -1\) produces the false equation \(1 = -1\).}</mrow>
+            <mrow>x + 2\amp = (2x + 1)^2\amp\amp\text{Suddenly, \(x = -1\) works. (Try it!)}</mrow>
+          </md>
+          <p>When we squared both sides, we <q>lost</q> the difference between <m>1</m> and <m>-1</m>, and they <q>became equal.</q> From here on, when we solved, we ended up with <m>x = -1</m> as a valid solution. So, the moral of the story is if you square an equation in the course of solving it, you will need to check your answer to make sure a false one didn't sneak in.</p>
+      </subsubsection>
+  </subsection>
+  <subsection>
+    <title>Radical Functions</title>
+    <p>When we consider radical functions like <m>f(x) = \sqrt[n]{x}</m> and <m>g(x) = x^{1/n}</m>,  the domain and range of these sorts of functions depend on <m>n</m>.</p>
+    <example xml:id="example-domain-range-radical-function">
+        <title>Domain and Range of a Radical Function</title>
+        <p>Determine the domain and range of <m>y =f(x)</m> and <m>y=g(x)</m> given below.</p>
+        <ol label="a.">
+          <li><p>For <m>f(x) = \dfrac{1}{x^{2/3}}</m>, we notice <m>f</m> may be rewritten as <m>f(x) = \sqrt[3]{\dfrac{1}{x^2}}</m> and any number squared is positive. Taking the cube root of a positive number poses no problem and always results in a positive number. The only problem will be at <m>x=0</m> since division by zero is not defined.  Hence, the domain is <m>x \lt 0</m> or <m>x \gt 0</m> or equivalently <m>(-\infty,0)\cup (0,\infty)</m>.</p>
+          <p>Next, let's consider the range: Since the numerator of the fraction is <m>1</m>, there is no way to make the fraction equal zero.  Hence, zero is not in the range.  At first glance, it would seem the range should be numbers between <m>0</m> and <m>1</m> excluding zero, but we have to consider all possible values to use for <m>x</m>. Let's try a variety of values for <m>x</m> to get an idea of the kind of output values the function makes:</p>
+          <table>
+            <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
+              <col right="minor" halign="right"/>
+              <col right="minor" />
+              <col right="minor"  />
+              <col right="minor"  />
+              <col right="minor"  />
+              <col right="minor"  />
+              <col right="minor" />
+              <col right="minor"  />
+              <col right="minor"  />
+              <col right="minor"  />
+              <col right="minor"  />
+              <col right="minor" />
+              <col right="minor"  />
+              <col right="minor"  />
+              <col right="minor"  />
+              <col right="minor"  />
+              <col />
+              <!-- -->
+              <row bottom = "minor">
+                <cell><m>x = </m></cell>
+                <cell><m>-100</m></cell>
+                <cell><m>-10</m></cell>
+                <cell><m>-1</m></cell>
+                <cell><m>-0.1</m></cell>
+                <cell><m>-0.01</m></cell>
+                <cell><m>-0.001</m></cell>
+                <cell><m>0.001</m></cell>
+                <cell><m>0.01</m></cell>
+                <cell><m>0.1</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>10</m></cell>
+                <cell><m>100</m></cell>
+              </row>
+              <row>
+                <cell><m>f(x) \approx</m></cell>
+                <cell><m>0.0464</m></cell>
+                <cell><m>0.2154</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>4.6416</m></cell>
+                <cell><m>21.5443</m></cell>
+                <cell><m>100</m></cell>
+                <cell><m>100</m></cell>
+                <cell><m>21.5443</m></cell>
+                <cell><m>4.6416</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>0.2154</m></cell>
+                <cell><m>0.0464</m></cell>
+              </row>
+            </tabular>
+          </table>
+          <p>Is this enough to convince you that the function can output any positive number? If not, try a few more values, or better yet, graph <m>y = f(x)</m> to see that the range is <m>y \gt 0</m> or equivalently <m>(0,\infty)</m>.</p></li>
+          <li><p>For <m>g(x) =\sqrt{x + 1},</m> the domain consists of all real numbers which may be evaluated in the function.  This means <m>x+1\ge 0</m>  hence the domain is <m>x \ge -1</m> or equivalently <m>[-1,\infty)</m>. The range is the set of numbers which can be produced by <m>g(x).</m>  Notice that we can make very small positive numbers numbers by letting <m>x</m> be values close to <m>-1</m> and we can make zero by substituting <m>x = -1.</m>  The larger <m>x</m> is, the larger the output value will be, but since the square root is always a nonnegative number, the range is <m>y \ge 0</m> or equivalently <m>[0,\infty).\checkmark</m></p></li>
+        </ol>
+    </example>
+    <p>Now let's try our hand at finding intercepts.</p>
+    <example xml:id="example-intercepts-radical-function">
+        <title>Intercepts of a Radical Function</title>
+        <p>Determine the intercepts for <m>y =f(x)</m> and <m>y=g(x).</m></p>
+        <ol label="a.">
+          <li><p>For <m>f(x) = \dfrac{1}{x^{2/3}}</m>:</p>
+          <p>The <m>y</m>-intercept is where <m>x=0</m>. But, <m>f(0)</m> is not defined. <m>f(x)</m> has no <m>y</m>-intercept.</p>
+          <p>The <m>x</m>-intercept is where <m>y=0</m>. Consider: <m>0 = \dfrac{1}{x^{2/3}}</m>. The numerator is always <m>1</m> and the fraction will never be zero.  <m>f(x)</m> has no <m>x</m>-intercept.</p>
+          </li>
+          <li><p>For <m>g(x) = \sqrt{x + 1}</m>:</p>
+          <p>The <m>y</m>-intercept is where <m>x=0</m>.  <m>g(0) = \sqrt{0 + 1} = \sqrt{1} = 1</m>. The <m>y</m>-intercept is at <m>y=1</m>.</p>
+          <p>The <m>x</m>-intercept is where <m>y=0</m>.  Solve: <m>0 = \sqrt{x + 1}</m>. Square both sides: <m>0 = x+1</m>, so the <m>x</m>-intercept is at <m>x=-1</m>.</p>
+          </li>
+        </ol>
+    </example>
+    <p>In <xref ref="section-1C-graphs" autoname="yes" />, we considered transformations of functions. We will now review these concepts.</p>
+    <example xml:id="example-sqrt-x-transformations">
+        <title>Transformations of a Radical Function</title>
+        <p>Consider graphs of transformations of <m>f(x)=\sqrt{x}.</m></p>
+        <sbsgroup widths="35% 65%" valign="middle">
+          <sidebyside>
+            <p>Let's start with the graph of <m>f(x) = \sqrt{x}:</m>
+            </p>
+            <figure xml:id="figure-graph-sqrt-x"> <!--set3C-Radical_Functions_01.png-->
+              <image xml:id="graph-sqrt-x">
+                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                  \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
+                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+                  \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
+                  \foreach \x in {-5,...,-1,1,2,...,5}
+                      \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
+                  \foreach \y in {-5,...,-1,1,2,...,5}
+                      \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
+                  \draw[line width=0.75mm, domain=0:5.9,smooth,variable=\x,red] plot ({\x},{sqrt(\x)});
+                  \fill[color=red] (0,0) circle (.15cm);
+                  \node at (1.75, 2.5) {\Large $f(x)=\sqrt{x}$}; 
+                \end{tikzpicture}]]></latex-image-code>
+              </image>
+            </figure>
+          </sidebyside>
+          <sidebyside>
+            <paragraphs>
+              <p><m>g(x) = 3-\sqrt{x-2}</m> shifts the graph of <m>f(x)</m> to the right <m>2</m> and up <m>3</m> and also</p>
+              <p>flips it on the horizontal axis:
+              </p>
+            </paragraphs>
+            <figure xml:id="figure-graph-3-minus-sqrt-x-minus-2"> <!--set3C-Radical_Functions_02.png-->
+              <image xml:id="graph-3-minus-sqrt-x-minus-2">
+                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                  \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
+                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+                  \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
+                  \foreach \x in {-5,...,-1,1,2,...,5}
+                      \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
+                  \foreach \y in {-5,...,-1,1,2,...,5}
+                      \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
+                  \draw[line width=0.75mm, domain=0:5.9,smooth,variable=\x,red] plot ({\x},{sqrt(\x)});
+                  \fill[color=red] (0,0) circle (.15cm);
+                  \node at (-1.5, .5) {\Large $f(x)=\sqrt{x}$};
+                  \draw[line width=0.75mm, domain=2:5.9,smooth,variable=\x,blue] plot ({\x},{3-sqrt(\x-2)});
+                  \fill[color=blue] (2,3) circle (.15cm);
+                  \node at (2, 3.5) {\Large $g(x)=3-\sqrt{x-2}$}; 
+                \end{tikzpicture}]]></latex-image-code>
+              </image>
+            </figure>
+          </sidebyside>
+          <sidebyside>
+            <paragraphs>
+              <p><m>h(x) = \sqrt{1-x}-2=\sqrt{-(x-1)}-2</m> flips <m>f(x)</m> across the vertical axis,</p>
+              <p>shifts it <m>1</m> to the right and <m>2</m> down:
+              </p>
+            </paragraphs>
+            <figure xml:id="figure-graph-sqrt-1-minus-x-minus-2"> <!-- set3C-Radical_Functions_03.png-->
+              <image xml:id="graph-sqrt-1-minus-x-minus-2">
+                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                  \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
+                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+                  \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
+                  \foreach \x in {-5,...,-1,1,2,...,5}
+                      \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
+                  \foreach \y in {-5,...,-1,1,2,...,5}
+                      \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
+                  \draw[line width=0.75mm, domain=0:5.9,smooth,variable=\x,red] plot ({\x},{sqrt(\x)});
+                  \fill[color=red] (0,0) circle (.15cm);
+                  \node at (1.75, 2.5) {\Large $f(x)=\sqrt{x}$};
+                  \draw[line width=0.75mm, domain=-5.9:1,smooth,variable=\x,green] plot ({\x},{sqrt(1-\x)-2});
+                  \fill[color=green] (1,-2) circle (.15cm);
+                  \node at (-3, -1.5) {\Large $h(x)=\sqrt{1-x}-2$}; 
+                \end{tikzpicture}]]></latex-image-code>
+              </image>
+            </figure>
+          </sidebyside>
+        </sbsgroup>
+    </example>
+    <p>This section would not be complete without an application (i.e. word problem).</p>
+    <example xml:id="example-hang-time">
+        <title>Hang Time</title>
+        <p>A basketball player's hang time is the time spent in the air when shooting a basket.  Hang time can be estimated by the model
+          <md>
+            <mrow>h = \frac{\sqrt{v}}{2}</mrow>
+          </md>
+          where <m>h</m> is the hang time in seconds and <m>v</m> the vertical distance of the jump in feet.  Suppose Boo is a member of the C of I basketball team. If Boo's hang time for a slam dunk is 1.15 seconds, how high did Boo jump?</p>
+          <p>Solution: We know that <m>h = 1.15</m> so
+            <md>
+              <mrow>1.15 \amp = \frac{\sqrt{v}}{2}</mrow>
+              <mrow>2(1.15) \amp = \sqrt{v}</mrow>
+              <mrow>(2.30)^2 \amp = v</mrow>
+              <mrow>\text{So, } v \amp = 5.29</mrow>
+            </md>
+            Answer: Boo jumped <m>5.29</m> ft high while making the slam dunk.  Go Yotes!<m>\checkmark</m></p>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Composition With General Power and Radical Functions</title>
+    <p>We finish this section with a twist to the idea of composing functions.  Previously, we were given two functions and asked to compose them. For example, if <m>f(x) = \sqrt{x}</m> and <m>g(x) = 2x^3+1</m>,
+      <md>
+        <mrow>(f \circ g)(x) = f(g(x)) = f(2x^3+1) = \sqrt{2x^3+1}.</mrow>
+      </md>
+      However, in Calculus, it is sometimes necessary to do the reverse: to identify the two functions used in a composition.</p>
+      <example xml:id="example-identify-functions-in-composition">
+          <title>Identifying Functions in Compositions</title>
+          <p>For <m>h(x) = \dfrac{1}{\sqrt[3]{x+1}},</m> find two functions, <m>f(x)</m> and <m>g(x)</m> so that <m>h(x) = (f \circ g)(x).</m></p>
+          <p> In other words, we want to deconstruct <m>h(x)</m> into two functions. Actually, there is more than one set of functions that work. For now, it doesn't matter what the two functions are as long as they make <m>h(x)</m>.  It basically takes a little educated guessing:
+          <ol label="a.">
+            <li><p>It looks like <m>x+1</m> is "plugged in" to <m>\dfrac{1}{\sqrt[3]{x}}</m>, so we could have <m>g(x) = x+1</m> and <m>f(x) = \dfrac{1}{\sqrt[3]{x}}</m>.</p>
+            <p>We can check: <m>(f \circ g)(x) = f(x+1) =  \dfrac{1}{\sqrt[3]{x+1}}\checkmark</m></p></li>
+            <li><p>Now consider if <m>f(x) = \dfrac{1}{x}</m> and <m>g(x) = \sqrt[3]{x+1}</m> yield <m>h(x)</m>.</p>
+            <p>Checking: <m>(f \circ g)(x) = f(\sqrt[3]{x+1}) =  \dfrac{1}{\sqrt[3]{x+1}}\checkmark</m></p></li>
+            <li><p>What if we took <m>f(x) = \dfrac{1}{x+1}</m> and <m>g(x) = \sqrt[3]{x}</m>?</p>
+            <p>Let's check: <m>(f \circ g)(x) = f(\sqrt[3]{x}) =  \dfrac{1}{\sqrt[3]{x}+1}</m> which is <em>NOT</em> <m>h(x)</m>. This choice of <m>f(x)</m> and <m>g(x)</m> does not work.</p></li>
+          </ol>
+        </p>
+      </example>
+      <p>The moral here is: Guess, but check your answer.  You <em>can</em>  know if you have a correct answer.</p>
+    </subsection>
+</section>

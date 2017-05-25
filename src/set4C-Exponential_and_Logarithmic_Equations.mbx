@@ -1,0 +1,199 @@
+<section xml:id="section-4C-exp-and-log-equations">
+  <title>Exponential and Logarithmic Equations</title>
+  <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/) Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  NEEDS PAGES-->
+  <introduction>
+    <p>Objectives:
+      <ul>
+        <li>Solve exponential equations.</li>
+        <li>Solve logarithmic equations.</li>
+      </ul>
+    </p>
+  </introduction>
+  <p>In this section we will develop techniques for solving equations involving exponential and logarithmic functions. Suppose, for instance, we wanted to solve the equation <m>2^x = 128.</m>  If we happen to see that <m>128 = 2^7</m> then we have the solution to the equation: <m>x = 7.</m> However, if we change the equation slightly to <m>2^x = 129,</m> this method  leaves a lot to be desired. The exponent we need on <m>2</m> to get <m>129</m> does not easily come to mind. Here's were logs come to the rescue.  Just like squaring both sides of an equation is a reasonable strategy when working with radicals, "logging" both sides allows us to use the rules of logarithms to solve exponential equations. We could take the logarithm base <m>2</m> of both sides, but this sometimes presents a problem:
+  <md>
+    <mrow>2^x\amp = 129\amp\amp</mrow>
+    <mrow>\log_2(2^x)\amp = \log_2(129)\amp\amp\text{Take the logarithm base \(2\) of both sides}</mrow>
+    <mrow>x\amp = \log_2(129)\amp\amp\text{Use the fact that \(\log_2(x)\) is the inverse function of }2^x</mrow>
+  </md>We've solved for <m>x</m>, but how do we calculate <m>\log_2(129)</m>? Most calculators do not have a button for a logarithm base <m>2</m>. If you think about it, there are an infinite number of bases we could consider for a logarithm.  Your calculator probably has two logarithm buttons, one for <m>\ln(x)</m> and another for <m>\log(x)</m>, base <m>e</m> and <m>10</m> respectively.  Fortunately, all is not lost. Let's see how we would solve the problem limited by our choice of bases. We'll use base <m>e</m> for this problem.
+</p>
+<example xml:id="example-solve-using-ln">
+    <title>Solve an Exponential Equation Using the Natural Logarithm</title>
+    <p>Solve <m>2^x = 129</m> for <m>x.</m></p>
+    <md>
+      <mrow>2^x\amp = 129\amp\amp</mrow>
+      <mrow>\ln(2^x)\amp = \ln(129)\amp\amp\text{Take the natural logarithm of both sides}</mrow>
+      <mrow>x\ln(2)\amp = \ln(129)\amp\amp\text{Use the Power Rule for logs to bring down the \(x\) in the exponent}</mrow>
+      <mrow>\dfrac{x\ln(2)}{\ln(2)}\amp =  \dfrac{\ln(129)}{\ln(2)}\amp\amp\text{Since \(\ln(2)\) is a perfectly good number, divide both sides by it}</mrow>
+      <mrow>x\amp =  \dfrac{\ln(129)}{\ln(2)}\amp\amp\text{We have solved for }x</mrow>
+      <mrow>\amp \approx 7.011227\amp\amp\text{Use a calculator to get the approximate value}</mrow>
+    </md>
+    <p>Check our answer: <m>2^{7.011227} \approx 128.9999.\checkmark</m></p>
+  </example>
+  <p>Note that if we had used the common log instead of the natural log our last step would have been <m>x = \dfrac{\log(129)}{\log(2)}</m> and punching this into a calculator gives <m>x \approx 7.011227</m>.  Using either base <m>e</m> or base <m>10</m> gives the same answer<ndash />what a comforting thought!</p>
+  <p>We'll work a few more examples of solving exponential equations and then move on to solving equations involving logs.</p>
+  <example xml:id="example-solve-using-log">
+      <title>Solve an Exponential Equation Using the Common Logarithm</title>
+      <p>Solve the equation: <m>4^{x+1} = 11.</m></p>
+      <p>Let's try this one using the common logarithm.
+      <md>
+        <mrow>4^{x+1}\amp = 11\amp\amp</mrow>
+        <mrow>\log(4^{x+1})\amp = \log(11)\amp\amp\text{Take the log of both sides}</mrow>
+        <mrow>(x+1)\log(4)\amp = \log(11)\amp\amp\text{Use the Power Rule}</mrow>
+        <mrow>\dfrac{(x+1)\log(4)}{\log(4)}\amp = \dfrac{\log(11)}{\log(4)}\amp\amp\text{Divide both sides by }\log(4)</mrow>
+        <mrow>x+1\amp = \dfrac{\log(11)}{\log(4)}\amp\amp\text{Reduce and subtract \(1\) from both sides}</mrow>
+        <mrow>x\amp = \dfrac{\log(11)}{\log(4)} - 1\amp\amp\text{This answer is fine or use a calculator to get a decimal approximation}</mrow>
+        <mrow>x\amp \approx 0.729716\amp\amp\text{Our Solution}\checkmark</mrow>
+      </md></p>
+  </example>
+  <example xml:id="example-solve-using-ln-2">
+    <title>Solve an Exponential Equation Using the Natural Logarithm</title>
+    <p>Solve <m>3^{2-3t} = 2(5^t)</m> for <m>t.</m></p>
+    <p>The issue is that the variables are in the exponent.
+    <md>
+      <mrow>3^{2-3t}\amp = 2(5^t)\amp\amp</mrow>
+      <mrow>\ln(3^{2-3t})\amp = \ln(2(5^t))\amp\amp\text{Take the natural log of both sides to bring down exponents}</mrow>
+      <mrow>(2-3t)\ln(3)\amp = \ln(2(5^t))\amp\amp\text{We can bring down the exponent on the left,}</mrow>
+      <mrow>\amp\amp\amp\text{but on the right the exponent is only on the }5</mrow>
+      <mrow>\amp\amp\amp\text{so we'll need to separate the \(2\) from the }5^t</mrow>
+      <mrow>\amp\amp\amp\text{before we can use the Power Rule}</mrow>
+      <mrow>(2-3t)\ln(3)\amp = \ln(2) + \ln(5^t)\amp\amp\text{Use the Product Rule}</mrow>
+      <mrow>(2-3t)\ln(3)\amp = \ln(2) + t\ln(5)\amp\amp\text{Now we can use the Power Rule on the }5^t</mrow>
+      <mrow>2\ln(3)-3t\ln(3)\amp = \ln(2) + t\ln(5)\amp\amp\text{Distribute the \(\ln(3)\) to separate the \(-3t\) from the }2</mrow>
+      <mrow>2\ln(3)- \ln(2)\amp = t\ln(5)+3t\ln(3)\amp\amp\text{Add \(3t\ln(3)\) and subtract \(\ln(2)\) from both sides}</mrow>
+      <mrow>\amp\amp\amp\text{to get the \(t\)'s on one side}</mrow>
+      <mrow>2\ln(3)- \ln(2)\amp = t\left(\ln(5)+3\ln(3)\right)\amp\amp\text{Factor out the \(t\) on the right}</mrow>
+      <mrow>\dfrac{2\ln(3) - \ln(2)}{\ln(5)+3\ln(3)}\amp = t\amp\amp\text{Divide both sides by }\ln(5)+3\ln(3)</mrow>
+      <mrow>t\amp \approx 0.3066245\amp\amp\text{If you wish, use a calculator to get an approximation.}\checkmark</mrow>
+    </md></p>
+  </example>
+  <example xml:id="example-solve-using-ln-3">
+    <title>Solve an Exponential Equation Using the Natural Logarithm</title>
+    <p>Solve <m>5^{2x} + 1 = 9</m> for <m>x.</m></p>
+    <p>Taking the log of a sum will not help us since there is no <q>Sum</q> Rule.
+    <md>
+      <mrow>5^{2x} + 1\amp = 9\amp\amp</mrow>
+      <mrow>5^{2x}\amp = 8\amp\amp\text{Subtract \(1\) from both sides}</mrow>
+      <mrow>\log(5^{2x})\amp = \log(8)\amp\amp\text{Now, we can take the log of both sides}</mrow>
+      <mrow>2x\log(5)\amp = \log(8)\amp\amp\text{Apply the Power Rule}</mrow>
+      <mrow>x\amp = \dfrac{\log(8)}{2\log(5)}\amp\amp\text{Divide both sides by }2\log(5)</mrow>
+      <mrow>x\amp \approx 0.646015\amp\amp\text{Our Solution}\checkmark</mrow>
+    </md></p>
+  </example>
+  <p>The next example is a special case for when the bases are the same.</p>
+  <example xml:id="example-solve-when-same-base">
+      <title>Solve an Exponential Equation Using Same Base</title>
+      <p>Solve <m>3^{x+2} = 9^{x}</m> for <m>x.</m></p>
+      <p>We could solve this one by taking logs of both sides, but let's consider another approach.
+    <md>
+      <mrow>3^{x+2}\amp = 9^{x}\amp\amp</mrow>
+      <mrow>3^{x+2}\amp = (3^2)^x\amp\amp\text{Rewrite the right side to use base \(3\) by writing \(9\) as \(3^2\)}</mrow>
+      <mrow>3^{x+2}\amp = 3^{2x}\amp\amp\text{Combine the exponents on the right with the Power Rule for exponents}</mrow>
+      <mrow>\amp\amp\amp\text{Exponential functions have unique output for each input}</mrow>
+      <mrow>x+2\amp = 2x\amp\amp\text{Since the outputs are equal, the inputs must be equal}</mrow>
+      <mrow>2\amp = 2x - x\amp\amp\text{Subtract \(x\) from both sides}</mrow>
+      <mrow>2\amp = x\amp\amp\text{Our Solution}\checkmark</mrow>
+    </md></p>
+  </example>
+  <p>Okay, let's get a few log equations under our belts and this section will soon be history!  It shouldn't surprise you that solving log equations usually involves reverting to an exponential form.</p>
+  <example xml:id="example-solve-using-exponentiation">
+    <title>Solve a Logarithmic Equation Using Exponentiation</title>
+    <p>Solve <m>\log_3(x+1) = 2</m> for <m>x.</m></p>
+    <md>
+      <mrow>\log_3(x+1)\amp = 2\amp\amp\text{We have to get the \(x\) out of the logarithm in order to solve for it}</mrow>
+      <mrow>3^{2}\amp = x+1\amp\amp\text{Change the equation to exponential form}</mrow>
+      <mrow>9 - 1\amp = x\amp\amp\text{Subtract \(1\) from both sides}</mrow>
+      <mrow>x\amp = 8\amp\amp\text{Our Solution}</mrow>
+    </md>
+    <p>Let's check our answer: <m>\log_3(8+1) = \log_3(9) = \log_3\left(3^2 \right) = 2.\checkmark</m></p>
+  </example>
+  <p>One problem that may arise when we switch a log equation into an exponential equation is the difference in the domains of the two functions. While exponential functions will accept any number, logarithms can only have positive numbers as input. So, a solution to an exponential equation may not work in the original log equation. This situation is similar to when you solved equations with square roots by squaring. You may get extra answers and the only way to know if a solution is really a solution is to check your answers.</p>
+  <example xml:id="example-solve-log-equation">
+    <title>Solve a Logarithmic Equation</title>
+    <p>Solve <m>\log_2(x) + \log_2(x+2) = 3</m> for <m>x.</m></p>
+    <md>
+      <mrow>\log_2(x) + \log_2(x+2)\amp = 3\amp\amp\text{We can rewrite this as an exponential if we have one log}</mrow>
+      <mrow>\log_2\left(x(x+2)\right)\amp = 3\amp\amp\text{Use the Product Rule to combine the logs}</mrow>
+      <mrow>2^3\amp = x(x+2)\amp\amp\text{Change to exponential form}</mrow>
+      <mrow>8\amp = x^2 + 2x\amp\amp\text{Multiply out the expressions}</mrow>
+      <mrow>0\amp = x^2 + 2x - 8\amp\amp\text{This is a quadratic equation, so set it equal to zero}</mrow>
+      <mrow>0\amp = (x + 4)(x - 2)\amp\amp\text{Factor}</mrow>
+      <mrow>x + 4 = 0\text{ or }\amp x - 2 = 0\amp\amp\text{Set each factor equal to zero}</mrow>
+      <mrow>x = -4\text{ or }\amp x = 2\amp\amp\text{Solve each equation}</mrow>
+    </md>
+    <p>Now, we have to check both answers to make sure they work in the original log equation.
+      <md>
+        <mrow>\underline{\text{Check: }}x = -4:\amp\amp\underline{\text{Check: }}x = 2:\amp</mrow>
+        <mrow>\log_2(-4) + \log_2(-4+2)\amp\amp\log_2(2) + \log_2(2+2)\amp=\log_2(2) + \log_2(4)</mrow>
+        <mrow>\text{You cannot take the}\amp\amp\amp= 1 + 2</mrow>
+        <mrow>\text{logarithm of a negative number.}\amp\amp\amp = 3\text{ This one works.}</mrow>
+      </md>
+      Only <m>x = 2</m> is a solution.<m>\checkmark</m></p>
+    </example>
+    <example xml:id="example-solve-log-equation-2">
+    <title>Solve a Logarithmic Equation</title>
+    <p>Solve <m>\log x = 1 - \log(x-3)</m> for <m>x.</m></p>
+    <md>
+      <mrow>\log x\amp = 1 - \log(x-3)\amp\amp\text{We need to have only one log to convert to exponential form}</mrow>
+      <mrow>\log x + \log(x-3)\amp = 1\amp\amp\text{Add \(\log(x-3)\) to both sides}</mrow>
+      <mrow>\log(x(x-3))\amp = 1\amp\amp\text{Use the Product Rule}</mrow>
+      <mrow>10^1\amp = x(x-3)\amp\amp\text{Switch to exponential form}</mrow>
+      <mrow>10\amp = x^2 - 3x\amp\amp\text{Multiply out the expressions}</mrow>
+      <mrow>0\amp = x^2 - 3x - 10\amp\amp\text{Set equal to zero to solve the quadratic equation}</mrow>
+      <mrow>0\amp = (x - 5)(x + 2)\amp\amp\text{Factor}</mrow>
+      <mrow>x - 5 = 0\text{ or }\amp x+2 = 0\amp\amp\text{Set each factor equal to zero}</mrow>
+      <mrow>x = 5\text{ or }\amp x = -2\amp\amp\text{Solve each equation}</mrow>
+    </md>
+    <p>Checking the answers:
+      <md>
+        <mrow>\underline{\text{Check: }}x = 5:\amp\amp\amp\underline{\text{Check: }}x = -2:\amp</mrow>
+        <mrow>\log 5 \approx 0.69897\text{ and}\amp\amp\amp\text{We run into problems}\amp</mrow>
+        <mrow>1 - \log(5-3)\amp =  1 - \log(2)\amp\amp\text{with}\log(-2)\amp</mrow>
+        <mrow>\amp\approx 0.69897\amp\amp\text{This one doesn't work.}\amp</mrow>
+      </md>
+      The only solution is <m>x = 5.\checkmark</m></p>
+    </example>
+    <p>For this next example, we will use the fact that logarithm functions give unique output values. If the output values are equal, then the input values have to be equal.</p>
+    <example xml:id="example-solve-log-equation-3">
+    <title>Solve a Logarithmic Equation</title>
+    <p>Solve <m>\ln(c) + \ln(2c) = \ln(x+1)</m> for <m>c.</m></p>
+    <md>
+      <mrow>\ln(c) + \ln(2c)\amp = \ln(x+1)\amp\amp\text{Use the Product Rule on the left side to combine the logarithms}</mrow>
+      <mrow>\ln(2c^2)\amp = \ln(x+1)\amp\amp\text{Here, the results of the two logarithms are equal,}</mrow>
+      <mrow>\amp\amp\amp\text{so the input values must be equal}</mrow>
+      <mrow>2c^2\amp = x+1\amp\amp\text{Divide both sides by }2</mrow>
+      <mrow>c^2\amp = \dfrac{x+1}{2}\amp\amp\text{Now, take the square root of both sides}</mrow>
+      <mrow>c\amp = \pm\sqrt{\dfrac{x+1}{2}}\amp\amp\text{Note that the original equation will not allow}</mrow>
+      <mrow>\amp\amp\amp\text{a negative value to be plugged in}</mrow>
+    <mrow>c\amp = \sqrt{\dfrac{x+1}{2}}\amp\amp\text{Our Solution}\checkmark</mrow>
+  </md>
+</example>
+<example xml:id="example-investment">
+    <title>Investment Account</title>
+    <p>Suppose you invest <m>P_0</m> dollars in a bank account with an annual  interest rate of <m>2\%</m> (i.e. interest is paid once per year).  The amount, <m>A</m>, in your account after <m>t</m> years, if you make no other deposits and no withdrawals, may be calculated by the following formula:
+      <md>
+        <mrow>A = P_0(1.02)^t.</mrow>
+      </md>
+      Now, suppose you invested <m>\$1000</m> in the account. Assume no other deposits and no withdrawals are made.</p>
+      <ol label="a.">
+        <li><p>How much will be in the account after <m>10</m> years?</p>
+        <p><alert>Solution:</alert> We just need to substitute <m>t=10</m> and <m>P_0 = 1000</m> and calculate the result:
+        <md>
+          <mrow>A\amp = 1000(1.02)^{10}</mrow>
+          <mrow>A\amp \approx 1,218.99</mrow>
+        </md>
+        The account will have <m>\$1,218.99</m> at the end of <m>10</m> years.</p></li>
+        <li><p>How many years will it take before the account has <m>\$1500</m> in it?</p>
+        <p><alert>Solution:</alert> This time we know, <m>A = 1500</m> and <m>P_0 = 1000.</m> We need to find the value for <m>t</m>:
+        <md>
+          <mrow>1500\amp  = 1000(1.02)^t</mrow>
+          <mrow>\frac{1500}{1000}\amp  = (1.02)^t</mrow>
+          <mrow>\ln(1.5)\amp  = \ln(1.02)^t</mrow>
+          <mrow>\ln(1.5)\amp  = t\ln(1.02)</mrow>
+          <mrow>\frac{\ln(1.5)}{\ln(1.02)}\amp = t</mrow>
+          <mrow>t\amp \approx 20.475</mrow>
+        </md>
+        The account will have at least <m>\$1,500</m> roughly in the middle of year <m>20</m>. Since the
+         bank only pays interest once a year, you will get the amount at the end of year <m>20.\checkmark</m></p></li>
+       </ol>
+  </example>
+</section>

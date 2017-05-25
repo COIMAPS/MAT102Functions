@@ -1,0 +1,274 @@
+<section xml:id="section-1A-function-concepts">
+  <title>Function Concepts</title>
+<!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 23-31-->
+<introduction>
+    <p>Objectives:
+      <ul>
+        <li><p>Understand variable and function concepts.</p></li>
+        <li><p>Represent and use functions.</p></li>
+        <li><p>Determine the domain and range of a function.</p></li>
+        <li><p>Identify functions from non-functions.</p></li>
+      </ul>
+    </p>
+  <p>This unit on functions is important, because it provides a crucial transition point. Roughly speaking:
+    <ul>
+      <li><p>In elementary school, math is about numbers.</p></li>
+      <li><p>Then starting in middle school or high school, math is about variables.</p></li>
+      <li><p>And continuing into Calculus, math is about functions.</p></li>
+    </ul>
+    Each step builds on the previous step. Each step expands the ability of mathematics to model behavior
+and solve problems. And, perhaps most crucially, each step can be frightening to a student. It can be very
+intimidating to see an entire page of mathematics that is covered with letters, with almost no numbers to be found!</p>
+<p>Unfortunately, many students end up with a very vague idea of what variables are (<q>That's when you use
+letters in math</q>) and an even more vague understanding of functions (<q>Those things that look like <m>f(x)</m> or something</q>). If you leave yourself with this kind of vague understanding of the core concepts, the lessons will make less and less sense as you go on: you will be left with the feeling that <q>I just can't do this stuff</q> without realizing that the problem was all the way back in the idea of a variable or function.</p>
+<p>The good news is, variables and functions both have very specific meanings that are not difficult to understand.</p>
+</introduction>
+  <subsection xml:id="variables">
+    <title>What is a Variable?</title>
+    <p>A variable is a letter that stands for a number you don't know, or a number that can change. A few examples:</p>
+    <example>
+      <title>Good Examples of Variable Definitions</title>
+      <ul>
+        <li><p>Let <m>p</m> be the number of people in a classroom.</p></li>
+        <li><p>Let <m>A</m> be John's age, measured in years.</p></li>
+        <li><p>Let <m>h</m> be the number of hours that Susan has been working.</p></li>
+      </ul>
+    </example>
+    <p>In each case, the letter stands for a very specific number. However, we use a letter instead of a number because we don't know the specific number. In the first example above, different classrooms will have different numbers of people (so <m>p</m> can be different numbers in different classes); in the second example, John's age is a specific and well-defined number, but we don't know what it is (at least not yet); and in the third example, h will actually change its value every hour. In all three cases, we have a good reason for using a letter: it represents a number, but we cannot use a specific number such as <q><m>-3</m></q> or <q><m>4 \frac{1}{2}</m></q>.</p>
+    <example>
+      <title>Bad Examples of Variable Definitions</title>
+      <ul>
+        <li><p>Let <m>n</m> be the nickels.</p></li>
+        <li><p>Let <m>M</m> be the number of minutes in an hour.</p></li>
+      </ul>
+      <p>The first error is by far the most common. Remember that a variable always stands for a number. <q>The nickels</q> are not a number. Better definitions would be: <q>Let <m>n</m> be the number of nickels</q> or <q>Let <m>n</m> be the total value of the nickels, measured in cents</q> or <q>Let <m>n</m> be the total mass of the nickels, measured in grams.</q></p>
+      <p>The second example is better, because <q>number of minutes in an hour</q> is a number. But there is no reason to call it <q>The Mysterious Mr. M</q> because we already know what it is. Why use a letter when you just mean <q><m>60</m></q>?</p>
+    </example>
+    <p>Bad variable definitions are one of the most common reasons that students get stuck on word problems-or get the wrong answer. The first type of error illustrated above leads to variable confusion: <m>n</m> will end up being used for <q>number of nickels</q> in one equation and <q>total value of the nickels</q> in another, and you end up with the wrong answer. The second type of error is more harmless-it won't lead to wrong answers-but it won't help either. It usually indicates that the student is asking the wrong question (<q>What can I assign a variable to?</q>) instead of the right question (<q>What numbers do I need to know?</q>)</p>
+    <p><alert>Variables aren't all called <m>x</m>. Get used to it.</alert></p>
+    <p>Many students expect all variables to be named <m>x</m>, with possibly an occasional guest appearance by <m>y</m>. In fact, variables can be named with practically any letter. Uppercase letters, lowercase letters, and even Greek letters are commonly used for variable names. Hence, a problem might start with <q>Let <m>H</m> be the home team's score and <m>V</m> be the visiting team's score.</q></p>
+    <p>If you attempt to call both of these variables <m>x</m>, it just won't work. You could in principle call one of them <m>x</m> and the other <m>y</m>, but that would make it more difficult to remember which variable goes with which team. It is important to become comfortable using a wide range of letters. (We do, however, recommend avoiding the letter o whenever possible, since it looks like the number <m>0</m>.)</p>
+  </subsection>
+  <subsection xml:id="what-is-a-function">
+    <title>What is a Function?</title>
+    <p>A function is neither a number nor a variable: it is a <term>process</term> for turning one number into another. For
+instance, <q>Double and then add <m>6</m></q> is a function. If you put a <m>4</m> into that function, it comes out with a <m>14</m>. If you put a <m>1/2</m> into that function, it comes out with a <m>7</m>.</p>
+<p>The traditional image of a function is a machine, with a slot on one side where numbers go in and a slot on
+the other side where numbers come out.</p>
+<figure xml:id="figure-function-box">
+          <image xml:id="function-box"> 
+            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            \node (a) at (-3,1) {\LARGE $5$};
+            \node (b) at (-1.5,1) {};
+            \draw[thick,-open triangle 90] (a) -- (b);
+            \draw[line width=1mm, fill=red] (-1,0) rectangle(4,2);
+            \draw[thick,white] (1.5,1) node {\LARGE FUNCTION};
+            \node (c) at (4.5,1) {};
+            \node (d) at (6,1) {\LARGE $14$};
+            \draw[thick,-open triangle 90] (c) -- (d); 
+            \end{tikzpicture}]]></latex-image-code></image></figure>
+  <p>A number goes in. A number comes out. The <term>function</term> is the <q>process</q> that turns <m>5</m> into <m>14</m>.</p>
+  <p>The point of this image is that the function is not the numbers, but the machine itself-the process, not
+results of the process.  You may think of a function as an algorithm or a rule, or a recipe-for turning numbers into other numbers. That is what a function is.</p>
+<p>A function may describe simple or complicated steps to assign values: <q>Respond with -3 no matter what
+number you are given,</q> or <q>Give back the lowest prime number that is greater than or equal to the number you were given.</q> Students often ask, <q>Can a function do that?</q>  The answer is always yes (with one caveat mentioned below). Expand your idea of what a function can do. Any process that consistently turns numbers into other numbers, is a function.</p>
+<p>By the way-having defined the word <q>function</q> I just want to say something about the word <q>equation.</q> An <term>equation</term> is when you <q>equate</q> two things-that is to say, set them equal. So <m>x^2 - 3</m> is a function, but it is not an equation. <m>x^2-3 = 6</m> is an equation. An <q>equation</q> is not about a process, it is a statement. In this case, the equation is stating that some number squared minus 3 is equal to a particular number, <m>6</m>. The equation is not telling you how to find values for numbers in general.</p>
+<subsubsection>
+  <title>The Rule of Consistency</title>
+  <p>There is only one limitation on what a function can do: a function must be <term>consistent</term>.</p>
+<p>For instance, the function in the above drawing is given a <m>5</m>, and gives back a <m>14</m>. That means this particular function turns <m>5</m> into <m>14</m>-always. That particular function can never take in a <m>5</m> and give back a <m>16</m>. This <q>rule of consistency</q> is a very important constraint on the nature of functions.</p>
+<p>NOTE: This rule does not treat the inputs and outputs the same!</p>
+<p>For instance, consider the function <m>y = x^2</m>. This function takes both <m>3</m> and <m>-3</m> and turns them into <m>9</m> (two different inputs, same output). That is allowed. However, it is not reversible! If you take a <m>9</m> and turn it into both a <m>3</m> and a <m>-3</m> (two different outputs, same input), then what you have is not a function.  The issue here is that a function does not allow any ambiguity about what the output should be for a given input.  In this case, which output should go with the <m>9</m>? <m>3</m> or <m>-3</m>?</p>
+<p>This asymmetry has the potential to cause a great deal of confusion, but it is a very important aspect of
+functions.</p>
+</subsubsection>
+</subsection>
+<subsection xml:id="represent-a-function">
+    <title>Four Ways to Represent a Function</title>
+    <p>Modern Calculus texts emphasize that a function can be expressed in four different ways:
+      <ol>
+        <li><p><term>Verbal</term> - This is the way functions were described as far back as 1800 BCE in Babylonian clay tablets: "Double and add six."</p></li>
+        <li><p><term>Algebraic</term> - This is the most common, most concise, and most powerful representation: <m>y = 2x + 6</m>. Note that in an algebraic representation, the input and output numbers are represented as variables (in this case, an <m>x</m> and <m>y</m>, respectively).</p></li>
+        <li><p><term>Numerical</term> - This can be done as a list of value pairs, as <m>(4, 10)</m> - meaning that if a <m>4</m> goes in, a <m>10</m> comes out. (You may recognize this as <m>(x, y)</m> points used in graphing.)</p></li>
+        <li><p><term>Graphical</term> - This is discussed in detail in the section on graphing.</p></li>
+      </ol>
+    </p>
+<p>These are not four different types of functions: they are four different views of the same function. One of
+the most important skills in Algebra is converting a function between these different forms, and this theme
+will recur in different forms throughout the text.</p>
+</subsection>
+<subsection xml:id="domain-range">
+    <title>Domain and Range</title>
+    <p>Consider the function <m>y = \sqrt{x}</m>. It's output, <m>y</m>, is the positive real number that multiplies itself to get <m>x</m>.  If this function is given a <m>9</m> it hands back a <m>3</m>. If this function is given a <m>2</m> it hands back. . .well, it hands back <m>\sqrt{2}</m>, which is approximately <m>1.4</m>. The answer cannot be specified exactly as a fraction or decimal, but it is a perfectly good answer nonetheless.</p>
+    <p>On the other hand, what if this function is handed <m>-4</m>? There is no real number which can multiply itself to get <m>-4</m>, so the function has no number to hand back. If our function is a computer or calculator, it responds with an error message. So we see that this function is able to respond to the numbers <m>9</m> and <m>2,</m> but it is not able to respond in any way to the number <m>-4</m>. Mathematically, we express this by saying that <m>9</m> and <m>2</m> are in the "domain" of the square root function, and <m>-4</m> is not in the domain of this function.</p>
+    <p><term>Domain</term> The domain of a function is all the numbers that it can successfully act on. Put another way, it is all the numbers that can go into the function.</p>
+    <p>A square root cannot successfully act on a negative number. We say that "The domain of <m>\sqrt{x}</m> is all numbers <m>\Box</m> such that <m>\Box^2=x</m>" meaning that if you give this function zero or a positive number, it can act on it; if you give this function a negative number, it cannot.</p>
+    <p>A subtler example is the function <m>y =\sqrt{x + 7}</m>. Does this function have the same domain as the previous function? No, it does not. If you hand this function a <m>-4</m> it successfully hands back <m>\sqrt{3}</m> (about <m>1.7</m>). So, <m>-4</m> is in the domain of this function. On the other hand, if you hand this function a <m>-8</m> it attempts to take <m>\sqrt{-1}</m> and fails; <m>-8</m> is not in the domain of this function. If you play with a few more numbers, you should be able to convince yourself that the domain of this function is all numbers <m>x</m> such that <m>x \geq -7</m>.</p>
+    <p>You are probably familiar with two mathematical operations that are not allowed. The first is, you are not allowed to take the square root of a negative number. As we have seen, this leads to restrictions on the domain of any function that includes square roots.</p>
+    <p>The second restriction is, you are not allowed to divide by zero. This can also restrict the domain of functions. For instance, the function <m>y = \dfrac{1}{x^2-4}</m> has as its domain all numbers except <m>x = 2</m> and <m>x = -2</m>. These two numbers both cause the function to attempt to divide by <m>0</m>, and hence fail. If you ask a calculator to plug <m>x = 2</m> into this function, you will get an error message.</p>
+    <p>So: if you are given a function, how can you find its domain? Look for any number that puts a negative number under the square root; these numbers are not in the domain. Look for any number that causes the function to divide by zero; these numbers are not in the domain. All other numbers are in the domain. Consider the following function examples.</p>
+     <table>
+      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
+        <col right="minor" />
+        <col right="minor" />
+        <col halign="left" width="50%"/>
+        <!--  -->
+        <row bottom = "major">
+            <cell>Function</cell>
+            <cell>Domain</cell>
+            <cell><p>Comments</p></cell>
+        </row>
+        <row>
+          <cell><m>\sqrt{x}</m></cell>
+          <cell><m>x \geq 0</m></cell>
+          <cell><p>You can take the square root of <m>0</m>, or of any positive number, but you cannot take the square root of a negative number.</p></cell>
+        </row>
+        <row>
+          <cell><m>\sqrt{x + 7}</m></cell>
+          <cell><m>x \geq -7</m></cell>
+          <cell><p>If you plug in any number greater than or equal to <m>-7</m>, you will be taking a legal square root. If you plug in a number less than <m>-7</m>, you will be taking the square root of a negative number.This domain can also be understood graphically: the graph <m>y =\sqrt{x}</m> has been moved <m>7</m> units to the left. See <term>horizontal row translations</term> below.</p></cell>
+        </row>
+        <row>
+          <cell><m>\dfrac{1}{x}</m></cell>
+          <cell><m>x \neq 0</m></cell>
+          <cell><p>In other words, the domain is <q>all numbers except <m>0</m>.</q> You are not allowed to divide by <m>0</m>. You are allowed to divide by anything else.</p></cell>
+        </row>
+        <row>
+            <cell><m>\dfrac{1}{x-3}</m></cell>
+            <cell><m>x \neq 3</m></cell>
+            <cell><p>If <m>x = 3</m> then you are dividing by <m>0</m>, which is not allowed. If <m>x = 0</m> you are dividing by <m>-3</m>, which is allowed. So be careful! The rule is not <q>when you are dividing, <m>x</m> cannot be <m>0</m>.</q> The rule is <q> <m>x</m> can never be any value that would put a <m>0</m> in the denominator.</q></p></cell>
+          </row>
+          <row>
+            <cell><m>\dfrac{1}{x^2-4}</m></cell>
+            <cell><m>x \neq \pm2</m></cell>
+            <cell><p>Or, <q> <m>x</m> can be any number except <m>2</m> or <m>-2</m>.</q> Either of these <m>x</m> values will put a <m>0</m> in the denominator, so neither one is allowed.</p></cell>
+          </row>
+          <row>
+            <cell><m>2^x + x^2 - 3x + 4</m></cell>
+            <cell>All numbers</cell>
+            <cell><p>You can plug any <m>x</m> value into this function and it will come back with a number.</p></cell>
+          </row>
+          <row>
+            <cell><m>\dfrac{\sqrt{x-3}}{x-5}</m></cell>
+            <cell><m>x \geq 3</m>, <m>x \neq 5</m></cell>
+            <cell><p>In words, the domain is all numbers greater than or equal to <m>3</m>, except the number <m>5</m>. Numbers less than <m>3</m> put negative numbers under the square root; <m>5</m> causes a division by <m>0</m>.</p></cell>
+          </row>
+        </tabular>
+      </table>
+      <p>You can confirm all these results with your calculator; try plugging numbers into these functions, and see when you get errors!</p>
+      <p>A related concept is the range of a function.</p>
+      <p><term>Range</term> The range of a function is all the numbers that it may possibly produce. Put another way, it is all the numbers that can come out of the function.</p>
+      <p>To illustrate this example, let us return to the function <m>y = \sqrt{x + 7}</m>. Recall that we said the domain of this function was all numbers <m>x</m> such that <m>x \geq -7</m>; in other words, you are allowed to put any number greater than or equal to <m>-7</m> into this function.</p>
+      <p>What numbers might come out of this function? If you put in a <m>-7</m> you get out a <m>0.</m> (<m>\sqrt{0} = 0</m>) If you put in a <m>-6</m> you get out <m>\sqrt{1} = 1</m>. As you increase the <m>x</m> value, the output values also increase. However, if you put in <m>x = -8</m> nothing comes out at all. Hence, the range of this function is all numbers <m>y</m> such that <m>y \geq 0</m>. That is, this function is capable of handing back <m>0</m> or any positive number, but it will never hand back a negative number.</p>
+      <p>It's easy to get the words domain and range confused-and it's important to keep them distinct, because although they are related concepts, they are different from each other. One trick that sometimes helps is to remember that, in everyday usage, <q>your domain</q> is your home, your land-it is where you begin. A function begins in its own domain. It ends up somewhere out on the range.</p>
+      <subsubsection>
+        <title>Interval Notation for Domains and Ranges</title>
+      <p>Domains and ranges above are sometimes expressed as intervals, using the following rules:
+        <ul>
+          <li><p>Parentheses <m>(</m> <m>)</m> mean <q>an interval starting or ending here, but not including this number</q></p></li>
+          <li><p>Square brackets <m>[</m> <m>]</m> mean <q>an interval starting or ending here, including this number</q></p></li>
+        </ul>
+        This is easiest to explain with examples.</p>
+    <table>
+      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
+        <col right="minor" />
+        <col halign="left" right="minor" width="50%" />
+        <col />
+        <!--  -->
+        <row bottom = "major">
+            <cell>This notation...</cell>
+            <cell><p>...means this...</p></cell>
+            <cell>...or in other words</cell>
+        </row>
+        <row>
+          <cell><m>(-3, 5)</m></cell>
+          <cell><p>All numbers between <m>-3</m> and <m>5</m>, not including <m>-3</m> and <m>5</m>.</p></cell>
+          <cell><m>-3 &lt; x &lt; 5</m></cell>
+        </row>
+        <row>
+          <cell><m>[-3, 5]</m></cell>
+          <cell><p>All numbers between <m>-3</m> and <m>5</m>, including <m>-3</m> and <m>5</m>.</p></cell>
+          <cell><m>-3 \leq x \leq 5</m></cell>
+        </row>
+        <row>
+          <cell><m>[-3, 5)</m></cell>
+          <cell><p>All numbers between <m>-3</m> and <m>5</m>, including <m>-3</m> but not <m>5</m>.</p></cell>
+          <cell><m>-3 \leq x &lt; 5</m></cell>
+        </row>
+        <row>
+          <cell><m>(-\infty, 10]</m></cell>
+          <cell><p>All numbers less than or equal to 10.</p></cell>
+          <cell><m>x \leq 10</m></cell>
+        </row>
+        <row>
+          <cell><m>(23,\infty)</m></cell>
+          <cell><p>All numbers greater than <m>23</m>.</p></cell>
+          <cell><m>x &gt; 23</m></cell>
+        </row>
+        <row>
+          <cell><m>(-\infty, 4) \cup (4,\infty)</m></cell>
+          <cell><p>All numbers less than <m>4</m>, and all numbers greater than <m>4.</m> In other words, all numbers except <m>4.</m></p></cell>
+          <cell><m>x \neq 4</m></cell>
+        </row>
+      </tabular>
+    </table>
+  </subsubsection>
+  </subsection>
+  <subsection xml:id="functions-in-real-world">
+    <title>Functions in the Real World</title>
+    <p>Why are functions so important that they form the heart of math from high school onward?</p>
+    <p>Functions are used whenever one variable depends on another variable. This relationship between two variables is the most important in mathematics. It is a way of saying <q>If you tell me what <m>x</m> is, I can tell you what <m>y</m> is.</q> We say that <m>y</m> <q>depends on</q> <m>x</m>, or <m>y</m> <q>is a function of</q> <m>x</m>.</p>
+    <p>A few examples:</p>
+    <example>
+      <title>Function Concepts - Functions in the Real World</title>
+      <p>
+        <ul>
+          <li><p><q>The area of a circle depends on its radius.</q></p></li>
+          <li><p><q>The amount of money Alice makes depends on the number of hours she works.</q></p></li>
+          <li><p><q>Max threw a ball. The height of the ball depends on how many seconds it has been in the air.</q></p></li>
+        </ul>
+        In each case, there are two variables. Given enough information about the scenario, you could assert that if you tell me this variable, I will tell you that one. For instance, suppose you know that Alice makes <m>\$100</m> per day. Then we could make a chart like this.</p>
+    <table>
+      <tabular top="major" bottom = "major" halign="center" left="minor">
+        <col right="minor" />
+        <col right="minor"/>
+        <!--  -->
+        <row bottom = "major">
+          <cell>If Alice works this many days...</cell>
+          <cell>...she makes this many dollars</cell>
+        </row>
+        <row>
+          <cell><m>0</m></cell>
+          <cell><m>0</m></cell>
+        </row>
+        <row>
+          <cell><m>1</m></cell>
+          <cell><m>100</m></cell>
+        </row>
+        <row>
+          <cell><m>1 \frac{1}{2}</m></cell>
+          <cell><m>150</m></cell>
+        </row>
+        <row>
+          <cell><m>8</m></cell>
+          <cell><m>800</m></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>If you tell me how long she has worked, I will tell you how much money she has made. Her earnings <q>depend on</q> how long she works.</p>
+    <p>The two variables are referred to as the dependent variable and the independent variable. The dependent
+variable is said to <q>depend on</q> or <q>be a function of</q> the independent variable. "The height of the ball is a function of the time."</p>
+</example>
+<example>
+      <title>Bad Examples of Functional Relationships</title>
+      <ul>
+        <li><p><q>The number of Trojan soldiers depends on the number of Greek soldiers.</q></p></li>
+        <li><p><q>The time depends on the height of the ball.</q></p></li>
+      </ul>
+      <p>The first of these two examples is by far the most common. It is simply not true. There may be a relationship between these two quantities-for instance, the sum of these two variables might be the total number of soldiers, and the difference between these two quantities might suggest whether the battle will be a fair one. But there is no dependency relationship-that is, no way to say <q>If you tell me the number of Greek soldiers, I will tell you the number of Trojan soldiers</q>-so this is not a function.</p>
+      <p>The second example is subtler: it confuses the dependent and the independent variables. The height depends on the time, not the other way around. More on this in <xref ref="subsection-inverse-functions" autoname="yes" />.</p>
+    </example>
+  </subsection>
+</section>

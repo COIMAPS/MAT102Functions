@@ -1,0 +1,454 @@
+<section xml:id="section-1B-function-notation">
+  <title>Function Notation, Composition and Inverses</title>
+<!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
+Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
+Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 31-32, 52-59-->
+<introduction>
+    <p>Objectives:
+      <ul>
+        <li><p>Use function notation.</p></li>
+        <li><p>Perform function operations including addition, subtraction, multiplication, and division.</p></li>
+        <li><p>Recognize and create composite and inverse functions.</p></li>
+      </ul>
+    </p>
+   </introduction>
+   <subsection xml:id="function-notation">
+    <title>Function Notation</title>
+    <p>Functions are often denoted by the notation: <m>f(x)</m>. When you write <m>f(x)</m> you are "naming" the function, <m>f</m>,  and you are indicating that it is a function of, or <em>depends on</em> the variable <m>x</m>.</p>
+    <p>For instance, suppose <m>f(x) = x^2 + 3x</m>. This means that <m>f</m> is a function that takes whatever you give it, and squares it, and multiplies it by <m>3</m>, and adds those two quantities.</p>
+    <sidebyside widths="10% 5% 35% 5% 40%" valign="middle">
+      <p><md>
+          <mrow>7</mrow>
+          <mrow>10</mrow>
+          <mrow>x</mrow>
+          <mrow>y</mrow>
+          <mrow>dog</mrow>
+      </md></p>
+      <p><md>
+          <mrow>\rightarrow</mrow>
+          <mrow>\rightarrow</mrow>
+          <mrow>\rightarrow</mrow>
+          <mrow>\rightarrow</mrow>
+          <mrow>\rightarrow</mrow>
+      </md></p>
+      <figure xml:id="figure-function-box-x-sq-plus-3x">
+          <image xml:id="function-box-x-sq-plus-3x"> 
+            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            \draw[line width=1mm, fill = red] (-1,0) rectangle(4,2);
+            \draw[thick,white] (1.5,1.2) node {\LARGE FUNCTION};
+            \draw[thick] (1.5, .5) node {\LARGE $x^2+3x$}; 
+            \end{tikzpicture}]]></latex-image-code></image></figure>
+      <p><md>
+          <mrow>\rightarrow</mrow>
+          <mrow>\rightarrow</mrow>
+          <mrow>\rightarrow</mrow>
+          <mrow>\rightarrow</mrow>
+          <mrow>\rightarrow</mrow>
+      </md></p>
+      <p><md>
+          <mrow>f(7) &amp;= 72 + 3(7) = 70</mrow>
+          <mrow>f(10) &amp;= 102 + 3(10) = 130</mrow>
+          <mrow>f(x) &amp;= x^2 + 3x</mrow>
+          <mrow>f(y) &amp;= y^2 + 3y</mrow>
+          <mrow>f(\mbox{dog}) &amp;= (dog)^2 + 3(dog) = \text{?}</mrow>
+          <mrow>(\text{but }&amp;dog\text{ is not in the domain of }f)</mrow>
+      </md></p>
+      </sidebyside>
+      <p>The notation <m>f(7)</m> means <q>plug the number <m>7</m> into the function <m>f</m>.</q> It does not indicate that you are multiplying <m>f</m> times <m>7</m>. To evaluate <m>f(7)</m> you take the function <m>f(x)</m> and replace all occurrences of the variable <m>x</m> with the number <m>7</m>. If this function is given a <m>7</m>, it will come out with a <m>70</m>.</p>
+      <example>
+        <title>Function Evaluation</title>
+        <p>Consider the function <m>f(t) = 1 +5t.</m>
+          <ol label="a.">
+            <li>To determine <m>f(3),</m> substitute <m>3</m> for each <m>t</m> in the expression:
+              <md>
+                <mrow>f(t) &amp;= 1+5t</mrow>
+                <mrow>f(3) &amp;= 1+5(3)</mrow>
+                <mrow>&amp;=1+15</mrow>
+                <mrow>&amp;=16</mrow>
+              </md></li>
+              <li>Values other than numbers may be evaluated in the function:
+              <md>
+                <mrow>f(2w) &amp;= 1+5\cdot2w</mrow>
+                <mrow>&amp;=1+10w</mrow>
+              </md></li>
+              <li>Simplifying the expression makes the result more compact:
+                <md>
+                <mrow>f(b-1) &amp;= 1+5(b-1)</mrow>
+                <mrow>&amp;= 1+5b-5</mrow>
+                <mrow>&amp;=5b-4</mrow>
+              </md></li>
+            </ol>
+          </p>
+        </example>
+        <example>
+          <title>Determine a Function Value Given a Graph</title>
+          <p>Determine <m>g(1)</m> from the graph of <m>y = g(t)</m> shown below.</p>
+          <sidebyside widths="55% 40%" valign="middle">
+            <paragraphs>
+              <p>Remember, the horizontal axis represents the indepenent variable, <m>t.</m> The vertical axis represents the dependent variable-the one we must calculate-<m>y.</m></p>
+              <p>The value on the <m>y</m>-axis that corresponds to <m>t = 1</m> is <m>y = 3.</m></p>
+              <p>So, <m>g(1) = 3.\checkmark</m></p>
+            </paragraphs>
+            <figure xml:id="figure-graph-gt">
+                <image xml:id="function-graph-gt"> 
+                  <latex-image-code><![CDATA[\begin{tikzpicture} 
+                  \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9); 
+                  \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$t$}; 
+                  \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$y$}; 
+                  \foreach \x in {-4,-2,2,4} 
+                      \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$}; 
+                  \foreach \y in {-4,-2,2,4} 
+                      \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$}; 
+                  \fill[color=red] (1,3) circle (.15cm); 
+                  \draw[line width=0.75mm, domain=-3.15:3.15,smooth,variable=\x,red] plot ({\x},{-\x*\x+4});
+                  \node at (-3,3.5) {\LARGE $y=g(t)$}; 
+                  \end{tikzpicture}]]></latex-image-code></image></figure>
+                </sidebyside>
+              </example>
+    <p>If we write <m>f(y) = y^2 + 3y</m> we have not specified a different function. Remember, the function is not the variables or the numbers, it is the process.  <m>f(y) = y^2 + 3y</m> also means <q>whatever number comes in, square it, multiply it by <m>3</m>, and add those two quantities.</q> So it is a different way of writing the same function.</p>
+    <p>Just as many students expect all variables to be named <m>x</m>, many students expect all functions to be named <m>f</m>. The correct rule is that-whenever possible-functions, like variables, should be named descriptively. For instance, if Alice makes <m>\$100</m> per day, we might write:
+      <ul>
+        <li>Let <m>m</m> equal the amount of money Alice has made (measured in dollars)</li>
+        <li>Let <m>t</m> equal the amount of time Alice has worked (measured in days)</li>
+        <li>Then, <m>m(t) = 100t</m></li>
+      </ul></p>
+      <p>This last equation should be read <q><m>m</m> is a function of <m>t</m> (or <m>m</m> depends on <m>t</m>). Given any value of the variable <m>t</m>, you can multiply it by <m>100</m> to find the corresponding value of the variable <m>m</m>.</q></p>
+      <p>Of course, this is a very simple function! While simple examples are helpful to illustrate the concept, it is important to realize that very complicated functions are also used to model real world relationships. For instance, <m>M(i) = \frac{1000 \frac{i}{12}(1 + \frac{i}{12})^{60} }{ (1 + \frac{i}{12})^{60} - 1}</m> gives the monthly payment on a <m>5</m>-year loan of <m>\$1000</m> for an annual interest rate of <m>i</m>.  Here, the monthly payment, <m>M</m>, is a function of the annual interest rate, <m>i</m>.</p>
+      <p>The function <m>M(i)</m> could be thought of as being built from <q>smaller</q> functions like <m>(1 + \frac{i}{12})^{60}</m> and this idea of building functions by combining other functions is discussed next.</p>
+  </subsection>
+  <subsection xml:id="function-operations">
+    <title>Operations on Functions</title>
+    <p>We may create new functions by combining two or more functions by addition, subtraction, multiplication, division or composition. The first four operations on functions are very similar to how we deal with these operations for numbers. Mainly, it's a matter of getting used to the notation.  For functions <m>f</m> and <m>g</m>:</p>
+    <table>
+      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
+        <col right="minor" halign="left" />
+        <col />
+        <!--  -->
+        <row bottom = "major">
+            <cell>Terminology</cell>
+            <cell>Notation and Definition</cell>
+        </row>
+        <row bottom = "minor">
+          <cell>Sum: <m>f + g</m></cell>
+          <cell><m>(f+g)(x) = f(x) + g(x)</m></cell>
+        </row>
+        <row bottom = "minor">
+          <cell>Difference: <m>f - g</m></cell>
+          <cell><m>(f-g)(x) = f(x) - g(x)</m></cell>
+        </row>
+        <row bottom = "minor">
+          <cell>Product: <m>f g</m></cell>
+          <cell><m>(fg)(x) = f(x) g(x)</m></cell>
+        </row>
+        <row>
+          <cell>Quotient: <m>\dfrac{f}{g}</m></cell>
+          <cell><m>\dfrac{f}{g} = \dfrac{f(x)}{g(x)}</m></cell>
+        </row>
+      </tabular>
+    </table>
+    <example>
+      <title>Function Operations</title>
+      <p>Consider the functions 
+        <md>
+          <mrow>f(x) = 3x+1\text{ and }g(x) = x^2-5.</mrow>
+          </md>
+          Determine the function values of <m>(f+g)(2),</m> <m>(f-g)(2),</m> <m>(fg)(2),</m> and <m>\left(\frac{f}{g}\right)(2).</m></p>
+      <p>Since  <m>f(2) = 3(2)+1 = 7</m> and <m>g(2) = 2^2-5 = -1</m>,
+        <md>
+          <mrow>(f+g)(2) &amp;= f(2) + g(2) = 7 + (-1) = 6</mrow>
+          <mrow>(f-g)(2) &amp;= f(2) - g(2) = 7 - (-1) = 8</mrow>
+          <mrow>(fg)(2) &amp;= f(2)g(2) = 7 (-1) = -7</mrow>
+          <mrow>\left(\frac{f}{g}\right)(2) &amp;= \frac{f(2)}{g(2)} = \frac{7}{-1} = -7\checkmark</mrow>
+        </md>
+      </p>
+    </example>
+    <subsubsection>
+      <title>Composite Functions</title>
+    <p>Consider the following situation:
+      <ul>
+        <li>You are the manager of an elementary school cafeteria, making peanut butter sandwiches for today's lunch.</li>
+        <li>The more classes the school has, the more children there are.</li>
+        <li>The more children there are, the more sandwiches you have to make.</li>
+        <li>The more sandwiches you have to make, the more pounds (lbs) of peanut butter you will use.</li>
+        <li>The more peanut butter you use, the more money you need to budget for peanut butter.</li>
+        <li>...and so on.</li>
+      </ul>
+      Each sentence in this little story is a function. Mathematically, if <m>c</m> is the number of classes and <m>h</m> is the number of children, then the first sentence asserts the existence of a function <m>h(c)</m>.</p>
+      <p>The principal walks up to you at the beginning of the year and says <q>We're considering expanding the school. If we expand to <m>70</m> classes, how much money do we need to budget? What if we expand to <m>75</m>? How about <m>80</m>?</q> For each of these numbers, you have to calculate each number from the previous one, until you find the final budget number.</p>
+      <figure xml:id="figure-function-chain">
+          <image xml:id="function-chain"> 
+            <latex-image-code><![CDATA[\begin{tikzpicture} 
+              \node (a) at (0,0) {Classes};
+              \node (b) at (1.3,0) {};
+              \draw[thick,-open triangle 90] (a) -- (b);
+
+              \node (c) at (1.6,0) {$\color{red}{\framebox{F1}}$};
+
+              \node (d) at (3.4,0) {Children};
+              \draw[thick,-open triangle 90] (c) -- (d);
+
+              \node (e) at (5.2,0) {$\color{blue}{\framebox{F2}}$};
+              \draw[thick,-open triangle 90] (d) -- (e);
+
+              \node (f) at (7.2,0) {Sandwiches};
+              \draw[thick,-open triangle 90] (e) -- (f);
+
+              \node (g) at (9.2,0) {$\color{purple}{\framebox{F3}}$};
+              \draw[thick,-open triangle 90] (f) -- (g);
+
+              \node (h) at (10.8,0) {lbs PB};
+              \draw[thick,-open triangle 90] (g) -- (h);
+              
+              \node (i) at (12.4,0) {$\color{green}{\framebox{F4}}$};
+              \draw[thick,-open triangle 90] (h) -- (i);
+
+              \node (j) at (14.1,0) {Budget};
+              \draw[thick,-open triangle 90] (i) -- (j);         
+              \end{tikzpicture}]]></latex-image-code></image></figure>
+    <p>But going through this process each time is tedious. What you want is one function that puts the entire chain together: <q>You tell me the number of classes, and I will tell you the budget.</q></p>
+    <figure xml:id="figure-function-box-pb">
+          <image xml:id="function-box-pb"> 
+            <latex-image-code><![CDATA[\begin{tikzpicture} 
+                \node (a) at (-3,1) {Classes};
+                \node (b) at (-1.25,1) {};
+                \draw[thick,-open triangle 90] (a) -- (b);
+                \draw[line width=1mm, fill=red] (-1,.5) rectangle(3,1.5);
+                \draw[thick,white] (1,1) node {FUNCTION};
+                \node (c) at (3,1) {};
+                \node (d) at (5,1) {\$\$ Budget};
+                \draw[thick,-open triangle 90] (c) -- (d);
+            \end{tikzpicture}]]></latex-image-code></image></figure>
+            <p>This is a composite function-a function that represents in one function, the results of an entire chain of dependent functions. Since such chains are very common in real life, finding composite functions is an important skill.</p>
+          </subsubsection>
+          <subsubsection>
+            <title>How do you make a composite Function?</title>
+            <p>We can consider how to build composite functions into the function game that we played on the first day. Suppose Susan takes any number you give her, quadruples it, and adds <m>6</m>. Al takes any number you give him and divides it by <m>2</m>. Mathematically, we can represent the two functions like this:
+            <md>
+              <mrow>S(x) = 4x + 6</mrow>
+              <mrow>A(x) = \frac{x}{2}</mrow>
+            </md></p>
+            <p>To create a chain like the one above, we give a number to Susan; she acts on it, and gives the resulting number to Al; and he then acts on it and hands back a third number.
+              <md>
+                <mrow>3 \rightarrow \text{Susan} \rightarrow S(3)=18 \rightarrow Al \rightarrow A(18) = 9</mrow>
+              </md>
+            In this example, we are plugging <m>S(3)</m>-in other words, <m>18</m>- into Al's function. In general, for any <m>x</m> that comes in, we are plugging <m>S(x)</m> into <m>A(x)</m>. So we could represent the entire process as <m>A(S(x))</m>. This notation for composite functions is really nothing new: it means that you are plugging <m>S(x)</m> into the <m>A</m> function.</p>
+            <p>But in this case, recall that <m>S(x) = 4x + 6</m>. So we can write:
+              <md>
+                <mrow>A(S(x)) = \frac{S(x)}{2} = \frac{4x + 6}{2}= 2x + 3</mrow>
+              </md>
+            </p>
+            <p>What happened? We've just discovered a shortcut for the entire process. When you perform the operation <m>A(S(x))</m>-that is, when you perform the Al function on the result of the Susan function-you are, in effect, doubling and adding <m>3</m>. For instance, we saw earlier that when we started with a <m>3</m>, we ended with a <m>9</m>. Our composite function does this in one step:
+            <md>
+              <mrow>3 \rightarrow 2x + 3 \rightarrow 9</mrow>
+            </md>
+            </p>
+            <p>Understanding the meaning of composite functions requires real thought. It requires understanding the idea that this variable depends on that variable, which in turn depends on the other variable; and how that idea is translated into mathematics. Finding composite functions, on the other hand, is a purely mechanical process-it requires practice, but no creativity. Whenever you are asked for <m>f(g(x))</m>, just plug the <m>g(x)</m> function into the <m>f(x)</m> function and then simplify.</p>
+            <example xml:id="example-building-composite">
+                <title>Building and Testing a Composite Function</title>
+                <p>Condider
+                  <md>
+                    <mrow>f(x) = x^2 - 4x\text{ and }g(x)=x+2</mrow>
+                  </md>
+                  Determine and test the composite function <m>f(g(x))</m>
+                </p>
+                <ol label="a.">
+                  <li><p>To determine the composite, plug <m>g(x)</m> into <m>f(x)</m>, just as you would with any number, then simplify.
+                    <md>
+                      <mrow>f(g(x))&amp;= f(x+2)</mrow>
+                      <mrow>&amp;= (x+2)^2-4(x+2)</mrow>
+                      <mrow>&amp;= (x^2+4x+4)-(4x+8)</mrow>
+                      <mrow>&amp;= x^2+4x-4x+4-8</mrow>
+                      <mrow>&amp;= x^2-4</mrow>
+                    </md>
+                    So <m>f(g(x))= x^2-4\checkmark</m>
+                  </p></li>
+                  <li><p>Let's test it. <m>f(g(x))</m> means do <m>g</m>, then <m>f</m>. What happens if we start with <m>x = 7</m>?
+                    <md>
+                      <mrow>7 \rightarrow g(x)\rightarrow 7 + 2 = 9 \rightarrow f(x) \rightarrow (9)^2 - 4 (9) = 45</mrow>
+                    </md>So, if it worked, our composite function should do all of that in one step.
+                    <md>
+                      <mrow>7 \rightarrow x^2 - 4 \rightarrow 7^2 - 4 = 45\checkmark\text{ It worked!}</mrow>
+                    </md>
+                  </p>
+                </li>
+              </ol>
+            </example><p>There is a different notation that is sometimes used for composite functions. The notation <m></m> very naturally conveys the idea of <q>plugging <m>g(x)</m> into <m>f(x)</m>.</q> However, you will sometimes see the same thing written as <m></m>, which represents the idea of <q>doing one function, and then the other, in sequence.</q> The two notations mean the same thing.  That is:
+            <md>
+              <mrow>(f \circ g)(x)=f(g(x))</mrow>
+            </md>
+            </p> 
+          </subsubsection>
+  </subsection>
+  <subsection xml:id="subsection-inverse-functions">
+    <title>Inverse Functions</title>
+    <p>Let's go back to Alice, who makes <m>\$100</m> each day. We know how to answer questions such as <q>After <m>3</m> days, how much money has Alice made?</q> We use the function <m>m(t) = 100t</m>.</p>
+    <p>But suppose we want to ask the reverse question: <q>If Alice has made <m>\$300</m>, how many hours has she worked?</q> This is the job of an inverse function. It gives the same relationship, but reverses the dependent and independent variables: <m>t(m) = m/100</m>. Given any amount of money, divide it by <m>100</m> to find how many days she has worked.</p>
+    <p>Consider the following exampls:
+      <ul>
+        <li><p>If a function answers the question: <q>Alice worked this long, how much money has she made?</q> then its inverse answers the question: <q>Alice made this much money, how long did she work?</q></p></li>
+        <li><p>If a function answers the question: <q>I have this many spoons, how much do they weigh?</q> then its inverse answers the question: <q>My spoons weigh this much, how many do I have?</q></p></li>
+        <li><p>If a function answers the question: <q>How many hours of music fit on <m>12</m> CDs?</q> then its inverse answers the question: <q>How many CDs do you need for <m>3</m> hours of music?</q></p></li>
+      </ul>
+    </p>
+    <subsubsection>
+      <title>How do you recognize an inverse function?</title>
+    <p>Let's consider Alice's functions above:
+      <md>
+        <mrow>m(t) = 100t</mrow>
+        <mrow>t(m) = m/100</mrow>
+      </md>
+      Mathematically, you can recognize these as inverse functions because they reverse the inputs and the outputs.
+      <md>
+        <mrow>3 \rightarrow m(t) &amp;= 100t \rightarrow 300</mrow>
+        <mrow>300 \rightarrow t (m) &amp;= m/100  \rightarrow 3</mrow>
+        <mrow>\checkmark &amp;\text{ Inverse functions }</mrow>
+      </md>
+      Of course, this makes logical sense. The first line above says that <q>If Alice works <m>3</m> hours, she makes <m>\$300</m>.</q> The second line says <q>If Alice made <m>\$300</m>, she worked <m>3</m> hours.</q> It's the same statement, made in two different ways.</p>
+      <p>But this <q>reversal</q> property gives us a way to test any two functions to see if they are inverses. For instance, consider the two functions:
+      <md>
+        <mrow>f(x) = 3x + 7</mrow>
+        <mrow>g(x) = \frac{1}{3}x - 7</mrow>
+      </md>
+        They look like inverses, don't they? But let's test and find out.
+      <md>
+        <mrow>2 \rightarrow f(x)&amp;= 3x + 7 \rightarrow 13</mrow>
+        <mrow>13 \rightarrow g(x)&amp;= \frac{1}{3}x - 7 \rightarrow \frac{13}{3} - 7 \rightarrow \frac{-8}{3}</mrow>
+        <mrow>\times &amp;\text{ NOT inverse functions }</mrow>
+      </md>
+      The first function turns a <m>2</m> into a <m>13</m>. But the second function does not turn <m>13</m> into <m>2</m>. So these are not inverses.
+    </p>
+    <p>On the other hand, consider:
+      <md>
+        <mrow>f(x) = 3x + 7</mrow>
+        <mrow>g(x) = \frac{1}{3}(x - 7)</mrow>
+      </md>
+      Let's run our test of inverses on these two functions.
+      <md>
+        <mrow>2 \rightarrow f(x)&amp;= 3x + 7 \rightarrow 13</mrow>
+        <mrow>13 \rightarrow g(x)&amp;= \frac{1}{3}(x - 7) \rightarrow \frac{1}{3}(13 - 7) \rightarrow 2</mrow>
+        <mrow>\checkmark &amp;\text{ Inverse functions }</mrow>
+      </md>
+      So we can see that these functions do, in fact, reverse each other: they are inverses.</p>
+      <p>A common example of a pair of inverse functions is the Celsius-to-Fahrenheit conversion:
+        <md>
+          <mrow>F(C) = \frac{9}{5}C + 32</mrow>
+          <mrow>C(F) = \frac{5}{9}(F - 32)</mrow>
+        </md>
+          where <m>C</m> is the Celsius temperature and <m>F</m> the Fahrenheit. If you plug <m>100^{\circ} C</m> into the first equation, you find that it is <m>212^\circ F</m>. If you ask the second equation about <m>212^{\circ} F</m>, it of course converts that back into <m>100^{\circ} C</m>.
+        </p>
+      </subsubsection>
+      <subsubsection>
+        <title>The Notation and Definition of an Inverse Function</title>
+      <p>The notation for the inverse function of <m>f(x)</m> is <m>f^{-1}(x)</m>. This notation can cause considerable confusion, because it looks like an exponent, but it isn't. <m>f^{-1}(x)</m> simply means "the inverse function of <m>f(x)</m>." It is defined formally by the fact that if you plug any number x into one function, and then plug the result into the other function, you get back where you started. (Take a moment to convince yourself that this is the same definition I gave above more informally.) We can represent this as a composition function by saying that <m>f\left(f^{-1}(x)\right)= x</m>.</p>
+      <p><term>Inverse Function:</term> <m>f^{-1}(x)</m> is defined as the inverse function of <m>f(x)</m> if it consistently reverses the <m>f(x)</m> process. That is, if <m>f(a)=b</m>, then <m>f^{-1}(b)=a</m>. More concisely and formally, <m>f^{-1}(x)</m> is the inverse function of <m>f(x)</m> if <m>\left(f \circ f^{-1}\right)(x) = x</m>.</p>
+    </subsubsection>
+    <subsubsection>
+      <title>Finding an Inverse Function</title>
+      <p>In examples above, we saw that if <m>f(x) = 3x + 7</m>, then <m>f ^{-1}(x) = \frac{1}{3}(x - 7)</m>. We also saw that the function <m>\frac{1}{3} x - 7</m>, which may have looked just as likely, did not work as an inverse function. So in general, given a function, how do you find its inverse function?</p>
+      <p>Remember that an inverse function reverses the inputs and outputs. When we graph functions, we always represent the incoming number as <m>x</m> and the outgoing number as <m>y</m>. So to find the inverse function, switch the <m>x</m> and <m>y</m> values, and then solve for <m>y</m>.</p>
+      <example xml:id="example-building-inverse">
+          <title>Building and Testing an Inverse Function</title>
+          <p>Determine and test the inverse function of <m>f(x) = \dfrac{2x-3}{5}.</m></p>
+          <ol>
+            <li><p>Determine the inverse function of <m>f(x) = \dfrac{2x-3}{5}:</m></p>
+            <ol>
+              <li><p>Write the function as <m>y = \dfrac{2x-3}{5}</m></p></li>
+              <li><p>Switch the <m>x</m> and <m>y</m> variables: <m>x = \dfrac{2y-3}{5}</m></p></li>
+              <li><p>Solve for <m>y</m>:
+                <md>
+                  <mrow>5x &amp;= 2y - 3</mrow>
+                  <mrow>5x + 3 &amp;= 2y</mrow>
+                  <mrow>\dfrac{5x+3}{2} &amp;= y</mrow>
+                </md>
+                So <m>f^{-1}(x) = \dfrac{5x+3}{2}</m></p></li>
+            </ol></li>
+            <li><p>Test to make sure this solution satisfies the definition of an inverse function:</p>
+            <ol>
+              <li><p>Pick a number, and plug it into the original function: <m>9 \rightarrow f(x) \rightarrow 3.</m></p></li>
+              <li><p>See if the inverse function reverses this process: <m>3 \rightarrow  f^{-1}(x) \rightarrow 9. \checkmark</m> It worked!</p></li>
+            </ol></li>
+          </ol>
+      </example>
+      <p>Were you surprised by the answer? At first glance, it seems that the numbers in the original function (the <m>2</m>, <m>3</m>, and <m>5</m>) have been rearranged almost at random.</p>
+      <p>But with more thought, the solution becomes very intuitive. The original function <m>f(x)</m> described the following process: double a number, then subtract <m>3</m>, then divide by <m>5</m>. To reverse this process, we need to reverse each step in order: multiply by <m>5</m>, then add <m>3</m>, then half the result. This is just what the inverse function does.</p>
+    </subsubsection>
+    <subsubsection>
+      <title>Some Functions Have No Inverse Function</title>
+      <p>Some functions have no inverse function. The reason is the rule of consistency.</p>
+      <p>For instance, consider the function <m>y = x^2</m>. This function takes both <m>3</m> and <m>-3</m> and turns them into <m>9</m>. No problem: a function is allowed to turn different inputs into the same output. However, what does that say about the inverse of this particular function? In order to fulfill the requirement of an inverse function, it would have to take <m>9</m>, and turn it into both <m>3</m> and <m>-3</m>-which is the one and only thing that functions are not allowed to do. Hence, the inverse of this function would not be a function at all!</p>
+      <sidebyside widths="5% 5% 25% 5% 5%" valign="middle" haligns="center center left center center" margins="20%">
+      <p><md>
+          <mrow>3&amp;</mrow>
+          <mrow>-3&amp;</mrow>
+      </md></p>
+      <p><md>
+          <mrow>\rightarrow</mrow>
+          <mrow>\rightarrow</mrow>
+      </md></p>
+      <figure xml:id="figure-function-box-x-sq">
+          <image xml:id="function-box-x-sq"> 
+            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            \draw[line width=1mm, fill = red] (0,0) rectangle(4,2);
+            \node at (2,1) {\LARGE $f(x)=x^2$}; 
+            \end{tikzpicture}]]></latex-image-code></image></figure>
+      <p><md>
+          <mrow>\rightarrow</mrow>
+          <mrow>\rightarrow</mrow>
+      </md></p>
+      <p><md>
+          <mrow>9</mrow>
+          <mrow>9</mrow>
+      </md></p>
+      </sidebyside>
+      <p>If <m>3</m> goes in, <m>9</m> comes out. If <m>-3</m> goes in, <m>9</m> also comes out. No problem. Now, consider the situation for the inverse:</p>
+      <sidebyside widths="5% 5% 25% 5% 5%" valign="middle" haligns="center center left center center" margins="20%">
+      <p><md>
+          <mrow>9</mrow>
+      </md></p>
+      <p><md>
+          <mrow>\rightarrow</mrow>
+      </md></p>
+      <figure xml:id="figure-function-f-inverse">
+          <image xml:id="function-f-inverse"> 
+            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            \draw[line width=1mm, fill = yellow] (0,0) rectangle(4,2);
+            \node at (2,1) {\LARGE $f^{-1}(x)$}; 
+            \end{tikzpicture}]]></latex-image-code></image></figure>
+      <p><md>
+          <mrow>\rightarrow</mrow>
+          <mrow>\rightarrow</mrow>
+      </md></p>
+      <p><md>
+          <mrow>3\text{?}</mrow>
+          <mrow>-3\text{?}</mrow>
+      </md></p>
+      </sidebyside>
+      <p>Its inverse would have to turn <m>9</m> into both <m>3</m> and <m>-3</m>. No function can do this, so there is no inverse.</p>
+    <p>In general, any function that turns multiple inputs into the same output, does not have an inverse function.</p>
+    <p>What does that mean in the real world? If we can convert Fahrenheit to Celsius, we must be able to convert Celsius to Fahrenheit. If we can ask <q>How much money did Alice make in <m>3</m> days?</q> we must surely be able to ask <q>How long did it take Alice to make <m>\$500</m>?</q> When would you have a function that cannot be inverted?</p>
+    <p>Let's go back to this example:</p>
+    <p>Recall the example that was used earlier: <q>Max threw a ball. The height of the ball depends on how many seconds it has been in the air.</q> The two variables here are <m>h</m> (the height of the ball) and <m>t</m> (the number of seconds it has been in the air). The function <m>h(t)</m> enables us to answer questions such as <q>After <m>3</m> seconds, where is the ball?</q></p>
+    <p>The inverse question would be <q>At what time was the ball <m>10</m> feet in the air?</q> The problem with that question is, it may well have two answers!</p>
+    <table>
+      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
+        <col right="minor" halign="left" />
+        <col />
+        <!--  -->
+        <row bottom = "major">
+            <cell>The ball is here...</cell>
+            <cell>...after this much time has elapsed</cell>
+        </row>
+        <row bottom = "minor">
+          <cell><m>10</m> ft</cell>
+          <cell><m>2</m> seconds (*on the way up)</cell>
+        </row>
+        <row bottom = "minor">
+          <cell><m>10</m> ft</cell>
+          <cell><m>5</m> seconds (*on the way back down)</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>So what does that mean? Does it mean we can't ask that question? Of course not. We can ask that question, and we can expect to mathematically find the answer, or answers-by knowing how to solve  quadratic equations. However, it <em>does</em> mean that time is not a function of height because such a <q>function</q> would not be consistent: one question would produce multiple answers.</p>
+  </subsubsection>
+  </subsection>
+</section>
