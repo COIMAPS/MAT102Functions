@@ -4,21 +4,19 @@
 Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
 Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 23-31-->
 <introduction>
-    <p>Objectives:
       <ul>
         <li><p>Understand variable and function concepts.</p></li>
         <li><p>Represent and use functions.</p></li>
         <li><p>Determine the domain and range of a function.</p></li>
         <li><p>Identify functions from non-functions.</p></li>
       </ul>
-    </p>
-  <p>This unit on functions is important, because it provides a crucial transition point. Roughly speaking:
+  <p>This unit on functions is important, because it provides a crucial transition point. Roughly speaking:</p>
     <ul>
       <li><p>In elementary school, math is about numbers.</p></li>
       <li><p>Then starting in middle school or high school, math is about variables.</p></li>
       <li><p>And continuing into Calculus, math is about functions.</p></li>
     </ul>
-    Each step builds on the previous step. Each step expands the ability of mathematics to model behavior
+    <p>Each step builds on the previous step. Each step expands the ability of mathematics to model behavior
 and solve problems. And, perhaps most crucially, each step can be frightening to a student. It can be very
 intimidating to see an entire page of mathematics that is covered with letters, with almost no numbers to be found!</p>
 <p>Unfortunately, many students end up with a very vague idea of what variables are (<q>That's when you use
@@ -53,10 +51,11 @@ letters in math</q>) and an even more vague understanding of functions (<q>Those
   </subsection>
   <subsection xml:id="what-is-a-function">
     <title>What is a Function?</title>
+    <introduction>
     <p>A function is neither a number nor a variable: it is a <term>process</term> for turning one number into another. For
 instance, <q>Double and then add <m>6</m></q> is a function. If you put a <m>4</m> into that function, it comes out with a <m>14</m>. If you put a <m>1/2</m> into that function, it comes out with a <m>7</m>.</p>
 <p>The traditional image of a function is a machine, with a slot on one side where numbers go in and a slot on
-the other side where numbers come out.</p>
+the other side where numbers come out.</p></introduction>
 <figure xml:id="figure-function-box">
           <image xml:id="function-box"> 
             <latex-image-code><![CDATA[\begin{tikzpicture} 
@@ -77,7 +76,8 @@ number you are given,</q> or <q>Give back the lowest prime number that is greate
 <p>By the way-having defined the word <q>function</q> I just want to say something about the word <q>equation.</q> An <term>equation</term> is when you <q>equate</q> two things-that is to say, set them equal. So <m>x^2 - 3</m> is a function, but it is not an equation. <m>x^2-3 = 6</m> is an equation. An <q>equation</q> is not about a process, it is a statement. In this case, the equation is stating that some number squared minus 3 is equal to a particular number, <m>6</m>. The equation is not telling you how to find values for numbers in general.</p>
 <subsubsection>
   <title>The Rule of Consistency</title>
-  <p>There is only one limitation on what a function can do: a function must be <term>consistent</term>.</p>
+  <introduction>
+  <p>There is only one limitation on what a function can do: a function must be <term>consistent</term>.</p></introduction>
 <p>For instance, the function in the above drawing is given a <m>5</m>, and gives back a <m>14</m>. That means this particular function turns <m>5</m> into <m>14</m>-always. That particular function can never take in a <m>5</m> and give back a <m>16</m>. This <q>rule of consistency</q> is a very important constraint on the nature of functions.</p>
 <p>NOTE: This rule does not treat the inputs and outputs the same!</p>
 <p>For instance, consider the function <m>y = x^2</m>. This function takes both <m>3</m> and <m>-3</m> and turns them into <m>9</m> (two different inputs, same output). That is allowed. However, it is not reversible! If you take a <m>9</m> and turn it into both a <m>3</m> and a <m>-3</m> (two different outputs, same input), then what you have is not a function.  The issue here is that a function does not allow any ambiguity about what the output should be for a given input.  In this case, which output should go with the <m>9</m>? <m>3</m> or <m>-3</m>?</p>
@@ -87,14 +87,13 @@ functions.</p>
 </subsection>
 <subsection xml:id="represent-a-function">
     <title>Four Ways to Represent a Function</title>
-    <p>Modern Calculus texts emphasize that a function can be expressed in four different ways:
+    <p>Modern Calculus texts emphasize that a function can be expressed in four different ways:</p>
       <ol>
         <li><p><term>Verbal</term> - This is the way functions were described as far back as 1800 BCE in Babylonian clay tablets: "Double and add six."</p></li>
         <li><p><term>Algebraic</term> - This is the most common, most concise, and most powerful representation: <m>y = 2x + 6</m>. Note that in an algebraic representation, the input and output numbers are represented as variables (in this case, an <m>x</m> and <m>y</m>, respectively).</p></li>
         <li><p><term>Numerical</term> - This can be done as a list of value pairs, as <m>(4, 10)</m> - meaning that if a <m>4</m> goes in, a <m>10</m> comes out. (You may recognize this as <m>(x, y)</m> points used in graphing.)</p></li>
         <li><p><term>Graphical</term> - This is discussed in detail in the section on graphing.</p></li>
       </ol>
-    </p>
 <p>These are not four different types of functions: they are four different views of the same function. One of
 the most important skills in Algebra is converting a function between these different forms, and this theme
 will recur in different forms throughout the text.</p>
@@ -165,12 +164,12 @@ will recur in different forms throughout the text.</p>
       <p>It's easy to get the words domain and range confused-and it's important to keep them distinct, because although they are related concepts, they are different from each other. One trick that sometimes helps is to remember that, in everyday usage, <q>your domain</q> is your home, your land-it is where you begin. A function begins in its own domain. It ends up somewhere out on the range.</p>
       <subsubsection>
         <title>Interval Notation for Domains and Ranges</title>
-      <p>Domains and ranges above are sometimes expressed as intervals, using the following rules:
+      <p>Domains and ranges above are sometimes expressed as intervals, using the following rules:</p>
         <ul>
           <li><p>Parentheses <m>(</m> <m>)</m> mean <q>an interval starting or ending here, but not including this number</q></p></li>
           <li><p>Square brackets <m>[</m> <m>]</m> mean <q>an interval starting or ending here, including this number</q></p></li>
         </ul>
-        This is easiest to explain with examples.</p>
+        <p>This is easiest to explain with examples.</p>
     <table>
       <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
         <col right="minor" />
@@ -223,13 +222,12 @@ will recur in different forms throughout the text.</p>
     <p>A few examples:</p>
     <example>
       <title>Function Concepts - Functions in the Real World</title>
-      <p>
         <ul>
           <li><p><q>The area of a circle depends on its radius.</q></p></li>
           <li><p><q>The amount of money Alice makes depends on the number of hours she works.</q></p></li>
           <li><p><q>Max threw a ball. The height of the ball depends on how many seconds it has been in the air.</q></p></li>
         </ul>
-        In each case, there are two variables. Given enough information about the scenario, you could assert that if you tell me this variable, I will tell you that one. For instance, suppose you know that Alice makes <m>\$100</m> per day. Then we could make a chart like this.</p>
+        <p>In each case, there are two variables. Given enough information about the scenario, you could assert that if you tell me this variable, I will tell you that one. For instance, suppose you know that Alice makes <m>\$100</m> per day. Then we could make a chart like this.</p>
     <table>
       <tabular top="major" bottom = "major" halign="center" left="minor">
         <col right="minor" />

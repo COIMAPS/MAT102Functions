@@ -4,11 +4,9 @@
 Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
 Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 77-83-->
 <introduction>
-  <p>Objective:
   <ul>
     <li>Solve two simultaneous linear equations graphically, by substitution, and by elimination.</li>
   </ul>
-</p>
   <p>Consider the equation <m>y = 2\sqrt{x}</m>. How many <m>(x, y)</m> pairs are there that satisfy this equation? Answer: <m>(0, 0)</m>, <m>(1, 2)</m>, <m>(4, 4)</m>, and <m>(9, 6)</m> are all solutions; and there is an infinite number of other solutions. (And don't forget non-integer solutions, such as <m>(\frac{1}{4}, 1)</m>!)</p>
   <p>Now, consider the equation <m>y = x + \frac{1}{2}.</m> How many pairs satisfy this equation? Once again, an infinite number. Most equations that relate two variables have an infinite number of solutions.</p>
   <p>To consider these two equations <q>simultaneously</q> is to ask the question:

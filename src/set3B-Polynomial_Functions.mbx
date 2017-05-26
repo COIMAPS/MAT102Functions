@@ -5,13 +5,11 @@ Saylor URL: http://www.saylor.org/courses/ma001/
 Attributed to: Tyler Wallace
 Saylor.org,  pages 192-193-->
 <introduction>
-  <p>Objectives:
     <ul>
-      <li>Evaluate, add, subtract and multiply polynomials.</li>
-      <li>Identify graphs of polynomial functions.</li>
-      <li>Determine the degree and  intercepts of polynomial functions.</li>
+      <li><p>Evaluate, add, subtract and multiply polynomials.</p></li>
+      <li><p>Identify graphs of polynomial functions.</p></li>
+      <li><p>Determine the degree and  intercepts of polynomial functions.</p></li>
     </ul>
-  </p>
   <p>Many applications in mathematics have to do with what are called polynomials. Polynomials are made up of terms. Terms are a product of numbers and/or variables. For example, <m>5x</m>, <m>2y^3</m>, <m>-4</m>  and <m>ab^3c</m> are all terms. Each term has a <term>coefficient,</term> the number, and a <term>degree,</term> the power of the variable in the term <ndash /> if there is more than one variable, then the degree is the sum of the exponents on the variables.</p>
   <example xml:id="example-term-coefficients-degrees">
       <title>Term Coefficients and Degrees</title>

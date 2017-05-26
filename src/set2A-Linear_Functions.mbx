@@ -4,13 +4,12 @@
 Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
 Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 50-52-->
 <introduction>
-  <p>Objectives:
     <ul>
       <li><p>Understand the concepts of linear function, slope, and <m>y</m>-intercept.</p></li>
       <li><p>Give the slope-intercept equation for a line.</p></li>
       <li><p>Give the equation of a line from either a graph, the slope and a point, or two points on the line.</p></li>
       <li><p>Give equations for horizontal and vertical lines.</p></li>
-    </ul></p>
+    </ul>
   </introduction>
   <p>Most students entering this course are already familiar with the basic mechanics of graphing lines. Recapping very briefly: the equation for a line is <m>y = mx + b</m> where  <m>m</m> and <m>b</m> are constants. Note that <m>b</m> is the <m>y</m>-intercept  and <m>m</m> is the slope.   This form of the equation for a line is sometimes called the <term>slope-intercept</term> form because the slope and vertical intercept are clearly seen.</p>
   <example xml:id="example-linear-equation">
@@ -74,10 +73,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         <p><term>Linear Function</term>: A function is said to be <q>linear</q> if every time the independent
 variable increases by <m>1</m>, the dependent variable increases or decreases by the same amount.</p>
 <p>Once you know that Alice's bank account function is linear, there are only two things you need to know
-before you can predict her bank account on any given day.
+before you can predict her bank account on any given day.</p>
 <ul>
-  <li> How much money she started with (<m>\$750</m> in this example). This is called the <m>y</m>-intercept </li>
-  <li> How much she makes each day (<m>\$100</m> in this example). This is called the slope.</li>
+  <li><p>How much money she started with (<m>\$750</m> in this example). This is called the <m>y</m>-intercept</p></li>
+  <li><p>How much she makes each day (<m>\$100</m> in this example). This is called the slope.</p></li>
 </ul>
 <sidebyside widths="40% 55%" valign="middle">
   <p>So, the linear function that gives how much money 
@@ -116,7 +115,6 @@ before you can predict her bank account on any given day.
               We see the <m>y</m>-intercept is <m>2.\checkmark</m></p></li>
           </ol></p>
       </example>
-    </p>
     <subsection>
       <title>But what about slope?</title>
       <p>One of the best ways to understand the idea of slope is to convince yourself that all of the following definitions of slope are actually the same.</p>
