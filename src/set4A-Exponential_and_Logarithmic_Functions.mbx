@@ -4,14 +4,12 @@
 Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
 Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
 <introduction>
-  <p>Objectives:
     <ul>
-      <li>Evaluate exponential and logarithmic functions.</li>
-      <li>Identify graphs, domains, ranges, and asymptotes of exponential and logarithmic functions.</li>
-  <li>Determine the inverse of exponential and logarithmic functions.</li>
-  <li>Simplify exponential and logarithmic expressions and identify compositions of exponential and logarithmic functions.</li>
+      <li><p>Evaluate exponential and logarithmic functions.</p></li>
+      <li><p>Identify graphs, domains, ranges, and asymptotes of exponential and logarithmic functions.</p></li>
+  <li><p>Determine the inverse of exponential and logarithmic functions.</p></li>
+  <li><p>Simplify exponential and logarithmic expressions and identify compositions of exponential and logarithmic functions.</p></li>
 </ul>
-  </p>
 </introduction>
 <subsection>
   <title>Introduction</title>
@@ -481,30 +479,28 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
     </p>
     <p>Since logs are defined as the inverses of exponential functions, we can use use what we know about inverses to tell us about the graphs of logarithmic functions. For example, we know that the domain of a log function is the range of an exponential function, namely <m>(0,\infty),</m> and that the range of a log function is the domain of an exponential function, namely <m>(-\infty,\infty).</m> Since we know the basic shapes of <m>y = f(x) = b^x</m> for the different cases of <m>b,</m> we can obtain the graph of <m>y = f^{-1}(x) = \log_b(x)</m> by flipping the graph of <m>f</m> across the line <m>y = x</m> as shown below. The <m>y</m>-intercept <m>(0, 1)</m> on the graph of <m>f</m> corresponds to an <m>x</m>-intercept of <m>(1, 0)</m> on the graph of <m>f^{-1}.</m> The horizontal asymptotes <m>y = 0</m> on the graphs of the exponential functions become vertical asymptotes <m>x = 0</m> on the log graphs.</p>
     <p>We summarize the basic properties of logarithmic functions below, all of which come from the fact that they are inverses of exponential functions.</p>
-    <p><alert>Properties of Logarithmic Functions:</alert> Suppose <m>f(x) = \log_b(x).</m>
+    <p><alert>Properties of Logarithmic Functions:</alert> Suppose <m>f(x) = \log_b(x).</m></p>
     <ul>
-      <li>The domain of <m>f</m> is <m>(0, \infty)</m> and the range of <m>f</m> is <m>(-\infty, \infty).</m></li>
-      <li><m>(1, 0)</m> is on the graph of <m>f</m> and <m>x = 0</m> is a vertical asymptote of the graph of <m>f.</m></li>
-      <li><m>f</m> has a unique output for each input, continuous and smooth.</li>
-      <li><m>b^a = c</m> if and only if <m>\log_b(c) = a.</m> That is, <m>\log_b(c)</m> is the exponent you put on <m>b</m> to obtain <m>c.</m>  <m>\log_b(b^x) = x</m> for all <m>x</m> and <m>b^{\log_b(x)} = x</m> for all <m>x \gt 0</m> and <m>\ln(e^x)=x</m>.</li>
+      <li><p>The domain of <m>f</m> is <m>(0, \infty)</m> and the range of <m>f</m> is <m>(-\infty, \infty).</m></p></li>
+      <li><p><m>(1, 0)</m> is on the graph of <m>f</m> and <m>x = 0</m> is a vertical asymptote of the graph of <m>f.</m></p></li>
+      <li><p><m>f</m> has a unique output for each input, continuous and smooth.</p></li>
+      <li><p><m>b^a = c</m> if and only if <m>\log_b(c) = a.</m> That is, <m>\log_b(c)</m> is the exponent you put on <m>b</m> to obtain <m>c.</m>  <m>\log_b(b^x) = x</m> for all <m>x</m> and <m>b^{\log_b(x)} = x</m> for all <m>x \gt 0</m> and <m>\ln(e^x)=x</m>.</p></li>
     </ul>
-  </p>
     <sbsgroup widths="45% 45%" valign="middle">
       <sidebyside>
         <p>If <m>b\gt 1:</m>
           <ul>
-            <li><m>f</m> is always increasing</li>
-            <li>As <m>x</m> gets closer to zero from the right, <m>f</m> takes larger negative values</li>
-            <li>As <m>x</m> takes on larger positive values, <m>f</m> gets larger</li>
-            <li>The graph of <m>f</m> looks like:</li>
-           </ul>
-        </p>
+            <li><p><m>f</m> is always increasing</p></li>
+            <li><p>As <m>x</m> gets closer to zero from the right, <m>f</m> takes larger negative values</p></li>
+            <li><p>As <m>x</m> takes on larger positive values, <m>f</m> gets larger</p></li>
+            <li><p>The graph of <m>f</m> looks like:</p></li>
+           </ul></p>
         <p>If <m>b\lt 1:</m>
           <ul>
-            <li><m>f</m> is always decreasing</li>
-            <li>As <m>x</m> gets closer to zero from the right, <m>f</m> takes larger positive values</li>
-            <li>As <m>x</m> takes on larger positive values, <m>f</m> takes larger negative values</li>
-            <li>The graph of <m>f</m> looks like:</li>
+            <li><p><m>f</m> is always decreasing</p></li>
+            <li><p>As <m>x</m> gets closer to zero from the right, <m>f</m> takes larger positive values</p></li>
+            <li><p>As <m>x</m> takes on larger positive values, <m>f</m> takes larger negative values</p></li>
+            <li><p>The graph of <m>f</m> looks like:</p></li>
            </ul>
         </p>
       </sidebyside>

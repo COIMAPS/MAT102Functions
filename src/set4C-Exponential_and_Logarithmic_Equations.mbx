@@ -2,12 +2,10 @@
   <title>Exponential and Logarithmic Equations</title>
   <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/) Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  NEEDS PAGES-->
   <introduction>
-    <p>Objectives:
       <ul>
-        <li>Solve exponential equations.</li>
-        <li>Solve logarithmic equations.</li>
+        <li><p>Solve exponential equations.</p></li>
+        <li><p>Solve logarithmic equations.</p></li>
       </ul>
-    </p>
   </introduction>
   <p>In this section we will develop techniques for solving equations involving exponential and logarithmic functions. Suppose, for instance, we wanted to solve the equation <m>2^x = 128.</m>  If we happen to see that <m>128 = 2^7</m> then we have the solution to the equation: <m>x = 7.</m> However, if we change the equation slightly to <m>2^x = 129,</m> this method  leaves a lot to be desired. The exponent we need on <m>2</m> to get <m>129</m> does not easily come to mind. Here's were logs come to the rescue.  Just like squaring both sides of an equation is a reasonable strategy when working with radicals, "logging" both sides allows us to use the rules of logarithms to solve exponential equations. We could take the logarithm base <m>2</m> of both sides, but this sometimes presents a problem:
   <md>

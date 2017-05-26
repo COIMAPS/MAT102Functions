@@ -4,14 +4,12 @@
 Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
 Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 35-49-->
 <introduction>
-    <p>Objectives:
       <ul>
         <li><p>Understand and create graphs of functions.</p></li>
         <li><p>Identify <m>x-</m> and <m>y-</m> intercepts.</p></li>
         <li><p>Understand and create vertical and horizontal translations of functions.</p></li>
         <li><p>Use inequality and interval notation.</p></li>  
       </ul>
-    </p>
    <p>Graphing, like algebraic generalizations, is a difficult topic because many students know how to do it but are not sure what it means.</p>
    <p>For instance, consider the following graph:</p>
    <figure xml:id="figure-graph-x-sq">
