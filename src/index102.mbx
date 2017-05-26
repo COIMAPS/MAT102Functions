@@ -94,6 +94,9 @@
 <xi:include href="./set4A-Exponential_and_Logarithmic_Functions.mbx" />
 <xi:include href="./set4B-Logarithm_Rules.mbx" />
 <xi:include href="./set4C-Exponential_and_Logarithmic_Equations.mbx" />
+</chapter><chapter xlm:id="chapter-5-moths-are-cool">
+    <title>Moths are cool!</title>
+<xi:include href="./set5A-Moths.mbx" />
 </chapter>
 </book>
 </mathbook>
