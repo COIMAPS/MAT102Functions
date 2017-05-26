@@ -561,7 +561,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
           </ol>
         </p>
     </example>
-    <p><alert>Note:</alert> Why study polynomials?  What are they good for?  Many functions are difficult to calculate without a calculator or computer, for example, trigonometric functions.  How <em>DO</em> calculators or computers calculate values for these functions? The answer  is based on polynomials which are easier to calculate since they only involve multiplying and addition/subtraction. The graph  below shows how the polynomial <m>f(x) = x - \frac{1}{6}x^3 + \frac{1}{120}x^5</m> approximates the function <m>g(x) = \sin(x)</m> for <m>-3 \leq x \leq3</m>.</p>
+    <p><alert>Note:</alert> Why study polynomials?  What are they good for?  Many functions are difficult to calculate without a calculator or computer, for example, trigonometric functions.  How <em>DO</em> calculators or computers calculate values for these functions? The answer  is based on polynomials which are easier to calculate since they only involve multiplying and addition/subtraction. For example, if you are stuck on a desert island without a calculator, you could calculate a polymomial evaluated at 1.2, but you probably couldn't evaluate <m>sin(1.2)</m>. The graph  below shows how the polynomial <m>f(x) = x - \frac{1}{6}x^3 + \frac{1}{120}x^5</m> approximates the function <m>g(x) = \sin(x)</m> for <m>-3 \leq x \leq3</m>.</p>
     <figure xml:id="figure-graph-sine-approx"> <!--set3B-Polynomial_Functions_07.png-->
               <image xml:id="graph-sine-approx">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
