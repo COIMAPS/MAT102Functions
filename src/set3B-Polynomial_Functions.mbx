@@ -222,7 +222,7 @@ Saylor.org,  pages 192-193-->
         <sidebyside>
           <figure xml:id="figure-graph-4-polynomials-1">
             <image xml:id="graph-4-polynomials-1">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image-code><![CDATA[\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -237,7 +237,7 @@ Saylor.org,  pages 192-193-->
           </figure>
           <figure xml:id="figure-graph-4-polynomials-2">
             <image xml:id="graph-4-polynomials-2">i
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image-code><![CDATA[\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -254,7 +254,7 @@ Saylor.org,  pages 192-193-->
         <sidebyside>
           <figure xml:id="figure-graph-4-polynomials-3">
             <image xml:id="graph-4-polynomials-3">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image-code><![CDATA[\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -269,7 +269,7 @@ Saylor.org,  pages 192-193-->
           </figure>
           <figure xml:id="figure-graph-4-polynomials-4">
             <image xml:id="graph-4-polynomials-4">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image-code><![CDATA[\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -282,14 +282,14 @@ Saylor.org,  pages 192-193-->
               \end{tikzpicture}]]></latex-image-code>
             </image>
           </figure>
-          
+
         </sidebyside>
       </sbsgroup>
-    <p>Each of these graphs look quite different from each other, but share some characteristics.
+    <p>Each of these graphs look quite different from each other, but they do share some characteristics.
       <ul>
         <li>The graphs are all <q>connected</q> with smooth bends.  They do not look like piece-wise functions.</li>
         <li>The domain of each consists of all real numbers. (Why?)</li>
-        <li>The <q>ends</q> of the graph eventually settles into an upward or downward curve. (Note: The graph doesn't really <q>end</q>, it continues indefinitely, but if you go out far enough, eventually it will consistently move in one direction, either up or down.)</li>
+        <li>The <q>ends</q> of the graph eventually settles into an upward or downward curve. (Note: The graph doesn't really <q>end</q>, but it continues indefinitely. If you go out far enough, eventually it will consistently move in one direction, either up or down.)</li>
         <li>The graphs all have one vertical intercept, but the number of horizontal intercepts varies from none to many.</li>
       </ul>
     </p>
@@ -330,10 +330,10 @@ Saylor.org,  pages 192-193-->
     </table>
         <figure xml:id="figure-graph-xsq-plus-1"> <!--set3B-Polynomial_Functions_03.png-->
           <image xml:id="graph-xsq-plus-1">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image-code><![CDATA[\begin{tikzpicture}
               \draw[step=1cm,gray,very thin] (-5.9,-1.9) grid (5.9,5.9);;
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
-              \draw[line width=0.55mm,black,<->] (0,-1.9) -- (0,5.9);          
+              \draw[line width=0.55mm,black,<->] (0,-1.9) -- (0,5.9);
               \draw[line width=0.55mm,black] (-4 cm,3pt) -- (-4 cm,-3pt);
               \draw[line width=0.55mm,black] (4 cm,3pt) -- (4 cm,-3pt);
               \draw[line width=0.55mm,black] (3pt,4 cm) -- (-3pt,4 cm);
@@ -347,7 +347,7 @@ Saylor.org,  pages 192-193-->
               \fill (-1,2) circle (.1cm);
               \fill (0,1) circle (.1cm);
               \fill (1,2) circle (.1cm);
-              \fill (2,5) circle (.1cm); 
+              \fill (2,5) circle (.1cm);
             \end{tikzpicture}]]></latex-image-code>
           </image>
         </figure>
@@ -401,7 +401,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
           <p>Plotting a few more points gives the graph:</p>
           <figure xml:id="figure-graph--negative-xsq-minus-x-plus-2"> <!--set3B-Polynomial_Functions_04.png-->
               <image xml:id="graph--negative-xsq-minus-x-plus-2">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-4.9) grid (5.9,4.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
                   \draw[line width=0.55mm,black,<->] (0,-4.9) -- (0,4.9);
@@ -418,7 +418,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \node at (2.2,2.5) {\Large $g(x)=-x^2-x+2$};
                   \fill (-2,0) circle (.1cm);
                   \fill (0,2) circle (.1cm);
-                  \fill (1,0) circle (.1cm); 
+                  \fill (1,0) circle (.1cm);
                 \end{tikzpicture}]]></latex-image-code>
               </image>
             </figure>
@@ -432,7 +432,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
         <mrow>0 \amp = \frac{2}{7}x^3-\frac{1}{7}x^2-3x</mrow>
         <mrow>\amp  = \frac{1}{7}x(2x^2-x-21)</mrow>
         <mrow>\amp = \frac{1}{7}x(2x- 7)(x+3)</mrow>
-      </md>So, 
+      </md>So,
       <md>
         <mrow>\frac{1}{7}x\amp = 0\amp\amp\text{or}\amp 2x - 7 \amp = 0\amp\amp\text{or}\amp x + 3 \amp = 0</mrow>
         <mrow>x\amp = 0\amp\amp\text{or}\amp x \amp = \frac{7}{2} \amp\amp\text{or}\amp x \amp = -3</mrow>
@@ -442,7 +442,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
           <p>Plotting a few more points gives the graph:</p>
           <figure xml:id="figure-graph-cubic"> <!--set3B-Polynomial_Functions_05.png-->
               <image xml:id="graph-cubic">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-4.9) grid (5.9,4.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
                   \draw[line width=0.55mm,black,<->] (0,-4.9) -- (0,4.9);
@@ -459,7 +459,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \node at (-3.5,3.5) {\Large $h(x)=\frac{2}{7}x^3-\frac{1}{7}x^2-3x$};
                   \fill (-3,0) circle (.1cm);
                   \fill (0,2) circle (.1cm);
-                  \fill (3.5,0) circle (.1cm); 
+                  \fill (3.5,0) circle (.1cm);
                 \end{tikzpicture}]]></latex-image-code>
               </image>
             </figure>
@@ -499,7 +499,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
           <p>Plot a few more points and we are done:</p>
           <figure xml:id="figure-graph-quartic"> <!--set3B-Polynomial_Functions_06.png-->
               <image xml:id="graph-quartic">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-8.9) grid (5.9,1.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
                   \draw[line width=0.55mm,black,<->] (0,-8.9) -- (0,1.9);
@@ -516,7 +516,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \node at (-3.5,-6.5) {\Large $k(x)=x^4-2x^3-2x^2$};
                   \fill (-.732,0) circle (.1cm);
                   \fill (0,0) circle (.1cm);
-                  \fill (2.732,0) circle (.1cm); 
+                  \fill (2.732,0) circle (.1cm);
                 \end{tikzpicture}]]></latex-image-code>
               </image>
             </figure>
@@ -566,7 +566,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
     <p><alert>Note:</alert> Why study polynomials?  What are they good for?  Many functions are difficult to calculate without a calculator or computer, for example, trigonometric functions.  How <em>DO</em> calculators or computers calculate values for these functions? The answer  is based on polynomials which are easier to calculate since they only involve multiplying and addition/subtraction. The graph  below shows how the polynomial <m>f(x) = x - \frac{1}{6}x^3 + \frac{1}{120}x^5</m> approximates the function <m>g(x) = \sin(x)</m> for <m>-3 \leq x \leq3</m>.</p>
     <figure xml:id="figure-graph-sine-approx"> <!--set3B-Polynomial_Functions_07.png-->
               <image xml:id="graph-sine-approx">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                   \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0);
                   \draw[line width=0.55mm,black,<->] (0,-4) -- (0,4);
                   \foreach [evaluate=\x as \z using int(2*\x)] \x in {-5,...,5}
@@ -576,7 +576,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \draw[line width=0.75mm, domain=-2.4:2.3,smooth,variable=\x,red] plot ({\x},{\x-2*\x*\x*\x/3+2*\x*\x*\x*\x*\x/15});
                   \draw[dashed, line width=0.75mm, blue](-5.5, .5) cos (-4.71,0) sin (-3.93,-.5) cos (-3.14,0) sin (-2.36,.5) cos (-1.57,0) sin (-.785,-.5) cos (0,0) sin (.785,.5) cos (1.57,0) sin (2.36,-.5) cos (3.14,0) sin (3.93,.5) cos (4.71,0) sin (5.5, -.5);
                   \node at (4,3.2) {\Large $f(x)=x - \frac{1}{6}x^3 + \frac{1}{120}x^5$};
-                  \node at (4, -1) {\Large $g(x)=\sin(x)$}; 
+                  \node at (4, -1) {\Large $g(x)=\sin(x)$};
                 \end{tikzpicture}]]></latex-image-code>
               </image>
             </figure>
