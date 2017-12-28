@@ -12,7 +12,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <li><p>Give equations for horizontal and vertical lines.</p></li>
     </ul></p>
   </introduction>
-  <p>Most students entering this course are already familiar with the basic mechanics of graphing lines. Recapping very briefly: the equation for a line is <m>y = mx + b</m> where  <m>m</m> and <m>b</m> are constants. Note that <m>b</m> is the <m>y</m>-intercept  and <m>m</m> is the slope.   This form of the equation for a line is sometimes called the <term>slope-intercept</term> form because the slope and vertical intercept are clearly seen.</p>
+  <p>Most students entering this course are already familiar with the basic mechanics of graphing lines. Recapping very briefly: the equation for a line is <m>y = mx + b</m> where <m>b</m> is the <m>y</m>-intercept  and <m>m</m> is the slope.   This form of the equation for a line is sometimes called the <term>slope-intercept</term> form because the slope and vertical intercept are clearly seen.</p>
   <example xml:id="example-linear-equation">
       <title>Determine Slope and Intercept from Linear Equation</title>
       <p>Any equation that can be written in slope-intercept form is the equation for a line. So, <m>2x-5y = 15</m> represents a line since:
@@ -26,7 +26,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
   <p>Not all equations represent lines. For example, <m>y = x^2 + 3x</m> does not define a line. It cannot be written in the form <m>y = mx + b.</m></p>
   <p>There are two purposes of reintroducing this material in this course. The first is to frame the discussion as linear functions modeling behavior. The second is to deepen your understanding of the important concept of slope.</p>
   <p>Consider the following examples. Sam is a salesman-he earns a commission for each sale. Alice is a technical support representative-she earns <m>\$100</m> each day. The chart below shows their bank accounts over the week.</p>
-   <table>
+<!--   <table>  -->
       <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
         <col right="minor" />
         <col right="minor" />
@@ -68,7 +68,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
             <cell><m>\$1,250</m></cell>
         </row>
       </tabular>
-    </table>
+<!--    </table>  -->
         <p>Sam has some extremely good days (such as the first day, when he made <m>\$200</m>) and some extremely bad days (such as the second day, when he made nothing). Alice makes exactly <m>\$100</m> every day.</p>
         <p>Let <m>d</m> be the number of days, <m>S</m> be the number of dollars Sam has made, and <m>A</m> be the number of dollars Alice has made. Both <m>S</m> and <m>A</m> are functions of time. But <m>S(d)</m> is not a linear function, and <m>A(d)</m> is a linear function.</p>
         <p><term>Linear Function</term>: A function is said to be <q>linear</q> if every time the independent
@@ -86,7 +86,7 @@ before you can predict her bank account on any given day.
     <mrow>A(d) = 100d + 750.</mrow>
   </md>
   </p>
-  <figure xml:id="figure-graph-Alice">
+<!--  <figure xml:id="figure-graph-Alice">  -->
         <image xml:id="graph-Alice"> <!--set2A-Linear_Functions_00.png-->
           <latex-image-code><![CDATA[\begin{tikzpicture} 
           \draw[line width=0.55mm,black,<->] (-.5,0) -- (10.5,0) node[anchor=north west] {d};
@@ -98,9 +98,12 @@ before you can predict her bank account on any given day.
           \draw[line width=0.75mm, domain=0:10.5,smooth,variable=\x,red] (0,3.75)--(10.5,9);
           \fill[color=red] (0,3.75) circle (.1cm);
           \node at (7,5) {$A(d)=100d+750$};
-          \end{tikzpicture}]]></latex-image-code></image></figure>
+          \end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+<!--      </figure>  -->
       </sidebyside>
-      <p>The <m>y</m>-intercept is relatively easy to understand. As discussed in <xref ref="subsubsection-intercepts" autoname="yes" />, the vertical intercept may be calculated from the formula of a line by evaluating the formula at <m>0</m>. Verbally, it is where the function is when the independent variable is <m>0</m>; graphically, it is where the line crosses the <m>y</m>-axis. </p>
+      <p>The <m>y</m>-intercept is relatively easy to understand. As discussed in <xref ref="subsubsection-intercepts" autoname="yes" />, the vertical intercept may be calculated from the formula of a line by evaluating the formula at <m>0</m>. Verbally, it is the dependent value when the independent variable is <m>0</m>; graphically, it is where the line crosses the <m>y</m>-axis. </p>
       <example xml:id="example-determine-y-intercept">
           <title>Determine <m>y</m>-intercept Two Ways</title>
           <p>Determine the $y$-intercept for the line defined by the equation, $x + 3y = 6$.</p>
@@ -120,7 +123,7 @@ before you can predict her bank account on any given day.
     <subsection>
       <title>But what about slope?</title>
       <p>One of the best ways to understand the idea of slope is to convince yourself that all of the following definitions of slope are actually the same.</p>
-      <table>
+<!--      <table>  -->
       <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
         <col right="minor" width="30%" />
         <col right="minor" width="30%" />
@@ -153,13 +156,13 @@ before you can predict her bank account on any given day.
           <cell><p>The higher the slope, the faster the graph rises as you move to the right.</p></cell>
         </row>
       </tabular>
-    </table>
-    <p>So slope does not tell you where a graph is, but how quickly it is rising or falling. Looking at a graph, you can get an approximate feeling for its slope without any numbers. Examples are given below.</p>
+<!--    </table>  -->
+    <p>So slope does not tell you where a graph is, but how quickly it is rising or falling. Looking at a graph, you can get an approximate feeling for its slope without any numbers. Examples are given below.  In each example, the scales on the horizontal and vertical axes are identical.</p>
     <sbsgroup widths="55% 40%" valign="middle">
         <sidebyside>
           <p>A slope of <m>1</m>: each time you go over <m>1</m>, you also go up <m>1</m>.
           </p>
-          <figure xml:id="figure-graph-slope-1"> <!--set2A-Linear_Functions_02a.png-->
+<!--          <figure xml:id="figure-graph-slope-1">--> <!--set2A-Linear_Functions_02a.png-->
               <image xml:id="graph-slope-1">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
@@ -167,12 +170,12 @@ before you can predict her bank account on any given day.
                       \draw[line width=0.75mm,red] (-5,-2)--(2,5); 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
           </sidebyside>
         <sidebyside>
           <p>A steep slope of perhaps <m>3</m> or <m>4</m>.
           </p>
-          <figure xml:id="figure-graph-slope-steep"> <!--set2A-Linear_Functions_02b.png-->
+<!--          <figure xml:id="figure-graph-slope-steep"> --> <!--set2A-Linear_Functions_02b.png-->
               <image xml:id="graph-slope-steep">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                         \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
@@ -180,12 +183,12 @@ before you can predict her bank account on any given day.
                         \draw[line width=0.75mm, blue] (-1.33,-5)--(2,5);
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
         <sidebyside>
           <p>A gentle slope of perhaps <m>\frac{1}{2}</m>.
           </p>
-          <figure xml:id="figure-graph-slope-gentle"> <!--set2A-Linear_Functions_02c.png-->
+<!--          <figure xml:id="figure-graph-slope-gentle"> --> <!--set2A-Linear_Functions_02c.png-->
               <image xml:id="graph-slope-gentle">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
@@ -193,7 +196,7 @@ before you can predict her bank account on any given day.
                       \draw[line width=0.75mm,green] (-5,-2)--(5,1.5);
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
         <sidebyside>
           <paragraphs>
@@ -201,7 +204,7 @@ before you can predict her bank account on any given day.
           <p>each time you go over 1, you don't go up at all! The equation
            of a horizontal line is: <m>y = 0x + b</m> and simplified: <m>y = b</m>.</p>
          </paragraphs>
-          <figure xml:id="figure-graph-slope-horizontal"> <!--NEEDS TO BE UPDATED set2A-Linear_Functions_02d.png-->
+<!--          <figure xml:id="figure-graph-slope-horizontal"> --> <!--NEEDS TO BE UPDATED set2A-Linear_Functions_02d.png-->
               <image xml:id="graph-slope-horizontal">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
@@ -209,14 +212,14 @@ before you can predict her bank account on any given day.
                       \draw[line width=0.75mm,red] (-5,3)--(5,3);
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
         <sidebyside>
           <paragraphs>
           <p>This line goes down as you move left to right.</p>
           <p>So the slope is negative. It is steep: maybe a <m>-2</m>.</p>
          </paragraphs>
-        <figure xml:id="figure-graph-slope-negative"> <!--set2A-Linear_Functions_02e.png-->
+<!--        <figure xml:id="figure-graph-slope-negative"> --> <!--set2A-Linear_Functions_02e.png-->
               <image xml:id="graph-slope-negative">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
@@ -224,16 +227,16 @@ before you can predict her bank account on any given day.
                       \draw[line width=0.75mm,blue] (-2,5)--(3,-5); 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+ <!--           </figure>  -->
         </sidebyside>
         <sidebyside>
           <paragraphs>
           <p>A vertical line has no slope.</p>
-          <p>It has no change in the horizontal direction and since we cannot calculate division by zero,   we say the slope is <term>not defined</term>. </p>
+          <p>It has no change in the horizontal direction, and since we cannot calculate division by zero,   we say the slope is <term>not defined</term>. </p>
           <p>Note that having no value is not the same as having the value of zero.</p>
           <p>The equation for a vertical line is just $x = c$ where $c$ is the $x$-intercept of the line.</p>
           </paragraphs>
-          <figure xml:id="figure-graph-slope-vertical"> <!--set2A-Linear_Functions_02f.png-->
+<!--          <figure xml:id="figure-graph-slope-vertical"> --> <!--set2A-Linear_Functions_02f.png-->
               <image xml:id="graph-slope-vertical">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
@@ -241,7 +244,7 @@ before you can predict her bank account on any given day.
                       \draw[line width=0.75mm,green] (-3,-5)--(-3,5); 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
       </sbsgroup>
       <p>The slope of a line may be calculated from any two points on the line, <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m>.  The "rise" is found by finding the difference between the two <m>y</m> values, <m>y_2 - y_1</m> and dividing by the "run", the difference in the <m>x</m> values: <m>x_2 - x_1</m>. Note that you must find the differences in the same order. You may not calculate the change from <m>y_1</m> to <m>y_2</m> and then the change from <m>x_2</m> to <m>x_1</m>.  So the formula for finding the slope of a line from two points on the line is:
@@ -256,7 +259,7 @@ before you can predict her bank account on any given day.
           <paragraphs><p>Looking at the graph at the right, you can see  it doesn't matter which points you use as long as you are consistent in finding the differences between <m>x</m> and <m>y</m> values:</p>
           <p>slope <m>= \frac{2}{1} = \frac{-2}{-1} = 2.\checkmark</m></p>
         </paragraphs>
-    <figure xml:id="figure-graph-slope-line"> <!--set2A-Linear_Functions_01.png-->
+<!--    <figure xml:id="figure-graph-slope-line"> --> <!--set2A-Linear_Functions_01.png-->
               <image xml:id="graph-slope-line">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
@@ -273,7 +276,7 @@ before you can predict her bank account on any given day.
                       \draw[dashed, line width=0.75mm,black,->] (-2,-2) -- (-2,-4) node[shift={(-.6,.75)}] {\Large $-2$};
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
     </example>
     <example xml:id="example-slope-from-2-points-positive">
@@ -288,17 +291,17 @@ before you can predict her bank account on any given day.
       <example xml:id="example-slope-from-2-points-horizontal">
         <title>Determine Slope Given Two Points</title>
         <p>Determine the slope of the line passing through the points <m>(3, 2)</m> and <m>(-1, 2).</m></p>
-        <p>To determine the slope, <m>m</m>, of the line passing through the points, <m>(3, 2)</m> and <m>(-1, 2),</m> we agaian calculate the rise and divide by the run. This time we let  <m>(3, 2)</m> be the "first" point and <m>(-1, 2)</m> be the "second" point:
+        <p>Calculate the rise and divide by the run. This time we let  <m>(3, 2)</m> be the "first" point and <m>(-1, 2)</m> be the "second" point:
         <md>
         <mrow>m = \frac{y_2 - y_1}{x_2 - x_1}=\frac{2 - 2}{-1- 3} = \frac{0}{-4} = 0</mrow>
         </md>
-        Since the slope is zero, the line is a horizontal line with all <m>y</m>-coordinates equal to <m>2.\checkmark</m>
+        Since the slope is zero, the line is horizontal with all <m>y</m>-coordinates equal to <m>2.\checkmark</m>
         </p>
       </example>
       <example xml:id="example-slope-from-2-points-undefined">
         <title>Determine Slope Given Two Points</title>
         <p>Determine the slope of the line passing through the points <m>(5, 0)</m> and <m>(5, 3).</m></p>
-        <p>To determine the slope, <m>m</m>, of the line passing through the points, <m>(5, 0)</m> and <m>(5, 3),</m> we agaian calculate the rise and divide by the run. This time we let  <m>(5, 0)</m> be the "first" point and <m>(5, 3)</m> be the "second" point:
+        <p>We again calculate the rise and divide by the run. This time we let  <m>(5, 0)</m> be the "first" point and <m>(5, 3)</m> be the "second" point:
         <md>
         <mrow>m = \frac{y_2 - y_1}{x_2 - x_1}=\frac{3 - 0}{5- 5}  \text{ Oops, we are in trouble here!}</mrow>
         </md>
@@ -308,7 +311,7 @@ before you can predict her bank account on any given day.
   </subsection>
   <subsection>
     <title>Finding the Equation for a Line</title>
-    <p>We may calculate the equation for a line if we can find it's slope and vertical intercept.</p>
+    <p>We can write an equation for a line if we can find it's slope and vertical intercept.</p>
     <example xml:id="example-equation-given-graph">
         <title>Determine Equation of a Line Given a Graph</title>
   <sidebyside widths="40% 55%" valign="middle">
@@ -317,7 +320,7 @@ before you can predict her bank account on any given day.
     <p>Using the previous graph, which we show again at the right, recall the slope is <m>2</m> and we can see that the <m>y</m>-intercept is <m>0</m>.
     </p>
   </paragraphs>
-    <figure xml:id="figure-graph-equation-line"> <!--set2A-Linear_Functions_01.png-->
+<!--    <figure xml:id="figure-graph-equation-line"> --> <!--set2A-Linear_Functions_01.png-->
               <image xml:id="graph-equation-line">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
@@ -334,7 +337,7 @@ before you can predict her bank account on any given day.
                       \draw[dashed, line width=0.75mm,black,->] (-2,-2) -- (-2,-4) node[shift={(-.6,.75)}] {\Large $-2$}; 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
         <p>Therefore, the equation for the line is <m>y = 2x.\checkmark</m>
         </p>
@@ -342,8 +345,8 @@ before you can predict her bank account on any given day.
     <p>Of course if the slope was <m>\sqrt{2}</m>, we'd want a better method of finding the equation.</p>
     <example xml:id="example-quation-given-point-slope">
         <title>Determine Equation of a Line Given the Slope and a Point</title>
-        <p>Determinethe equation for the line with slope <m>\frac{1}{2}</m> which passes through the point <m>(-3,5).</m></p>
-        <p>If we know the slope, we are half way done! Since we know the point is on the line, it must be a solution to the equation for the line: <m>y = \frac{1}{2}x + b</m>.  If we plug in the values <m>x = -3</m> and <m>y = 5</m> into the equation, we can find the value of <m>b:</m>
+        <p>Determine the equation for the line with slope <m>\frac{1}{2}</m> which passes through the point <m>(-3,5).</m></p>
+        <p>If we know the slope, we are half way done! Since we know the point is on the line, it must be a solution of the equation for the line: <m>y = \frac{1}{2}x + b</m>.  If we plug in the values <m>x = -3</m> and <m>y = 5</m> into the equation, we can find the value of <m>b:</m>
         <md>
           <mrow>5 &amp; = \frac{1}{2}(-3) + b</mrow>
           <mrow>5 &amp; = -\frac{3}{2} + b</mrow>
@@ -354,7 +357,7 @@ before you can predict her bank account on any given day.
         So, the equation for this line is <m>y = \frac{1}{2}x + \frac{13}{2}.\checkmark</m></p>
     </example>
     <example xml:id="example-quation-given-points">
-        <title>Determine Equation of a Line Given Two Point</title>
+        <title>Determine Equation of a Line Given Two Points</title>
         <p>Let <m>(-2,3)</m> and <m>(1,7)</m> be points on a line. If we find the slope, we may use the same process as the previous example to find the equation. The slope is:
         <md>
           <mrow>m = \dfrac{7-3}{1-(-2)} =\dfrac{4}{3}.</mrow>
@@ -368,7 +371,7 @@ before you can predict her bank account on any given day.
         </md>
         Hence, the equation is <m>y = \frac{4}{3}x + \frac{17}{3}.\checkmark</m></p>
     </example>
-    <p>We could have used the other point: <m>3 = \frac{4}{3}(-2) + b</m>. In this case, <m>b = 3 + \frac{8}{3} = \frac{9}{3} + \frac{8}{3}= \frac{17}{3}</m> and <m>b</m> is still equal to <m>\frac{17}{3}.</m>  So remember, finding the <m>b</m> from one point is enough to do just one time.
+    <p>We could have used the other point: <m>3 = \frac{4}{3}(-2) + b</m>. In this case, <m>b = 3 + \frac{8}{3} = \frac{9}{3} + \frac{8}{3}= \frac{17}{3}</m> and <m>b</m> is still equal to <m>\frac{17}{3}.</m>  So remember, we can use either point to find <m>b</m>.
 </p>
 <example xml:id="example-quation-given-points-undefined">
         <title>Determine Equation of a Line Given Two Points</title>
@@ -382,13 +385,13 @@ before you can predict her bank account on any given day.
             <mrow>1 &amp; = 0(-2)+b</mrow>
             <mrow> 1 &amp; =b.</mrow>
           </md>
-          And, even though it took a little longer, we get the equation, <m>y = 1,</m> for this line. Please don't write <m>y = 0x + 1</m> for the equation. Even though it is technically correct, it's better to simplify the equation since <m>0x + 1 = 1.\checkmark</m>
+          And, even though it took a little longer, we get the equation, <m>y = 1,</m> for this line. Please don't write <m>y = 0x + 1</m> for the equation. Even though it is technically correct, it's better to simplify the equation. <m>\checkmark</m>
 </p>
 </example>
 <example xml:id="example-quation-given-vertical">
     <title>Determine Equation of a Vertical Line Given One Point</title>
     <p>Determine the equation for the vertical line through the point <m>(-2,5).</m></p>
     <p>The slope of a vertical line is not defined since it has no change in the horizontal direction.  So, there is no value for the <m>m</m> in the slope-intercept form: <m>y = mx+b</m>. How can we proceed if we don't have a value to work with?</p>
-    <p>The equation for a line must define it-tell us <q>where</q> it is and what it looks like. The defining aspect of a vertical line is the fact that all of it's <m>x</m>=coordinates are the same. In this case, the <m>x</m> values of all the points on the line are <m>-2.</m> So, the equation for the line is <m>x = -2</m> since it tells all we need to know about <q>where</q> the line is and what it looks like.<m>\checkmark</m></p></example>
+    <p>The defining aspect of a vertical line is the fact that all of it's <m>x</m>=coordinates are the same. In this case, the <m>x</m> values of all the points on the line are <m>-2.</m> So, the equation for the line is <m>x = -2,</m> since it tells all we need to know about <q>where</q> the line is and what it looks like.<m>\checkmark</m></p></example>
 </subsection>
 </section>
