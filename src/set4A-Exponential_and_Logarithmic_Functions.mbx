@@ -16,9 +16,9 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
   <p>Of all of the functions we study in this course, exponential and logarithmic functions are possibly the ones which impact everyday life the most. This module introduces us to these functions while the rest of the Unit will more thoroughly explore their properties. Up to this point, we have dealt with functions which involve terms like <m>x^2</m> or <m>x^{2/3}</m>, or powers of <m>x</m>. That is functions with terms of the form <m>x^p</m> where the base of the term, <m>x</m>, varies but the exponent of each term, <m>p</m>, remains constant. In this Unit, we study functions of the form <m>f(x) = b^x</m> where the base <m>b</m> is a constant and the exponent <m>x</m> is the variable.</p>
   <example xml:id="example-explore-2-to-the-x">
       <title>Exponential Function <m>2^x</m></title>
-      <p>We start our exploration of these functions with <m>f(x) = 2^x.</m> (Apparently this is a tradition. Every book about Functions we have ever read starts with <m>f(x) = 2^x.</m>) We make a table of values, plot the points and connect the dots.</p>
+      <p>We start our exploration of these functions with <m>f(x) = 2^x.</m> We make a table of values, plot the points and connect the dots.</p>
       <sidebyside widths="30% 65%" valign="middle">
-          <table>
+<!--          <table>  -->
       <tabular halign="center" >
         <col right="major" halign="right" />
         <col />
@@ -56,8 +56,9 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
             <cell><m>2^3 = 8</m></cell>
         </row>
       </tabular>
-    </table>
-        <figure xml:id="figure-graph-2-to-the-x"> <!--set4A-Exponential_and_Logarithmic_Functions_01.png-->
+<!--    </table>  -->
+<!--        <figure xml:id="figure-graph-2-to-the-x"> -->
+<!--set4A-Exponential_and_Logarithmic_Functions_01.png-->
           <image xml:id="graph-2-to-the-x">
             <latex-image-code><![CDATA[\begin{tikzpicture} 
               \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,10.9);
@@ -78,9 +79,9 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
               \node at (-2.2, 2.5) {\LARGE $f(x)=2^x$}; 
             \end{tikzpicture}]]></latex-image-code>
           </image>
-        </figure>
+<!--        </figure>b -->
         </sidebyside>
-    <p>A few remarks about the graph of <m>f(x) = 2^x</m> which we have constructed are in order. First, note that from what we discovered about exponents in <xref ref="section-3C-radical-functions" autoname="yes" /> 3C-Radical Functions, any real number may be an input for <m>f(x) = 2^x</m>.  Thus, the domain is all real numbers. If we consider <q>large</q> negative values of <m>x</m>  like <m>x = -100</m> or <m>x = -1000,</m> the function <m>f(x) = 2^x</m> takes on values like <m>f(-100) = 2^{-100} = \frac{1}{2^{100}}</m>  or  <m>f(-1000) = 2^{-1000} = \frac{1}{2^{1000}}</m>. In other words, as <m>x</m> takes on increasingly <q>larger</q> negative values, this is what happens in the function:
+    <p>A few remarks about the graph of <m>f(x) = 2^x</m> are in order. First, note that from what we discovered about exponents in <xref ref="section-3C-radical-functions" autoname="yes" /> 3C-Radical Functions, any real number may be an input for <m>f(x) = 2^x</m>.  Thus, the domain is all real numbers. If we consider <q>large</q> negative values of <m>x</m>  like <m>x = -100</m> or <m>x = -1000,</m> the function <m>f(x) = 2^x</m> takes on values like <m>f(-100) = 2^{-100} = \frac{1}{2^{100}}</m>  or  <m>f(-1000) = 2^{-1000} = \frac{1}{2^{1000}}</m>. In other words, as <m>x</m> takes on increasingly <q>larger</q> negative values, this is what happens in the function:
     <md>
       <mrow>2^x \approx \frac{1}{\text{very big positive number}} \approx \text{very small positive number}</mrow>
     </md>
@@ -96,7 +97,8 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
   <p>We leave it to the reader to verify that if <m>b \gt 1,</m> then the exponential function <m>f(x) = b^x</m> will share the same basic shape and characteristics as <m>f(x) = 2^x</m>.</p>
   <p>What if <m>0 \lt b \lt 1</m>? Consider <m>g(x) = \left(\frac{1}{2}\right)^x</m>.  We could certainly build a table of values and connect the points, or we could take a step back and note that <m>g(x) = \left(\frac{1}{2}\right)^x =(2^{-1})^2 = 2^{-x} = f(-x),</m> where <m>f(x) = 2^x.</m> Thinking back to what we know about transforming graphs, the graph of <m>f(-x)</m> is obtained from the graph of <m>f(x)</m> by flipping it across the <m>y</m>-axis.</p>
     <sidebyside widths="40% 15% 40%" valign="middle">  
-      <figure xml:id="figure-graph-2-to-x"> <!--set4A-Exponential_and_Logarithmic_Functions_01.png-->
+<!--      <figure xml:id="figure-graph-2-to-x">  -->
+<!--set4A-Exponential_and_Logarithmic_Functions_01.png-->
         <image xml:id="graph-2-to-x">
           <latex-image-code><![CDATA[\begin{tikzpicture} 
             \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,10.9);
@@ -117,7 +119,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
             \node at (-2.2, 2.5) {\LARGE $f(x)=2^x$}; 
           \end{tikzpicture}]]></latex-image-code>
         </image>
-      </figure>
+<!--      </figure> -->
       <paragraphs>
         <p>Reflect across the <m>y</m>-axis
         <md>
@@ -125,7 +127,8 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
         </md>
         multiply each <m>x</m>-coordinate by <m>-1</m></p>
       </paragraphs>
-      <figure xml:id="figure-graph-2-to-neg-x"> <!--set4A-Exponential_and_Logarithmic_Functions_02.png-->
+<!--      <figure xml:id="figure-graph-2-to-neg-x"> -->
+<!--set4A-Exponential_and_Logarithmic_Functions_02.png-->
         <image xml:id="graph-2-to-neg-x">
           <latex-image-code><![CDATA[\begin{tikzpicture} 
             \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,10.9);
@@ -146,7 +149,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
             \node at (0.5, 7.5) {\LARGE $g(x)=2^{-x}=\left(\frac{1}{2}\right)^x$};
                 \end{tikzpicture}]]></latex-image-code>
         </image>
-      </figure>
+<!--      </figure>  -->
     </sidebyside>
     <p>We see that the domain and range of <m>g</m> match that of <m>f,</m> namely <m>(-\infty,\infty)</m> and <m>(0,\infty),</m> respectively. Whereas <m>f</m> is always increasing, g is always decreasing. As a result, as <m>x</m> grows in the negative direction, <m>g(x)</m> takes on larger positive values, and on the flip side, as <m>x</m> gets larger in the positive direction, <m>g(x)</m> gets closer to zero. It shouldn't be too surprising that for all choices of the base <m>0 \lt b \lt 1,</m> the graph of <m>y = b^x</m> behaves similarly to the graph of <m>g.</m></p>
     <p>We summarize the basic properties of exponential functions below:</p>
@@ -176,7 +179,8 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
         </p>
       </sidebyside>
       <sidebyside>
-        <figure xml:id="figure-graph-b-to-x"> <!--set4A-Exponential_and_Logarithmic_Functions_03.png-->
+<!--        <figure xml:id="figure-graph-b-to-x"> -->
+<!--set4A-Exponential_and_Logarithmic_Functions_03.png-->
           <image xml:id="graph-b-to-x">
             <latex-image-code><![CDATA[\begin{tikzpicture} 
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
@@ -188,8 +192,9 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                \node at (4, 2) {\LARGE $b>1$}; 
             \end{tikzpicture}]]></latex-image-code>
           </image>
-        </figure>
-        <figure xml:id="figure-graph-b-to-neg-x"> <!--set4A-Exponential_and_Logarithmic_Functions_04.png-->
+ <!--       </figure>  -->
+ <!--       <figure xml:id="figure-graph-b-to-neg-x"> -->
+ <!--set4A-Exponential_and_Logarithmic_Functions_04.png-->
           <image xml:id="graph-b-to-neg-x">
             <latex-image-code><![CDATA[\begin{tikzpicture} 
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
@@ -201,7 +206,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                \node at (3, 1) {\LARGE $0<b<1$}; 
             \end{tikzpicture}]]></latex-image-code>
           </image>
-        </figure>
+ <!--       </figure>  -->
       </sidebyside>
     </sbsgroup>
     <p>The proof of which, like many things discussed in the text, requires Calculus.</p>
@@ -224,7 +229,8 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
           <p><alert>Solution:</alert> To graph <m>y = 25\left(\frac{4}{5}\right)^x,</m> we start with the basic  exponential function <m>f(x) = \left(\frac{4}{5}\right)^x.</m> Since the base  <m>b = \frac{4}{5}</m> is between <m>0</m> and <m>1,</m> the graph of <m>y = f(x)</m> is  decreasing. We plot the <m>y</m>-intercept <m>(0, 1)</m> and two other points, <m>(-1,\frac{5}{4})</m>  and <m>(1, \frac{4}{5}),</m> and label the horizontal asymptote <m>y = 0.</m></p>
           <p>To obtain <m>V(x) = 25\left(\frac{4}{5}\right)^x,</m>  <m>x \ge 0,</m> we multiply the output from <m>f</m> by <m>25,</m> in other words, <m>V(x) = 25f(x).</m>  This results in a vertical stretch by a factor of <m>25.</m> We multiply all of the <m>y</m> values in the graph by <m>25</m> (including the <m>y</m> value of the horizontal  symptote) and obtain the points <m>(-1, \frac{125}{4}),</m> <m>(0, 25)</m> and <m>(1, 20).</m> The horizontal asymptote remains <m>y = 0.</m> Finally, we restrict the domain to <m>[0,\infty)</m> to fit with the applied domain given to us. We have the result below.</p>
           <sidebyside widths="40% 15% 40%" valign="middle">  
-            <figure xml:id="figure-graph-point-8-to-x"> <!-- set4A-Exponential_and_Logarithmic_Functions_05.png-->
+ <!--           <figure xml:id="figure-graph-point-8-to-x"> -->
+ <!-- set4A-Exponential_and_Logarithmic_Functions_05.png-->
               <image xml:id="graph-point-8-to-x">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,6.9);
@@ -241,7 +247,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \node at (-2.5, 3.5) {\LARGE $f(x) = \left(\frac{4}{5}\right)^x$};
                 \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+ <!--           </figure>  -->
             <paragraphs>
               <p>vertical scale by a factor of <m>25</m>
               <md>
@@ -249,7 +255,8 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
               </md>
               multiply each <m>y</m>-coordinate by <m>25</m></p>
             </paragraphs>
-            <figure xml:id="figure-graph-point-8-to-neg-x"> <!--set4A-Exponential_and_Logarithmic_Functions_06.png-->
+ <!--           <figure xml:id="figure-graph-point-8-to-neg-x"> -->
+ <!--set4A-Exponential_and_Logarithmic_Functions_06.png-->
               <image xml:id="graph-point-8-to-neg-x">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,6.9);
@@ -266,7 +273,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \node at (-2.75, 3.5) {\LARGE $V(x) = 25f(x)$}; 
                 \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+ <!--           </figure>  -->
           </sidebyside>
         </li>
         <li><p>Find and interpret the horizontal asymptote of the graph you found.</p>
@@ -287,7 +294,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
               <mrow>T(t) = 70 + 90e^{-0.1t} = 90e^{-0.1t} + 70 = 90f(-0.1t) + 70.</mrow>
             </md>
             Multiplication of the input to <m>f</m>, <m>t</m>, by <m>-0.1</m> results in a horizontal expansion by a factor of <m>10</m> as well as a flip about the <m>y</m>-axis. Let's see how this affects our three points by evaluating <m>e^{-0.1t}</m> at <m>t=-10, 0, 10:</m></p>
-             <table>
+ <!--            <table>  -->
               <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
                 <col right="minor" width="15%"/>
                 <col right="minor" width="15%" />
@@ -313,9 +320,9 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                     <cell><p>Expand the <m>1</m> horizontally <m>10</m> right, then flip across the <m>y</m>-axis to negative <m>10.</m></p></cell>
                 </row>
               </tabular>
-            </table>
+ <!--           </table>  -->
             <p>Next, we see that the output from <m>f</m> is being multiplied by <m>90.</m> This results in a vertical stretch by a factor of <m>90.</m> We multiply the <m>y</m>-coordinates by <m>90</m> to obtain:</p>
-             <table>
+ <!--            <table>  -->
               <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
                 <col right="minor" width="15%"/>
                 <col right="minor" width="15%" />
@@ -337,9 +344,9 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                     <cell><p><m>\left(-10, 90e^{1}\right)</m></p></cell>
                   </row>
               </tabular>
-            </table>
+ <!--           </table>  -->
             <p>We also multiply the <m>y</m> value of the horizontal asymptote <m>y = 0</m> by <m>90,</m> and it remains <m>y = 0.</m> Finally, we add <m>70</m> to all of the <m>y</m>-coordinates, which shifts the graph upwards to obtain:</p>
-             <table>
+ <!--            <table>  -->
               <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
                 <col right="minor" width="15%"/>
                 <col right="minor" width="15%" />
@@ -361,11 +368,12 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                     <cell><p><m>\left(-10, 90e^{1}+70\right)\approx (-10, 314.64)</m></p></cell>
                   </row>
               </tabular>
-            </table>
+ <!--           </table>  -->
             <p>Adding <m>70</m> to the horizontal asymptote shifts it upwards as well to <m>y = 70.</m></p>
             <p>Last but not least, we restrict the domain to match the domain of our applied situation <m>[0,\infty)</m> (we will only consider positive times <m>t</m> after our coffee was served).  We connect the first two points above using the same shape in the opposite direction as in the graph of <m>f</m>.  The resulting transformed graph is below:</p>
              <sidebyside widths="40% 15% 40%" valign="middle">  
-            <figure xml:id="figure-graph-e-to-x"> <!--set4A-Exponential_and_Logarithmic_Functions_07.png-->
+ <!--           <figure xml:id="figure-graph-e-to-x"> -->
+ <!--set4A-Exponential_and_Logarithmic_Functions_07.png-->
               <image xml:id="graph-e-to-x">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-3.9,-.9) grid (3.9,5.9);
@@ -380,14 +388,15 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \node at (-2.5, 1.5) {\LARGE $f(t)=e^t$}; 
                 \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+ <!--           </figure> -->
             <paragraphs>
               <p>
               <md>
                 <mrow>\Longrightarrow</mrow>
               </md></p>
             </paragraphs>
-            <figure xml:id="figure-graph-coffee"> <!--set4A-Exponential_and_Logarithmic_Functions_08.png-->
+ <!--           <figure xml:id="figure-graph-coffee"> -->
+ <!--set4A-Exponential_and_Logarithmic_Functions_08.png-->
               <image xml:id="graph-coffee">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-1.9,-.9) grid (3.9,5.9);
@@ -406,7 +415,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \node at (-1.15, 1.4) {\Large $y=70$};
                 \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+ <!--           </figure>  -->
           </sidebyside>
           </li>
           <li><p>Find and interpret the horizontal asymptote of the graph.</p>
@@ -427,7 +436,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
   <p>One of the easiest ways to understand logarithms is by comparison with a familiar concept: roots.</p>
   <p>Suppose someone asked you: <q>Exactly what does root mean?</q> You do understand roots, but they are difficult to define. After a few moments, you might come up with a definition very similar to the <q>question</q> definition of logarithms given above. <m>\sqrt[3]{8}</m> means <q>what number cubed is <m>8</m>?</q></p> <p>Now the person asks: <q>How do you find roots?</q> Well <m>\dots</m> you just play around with numbers until you find one that works. If someone asks for <m>\sqrt{25},</m> you just have to know that <m>5^2 = 25</m>. If someone asks for <m>\sqrt{30}</m>, you know that has to be bigger than <m>5</m> and smaller than <m>6</m>; if you need more accuracy, it's time for a calculator.</p>
   <p>All that information about roots applies in a very analogous way to logarithms.</p>
-   <table>
+<!--   <table>  -->
       <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
         <col right="minor" width="30%"/>
         <col right="minor" width="35%" />
@@ -463,7 +472,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
             <p>(<m>2^x</m> will never give <m>0</m> or a negative answer)</p></cell>
         </row>
       </tabular>
-    </table>
+ <!--   </table>  -->
     <p>For nonnegative numbers, <m>\sqrt{x}</m> can be defined as the inverse function of <m>x^2</m>. Recall the definition of an inverse function:  <m>f ^{-1}(x)</m> is defined as the inverse of <m>f(x)</m> if it reverses the inputs and outputs. So we can demonstrate this inverse relationship as follows:
     <md>
       <mrow>\sqrt{x}\text{ is the inverse function of }x^2</mrow>
@@ -505,7 +514,8 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
         </p>
       </sidebyside>
       <sidebyside>
-        <figure xml:id="figure-graph-log-b-x"> <!--set4A-Exponential_and_Logarithmic_Functions_09.png-->
+ <!--       <figure xml:id="figure-graph-log-b-x"> -->
+ <!--set4A-Exponential_and_Logarithmic_Functions_09.png-->
           <image xml:id="graph-log-b-x">
             <latex-image-code><![CDATA[\begin{tikzpicture} 
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
@@ -517,8 +527,9 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                \node at (4, 2) {\LARGE $b>1$};
             \end{tikzpicture}]]></latex-image-code>
           </image>
-        </figure>
-        <figure xml:id="figure-graph-log-b-small-x"> <!--set4A-Exponential_and_Logarithmic_Functions_10.png-->
+ <!--       </figure>  -->
+ <!--       <figure xml:id="figure-graph-log-b-small-x"> -->
+ <!--set4A-Exponential_and_Logarithmic_Functions_10.png-->
           <image xml:id="graph-log-b-small-x">
             <latex-image-code><![CDATA[\begin{tikzpicture} 
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
@@ -530,7 +541,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                \node at (4, 2) {\LARGE $0<b<1$};
             \end{tikzpicture}]]></latex-image-code>
           </image>
-        </figure>
+ <!--       </figure>  -->
       </sidebyside>
     </sbsgroup>
     <p>It is worth the reader's time to understand logarithm properties from an exponential perspective. For instance, we know that the domain of <m>g(x) = \log_2(x)</m> is <m>(0, \infty).</m> Why? Because the range of <m>f(x) = 2^x</m> is <m>(0, \infty).</m>  In a way, the idea of <q>reversing</q> the exponential function says verything, but at the same time, it doesn't. For example, if we try to find <m>\log_2(-1),</m> we are trying to find the exponent we put on <m>2</m> to give us <m>-1.</m> In other words, we are looking for <m>x</m> that satisfies <m>2^x = -1.</m> There is no such real number, since all powers of <m>2</m> are positive. While what we have said is exactly the same thing as saying <q>the domain of <m>g(x) = \log_2(x)</m> is <m>(0, \infty)</m> because the range of <m>f(x) = 2^x</m> is <m>(0,\infty),</m></q> we feel it is in a student's best interest to understand the properties of logarithms at this level instead of just merely memorizing the facts.</p>
@@ -554,7 +565,8 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
       <p><alert>Solution:</alert> Like the last example, there is no number that works.  There is no exponent <m>x</m> for which <m>10^x</m> gives a negative number. Recall that the domain of <m>f(x) = \log(x)</m> consists only of positive numbers, so we cannot take the logarithm of a negative number.</p></li>
     </ol>
   </example>
-  <subsubsection>
+</subsection>
+  <subsection>
     <title>Rewriting Logarithm Equations as Exponent Equations</title>
     <p>Being able to convert back and forth between log and exponential forms can come in handy when solving equations in the next section. We practice this technique next by comparing the process to working equations with roots.  Both root equations and logarithm equations can be rewritten as exponent equations.</p>
     <p><m>\sqrt{9} = 3</m> can be rewritten as <m>3^2 = 9</m>. These two equations are the same statement about numbers, written in two different ways. <m>\sqrt{9}</m> asks the question <q>What number squared is <m>9</m>?</q> So the equation <m>\sqrt{9} = 3</m> asks this question, and then answers it: <q><m>3</m> squared is <m>9</m>.</q></p>
@@ -640,6 +652,5 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
             <p><alert>Solution:</alert> There are several possible choices. If <m>f_1(t) = \dfrac{1}{t - 1}</m> and <m>g_1(t) = e^t,</m> then <m>f_1(g_1(t)) = \dfrac{1}{g_1(t)-1} = \dfrac{1}{e^t-1} = h(t).</m> Another choice could be, <m>f_2(t) = \dfrac{1}{t}</m> and <m>g_2(t) = e^t -1,</m> then <m>f_2(g_2(t)) = \dfrac{1}{g_2(t)} = \dfrac{1}{e^t-1} = h(t).\checkmark</m></p></li>
         </ol>
       </example>
-  </subsubsection>
-</subsection>
+  </subsection>
 </section>

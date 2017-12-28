@@ -15,7 +15,8 @@ Based on the file:szca07042013.pdf downloaded 1/26/2015,  starting at page 173--
 <subsection>
   <title>Absolute Value Functions</title>
   <p>There are a few ways to describe what is meant by the absolute value <m>\lvert x\rvert</m> of a real number <m>x</m>. You may have been taught that <m>\lvert x\rvert</m> is the distance from the real number <m>x</m> to <m>0</m> on the number line. So, for example, <m>\lvert 5\rvert = 5</m> and <m>\lvert -5\rvert = 5</m>, since each is <m>5</m> units from <m>0</m> on the number line.</p>
-  <figure xml:id="figure-graph-distance-5"> <!-- set3A-Absolute_Value_and_Piecewise_Functions_01.png-->
+<!--  <figure xml:id="figure-graph-distance-5"> -->
+    <!-- set3A-Absolute_Value_and_Piecewise_Functions_01.png-->
     <image xml:id="graph-distance-5">
       <latex-image-code><![CDATA[\begin{tikzpicture} 
             \draw[<->] (-5.5,0) -- (5.5,0);
@@ -30,28 +31,21 @@ Based on the file:szca07042013.pdf downloaded 1/26/2015,  starting at page 173--
              \node[anchor=south] at (2.5,.5) {distance is  $5$ units}; 
           \end{tikzpicture}]]></latex-image-code>
     </image>
-  </figure>
+<!--  </figure>  -->
   <p>Note that the distance from zero is a positive number and the absolute value function is often thought of as meaning <q>whatever comes in, a positive number comes out.</q>  This notion works if you are only considering taking the absolute value of a number:  <m>\lvert 5 \rvert= 5</m> and <m>\lvert -5 \rvert= 5.</m> But it's a little too simplistic if we consider the absolute value as a function.  For functions, we need to keep the <q>distance</q> idea firmly in mind.</p>
+  <!--
   <p>Consider the function that gives the distance between a number and <m>3</m>. Here we are shifting the measurement of distance from zero to <m>3,</m> a shift of <m>3</m> units to the right. The new <q>translated</q> function is <m>g(x) = \lvert x-3\rvert</m>. We see that <m>g(-5) = \lvert -5-3\rvert = \lvert -8\rvert = 8</m> and <m>g(5) = \lvert 5-3\rvert=\lvert -2\rvert=2.\checkmark</m></p>
-  <figure xml:id="figure-graph-distance-from-3"> <!-- set3A-Absolute_Value_and_Piecewise_Functions_01a.png-->
-    <image xml:id="graph-distance-from-3">
-      <latex-image-code><![CDATA[\begin{tikzpicture} 
-            \draw[<->] (-5.5,0) -- (5.5,0);
-            \foreach \x in {-5,...,5}
-                \draw (\x, 0.1) -- (\x, -0.1) node [below] {\x};
-           \fill[red] (-5,0) circle (.1cm);
-           \fill[red] (5,0) circle (.1cm);
-           \fill[black] (3,0) circle (.1cm);
-           \draw[<->, line width=0.75mm, red] (-5,.5) -- (3,.5);
-           \draw[<->, line width=0.75mm, red] (3,.5) -- (5,.5);
-           \node[anchor=south] at (-1,.5) {distance to $3$};
-           \node[anchor=south] at (4,1) {distance to $3$};
-           \draw[->, line width=0.55mm] (4,1) -- (4,.6);
-            \end{tikzpicture}]]></latex-image-code>
-    </image>
-  </figure>
-  <p>So, <m>f(x) = \lvert x\rvert</m> is the function that gives the distance between <m>x</m> to <m>0.</m>  The domain of this function consists of all real numbers, but the range is <m>[0,\infty)</m> since the distance is nonnegative.  When <m>x \geq 0</m>, <m>f(x) = x</m> and the graph of this function is a line with slope <m>1</m> and vertical intercept <m>0.</m>  When we graph values for negative <m>x</m>'s the function returns  positive values. Mathematically, one way to change the sign on a number is to multiply it by <m>-1</m>, so in essence <m>f(x) = -x</m> if <m> x \lt 0</m>. This  part of the graph, the section to the left of zero, is a line with slope <m>-1</m> and intercept <m>0.</m></p>
-  <figure xml:id="figure-graph-absolute-value-x"> <!-- set3A-Absolute_Value_and_Piecewise_Functions_02.png-->
+-->
+<!--  <figure xml:id="figure-graph-distance-from-3"> -->
+<!-- set3A-Absolute_Value_and_Piecewise_Functions_01a.png-->
+<!--    <image xml:id="graph-distance-from-3"> --> 
+<!--   SEE ORIGINAL CODE FOR THE GRAPH. IT WON'T COMMENT OUT BECAUSE OF THE INEQUALITY SIGNS IN THE COMMANDS -->
+ <!--   </image>  -->
+<!--  </figure>  -->
+
+  <p>So, <m>f(x) = \lvert x\rvert</m> is the function that gives the distance between <m>x</m> to <m>0.</m>  The domain of this function consists of all real numbers, but the range is <m>[0,\infty)</m> since the distance is nonnegative.  When <m>x \geq 0</m>, <m>f(x) = x</m> and the graph of this function is a line with slope <m>1</m> and vertical intercept <m>0.</m>  When we graph values for negative <m>x</m>'s the function returns  positive values. Mathematically, one way to change the sign on a number is to multiply it by <m>-1</m>, so we can say <m>f(x) = -x</m> if <m> x \lt 0</m>. This  part of the graph, the section to the left of zero, is a line with slope <m>-1</m> and intercept <m>0.</m></p>
+<!--  <figure xml:id="figure-graph-absolute-value-x"> -->
+    <!-- set3A-Absolute_Value_and_Piecewise_Functions_02.png-->
     <image xml:id="graph-absolute-value-x">
       <latex-image-code><![CDATA[\begin{tikzpicture} 
             \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
@@ -64,13 +58,14 @@ Based on the file:szca07042013.pdf downloaded 1/26/2015,  starting at page 173--
           \node at (-3,5.5) {\Large $f(x)=|x|$}; 
             \end{tikzpicture}]]></latex-image-code>
     </image>
-  </figure>
+<!--  </figure>  -->
   <p>Now that we have the basic shape of the absolute value function, graphing translations of the function should be fairly straight forward.</p>
   <example xml:id="example-translations-of-absolute-value-x">
       <title>Translations of the Absolute Value Function</title>
       <p>The function <m>g(x) = \lvert x-2\rvert + 3</m> is just the absolute value shifted <m>2</m> units to the right and up <m>3</m> units.</p>
       <sidebyside widths="55% 40%" valign="middle">
-        <figure xml:id="figure-graph-absolute-value-x-2-plus-3"> <!-- set3A-Absolute_Value_and_Piecewise_Functions_03.png-->
+<!--        <figure xml:id="figure-graph-absolute-value-x-2-plus-3"> -->
+          <!-- set3A-Absolute_Value_and_Piecewise_Functions_03.png-->
           <image xml:id="graph-absolute-value-x-2-plus-3">
             <latex-image-code><![CDATA[\begin{tikzpicture} 
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
@@ -83,12 +78,13 @@ Based on the file:szca07042013.pdf downloaded 1/26/2015,  starting at page 173--
                   \node at (-3,5.5) {\Large $g(x)=|x-2|+3$}; 
                   \end{tikzpicture}]]></latex-image-code>
           </image>
-        </figure>
+<!--        </figure>  -->
         <p>Notice that the domain remains <m>(-\infty,\infty)</m>, but the range has been shifted. For <m>g(x)</m> the output values never get smaller than <m>3,</m> so the range is <m>[3,\infty).</m></p>
         </sidebyside>
         <p>The function <m>h(x) = -3\lvert x+1\rvert</m> is a flip over the <m>x</m>-axis, a vertical stretch by a factor of <m>3</m> and a shift left by <m>1</m> unit.</p>
       <sidebyside widths="55% 40%" valign="middle">
-        <figure xml:id="figure-graph-absolute-value-neg-3-x-plus-1"> <!--set3A-Absolute_Value_and_Piecewise_Functions_04.png-->
+<!--        <figure xml:id="figure-graph-absolute-value-neg-3-x-plus-1"> -->
+          <!--set3A-Absolute_Value_and_Piecewise_Functions_04.png-->
           <image xml:id="graph-absolute-value-neg-3-x-plus-1">
             <latex-image-code><![CDATA[\begin{tikzpicture} 
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
@@ -101,7 +97,7 @@ Based on the file:szca07042013.pdf downloaded 1/26/2015,  starting at page 173--
                   \node at (3,-4) {\Large $h(x)=-3|x+1|$}; 
                   \end{tikzpicture}]]></latex-image-code>
           </image>
-        </figure>
+<!--        </figure> -->
         <p>Once again, the domain is unchanged, all real numbers may be used for inputs. (Is there a pattern here?) The output  values are all below the <m>x</m>-axis and so the range  is <m>(-\infty,0].</m>
         </p>
         </sidebyside>
@@ -157,7 +153,7 @@ for finding an output may change over the course of several intervals in the dom
     <li><alert>Question:</alert> What happens if you put a negative number into an absolute value?</li>
     <li><alert>Answer:</alert> You get that same number back, but made positive.</li>
   </ul></p>
-  <p>How do you make a negative number positive? As mentioned above, you multiply it by <m>-1</m>:<m>\lvert -5 \rvert= -(-5) = 5</m>. We can say, as a generalization, that <m>\lvert x \rvert= -x</m>. but only if <m>x</m> is negative.</p>
+  <p>How do you make a negative number positive? As mentioned above, you multiply it by <m>-1</m>:<m>\lvert -5 \rvert= -(-5) = 5</m>. We can say, as a generalization, that <m>\lvert x \rvert= -x</m> when <m>x</m> is negative.</p>
   <p>So the absolute value function can be defined in two pieces:
     <md>
       <mrow>\lvert x \rvert=\left\{\begin{array}{ccc}
@@ -204,7 +200,8 @@ for finding an output may change over the course of several intervals in the dom
         <sidebyside widths="40% 55%" valign="middle">
           <p>First visualize where the three pieces will be plotted.  The domains of the <q>pieces</q> start or end at <m>x=-2</m> and <m>x=1.</m>
           </p>
-          <figure xml:id="figure-graph-pieces"> <!--set3A-Absolute_Value_and_Piecewise_Functions_05.png-->
+<!--          <figure xml:id="figure-graph-pieces"> -->
+            <!--set3A-Absolute_Value_and_Piecewise_Functions_05.png-->
               <image xml:id="graph-pieces">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
@@ -217,7 +214,7 @@ for finding an output may change over the course of several intervals in the dom
                       \draw[dashed] (1,-1.9) -- (1, 6.9); 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
         <sidebyside widths="40% 55%" valign="middle">
           <paragraphs>
@@ -225,7 +222,8 @@ for finding an output may change over the course of several intervals in the dom
             <p>So, we graph this line in it's domain <ndash /> to the left of <m>-2</m>.</p>
             <p>At <m>x = -2</m>, <m>y=-2+7=-5</m>: plot the point <m>(-2,-5)</m>.  Now, count off the slope by moving to the left of this point: one unit down to one unit going left which is <m>\frac{-1}{-1} = 1</m>. Draw the line.</p>
           </paragraphs>
-          <figure xml:id="figure-graph-pieces-1"> <!--set3A-Absolute_Value_and_Piecewise_Functions_05a.png-->
+<!--          <figure xml:id="figure-graph-pieces-1"> -->
+            <!--set3A-Absolute_Value_and_Piecewise_Functions_05a.png-->
               <image xml:id="graph-pieces-1">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
@@ -242,14 +240,15 @@ for finding an output may change over the course of several intervals in the dom
                       \fill[red] (-2,5) circle (.1cm);
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
         <sidebyside widths="40% 55%" valign="middle">
           <paragraphs>
             <p>To get the next <q>piece,</q> it needs to be plotted for its entire domain between <m>-2</m> and <m>1</m>.</p>
             <p>Plot points and get the piece of <m>f(x)</m> where <m>-2 \lt x \lt 1</m>:</p>
           </paragraphs>
-          <figure xml:id="figure-graph-pieces-2"> <!--set3A-Absolute_Value_and_Piecewise_Functions_05b.png-->
+<!--          <figure xml:id="figure-graph-pieces-2"> -->
+            <!--set3A-Absolute_Value_and_Piecewise_Functions_05b.png-->
               <image xml:id="graph-pieces-2">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                     \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
@@ -267,11 +266,12 @@ for finding an output may change over the course of several intervals in the dom
                     \draw[red] (1,2) circle (.1cm);
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
         <sidebyside widths="40% 55%" valign="middle">
           <p>The last piece is a constant value of <m>3</m> for <m>x \geq 1</m>:</p>
-          <figure xml:id="figure-graph-pieces-3"> <!--set3A-Absolute_Value_and_Piecewise_Functions_05c.png-->
+<!--          <figure xml:id="figure-graph-pieces-3"> -->
+            <!--set3A-Absolute_Value_and_Piecewise_Functions_05c.png-->
               <image xml:id="graph-pieces-3">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
@@ -287,11 +287,12 @@ for finding an output may change over the course of several intervals in the dom
                       \fill[red] (1,3) circle (.1cm); 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure> -->
         </sidebyside>
         <sidebyside widths="40% 55%" valign="middle">
           <p>Of course, you don't need to do the three pieces on three different axes. The graph of <m>f(x)</m> consists of all three together:</p>
-          <figure xml:id="figure-graph-pieces-complete"> <!---->
+<!--          <figure xml:id="figure-graph-pieces-complete"> -->
+            <!---->
               <image xml:id="graph-pieces-complete">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
@@ -309,7 +310,7 @@ for finding an output may change over the course of several intervals in the dom
                   \fill[red] (1,3) circle (.1cm); 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
     </example>
 </subsection>

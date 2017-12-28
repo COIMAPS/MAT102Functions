@@ -12,7 +12,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
    </introduction>
    <subsection xml:id="function-notation">
     <title>Function Notation</title>
-    <p>Functions are often denoted by the notation: <m>f(x)</m>. When you write <m>f(x)</m> you are "naming" the function, <m>f</m>,  and you are indicating that it is a function of, or <em>depends on</em> the variable <m>x</m>.</p>
+    <p>Functions are often denoted by a letter such as <m>f</m>. If <m>x</m> is the independent variable, then <m>f(x)</m> is the output of  <m>f</m>, or the dependent variable.
+    </p>
     <p>For instance, suppose <m>f(x) = x^2 + 3x</m>. This means that <m>f</m> is a function that takes whatever you give it, and squares it, and multiplies it by <m>3</m>, and adds those two quantities.</p>
     <sidebyside widths="10% 5% 35% 5% 40%" valign="middle">
       <p><md>
@@ -29,13 +30,16 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <mrow>\rightarrow</mrow>
           <mrow>\rightarrow</mrow>
       </md></p>
-      <figure xml:id="figure-function-box-x-sq-plus-3x">
+<!--      <figure xml:id="figure-function-box-x-sq-plus-3x">  -->
           <image xml:id="function-box-x-sq-plus-3x"> 
             <latex-image-code><![CDATA[\begin{tikzpicture} 
             \draw[line width=1mm, fill = red] (-1,0) rectangle(4,2);
             \draw[thick,white] (1.5,1.2) node {\LARGE FUNCTION};
             \draw[thick] (1.5, .5) node {\LARGE $x^2+3x$}; 
-            \end{tikzpicture}]]></latex-image-code></image></figure>
+            \end{tikzpicture}]]>
+            </latex-image-code>
+          </image>
+<!--        </figure>  -->
       <p><md>
           <mrow>\rightarrow</mrow>
           <mrow>\rightarrow</mrow>
@@ -52,7 +56,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <mrow>(\text{but }&amp;dog\text{ is not in the domain of }f)</mrow>
       </md></p>
       </sidebyside>
-      <p>The notation <m>f(7)</m> means <q>plug the number <m>7</m> into the function <m>f</m>.</q> It does not indicate that you are multiplying <m>f</m> times <m>7</m>. To evaluate <m>f(7)</m> you take the function <m>f(x)</m> and replace all occurrences of the variable <m>x</m> with the number <m>7</m>. If this function is given a <m>7</m>, it will come out with a <m>70</m>.</p>
+      <p>The notation <m>f(7)</m> is the output of the function <m>f</m> when the input is <m>7</m>. It does not indicate that you are multiplying <m>f</m> times <m>7</m>. To evaluate <m>f(7)</m> you take the formula for <m>f(x)</m> and replace all occurrences of the variable <m>x</m> with the number <m>7</m>. If this function is given <m>7</m>, it will return <m>70</m>.</p>
       <example>
         <title>Function Evaluation</title>
         <p>Consider the function <m>f(t) = 1 +5t.</m>
@@ -83,11 +87,11 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <p>Determine <m>g(1)</m> from the graph of <m>y = g(t)</m> shown below.</p>
           <sidebyside widths="55% 40%" valign="middle">
             <paragraphs>
-              <p>Remember, the horizontal axis represents the indepenent variable, <m>t.</m> The vertical axis represents the dependent variable-the one we must calculate-<m>y.</m></p>
+              <p>Remember that the horizontal axis represents the indepenent variable, <m>t.</m> The vertical axis represents the dependent variable-the one we must calculate-<m>y.</m></p>
               <p>The value on the <m>y</m>-axis that corresponds to <m>t = 1</m> is <m>y = 3.</m></p>
               <p>So, <m>g(1) = 3.\checkmark</m></p>
             </paragraphs>
-            <figure xml:id="figure-graph-gt">
+<!--            <figure xml:id="figure-graph-gt">  -->
                 <image xml:id="function-graph-gt"> 
                   <latex-image-code><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9); 
@@ -100,11 +104,14 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                   \fill[color=red] (1,3) circle (.15cm); 
                   \draw[line width=0.75mm, domain=-3.15:3.15,smooth,variable=\x,red] plot ({\x},{-\x*\x+4});
                   \node at (-3,3.5) {\LARGE $y=g(t)$}; 
-                  \end{tikzpicture}]]></latex-image-code></image></figure>
+                  \end{tikzpicture}]]>
+                  </latex-image-code>
+                </image>
+<!--              </figure>  -->
                 </sidebyside>
               </example>
-    <p>If we write <m>f(y) = y^2 + 3y</m> we have not specified a different function. Remember, the function is not the variables or the numbers, it is the process.  <m>f(y) = y^2 + 3y</m> also means <q>whatever number comes in, square it, multiply it by <m>3</m>, and add those two quantities.</q> So it is a different way of writing the same function.</p>
-    <p>Just as many students expect all variables to be named <m>x</m>, many students expect all functions to be named <m>f</m>. The correct rule is that-whenever possible-functions, like variables, should be named descriptively. For instance, if Alice makes <m>\$100</m> per day, we might write:
+    <p>If we write <m>f(y) = y^2 + 3y</m> we have not specified a different function. It does not matter what letter we use for the independent variable.  <m>f(y) = y^2 + 3y</m> also means <q>whatever number comes in, square it, multiply it by <m>3</m>, and add those two quantities.</q> So it is a different way of writing the same function.</p>
+    <p>Just as not all variables are named <m>x</m>, not all functions are named <m>f</m>. Whenever possible, functions like variables, should be named descriptively. To simplify the notation, sometimes we use the same letter for the dependent variable and the name of the function.  For instance, if Alice makes <m>\$100</m> per day, we might write:
       <ul>
         <li>Let <m>m</m> equal the amount of money Alice has made (measured in dollars)</li>
         <li>Let <m>t</m> equal the amount of time Alice has worked (measured in days)</li>
@@ -116,8 +123,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
   </subsection>
   <subsection xml:id="function-operations">
     <title>Operations on Functions</title>
-    <p>We may create new functions by combining two or more functions by addition, subtraction, multiplication, division or composition. The first four operations on functions are very similar to how we deal with these operations for numbers. Mainly, it's a matter of getting used to the notation.  For functions <m>f</m> and <m>g</m>:</p>
-    <table>
+    <p>We may create new functions by combining two or more functions by addition, subtraction, multiplication, division or composition. The first four operations on functions are very similar to these operations for numbers. Mainly, it's a matter of getting used to the notation.  For functions <m>f</m> and <m>g</m>:</p>
+<!--    <table>  -->
       <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
         <col right="minor" halign="left" />
         <col />
@@ -143,7 +150,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <cell><m>\dfrac{f}{g} = \dfrac{f(x)}{g(x)}</m></cell>
         </row>
       </tabular>
-    </table>
+<!--    </table>  -->
     <example>
       <title>Function Operations</title>
       <p>Consider the functions 
@@ -163,17 +170,20 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <subsubsection>
       <title>Composite Functions</title>
     <p>Consider the following situation:
+    </p>
+      <p>You are the manager of an elementary school cafeteria, making peanut butter sandwiches for today's lunch.
       <ul>
-        <li>You are the manager of an elementary school cafeteria, making peanut butter sandwiches for today's lunch.</li>
         <li>The more classes the school has, the more children there are.</li>
         <li>The more children there are, the more sandwiches you have to make.</li>
         <li>The more sandwiches you have to make, the more pounds (lbs) of peanut butter you will use.</li>
         <li>The more peanut butter you use, the more money you need to budget for peanut butter.</li>
         <li>...and so on.</li>
       </ul>
-      Each sentence in this little story is a function. Mathematically, if <m>c</m> is the number of classes and <m>h</m> is the number of children, then the first sentence asserts the existence of a function <m>h(c)</m>.</p>
+    </p>
+    <p>
+      Each sentence in this little story involves a function. Mathematically, if <m>c</m> is the number of classes and <m>h</m> is the number of children, then the first sentence asserts the existence of a function <m>h=f(c)</m>.</p>
       <p>The principal walks up to you at the beginning of the year and says <q>We're considering expanding the school. If we expand to <m>70</m> classes, how much money do we need to budget? What if we expand to <m>75</m>? How about <m>80</m>?</q> For each of these numbers, you have to calculate each number from the previous one, until you find the final budget number.</p>
-      <figure xml:id="figure-function-chain">
+<!--      <figure xml:id="figure-function-chain">  -->
           <image xml:id="function-chain"> 
             <latex-image-code><![CDATA[\begin{tikzpicture} 
               \node (a) at (0,0) {Classes};
@@ -202,9 +212,12 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
 
               \node (j) at (14.1,0) {Budget};
               \draw[thick,-open triangle 90] (i) -- (j);         
-              \end{tikzpicture}]]></latex-image-code></image></figure>
+              \end{tikzpicture}]]>
+              </latex-image-code>
+            </image>
+<!--          </figure>  -->
     <p>But going through this process each time is tedious. What you want is one function that puts the entire chain together: <q>You tell me the number of classes, and I will tell you the budget.</q></p>
-    <figure xml:id="figure-function-box-pb">
+<!--    <figure xml:id="figure-function-box-pb">  -->
           <image xml:id="function-box-pb"> 
             <latex-image-code><![CDATA[\begin{tikzpicture} 
                 \node (a) at (-3,1) {Classes};
@@ -215,21 +228,24 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                 \node (c) at (3,1) {};
                 \node (d) at (5,1) {\$\$ Budget};
                 \draw[thick,-open triangle 90] (c) -- (d);
-            \end{tikzpicture}]]></latex-image-code></image></figure>
+            \end{tikzpicture}]]>
+            </latex-image-code>
+          </image>
+<!--        </figure>  -->
             <p>This is a composite function-a function that represents in one function, the results of an entire chain of dependent functions. Since such chains are very common in real life, finding composite functions is an important skill.</p>
           </subsubsection>
           <subsubsection>
             <title>How do you make a composite Function?</title>
-            <p>We can consider how to build composite functions into the function game that we played on the first day. Suppose Susan takes any number you give her, quadruples it, and adds <m>6</m>. Al takes any number you give him and divides it by <m>2</m>. Mathematically, we can represent the two functions like this:
+            <p>Suppose Susan takes any number you give her, quadruples it, and adds <m>6</m>. Al takes any number you give him and divides it by <m>2</m>. Mathematically, we can represent the two functions like this:
             <md>
               <mrow>S(x) = 4x + 6</mrow>
               <mrow>A(x) = \frac{x}{2}</mrow>
             </md></p>
             <p>To create a chain like the one above, we give a number to Susan; she acts on it, and gives the resulting number to Al; and he then acts on it and hands back a third number.
               <md>
-                <mrow>3 \rightarrow \text{Susan} \rightarrow S(3)=18 \rightarrow Al \rightarrow A(18) = 9</mrow>
+                <mrow>3 \rightarrow \text{Susan} \rightarrow S(3)=18 \rightarrow \text{Al} \rightarrow A(18) = 9</mrow>
               </md>
-            In this example, we are plugging <m>S(3)</m>-in other words, <m>18</m>- into Al's function. In general, for any <m>x</m> that comes in, we are plugging <m>S(x)</m> into <m>A(x)</m>. So we could represent the entire process as <m>A(S(x))</m>. This notation for composite functions is really nothing new: it means that you are plugging <m>S(x)</m> into the <m>A</m> function.</p>
+            In this example, we are plugging <m>S(3)</m>-in other words, <m>18</m>- into Al's function. In general, for any <m>x</m> that comes in, we are plugging <m>S(x)</m> into <m>A</m>. So we could represent the entire process as <m>A(S(x))</m>. This notation for composite functions is really nothing new: it means that you are plugging <m>S(x)</m> into the <m>A</m> function.</p>
             <p>But in this case, recall that <m>S(x) = 4x + 6</m>. So we can write:
               <md>
                 <mrow>A(S(x)) = \frac{S(x)}{2} = \frac{4x + 6}{2}= 2x + 3</mrow>
@@ -270,17 +286,20 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                   </p>
                 </li>
               </ol>
-            </example><p>There is a different notation that is sometimes used for composite functions. The notation <m></m> very naturally conveys the idea of <q>plugging <m>g(x)</m> into <m>f(x)</m>.</q> However, you will sometimes see the same thing written as <m></m>, which represents the idea of <q>doing one function, and then the other, in sequence.</q> The two notations mean the same thing.  That is:
+            </example><p>There is a different notation that is sometimes used for composite functions. The notation <m></m> very naturally conveys the idea of <q>plugging <m>g(x)</m> into <m>f(x)</m>.</q> However, you will sometimes see the same thing written as <m>(f \circ g)(x)</m>, which represents the idea of <q>doing one function, and then the other, in sequence.</q> The two notations mean the same thing.  That is:
+          <aside>
+            Composition Notation
             <md>
               <mrow>(f \circ g)(x)=f(g(x))</mrow>
             </md>
+          </aside>
             </p> 
           </subsubsection>
   </subsection>
   <subsection xml:id="subsection-inverse-functions">
     <title>Inverse Functions</title>
     <p>Let's go back to Alice, who makes <m>\$100</m> each day. We know how to answer questions such as <q>After <m>3</m> days, how much money has Alice made?</q> We use the function <m>m(t) = 100t</m>.</p>
-    <p>But suppose we want to ask the reverse question: <q>If Alice has made <m>\$300</m>, how many hours has she worked?</q> This is the job of an inverse function. It gives the same relationship, but reverses the dependent and independent variables: <m>t(m) = m/100</m>. Given any amount of money, divide it by <m>100</m> to find how many days she has worked.</p>
+    <p>But suppose we want to ask the reverse question: <q>If Alice has made <m>\$300</m>, how many hours has she worked?</q> This is the job of an inverse function. It gives the same relationship, but reverses the dependent and independent variables: <m>t(m) = m/100</m>. Given the amount of money Alice earned, divide it by <m>100</m> to find how many days she has worked.</p>
     <p>Consider the following exampls:
       <ul>
         <li><p>If a function answers the question: <q>Alice worked this long, how much money has she made?</q> then its inverse answers the question: <q>Alice made this much money, how long did she work?</q></p></li>
@@ -337,8 +356,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       </subsubsection>
       <subsubsection>
         <title>The Notation and Definition of an Inverse Function</title>
-      <p>The notation for the inverse function of <m>f(x)</m> is <m>f^{-1}(x)</m>. This notation can cause considerable confusion, because it looks like an exponent, but it isn't. <m>f^{-1}(x)</m> simply means "the inverse function of <m>f(x)</m>." It is defined formally by the fact that if you plug any number x into one function, and then plug the result into the other function, you get back where you started. (Take a moment to convince yourself that this is the same definition I gave above more informally.) We can represent this as a composition function by saying that <m>f\left(f^{-1}(x)\right)= x</m>.</p>
-      <p><term>Inverse Function:</term> <m>f^{-1}(x)</m> is defined as the inverse function of <m>f(x)</m> if it consistently reverses the <m>f(x)</m> process. That is, if <m>f(a)=b</m>, then <m>f^{-1}(b)=a</m>. More concisely and formally, <m>f^{-1}(x)</m> is the inverse function of <m>f(x)</m> if <m>\left(f \circ f^{-1}\right)(x) = x</m>.</p>
+      <p>The notation for the inverse function of <m>f(x)</m> is <m>f^{-1}(x)</m>. This notation can cause considerable confusion, because it looks like an exponent, but it isn't. <m>f^{-1}(x)</m> simply means "the inverse function of <m>f(x)</m>." It is defined formally by the fact that if you plug any number <m>x</m> into one function, and then plug the result into the other function, you get back where you started. (Take a moment to convince yourself that this is the same definition I gave above more informally.) We can represent this as a composition function by saying that <m>f\left(f^{-1}(x)\right)= x</m>.</p>
+      <p><term>Inverse Function:</term> <m>f^{-1}(x)</m> is defined as the inverse function of <m>f(x)</m> if it consistently reverses the <m>f(x)</m> process. That is, if <m>f(a)=b</m>, then <m>f^{-1}(b)=a</m>. More concisely and formally, <m>f^{-1}(x)</m> is the inverse function of <m>f(x)</m> if <m>\left(f \circ f^{-1}\right)(x) = x</m> and <m>\left(f^{-1} \circ f\right)(x) = x</m>.</p>
     </subsubsection>
     <subsubsection>
       <title>Finding an Inverse Function</title>
@@ -383,12 +402,15 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <mrow>\rightarrow</mrow>
           <mrow>\rightarrow</mrow>
       </md></p>
-      <figure xml:id="figure-function-box-x-sq">
+<!--      <figure xml:id="figure-function-box-x-sq">  -->
           <image xml:id="function-box-x-sq"> 
             <latex-image-code><![CDATA[\begin{tikzpicture} 
             \draw[line width=1mm, fill = red] (0,0) rectangle(4,2);
             \node at (2,1) {\LARGE $f(x)=x^2$}; 
-            \end{tikzpicture}]]></latex-image-code></image></figure>
+            \end{tikzpicture}]]>
+            </latex-image-code>
+          </image>
+<!--        </figure>  -->
       <p><md>
           <mrow>\rightarrow</mrow>
           <mrow>\rightarrow</mrow>
@@ -406,12 +428,15 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <p><md>
           <mrow>\rightarrow</mrow>
       </md></p>
-      <figure xml:id="figure-function-f-inverse">
+<!--      <figure xml:id="figure-function-f-inverse">  -->
           <image xml:id="function-f-inverse"> 
             <latex-image-code><![CDATA[\begin{tikzpicture} 
             \draw[line width=1mm, fill = yellow] (0,0) rectangle(4,2);
             \node at (2,1) {\LARGE $f^{-1}(x)$}; 
-            \end{tikzpicture}]]></latex-image-code></image></figure>
+            \end{tikzpicture}]]>
+            </latex-image-code>
+          </image>
+<!--        </figure>  -->
       <p><md>
           <mrow>\rightarrow</mrow>
           <mrow>\rightarrow</mrow>
@@ -424,10 +449,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <p>Its inverse would have to turn <m>9</m> into both <m>3</m> and <m>-3</m>. No function can do this, so there is no inverse.</p>
     <p>In general, any function that turns multiple inputs into the same output, does not have an inverse function.</p>
     <p>What does that mean in the real world? If we can convert Fahrenheit to Celsius, we must be able to convert Celsius to Fahrenheit. If we can ask <q>How much money did Alice make in <m>3</m> days?</q> we must surely be able to ask <q>How long did it take Alice to make <m>\$500</m>?</q> When would you have a function that cannot be inverted?</p>
-    <p>Let's go back to this example:</p>
-    <p>Recall the example that was used earlier: <q>Max threw a ball. The height of the ball depends on how many seconds it has been in the air.</q> The two variables here are <m>h</m> (the height of the ball) and <m>t</m> (the number of seconds it has been in the air). The function <m>h(t)</m> enables us to answer questions such as <q>After <m>3</m> seconds, where is the ball?</q></p>
+    <p>Consider this example:</p>
+    <p><q>Max threw a ball. The height of the ball depends on how many seconds it has been in the air.</q> The two variables here are <m>h</m> (the height of the ball) and <m>t</m> (the number of seconds it has been in the air). The function <m>h(t)</m> enables us to answer questions such as <q>After <m>3</m> seconds, where is the ball?</q></p>
     <p>The inverse question would be <q>At what time was the ball <m>10</m> feet in the air?</q> The problem with that question is, it may well have two answers!</p>
-    <table>
+<!--    <table>  -->
       <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
         <col right="minor" halign="left" />
         <col />
@@ -445,8 +470,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <cell><m>5</m> seconds (*on the way back down)</cell>
         </row>
       </tabular>
-    </table>
-    <p>So what does that mean? Does it mean we can't ask that question? Of course not. We can ask that question, and we can expect to mathematically find the answer, or answers-by knowing how to solve  quadratic equations. However, it <em>does</em> mean that time is not a function of height because such a <q>function</q> would not be consistent: one question would produce multiple answers.</p>
+<!--    </table>  -->
+    <p>So what does that mean? Does it mean we can't ask that question? Of course not. We can ask that question, and we can expect to find the answer, or answers mathematically-by knowing how to solve  quadratic equations. However, it <em>does</em> mean that time is not a function of height because such a <q>function</q> would not be consistent: one question would produce multiple answers.</p>
   </subsubsection>
   </subsection>
 </section>
