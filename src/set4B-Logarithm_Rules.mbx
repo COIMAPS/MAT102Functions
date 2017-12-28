@@ -13,8 +13,8 @@
     <li><m>\log_b(b^x) = x</m> for all <m>x</m> and <m>b^{\log_b(x)} = x</m> for all <m>x \gt 0</m></li>
   </ul>
 </p>
-<p><alert>Now for a few quick examples to review logarithms:</alert></p>
-<table>
+<p><alert>A few quick examples to review logarithms:</alert></p>
+<!-- <table> -->
   <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
     <col right="minor" width="15%"/>
     <col right="minor" width="35%" />
@@ -70,11 +70,11 @@
       <cell><p><m>5^{?}</m> will never be <m>0</m></p></cell>
     </row>
   </tabular>
-</table>
+<!-- </table> -->
 <p><alert>Review the graph of a logarithm function</alert></p>
 <p>The graph of any logarithm function with base greater than <m>1</m> has the same basic shape.  We plot a few well chosen points to graph <m>f(x) = \log_2(x)</m>:</p>
 <sidebyside widths="30% 65%" valign="middle">
-    <table>
+ <!--   <table>  -->
       <tabular halign="center" >
         <col right="major" halign="right" />
         <col />
@@ -112,8 +112,9 @@
             <cell><m>3</m></cell>
         </row>
       </tabular>
-    </table>
-    <figure xml:id="figure-graph-log-2-of-x"> <!--set4B-Logarithm_Rules_01.png-->
+ <!--   </table>  -->
+ <!--   <figure xml:id="figure-graph-log-2-of-x"> -->
+ <!--set4B-Logarithm_Rules_01.png-->
       <image xml:id="graph-log-2-of-x">
         <latex-image-code><![CDATA[\begin{tikzpicture}
           \draw[step=1cm,gray,very thin] (-.9,-5.9) grid (10.9,5.9);
@@ -134,7 +135,7 @@
           \node at (1.9, 2.5) {\LARGE $f(x)=\log_2(x)$};
         \end{tikzpicture}]]></latex-image-code>
       </image>
-    </figure>
+<!--    </figure>  -->
     </sidebyside>
     <p>As always, you can learn a great deal about the log function by reading the graph.
       <ul>
@@ -148,7 +149,8 @@
       <p>This pattern of slower and slower growth is one of the most important characteristics of the log. It can be used to "slow down" functions that have too wide a range to be practical to work with.</p>
       <p>Using the log to model a real world problem:  Lewis Fry Richardson (1881-1953) was a British meteorologist and mathematician. He was also an active Quaker and committed pacifist, and was one of the first men to apply statistics to the study of human conflict. Richardson catalogued <m>315</m> wars between 1820 and 1950, and categorized the by how many deaths they caused. At one end of the scale is a deadly quarrel, which might result in <m>1</m> or <m>2</m> deaths. At the other extreme are World War I and World War II, which are responsible for roughly <m>10</m> million deaths each.</p>
       <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/) Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014, Figure 6.3 page 130-->
-      <figure xml:id="figure-deaths"> <!--set4B-Logarithm_Rules_02.png-->
+ <!--     <figure xml:id="figure-deaths"> -->
+ <!--set4B-Logarithm_Rules_02.png-->
       <image xml:id="deaths">
         <latex-image-code><![CDATA[\begin{tikzpicture}
             \draw (0,0) -- (10,0);
@@ -164,10 +166,11 @@
             \draw[<-,line width=.5mm] (0.1,0.1) -- (2,1);
             \end{tikzpicture}]]></latex-image-code>
       </image>
-    </figure>
+ <!--   </figure>  -->
     <p>As you can see from the chart above, working with these numbers is extremely difficult: on a scale from <m>0</m> to <m>10</m> Million, there is no visible difference between (say) 1 and 100,000. Richardson solved this problem by taking the common log of the number of deaths. So a conflict with 1,000 deaths is given a magnitude of <m>\log(1000) = 3.</m> On this scale, which is now the standard for conflict measurement, the magnitudes of all wars can be easily represented.</p>
     <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/) Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014, Figure 6.3 page 130-->
-    <figure xml:id="figure-deaths-log"> <!--set4B-Logarithm_Rules_03.png-->
+ <!--   <figure xml:id="figure-deaths-log"> -->
+ <!--set4B-Logarithm_Rules_03.png-->
       <image xml:id="deaths-log">
         <latex-image-code><![CDATA[\begin{tikzpicture}
             \draw (0,0) -- (7,0);
@@ -199,7 +202,7 @@
             \node at (7, -2.15) {(either World War)};
             \end{tikzpicture}]]></latex-image-code>
       </image>
-    </figure>
+ <!--   </figure>  -->
     <p>Richardson's scale makes it practical to chart, discuss, and compare wars and battles from the smallest to the biggest. For instance, he discovered that each time you move up by one on the scale<ndash />that is, each time the number of deaths multiplies by <m>10</m><ndash />the number of conflicts drops by a third. (So there are roughly three times as many <q>magnitude <m>5</m></q>wars as <q>magnitude <m>6</m>,</q>and so on.)</p>
     <p>The log is useful here because the logarithm function itself grows so slowly that it compresses the entire 1 to 10,000,000 range into a <m>0</m> to <m>7</m> scale. The same trick is used<ndash />for the same reason<ndash />to study topics ranging from earthquakes to sound waves.</p>
   </introduction>
@@ -207,7 +210,7 @@
     <title>Rules of Logarithms</title>
     <p>Just as there are fundamental rules of exponents, there are corresponding fundamental rules of logarithms.</p>
     <p>For <m>b\gt 0</m>, <m>b \neq 1</m> and real numbers <m>m</m>, <m>n</m>, <m>M</m> and <m>N</m>, the exponent and logarithm rules are:</p>
-    <table>
+ <!--   <table>  -->
       <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
         <col right="minor" halign="left" width="20%"/>
         <col right="minor" width="30%"/>
@@ -239,7 +242,7 @@
             <cell><p><m>\log_b(1) = 0</m></p></cell>
         </row>
       </tabular>
-    </table>
+ <!--   </table>  -->
     <example xml:id="example-log-properties">
         <title>Properties of Logarithms</title>
         <p>Suppose you are given these two facts:

@@ -20,7 +20,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <p>Suppose your grandmother is driving to Pocatello from Caldwell on a Sunday afternoon. There won't be any slow downs for road work or rush hour traffic, so you figure she will be able to drive a steady <m>65</m> miles per hour once she's on the freeway.</p>
       <p><ol label="a.">
         <li><p>Let's write a linear function that models the distance she's travelled after leaving Caldwell. First, let's figure out what the variables should be. They should be the quantities we don't know, pertain to the problem and help get the model we are asked to find.  It's also a good idea to list what we know about the situation.
-          <table>
+<!--          <table>  -->
             <tabular top="minor" bottom = "minor" halign="left" left="minor" right="minor">
               <col right="minor" width="50%" halign="right" />
               <col width="50%"/>
@@ -37,7 +37,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                   <cell colspan="2"><p>She will drive about <m>65</m> miles per hour.</p></cell>
               </row>
             </tabular>
-          </table>
+<!--          </table>  -->
           Now, consider the situation. If you travel <m>65</m> miles per hour for <m>2</m> hours, how far do you go? A little common sense will tell you that the answer is <m>130</m> miles. This relationship is captured in the following equation: 
           <md>
             <mrow>d = rt</mrow>
@@ -58,7 +58,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       </ol>
     </p>
   </example>
-  <p>So, if you know a situation is modeled with a linear function, in the statement of the problem, you need to find what you always need to know in order to find the equation for a line: the slope and the vertical intercept (the <m>y</m>-intercept if the dependent variable is <m>y</m>.) So, look through the problem to see if you can find the necessary pieces to calculate these two parts of the equation for a line. Try this one:</p>
+  <p>So, if you know a situation is modeled with a linear function, you need to find the slope and the vertical intercept.</p>
   <example xml:id="example-home-value">
       <title>Home Value</title>
       <p>Four years ago a house was purchased for <m>\$150,000</m>.  This year it's appraised value is <m>\$155,450</m>. Assume that the value of the house after its purchase is a linear function of time (in years).</p>
@@ -66,7 +66,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         <ol label="a.">
           <li><p>Find the function which models the value of the house <m>t</m> years since it was purchased.</p>
           <p>Solution: If you didn't  notice that this function is supposed to be a line, you were not paying attention-read the problem over again!  Now, let's get to work.  There are two variables in this problem:
-            <table>
+<!--            <table>  -->
             <tabular top="minor" bottom = "minor" halign="left" left="minor" right="minor">
               <col right="minor" width="50%" halign="right" />
               <col width="50%" />
@@ -80,7 +80,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                   <cell><p><m>t =</m> The number of years</p></cell>
               </row>
             </tabular>
-          </table>
+<!--          </table>  -->
           Since the value depends on the amount of time after purchase, <m>V</m> is the dependent variable and <m>t</m> is the independent variable.  The slope may be calculated from two points on the line. Note that <m>t=0</m> represents when the house was purchased which gives us one point on the line: <m>(0,150000)</m>. Four years later we have another value, so a second point is <m>(4,155450)</m>.  We are pretty much set after we do the usual calculations to find the equation for a line:
           <md>
             <mrow>\text{slope} = \frac{155450 - 150000}{4 - 0} = 1362.5</mrow>
@@ -117,34 +117,34 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
   </example>
   <example xml:id="example-annual-interest">
       <title>Annual Interest</title>
-      <p>Money deposited in a savings certificate often earns interest at a higher rate than an ordinary savings account, but requires you leave the money in the certificate for a fixed amount of time.  Suppose you put money into a 12-month savings certificate with a yearly interest rate of <m>4\%</m>.</p>
+      <p>Money deposited in a savings certificate often earns interest at a higher rate than an ordinary savings account, but requires that you leave the money in the certificate for a fixed amount of time.  Suppose you put money into a <m>12</m>-month savings certificate with a yearly interest rate of <m>4\%</m>.</p>
       <p>
         <ol label="a.">
-          <li><p>Write an equation which takes a deposit amount and calculates the amount in the certificate after a year.</p>
-          <p>Solution: In this case, we don't know the beginning deposit amount and the final certificate value, so we'll let <m>A</m> be the amount we invest and <m>V</m> be the value at the end of 12 months.  To find the interest paid at the end of the year, we calculate <m>4\%</m> of the deposited amount:  <m>0.04A</m>.  To get the equation, we add the interest to the original amount to get the total value:
+          <li><p>Write an equation which takes a deposit amount and calculates the amount in the certificate after one year.</p>
+          <p>Solution: In this case, we don't know the beginning deposit amount and the final certificate value, so we'll let <m>A</m> be the amount we invest and <m>V</m> be the value at the end of <m>12</m> months.  To find the interest paid at the end of the year, we calculate <m>4\%</m> of the deposited amount:  <m>0.04A</m>.  We add the interest to the original amount to get the total value:
           <md>
             <mrow>V = A + 0.04A</mrow>
           </md>
-          We could simplify this expression by factoring out the <m>A</m>:
+          We can simplify this expression by factoring out <m>A</m>:
           <md>
             <mrow>V \amp = (1+0.04)A</mrow>
             <mrow>V \amp = 1.04A</mrow>
           </md>
           </p></li>
-          <li><p>What is the value of the certificate at the end of 12 months if <m>\$5000</m> is initially deposited?</p>
+          <li><p>What is the value of the certificate at the end of <m>12</m> months if <m>\$5000</m> is initially deposited?</p>
           <p>Solution: <m>V = 1.04(5000) = 5200</m>, so it will be worth <m>\$5,200.</m>
           </p></li>
-          <li><p>Solve the equation for <m>A</m>. What amount will you need to deposit in order to have <m>\$10,000</m> at the end of 12 <ndash /> months?</p>
+          <li><p>Solve the equation for <m>A</m>. What amount will you need to deposit in order to have <m>\$10,000</m> at the end of <m>12</m> months?</p>
           <p>Solution: Solving for <m>A</m>:
             <md>
               <mrow>V &amp; = 1.04A</mrow>
               <mrow>\frac{1}{1.04}V    &amp;= A</mrow>
               <mrow>\text{So, }  A  &amp; = 0.961538 V </mrow>
-            </md>Note that the <m>0.961538</m> is slightly rounded from the exact value of <m>\frac{1}{1.04}</m> which means our answer may be a lttle off the actual amount.  To answer the question:
+            </md>Note that the <m>0.961538</m> is slightly rounded from the exact value of <m>\frac{1}{1.04}</m> which means that our answer may be a lttle off the actual amount.  To answer the question:
             <md>
               <mrow>A = 0.981538(10000) = 9615.38</mrow>
             </md>
-            In this case, we can easily check our answer: <m>V = 1.04(9615.38) = 9999.9952</m> which rounds to <m>\$10,000.</m> I suppose if you really needed to make sure you had exactly <m>\$10,000</m> at the end of 12 months, you should have an extra penny saved up on the day you needed the money!<m>\checkmark</m>
+            In this case, we can easily check our answer: <m>V = 1.04(9615.38) = 9999.9952</m> which rounds to <m>\$10,000.</m> I suppose if you really needed to make sure you had exactly <m>\$10,000</m> at the end of <m>12</m> months, you should have an extra penny saved up on the day you needed the money!<m>\checkmark</m>
           </p></li>
         </ol>
       </p>
@@ -155,8 +155,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <ul>
         <li><term>Cost functions:</term> The amount of money required to produce a product.  Cost funtions   usually consist of two parts.</li>
         <ul>
-          <li>Fixed costs: Costs which don't change like the rent paid for office space.</li>
-          <li>Variable costs: Costs that depend on how many items are made. For example, the cost of the raw materials.</li>
+          <li>Fixed costs: Costs which don't change, such as the rent paid for office space.</li>
+          <li>Variable costs: Costs that depend on how many items are made, such as the cost of the raw materials.</li>
         </ul>
         <li><term>Revenue:</term> The amount of money earned from selling a product. Usually, it's calculated by <m>(\text{Price of item } \times \text{ Number of items sold})</m>.</li>
         <li><term>Profit:</term> The difference between the Revenue and Cost <ndash /> what you get to <q>take home</q>: <m>\text{Revenue} - \text{Cost}</m></li>
@@ -165,7 +165,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <title>Cost, Revenue, and Profit</title>
           <p>
             <ol label="a.">
-              <li><p>Suppose you are selling tomatoes at a local farmer's market. Your fixed costs are <m>\$1000</m> and it costs <m>\$2</m> to produce each box of tomatoes <ndash /> I'm making this up by the way <ndash /> which you plan to sell for <m>\$15</m> per box. Clearly, your cost function is <ndash /> wait a minute, we need a variable for the number of boxes of tomatoes, say <m>b</m>:
+              <li><p>Suppose you are selling tomatoes at a local farmer's market. Your fixed costs are <m>\$1000</m> and it costs <m>\$2</m> to produce each box of tomatoes, which you plan to sell for <m>\$15</m> per box. Clearly, your cost function is <ndash /> wait a minute, we need a variable for the number of boxes of tomatoes, say <m>b</m>:
               <md>
                 <mrow>C(b) = 1000 + 2b</mrow>
               </md>
@@ -178,11 +178,11 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                 <mrow>P(b) \amp = R(b) - C(b)</mrow>
                 <mrow>P(b) \amp = 15b - (1000+2b)</mrow>
                 <mrow>\amp = 13b - 1000.</mrow>
-              </md>Whew! We didn't even have to think too much about slope and vertical intercepts to find these equations, but we can see these functions are all linear, since they are of the form <q><m>y = mx + b.</m></q>  Notice that <q>slope</q> still matters here. For example, we can see that the Profit increases by <m>\$13</m> per box of tomatoes sold and the Profit's vertical intercept of <m>-1000</m> tells us that we are in debt for <m>\$1,000</m> when we start out with no boxes of tomatoes sold.
+              </md>Whew! We didn't even have to think too much about slope and vertical intercepts to find these equations, but we can see these functions are all linear, since they are of the form <q><m>y = mx + b.</m></q>  Notice that <q>slope</q> still matters here. For example, we can see that the Profit increases by <m>\$13</m> per box of tomatoes sold, and the Profit's vertical intercept of <m>-1000</m> tells us that we are in debt for <m>\$1,000</m> when we start out with no boxes of tomatoes sold.
               </p></li>
               <li><p>In doing business, the <q>break-even</q> point is when the money you receive from selling your product is equal to the money it costs to make or supply your produce: Revenue equals Cost.</p>
               <p>What is the break-even point for your tomato selling business?</p>
-              <p>Solution: We just need to find how many boxes of tomatoes makes the revenue equal to the cost
+              <p>Solution: We just need to find how many boxes of tomatoes make the revenue equal to the cost
               <md>
               <mrow> R(b) \amp = C(b)</mrow>
               <mrow>15b  \amp = 1000 + 2b</mrow>
@@ -193,10 +193,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
             </md>In this case, we cannot sell <m>0.923</m> of a box of tomatoes, so we'll need to sell <m>77</m> boxes to break even.</p>
             <sidebyside widths="45% 50%" valign="middle">
           <paragraphs>
-            <p>If you consider the break-even point in terms of the Revenue and Cost functions, it's the point the two graphs have in common (where they intersect).</p>
+            <p>The break-even point is the point the two graphs where the two graphs intersect.</p>
             <p>This occurs at approximately <m>77.</m></p>
         </paragraphs>
-    <figure xml:id="figure-graph-break-even"> <!--set2C-Applications_01.png-->
+<!--    <figure xml:id="figure-graph-break-even">  --> <!--set2C-Applications_01.png-->
               <image xml:id="graph-break-even">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.55mm,black,<->] (-.5,0) -- (10,0) node[anchor=north west] {b};
@@ -211,7 +211,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                       \node at (7,4) {\Large $R(b)=15b$}; 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
         <p>Note that since we had already calculated the profit function, we could have used it to find our answer. If revenue equals cost, the profit will be zero. So, another way to look at the break-even point is when profit is zero:
           <md>
@@ -239,8 +239,8 @@ of the Profit function intersects the horizontal axis. ADD BACK IN IF WE CREATE 
       <p>
         <ol>
           <li><p><em>Identify and label the variables:</em></p>
-          <p>There are actually two different, valid ways to approach this problem. You could make a variable that represents the number of dimes; or you could have a variable that represents the value of the dimes. Either way will lead you to the right answer. However, it is vital to know which one you're doing! If you get confused half-way through the problem, you will end up with the wrong answer.</p>
-          <p>Let's try it this way:
+          <p>
+          Let's try it this way:
             <ul>
               <li><m>d</m> is the number of dimes</li>
               <li><m>q</m> is the number of quarters</li>

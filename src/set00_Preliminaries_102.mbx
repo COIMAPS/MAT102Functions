@@ -26,43 +26,34 @@
   </introduction>
   <subsection xml:id="sets-of-numbers">
     <title>Sets of Numbers</title>
-    <p>While we would like nothing more than to delve quickly and deeply into the sheer excitement that is Functions, experience has taught us that a brief refresher on some basic notions is welcome, if not completely necessary, at this stage.  To that end, we present a brief summary of
-      <term>set theory</term> and some of the associated vocabulary and notations we use in the text. Like all good Math
-      <q>books</q>, we begin with a definition.
+    <p>Before introducing functions, we'll need a brief summary of
+      <term>set theory</term> and some of the associated vocabulary and notations we use in the text. We begin with a definition.
     </p>
     <p>A
-      <term>set</term> is a well-defined collection of objects which are called the
-      <term>elements</term> of
-the set. Here,
-      <term>well-defined</term> means that it is possible to determine if something belongs to the
-collection or not, without prejudice.
+      <term>set</term> is a collection of objects which are called the
+      <term>elements</term> of the set. 
     </p>
     <p>For example, the collection of letters that make up the word
-      <q>coyote</q>is well-defined and is a set,
-but the collection of the worst pizza places in the world is not well-defined, and so is not a set.
-In general, there are three ways to describe sets:
+      <q>coyote</q> is a set. Here are three ways to describe sets:
     </p>
     <p>
-      <term>Ways to Describe Sets</term>
+      <term>Ways to Describe a Set</term>
       <ol>
         <li>
           <p>
-            <term>The Verbal Method:</term> Use a sentence to define a set.
+            <term>The Verbal Method:</term> Use a sentence to define the set.
           </p>
         </li>
         <li>
           <p>
             <term>The Roster Method:</term> Begin with a left brace '
-            <m>\{</m>', list each element of the set only once
-and then end with a right brace `
+            <m>\{</m>', list each element of the set once, end with a right brace `
             <m>\}</m>'.
           </p>
         </li>
         <li>
           <p>
-            <term>The Set-Builder Method:</term> A combination of the verbal and roster methods using a
-            <term>dummy variable</term> such as
-            <m>x</m>.
+            <term>The Set-Builder Method:</term> A combination of the verbal and roster methods using a mathemaical expression to describe the set.
           </p>
         </li>
       </ol>
@@ -78,43 +69,39 @@ and then end with a right brace `
                 <q>coyote</q>.
               </em>
             </p>
-          </li>
-          <li>
             <p>A roster description of
               <m>S</m> would be
-              <m>\{c,o,y,t,e\}</m>. Note that we listed '
-              <m>o</m>' only once, even though it appears twice in
-              <q>coyote</q>.  Also, the order of the elements doesn't matter, so
-              <m>\{t,e,y,o,c\}</m> is also a roster description of
+              <m>\{c,o,y,t,e\}</m>. Note that we listed 
+              '<m>o</m>' only once, even though it appears twice in
+              <q>coyote</q>.  The order of the elements doesn't matter, so
+              <m>\{t,e,y,o,c\}</m> also is a roster description of
               <m>S</m>.
             </p>
           </li>
           <li>
+            <p> Now consider the set, <m>T</m> of integers <m>\{1,2,3,4,5,6,7,8,9\}</m>
+          </p>
             <p>A set-builder description of
-              <m>S</m> is:
-              <m>\{x \; | \; x</m> is a letter in the word
-              <q>coyote</q>
-              <m>\}</m>.  The way to read this is:
-              <q>The set of elements
+              <m>T</m> is:
+              <m>\{x \; | \; x</m> is a positive integer with <m>x /lt 10
+              \}</m>.  The way to read this is:
+              <q>The set of positive integers
                 <m>x</m> such that
-                <m>x</m> is a letter in the word
-                <q>coyote</q>.
+                <m>x</m> is less than <m>10</m>.
               </q>
             </p>
           </li>
         </ul>
       </p>
     </example>
-    <p>In each of the above cases, we may use the familiar equals sign '
-      <m>=</m>' and write
+    <p>In each of the above cases, we may use the familiar equals sign 
+      '<m>=</m>' and write
       <m>S = \{c,o,t,e,y\}</m> or
-      <m>S = \{x \; | \; x</m> is a letter in the word
-      <q>coyote</q>
-      <m>\}</m>. Clearly
+      <m>T = \{x \; | \; x </m> is a positive integer with <m> x \lt 10 \}</m>. Clearly
       <m>t</m> is in
       <m>S</m> and
-      <m>q</m> is not in
-      <m>S</m>.  Throughout your mathematical upbringing, you have encountered several famous sets of numbers. They are listed below.
+      <m>3</m> is not in
+      <m>S</m>.  Here are several famous sets of numbers. 
     </p>
     <!-- We express these sentiments mathematically by writing <m>t \in S</m> and <m>q \notin S.</m>-->
     <p>
@@ -124,23 +111,15 @@ and then end with a right brace `
           <p>The Empty Set:
             <m>\emptyset = \{ \}</m>. This is the set with no elements. Like the number
             <m>0,</m> it plays a vital role in mathematics.
-            <term>WeBWorK</term> will understand either empty curly braces
-            <c>{}</c>or
-            <c>NONE</c>.
           </p>
         </li>
         <li>
           <p>The Natural Numbers:
-            <m>\mathbb{N} = {1, 2, 3, \dots }</m> The periods of ellipsis here
+            <m>\mathbb{N} = {1, 2, 3, \dots }</m> The three periods in a row here
        indicate that the natural numbers contain
             <m>1</m>,
             <m>2</m>,
             <m>3</m>, and so forth.
-          </p>
-        </li>
-        <li>
-          <p>The Whole Numbers:
-            <m>\mathbb{W} = {0, 1, 2, \cdots }</m>
           </p>
         </li>
         <li>
@@ -150,29 +129,24 @@ and then end with a right brace `
         </li>
         <li>
           <p>The Rational Numbers:
-            <m>\mathbb{Q} = \{\frac{a}{b}\; |\; a  \mbox{ and } b \mbox{ are integers}\}.</m> Rational numbers are the ratios of integers (provided the denominator is not zero!). It turns out that another way to describe the rational numbers is:</p>
-            <p><m>\mathbb{Q} = \{x \; | \; x \mbox{ possesses a repeating or terminating decimal representation}\}.</m>
+            <m>\mathbb{Q} = \{\frac{a}{b}\; |\; a  \mbox{ and } b \mbox{ are integers with } b \neq 0\}.</m> Rational numbers are the ratios of integers (provided the denominator is not zero!). It turns out that another way to describe the rational numbers is:</p>
+            <p><m>\mathbb{Q} = \{x \; | \; x \mbox{ is a real number that has a repeating or terminating decimal representation}\}.</m>
           </p>
         </li>
         <li>
           <p>The Real Numbers:
-            <m>\mathbb{R} = \{ x \; | \; x \mbox{ possesses a decimal representation}\}.</m>
+            <m>\mathbb{R} = \{ x \; | \; x \mbox{ is a decimal number}\}.</m>
           </p>
         </li>
         <li>
           <p>The Irrational Numbers:
             <m>\mathbb{P} = \{ x \; | \; x \mbox{ is a non-rational real number }\}.</m> Said another way,
-         an irrational number is a decimal which neither repeats nor terminates.
-          </p>
-        </li>
-        <li>
-          <p>The Complex Numbers:
-            <m>\mathbb{C} = \{ a + bi \; | \; a,b \mbox { are in } \mathbb{R} \mbox{ and } i = \sqrt{-1}\}.</m> Despite their importance, complex numbers are not used in this course.
+         an irrational number is a decimal that is not a repeating decimal.
           </p>
         </li>
       </ol>
     </p>
-    <p>It is important to note that every natural number is a whole number, which, in turn, is an integer.
+    <p>It is important to note that every natural number is an integer.
 Each integer is a rational number (taking
       <m>b = 1</m> in the above definition for
       <m>\mathbb{Q}</m> produces integers) and the rational numbers are all real numbers, since they possess decimal representations.
@@ -182,7 +156,9 @@ For the most part, we will focus on sets whose elements come from the real numbe
   </subsection>
   <subsection xml:id="interval-notation">
     <title>Interval Notation</title>
-    <p>Recall that we may visualize
+    <p><q>Interval notation</q> is a shorthand way of describing an interval.  For example, for real numbers <m>a</m> and <m>b</m>, <q>(a,b)</q> is interval notation for <q> the set of all real numbers <m>x</m> bigger and <m>a</m> and less than <m>b</m></q>.  The table given below displays interval notation for different kinds of intervals.
+    </p>
+ <!--   <p>Recall that we may visualize
       <m>\mathbb{R}</m> as a line. Segments of this line are called
       <term>intervals</term> of numbers. Below is a summary of the so-called interval notation associated with given sets of numbers. For intervals with finite endpoints, we list the left endpoint, then the right endpoint. We use square brackets, '
       <m>[</m>' or '
@@ -206,6 +182,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
       <m>a</m> less than
       <m>b</m>.
     </p>
+  -->
     <p>
       <sbsgroup widths="25% 25% 45%" valign="middle">
         <sidebyside>
@@ -220,7 +197,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           <p>
             <m>(a, b)</m>
           </p>
-          <figure xml:id="figure-interval-open-a-to-open-b">
+<!--          <figure xml:id="figure-interval-open-a-to-open-b"> -->
               <image xml:id="interval-open-a-to-open-b">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[color=red] (0,.5) circle (.1cm);
@@ -230,7 +207,8 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                       \node[anchor=south, color=red] at (3,-.1) {$b$}; 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure></sidebyside>
+<!--            </figure> -->
+        </sidebyside>
         <sidebyside>
           <p>
             <m>a\leq x &lt; b</m>
@@ -238,7 +216,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           <p>
             <m>[a, b)</m>
           </p>
-          <figure xml:id="figure-interval-closed-a-to-open-b">
+<!--          <figure xml:id="figure-interval-closed-a-to-open-b"> -->
               <image xml:id="interval-closed-a-to-open-b">
               
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
@@ -249,7 +227,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                       \node[anchor=south, color=red] at (3,-.1) {$b$}; 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure> -->
         </sidebyside>
         <sidebyside>
           <p>
@@ -258,7 +236,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           <p>
             <m>(a, b]</m>
           </p>
-          <figure xml:id="figure-interval-open-a-to-closed-b">
+<!--          <figure xml:id="figure-interval-open-a-to-closed-b"> -->
               <image xml:id="interval-open-a-to-closed-b">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[color=red] (0,.5) circle (.1cm);
@@ -268,7 +246,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                       \node[anchor=south, color=red] at (3,-.1) {$b$}; 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure> -->
         </sidebyside>
         <sidebyside>
           <p>
@@ -277,7 +255,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           <p>
             <m>[a, b]</m>
           </p>
-          <figure xml:id="figure-interval-closed-a-to-closed-b">
+<!--          <figure xml:id="figure-interval-closed-a-to-closed-b">  -->
               <image xml:id="interval-closed-a-to-closed-b">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \fill[color=red] (0,.5) circle (.1cm);
@@ -287,7 +265,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                       \node[anchor=south, color=red] at (3,-.1) {$b$}; 
                       \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
         </sidebyside>
         <sidebyside>
           <p>
@@ -296,14 +274,14 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           <p>
             <m>(-\infty, b)</m>
           </p>
-          <figure xml:id="figure-interval-to-open-b">
+<!--          <figure xml:id="figure-interval-to-open-b">  -->
               <image xml:id="interval-to-open-b">
                 <latex-image-code><![CDATA[\begin{tikzpicture}
                       \draw[color=red] (3,.5) circle (.1cm);
                       \draw[color=red,
                   <-] (0,.5) -- (2.9,.5); \node[anchor=south, color=red] at (3,-.1) {$b$}; \end{tikzpicture}]]></latex-image-code>
                 </image>
-              </figure>
+<!--              </figure>  -->
           </sidebyside>
           <sidebyside>
             <p>
@@ -312,14 +290,14 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
             <p>
               <m>(-\infty, b]</m>
             </p>
-            <figure xml:id="figure-interval-to-closed-b">
+<!--            <figure xml:id="figure-interval-to-closed-b">  -->
                 <image xml:id="interval-to-closed-b">
                   <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \fill[color=red] (3,.5) circle (.1cm);
                       \draw[color=red,
                     <-] (0,.5) -- (2.9,.5); \node[anchor=south, color=red] at (3,-.1) {$b$}; \end{tikzpicture}]]></latex-image-code>
                   </image>
-                </figure>
+<!--                </figure>  -->
             </sidebyside>
             <sidebyside>
               <p>
@@ -328,7 +306,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
               <p>
                 <m>(a, \infty)</m>
               </p>
-              <figure xml:id="figure-interval-from-open-a">
+<!--              <figure xml:id="figure-interval-from-open-a">  -->
                   <image xml:id="interval-from-open-a">
                     <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[color=red] (0,.5) circle (.1cm);
@@ -336,7 +314,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                       \node[anchor=south, color=red] at (0,-.1) {$a$}; 
                       \end{tikzpicture}]]></latex-image-code>
                   </image>
-                </figure>
+<!--                </figure>  -->
             </sidebyside>
             <sidebyside>
               <p>
@@ -345,7 +323,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
               <p>
                 <m>[a, \infty)</m>
               </p>
-              <figure xml:id="figure-interval-from-closed-a">
+<!--              <figure xml:id="figure-interval-from-closed-a">  -->
                   <image xml:id="interval-from-closed-a">
                     <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \fill[color=red] (0,.5) circle (.1cm);
@@ -353,7 +331,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                       \node[anchor=south, color=red] at (0,-.1) {$a$}; 
                       \end{tikzpicture}]]></latex-image-code>
                   </image>
-                </figure>
+<!--                </figure>  -->
             </sidebyside>
             <sidebyside>
               <p>All Real numbers,
@@ -362,7 +340,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
               <p>
                 <m>(-\infty, \infty)</m>
               </p>
-              <figure xml:id="figure-interval-all-reals">
+<!--              <figure xml:id="figure-interval-all-reals">  -->
                   <image xml:id="interval-all-reals">
                     <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[color=red,
@@ -371,24 +349,28 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                       \node[anchor=south, color=red] at (1.5,-.1) {$0$}; 
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
-                  </figure>
+<!--                  </figure>  -->
               </sidebyside>
             </sbsgroup>
           </p>
+      <aside> 
+        <p>Square brackets <q><m> [ </m></q> or <q><m> ] </m></q> indicate that an endpoint is included in the interval; round parentheses <q><m> ( </m></q> or <q><m> ) </m></q> indicate that an endpoint is not included.
+      </p>
+      </aside> 
         <assemblage>
           <title>WeBWorK: Entering Infinity and Inequalities</title>
           <p>Type
             <ul>
               <li>
-                <c>inf</c>for
+                <c>inf</c> for
                 <m>\infty</m> and
-                <c>-inf</c>for
+                <c>-inf</c> for
                 <m>-\infty</m>
               </li>
               <li>
-                <c>&gt;=</c>for
+                <c>&gt;=</c> for
                 <m>\geq</m> and
-                <c>&lt;=</c>for
+                <c>&lt;=</c> for
                 <m>\leq</m>
               </li>
             </ul>
@@ -396,8 +378,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
         </assemblage>
         <p>Note that we could write the inequality
           <m>1 &lt; x &lt; 3</m> as
-          <m>3 &gt; x &gt; 1</m> and still have the same set. An easy way to remember which inequality symbol to use is that the smaller (closed) end of the inequlaity sign points to the smaller number and conversely the larger end (open end) is next to the larger value.  There is some evidence that the inequality sign started out as a
-          <q>distorted</q>equal sign with one end pinched together to denote the side with the smaller value. However it came about, the table below gives a few examples of the two notations.
+          <m>3 &gt; x &gt; 1</m> and still have the same set. An easy way to remember which inequality symbol to use is that the smaller (pointy) end of the inequality sign points to the smaller number and conversely the wide end is next to the larger value.  
         </p>
         <example xml:id="example-describing-specific-sets">
           <title>Describing Specific Sets</title>
@@ -415,7 +396,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                 <p>
                   <m>[1,3)</m>
                 </p>
-                <figure xml:id="figure-interval-closed-1-to-open-3">
+<!--                <figure xml:id="figure-interval-closed-1-to-open-3">  -->
                     <image xml:id="interval-closed-1-to-open-3">
                       <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \fill[color=red] (0,.5) circle (.1cm);
@@ -425,7 +406,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                       \node[anchor=south, color=red] at (3,-.1) {$3$}; 
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
-                  </figure>
+<!--                  </figure>  -->
               </sidebyside>
               <sidebyside>
                 <p>
@@ -434,7 +415,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                 <p>
                   <m>[-1,4]</m>
                 </p>
-                <figure xml:id="figure-interval-closed-neg1-to-closed-4">
+<!--                <figure xml:id="figure-interval-closed-neg1-to-closed-4">  -->
                     <image xml:id="interval-closed-neg1-to-closed-4">
                       <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \fill[color=red] (0,.5) circle (.1cm);
@@ -444,7 +425,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                       \node[anchor=south, color=red] at (3,-.1) {$4$}; 
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
-                  </figure>
+<!--                  </figure>  -->
               </sidebyside>
               <sidebyside>
                 <p>
@@ -453,7 +434,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                 <p>
                   <m>(-\infty, 5]</m>
                 </p>
-                <figure xml:id="figure-interval-less-equal-5">
+<!--                <figure xml:id="figure-interval-less-equal-5">  -->
                     <image xml:id="interval-less-equal-5">
                       <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[color=red] (3,.5) circle (.1cm);
@@ -463,7 +444,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                       \node[anchor=south, color=red] at (3,-.1) {$5$}; 
                       \end{tikzpicture}]]></latex-image-code>
                       </image>
-                    </figure>
+<!--                    </figure>  -->
                 </sidebyside>
                 <sidebyside>
                   <p>
@@ -472,7 +453,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                   <p>
                     <m>(-2, \infty)</m>
                   </p>
-                  <figure xml:id="figure-interval-greater-neg2">
+<!--                  <figure xml:id="figure-interval-greater-neg2">  -->
                     <image xml:id="interval-greater-neg2">
                       <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[color=red] (0,.5) circle (.1cm);
@@ -482,21 +463,21 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                       \node[anchor=south, color=red] at (0,-.1) {$-2$};
                       \end{tikzpicture}]]></latex-image-code>
                       </image>
-                    </figure>
+<!--                    </figure>  -->
                   </sidebyside>
                 </sbsgroup>
               </p>
             </example>
-<p>We will often have occasion to combine sets. There are two basic ways to combine sets: intersection and union. We define both of these concepts below.</p>
+<p>We will need to combine sets. Intersection and union are two basic ways to combine sets. We define both of these concepts below.</p>
 
 <p>Suppose <m>A</m> and <m>B</m> are two sets.
 <ul>
-  <li><p>The <term>intersection</term> of <m>A</m> and <m>B</m>: <m>A \cap B = \{ x \; | \;  x \mbox{ is in } A \mbox{ and }  x \mbox{ is in } B\}.</m></p></li>
-  <li><p>The <term>union</term> of <m>A</m> and <m>B</m>: <m>A \cup B = \{ x \; | \;  x \mbox{ is in } A \mbox{ or }  x \mbox{ is in } B \mbox{ (or both)}\}.</m></p></li>
+  <li><p>The <term>intersection</term> of <m>A</m> and <m>B</m> contains the elements that are in BOTH sets: <m>A \cap B = \{ x \; | \;  x \mbox{ is in } A \mbox{ and }  x \mbox{ is in } B\}.</m></p>
+  </li>
+  <li><p>The <term>union</term> of <m>A</m> and <m>B</m> contains every element that occurs in AT LEAST ONE of the sets: <m>A \cup B = \{ x \; | \;  x \mbox{ is in } A \mbox{ or }  x \mbox{ is in } B \mbox{ (or both)}\}.</m></p>
+  </li>
 </ul>
-Said differently, the intersection of two sets is the overlap of the two sets-the elements which the
-sets have in common. The union of two sets consists of the totality of the elements in each of the
-sets, collected together.</p>
+Said differently, the intersection of two sets is the overlap of the two sets-all the elements which the sets both have in common. The union of two sets consists of the elements in both of the sets, collected together.</p>
 <example xml:id="example-intersection-union-discrete">
   <title>Set Intersection and Union</title>
   <p>For
@@ -516,7 +497,7 @@ sets, collected together.</p>
               <sidebyside>
                 <p>First, sketch the graphs of <m>A</m> and <m>B</m>.
                 </p>
-                <figure xml:id="figure-intervals-overlap">
+<!--                <figure xml:id="figure-intervals-overlap">  -->
                     <image xml:id="intervals-overlap">
                       <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \fill[color=blue] (-5,1) circle (.1cm);
@@ -535,12 +516,12 @@ sets, collected together.</p>
                       \node[color=green] at (2,-1) {$B=(1,\infty)$}; 
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
-                  </figure>
+<!--                  </figure>  -->
               </sidebyside>
               <sidebyside>
                 <p>To determine <m>A \cap B,</m> we shade the overlap of the two and obtain <m>A \cap B = (1, 3).</m>
                 </p>
-                <figure xml:id="figure-intervals-overlap-intersection">
+<!--                <figure xml:id="figure-intervals-overlap-intersection">  -->
                     <image xml:id="intervals-overlap-intersection">
                       <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \fill[color=blue] (-5,1) circle (.1cm);
@@ -560,12 +541,12 @@ sets, collected together.</p>
                       \node[red] at (2,-1) {$A\cap B =(1,3)$}; 
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
-                  </figure>
+ <!--                 </figure> -->
               </sidebyside>
               <sidebyside>
                 <p>To determine <m>A \cup B,</m> we shade each of <m>A</m> and <m>B</m> along the lower number line and describe the resulting shaded region to see <m>A \cup B = [-5, \infty).</m>
                 </p>
-                <figure xml:id="figure-intervals-overlap-union">
+<!--                <figure xml:id="figure-intervals-overlap-union">  -->
                     <image xml:id="intervals-overlap-union">
                       <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \fill[color=blue] (-5,1) circle (.1cm);
@@ -585,7 +566,7 @@ sets, collected together.</p>
                       \node[red] at (0,-1) {$A\cup B =[-5,\infty)$}; 
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
-                  </figure>
+<!--                  </figure>  -->
               </sidebyside>  
               </sbsgroup>
               </p>
@@ -609,7 +590,7 @@ sets, collected together.</p>
                 <p>
                   <m>(-\infty, -2] \cup [2, \infty)</m>
                 </p>
-                <figure xml:id="figure-interval-less-neg2-great-2">
+<!--                <figure xml:id="figure-interval-less-neg2-great-2">  -->
                     <image xml:id="interval-less-neg2-great-2">
                       <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \fill[color=red] (-1.0,0) circle (.1cm);
@@ -621,7 +602,7 @@ sets, collected together.</p>
                       \node[black] at (1, -.5) {$2$}; 
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
-                  </figure>
+<!--                  </figure>  -->
               </sidebyside>
               <sidebyside>
                 <p>
@@ -630,7 +611,7 @@ sets, collected together.</p>
                 <p>
                   <m>(-\infty, 3)\cup (3, \infty)</m>
                 </p>
-                <figure xml:id="figure-interval-neq-3">
+<!--                <figure xml:id="figure-interval-neq-3">  -->
                     <image xml:id="interval-neq-3">
                       <latex-image-code><![CDATA[\begin{tikzpicture} 
                       \draw[color=red] (0.0,0) circle (.1cm);
@@ -639,7 +620,7 @@ sets, collected together.</p>
                       \node[black] at (0, -.5) {$3$}; 
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
-                  </figure>
+<!--                  </figure>  -->
               </sidebyside>
             </sbsgroup>
           </p>
@@ -652,7 +633,7 @@ sets, collected together.</p>
                 Upper case <c>U</c> for union <m>\cup</m>.
               </li>
               <li>
-                <c>!=</c>for
+                <c>!=</c> for
                 <m>\neq</m>.
               </li>
             </ul>
@@ -661,9 +642,9 @@ sets, collected together.</p>
       </subsection>
   <subsection xml:id="cartesian-coordinates">
     <title>The Cartesian Coordinate Plane</title>
-      <p>In order to visualize the pure excitement that is MAT-102, we need to unite Algebra and Geometry.  Simply put, we must find a way to draw algebraic things. Let's start with possibly the greatest mathematical achievement of all time: the Cartesian Coordinate Plane. (Named in honor of the 17th century philosopher, mathematician and scientist, Rene Decartes.)</p>
+      <p>Math became far more intuitive and powerful when people learned to marry the precision of algebra to the visual intuition of geometry. Simply put, we seek to find a way to draw algebraic things. Let's start with the Cartesian Coordinate Plane, named in honor of the 17th century philosopher, mathematician and scientist, Rene Decartes.</p>
       <p>Imagine two real number lines crossing at a right angle at <m>0</m> as drawn below.
-        <figure xml:id="figure-axes-no-grid">
+<!--        <figure xml:id="figure-axes-no-grid">  -->
           <image xml:id="axes-no-grid">
             <latex-image-code><![CDATA[\begin{tikzpicture} 
             \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
@@ -678,10 +659,11 @@ sets, collected together.</p>
                 \draw[black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$}; 
             \end{tikzpicture}]]></latex-image-code>
           </image>
-        </figure></p>
-      <p>The horizontal number line is usually called the <m>x</m>-axis while the vertical number line is usually called the <m>y</m>-axis. As with the usual number line, we imagine these axes extending off indefinitely in both directions. Having two number lines allows us to locate the positions of points off of the number lines as well as points on the lines themselves.</p>
+<!--        </figure>  -->
+      </p>
+      <p>The horizontal number line is usually called the <m>x</m>-axis while the vertical number line is usually called the <m>y</m>-axis. As with the usual number line, we imagine these axes extending off indefinitely in both directions. Having two number lines enables us to locate the positions of points off of the number lines as well as points on the lines themselves.</p>
       <p>For example, consider the point <m>P</m> shown below:
-      <figure xml:id="figure-axes-no-grid-P">
+<!--      <figure xml:id="figure-axes-no-grid-P">  -->
           <image xml:id="axes-no-grid-P"> 
             <latex-image-code><![CDATA[\begin{tikzpicture} 
             \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
@@ -698,11 +680,14 @@ sets, collected together.</p>
             \draw[red, dashed] (2,0) -- (2,-4);
             \fill[red] (2,-4) circle (.15cm);
             \node[red] at (2.5,-4) {\LARGE $P$};
-            \end{tikzpicture}]]></latex-image-code></image></figure>
-       To use the numbers on the axes to label this  point, we imagine dropping a vertical line from the <m>x</m>-axis to <m>P</m> and extending a horizontal line from the <m>y</m>-axis to <m>P</m>. This process is sometimes called <q>projecting</q> the point <m>P</m> to the <m>x</m>- (respectively <m>y</m>-) axis. We then describe the point <m>P</m> using the ordered pair <m>(2,-4).</m> The first number in the ordered pair is the <m>x</m>-coordinate and the second is the <m>y</m>-coordinate. Taken together, the ordered pair <m>(2, -4)</m> gives the location of the point <m>P</m> with respect to the <m>x</m> and <m>y</m> axes.
+            \end{tikzpicture}]]>        
+            </latex-image-code>
+          </image>
+<!--        </figure>  -->
+       To use the numbers on the axes to label this  point, imagine dropping a vertical line from the <m>x</m>-axis to <m>P</m> and extending a horizontal line from the <m>y</m>-axis to <m>P</m>. This process is sometimes called <q>projecting</q> the point <m>P</m> to the <m>x</m>- (respectively <m>y</m>-) axis. We then locate the point <m>P</m> using the ordered pair <m>(2,-4).</m> The first number in the ordered pair is the <m>x</m>-coordinate and the second is the <m>y</m>-coordinate. Taken together, the ordered pair <m>(2, -4)</m> gives the position of the point <m>P</m> with respect to the <m>x</m> and <m>y</m> axes.
       </p>
       <p>Notice that the order in the ordered pair is important: if we wish to plot the point <m>(-4, 2),</m> we would move to the left <m>4</m> units from the origin and then move upwards <m>2</m> units.
-      <figure xml:id="figure-axes-no-grid-P-Q">
+ <!--     <figure xml:id="figure-axes-no-grid-P-Q">  -->
           <image xml:id="axes-no-grid-P-Q"> 
             <latex-image-code><![CDATA[\begin{tikzpicture} 
             \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
@@ -723,10 +708,13 @@ sets, collected together.</p>
             \draw[red, dashed] (0,2) -- (-4,2);
             \fill[red] (-4,2) circle (.15cm);
             \node[red] at (-4,2.5) {\LARGE $(-4,2)$};
-            \end{tikzpicture}]]></latex-image-code></image></figure>
+            \end{tikzpicture}]]>
+            </latex-image-code>
+          </image>
+<!--        </figure>  -->
           </p>
           <p>The axes divide the plane into four regions called <term>quadrants</term>. They are labeled <m>Q1, Q2, Q3</m> and <m>Q4</m> and proceed counterclockwise around the plane as shown in the graph below. Note that point <m>P</m> is in quadrant 4, <m>Q4,</m> and <m>Q</m> is in quadrant 2, <m>Q2.</m>
-          <figure xml:id="figure-axes-no-grid-P-Q-quadrants">
+<!--          <figure xml:id="figure-axes-no-grid-P-Q-quadrants">  -->
           <image xml:id="axes-no-grid-P-Q-quadrants"> <!--NEEDS TO BE UPDATED-->
             <latex-image-code><![CDATA[\begin{tikzpicture} 
             \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
@@ -747,26 +735,32 @@ sets, collected together.</p>
             \draw[thick,red] (-3,3) node {\LARGE $Q2$};
             \draw[thick,red] (-3,-3) node {\LARGE $Q3$};
             \draw[thick,red] (3,-3) node {\LARGE $Q4$};
-            \end{tikzpicture}]]></latex-image-code></image></figure></p>
+            \end{tikzpicture}]]>
+            </latex-image-code>
+          </image>
+<!--        </figure>  -->
+      </p>
     </subsection>
     <subsection xml:id="math-expressions">
     <title>Mathematical expressions</title>
-    <p>Before beginning the material in MAT-102, you should have be able to simplify basic mathematical expressions with variables and know how to solve an equation for a variable.  Below are a few examples for your review.</p>
+    <p>You should have be able to simplify basic mathematical expressions with variables and know how to solve an equation for a variable.  Below are a few examples for your review.</p>
     <example xml:id="example-evaluate-expression">
       <title>Evaluate an Expression</title> 
       <p>Evaluate <m>2p + \dfrac{r^2}{3}</m> for <m>p = -1</m> and <m>r = 4</m>.</p>
-      <p>Substitute the values for the variables and simplify:
+      <p>Solution: Substitute <m>-1</m> for <m>p</m> and <m>4</m> for <m>r</m>, and simplify:
       <me>2(-1) + \frac{4^2}{3} = -2 + \frac{16}{3} = \frac{-6}{3} + \frac{16}{3} = \frac{10}{3}\checkmark</me>
       </p>
     </example>
   <example xml:id="example-simplify-expression">
     <title>Simplify an Expression</title> 
-    <p>Simplify: <m>3(2x+5)-4x</m>.</p>
-    <p>In this case you need to remove the parentheses by distributing the <m>3</m> (multiply <m>3</m> by both terms inside the parentheses) so that the like terms may be combined.
+    <p>Combine like terms: <m>3(2x+5)-4x</m>.</p>
+    <p>In this case one may remove the parentheses by multiplying out the expression <m>3(2x+5)</m> so that the like terms may be combined.
     <md>
       <mrow>3(2x+5)-4x</mrow>
+      <mrow>3(2x)+3(5)-4x</mrow>
       <mrow>6x+15-4x</mrow>
-      <mrow>2x+15\checkmark</mrow>
+      <mrow>(6x-4x)+15</mrow>
+      <mrow>2x+15 \checkmark</mrow>
     </md>
   </p>
 </example>
@@ -787,52 +781,54 @@ sets, collected together.</p>
 <example xml:id="example-solve-for-C">
   <title>Solve an Equation</title> 
   <p>Solve for <m>C</m>: <m>S = C + rC</m></p>
-  <p>The equation must be rearranged so that <m>C</m> is isolated. This can be done by factoring the right side and dividing by <m>1+r</m>:
+  <p>The equation needs to be rearranged so that <m>C</m> is isolated. This can be done by factoring <m>C</m> out of the right side then dividing by <m>1+r</m>:
   <md>
     <mrow>S = C + rC</mrow>
     <mrow>S = C(1 + r)</mrow>
     <mrow>\frac{S}{1+r} = C</mrow>
   </md>
-  And we usually write this in the from: <m>C = \dfrac{S}{1+r}\checkmark</m>
+  Which may be rewritten in the form: <m>C = \dfrac{S}{1+r} \checkmark</m>
 </p>
 </example>
 </subsection>
 <subsection xml:id="exponent-properties">
     <title>Exponent Properties</title>
-      <p>Problems with exponents can often be simplified using a few basic exponent properties. Exponents represent repeated multiplication. We will use this fact to discover the important properties.</p>
+      <p>Problems with exponents may often be simplified using a few basic exponent properties. For now, exponents represent repeated multiplication. We will use this fact to discover the important properties.</p>
       <historical>
     <title>World View Note</title>
     <p>The word exponent comes from the Latin <q>expo</q> meaning out of and <q>ponere</q> meaning place. While there is some debate, it seems that the Babylonians living in Iraq were the first to do work with exponents (dating back to the 23rd century BC or earlier!).</p>
   </historical>
       <example>
-      <title>Multiplication with Exponents</title>
+      <title>Multiply <m>a^n</m> times <m>a^m</m> using Exponents</title>
       <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 196 pg 177-->
-      <p>Simplify.
+      <p>Multipy <m>a^3</m> times <m>a^2</m>:
         <md>
-          <mrow>a^3a^2 \amp\amp\amp \text{Expand exponents to multiplication problem}</mrow>
-          <mrow>(aaa)(aa) \amp\amp\amp \text{Now we have \(5\) \(a\)'s being multiplied together}</mrow>
-          <mrow>a^5\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+          <mrow>a^3a^2 \amp\amp\amp \text{Represent <m>a^4</m> and <m>a^2</m> as products}</mrow>
+          <mrow>(aaa)(aa) \amp\amp\amp \text{Regroup}</mrow>
+          <mrow>(aaaaa) \amp\amp\amp \text{Represent the product with an exponent}</mrow>
+          <mrow>a^5\amp\amp\amp\text{Our Solution} \checkmark</mrow>
         </md>
       </p>
       </example>
-      <assemblage>
-        <title>WeBWorK: Entering Exponents</title>
-        <p>Type
-          <c>a^5</c>for
-          <m>a^5.</m>
-        </p>
-      </assemblage>
-      <p>A quicker method to arrive at our answer would have been to just add the exponents: <m>a^3 a^2=a^{3+2}=a^5</m>. This is known as the <term>product rule of exponents</term>: </p>
+      <p>The example shows that <m>a^3</m> times <m>a^2</m> just represents <m>3+2</m> <m>a</m>'s multiplied together.  Similarly, <m>(a^m)(a^n)</m> just represents <m>(m+n)</m> <m>a</m>'s multiplied together. This is known as the <term>product rule of exponents</term>: </p>
       <mdn>
         <mrow xml:id="exponents-product-rule">\text{Product Rule of Exponents: }
           a^m a^n=a^{m+n}
         </mrow>
       </mdn>
-      <p>The product rule of exponents can be used to simplify many problems. We will add the exponents on like variables. This is shown in the following examples.</p>
+      Note: In the expression <m>a^n</m>, <m>n</m> is called the <b>exponent</b> and <m>a</m> is called the <b>base</b>.
+      <assemblage>
+        <title>WeBWorK: Entering Exponents</title>
+        <p>Type
+          <c>a^5</c> for
+          <m>a^5.</m>
+        </p>
+      </assemblage>
+      <p>The product rule of exponents can be used to simplify many problems. This is shown in the following examples.</p>
        <example>
         <title>Product Rule of Exponents</title>
           <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 197 pg 177-->
-        <p>Simplify.
+        <p>Multiply:
         <md>
           <mrow>3^2\cdot 3^6\cdot 3 \amp\amp\amp \text{Same base \((3)\), add the exponents \(2+6+1\)}</mrow>
           <mrow>3^9 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
@@ -842,7 +838,7 @@ sets, collected together.</p>
       <example>
         <title>Product Rule of Exponents</title>
           <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 198 pg 177-->
-        <p>Simplify.
+        <p>Multiply:
         <md>
           <mrow>2x^3 y^5 z \cdot 5x y^2 z^3 \amp\amp\amp \text{Multiply \(2\cdot 5\), add exponents on each of \(x, y\) and \(z\)}</mrow>
           <mrow>10x^4 y^7 z^4 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
@@ -853,7 +849,7 @@ sets, collected together.</p>
       <example>
         <title>Division with Exponents</title>
           <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 199 pg 177-->
-        <p>Simplify.
+        <p>Divide:
         <md>
           <mrow>\dfrac{a^5}{a^2} \amp\amp\amp \text{Expand exponents}</mrow>
           <mrow>\dfrac{aaaaa}{aa} \amp\amp\amp \text{Since \(\frac{a}{a} = 1\), each \(a\) in the bottom "cancels" an \(a\) in the top.}</mrow>
@@ -862,16 +858,16 @@ sets, collected together.</p>
         </md>
       </p>
       </example>
-      <p>A quicker method to arrive at the solution would have been to just subtract the exponents, <m>\dfrac{a^5}{ a^2} = a^{5-2}= a^3</m>. This is known as the <term>quotient rule of exponents</term>:</p>
+      <p>Because the two <m>a</m>''s represented by <m>a^2</m> cancel two of the five <m>a</m>'s represented by <m>a^5</m>, there are <m>5-2=3</m> <m>a</m>'s left after cancelling.  Thus, dividing <m>a^5</m> by <m>a^2</m> just amounts to subtracting the exponents <m>\dfrac{a^5}{a^2} = a^{5-2}= a^3</m>. In a similar way, <m>\dfrac{a^m}{a^n} = a^{m-n}</m>. This is known as the <term>quotient rule of exponents</term>:</p>
       <mdn>
         <mrow xml:id="exponents-quotient-rule"> \text{Quotient Rule of Exponents: }
           \frac{a^m}{ a^n} =a^{m-n}
         </mrow>
       </mdn>
-      <p>The quotient rule of exponents can similarly be used to simplify exponent problems by subtracting exponents on like variables. This is shown in the following examples:</p>
+
       <example>
         <title>Quotient Rule of Exponents</title>
-        <p>Simplify:</p>
+        <p>Divide:</p>
         <md>
           <mrow>\dfrac{7^5 x^8}{7^4 x^3} \amp\amp\amp \text{Subtract the exponents on like bases, \(5-4 = 1\) and \(8-3=5\)}</mrow>
           <mrow>7^1x^5 \amp\amp\amp \text{Note that \(7^1 = 7\) since there is only one \(7\) to multiply.}</mrow>
@@ -890,15 +886,16 @@ sets, collected together.</p>
        <example>
         <title>Powers with Exponents</title>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 202 pg 178-->
-        <p>Simplify.
+        <p>Multiply:
         <md>
-          <mrow>\left(a^2\right)^3 \amp\amp\amp \text{This means we have \(a^2\) three times--expand}</mrow>
-          <mrow>a^2\cdot a^2 \cdot a^2 \amp\amp\amp \text{Add exponents}</mrow>
+          <mrow>\left(a^2\right)^3 \amp\amp\amp \text{This means we have three \(a^2\)'s multiplied together}</mrow>
+          <mrow>a^2\cdot a^2 \cdot a^2 \amp\amp\amp \text{Each <m>a^2</m> represent the produce of two <m>a</m>'s' </mrow>
+          <mrow>(aa)(aa)(aa) \amp\amp\amp \text{Three groups of two make six <m>a</m>'s in all multiplied together}</mrow>
           <mrow>a^6 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
       </example>
-      <p>A quicker method to arrive at the solution would have been to just multiply the exponents, <m>(a^2)^3 = a^{2\cdot 3} = a^6</m>. This is known as the <term>power of a power rule of exponents</term>: </p>
+      <p>Since three groups of two is <m>3 \cdot 2 = 6</m>, a quicker method to arrive at the solution is to just multiply the exponents, <m>(a^2)^3 = a^{2\cdot 3} = a^6</m>. This is known as the <term>power of a power rule of exponents</term>: </p>
       <mdn>
         <mrow xml:id="exponents-power-of-a-power-rule"> \text{Power of a Power Rule of Exponents: }
           (a^m)^n=a^{mn}
@@ -908,10 +905,11 @@ sets, collected together.</p>
       <example>
         <title>Powers of Products</title>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 203 pg 178-->
-        <p>Simplify.
+        <p>Multiply:
         <md>
           <mrow>(ab)^3 \amp\amp\amp \text{This means we have \((ab)\) three times}</mrow>
-          <mrow>(ab)(ab)(ab) \amp\amp\amp \text{The product of three \(a\)'s and three \(b\)'s can be written with exponents}</mrow>
+          <mrow>(ab)(ab)(ab) \amp\amp\amp \text{Regroup the variables}</mrow>
+          <mrow>(aaa)(bbb) \amp\amp\amp \text{The product of three \(a\)'s and three \(b\)'s can be written with exponents}</mrow>
           <mrow>a^3 b^3 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
@@ -929,21 +927,29 @@ sets, collected together.</p>
       </mdn>
 
       <p>It is important to be careful to only use the power of a product rule with multiplication inside parentheses. This property does NOT work if there is addition or subtraction inside the parentheses.</p>
+      <aside>
       <alert>WARNING:</alert>
-      <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Warning 204 pg 179-->
-      <p>
+      <!-- All but the last line was written by rac.  Cite Beginning and Intermediate Algebra by Tyler Wallace Warning 204 pg 179-->
+      <p>The Power of a Product Rule only applies to products.  It does <b>not</b> apply to sums for any exponent not equal to <m>1</m>. For example, 
+      <md> 
+        <mrow>(1+2)^2 = 3^2 = 9 \amp\amp \text{But,}</mrow>
+        <mrow>1^2+2^2 = 1+4 = 5 \amp\amp \text{So, }</mrow>
+        <mrow>(1+2)^2 \neq 1^2+2^2 \amp\amp \text{The rule does not hold for a sum.}</mrow>
+      </md>
         <md>
           <mrow>(a+b)^m\ne a^m+b^m \amp\amp\amp \text{These are NOT equal if \(m\ne 1\), beware of this error!}</mrow>
         </md>
       </p>
+    </aside>
       <p>Another property that is very similar to the power of a product rule is considered next.</p>
       <example>
         <title>Powers of Quotients</title>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 205 pg 179-->
-        <p>Simplify.
+        <p>Divide:
         <md>
-          <mrow>\left(\frac{a}{b} \right)^3 \amp\amp\amp \text{This means we have the fraction three times}</mrow>
-          <mrow>\left(\frac{a}{b} \right) \left(\frac{a}{b} \right) \left(\frac{a}{b} \right) \amp\amp\amp \text{Multiply fractions across the top and bottom, using exponents}</mrow>
+          <mrow>\left(\frac{a}{b} \right)^3 \amp\amp\amp \text{This means we have the three copies of the fraction multiplied together}</mrow>
+          <mrow>\left(\frac{a}{b} \right) \left(\frac{a}{b} \right) \left(\frac{a}{b} \right) \amp\amp\amp \text{Regroup the bases}</mrow>
+          <mrow>\frac{aaa}{bbb} \amp\amp\amp \text{Multiply fractions across the top and bottom}</mrow>
           <mrow>\dfrac{a^3}{b^3} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
@@ -965,7 +971,8 @@ sets, collected together.</p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 206 pg 179-->
         <p>Simplify.
         <md>
-          <mrow>(x^3y)^4 \amp\amp\amp \text{Put the exponent of \(4\) on each factor, multiplying powers}</mrow>
+          <mrow>(x^3y)^4 \amp\amp\amp \text{Apply the exponent <m>4</m> to each factor}</mrow>
+          <mrow>(x^3)^4 y^4 \amp\amp\amp \text{Multiply powers}</mrow>
           <mrow>x^{12} y^4 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
@@ -973,7 +980,7 @@ sets, collected together.</p>
       <assemblage>
         <title>WeBWorK: Entering Multi-digit Exponents</title>
         <p>If your exponent has two or more digits, you must place parentheses around it. Otherwise, WeBWorK only takes the first number after the <c>^</c> as the exponent: Type
-          <c>x^(12)</c>for
+          <c>x^(12)</c> for
           <m>x^{12}</m>.
         </p>
       </assemblage>
@@ -982,16 +989,17 @@ sets, collected together.</p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 207 pg 180-->
         <p>Simplify.
         <md>
-          <mrow>\left(\dfrac{a^3 b}{c^4 d^5} \right)^2 \amp\amp\amp \text{Put the exponent of 2 on each factor, multiplying powers}</mrow>
+          <mrow>\left(\dfrac{a^3 b}{c^4 d^5} \right)^2 \amp\amp\amp \text{ }</mrow>
+          <mrow>\dfrac{(a^3)^2 b^2}{(c^4)^2 (d^5)^2} \amp\amp\amp \text{ }</mrow>
           <mrow>\dfrac{a^6 b^2}{c^8d^{10}} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
       </example>
-      <p>As we multiply exponents its important to remember these properties apply to exponents, not bases. An expression such as
+      <p>An expression such as
         <m>5^3</m> does not mean we multiply
         <m>5</m> by
-        <m>3</m>, rather we multiply
-        <m>5</m> three times,
+        <m>3</m>, rather we multiply three
+        <m>5</m>'s together,
         <m>5 \cdot 5 \cdot 5 = 125</m>. This is shown in the next example.
       </p>
       <example>
@@ -999,20 +1007,21 @@ sets, collected together.</p>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 208 pg 180-->
         <p>Simplify.
         <md>
-          <mrow>(4x^2 y^5)^3 \amp\amp\amp \text{Put the exponent of \(3\) on each factor, multiplying powers}</mrow>
+          <mrow>(4x^2 y^5)^3 \amp\amp\amp \text{}</mrow>
+          <mrow>4^3 (x^2)^3 (y^5)^3 \amp\amp\amp \text{}</mrow>
           <mrow>4^3 x^6 y^{15} \amp\amp\amp \text{Evaluate \(4^3=4\cdot 4\cdot 4\)}</mrow>
           <mrow>64x^6 y^{15} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
       </example>
-      <p>In the previous example we did not put the
+      <p>Never multiply a base by the exponent.  In the previous example we did not put the
         <m>3</m> on the
         <m>4</m> and multipy to get
-        <m>12</m>, this would have been incorrect. Never multiply a base by the exponent. These properties pertain to exponents only, not bases.
+        <m>12</m>, this would have been incorrect.  These properties pertain to exponents only, not bases.
       </p>
       <p>In this lesson we have discussed five different exponent properties. These rules are summarized in the following table:</p>
 
-      <table>
+<!--      <table>  -->
         <tabular top="major" halign="center">
             <col halign="left" />
             <col halign="right" />
@@ -1041,7 +1050,7 @@ sets, collected together.</p>
               <cell><m>\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}</m><xref ref="exponents-power-of-a-quotient-rule" /></cell>
             </row>
           </tabular>
-        </table>
+<!--        </table>  -->
         <p>These five properties are often mixed up in the same problem. Often there is a bit of flexibility as to which property is used first. However, order of operations still applies to a problem. For this reason it is our suggestion to simplify inside any parentheses first, then simplify any exponents (using power rules), and finally simplify any multiplication or division (using product and quotient rules). This is illustrated in the next few examples. </p>
         <example>
         <title>Simplify Exponents</title>
@@ -1077,7 +1086,7 @@ sets, collected together.</p>
         </md>
       </p>
       </example>
-      <p>Clearly these problems can quickly become quite involved. Remember to follow order of operations as a guide, simplify inside parenthesis first, then power rules, then product and quotient rules.</p>
+      <p>These problems can quickly become quite involved. Remember to follow order of operations as a guide, simplify inside parenthesis first, then power rules, then product and quotient rules.</p>
     </subsection>
 
             
@@ -1145,7 +1154,7 @@ sets, collected together.</p>
             </center> </p> ##>-->
            <subsection>
       <title>Negative Exponents</title>
-      <p>There are a few special exponent properties that deal with exponents that are not positive. The first is considered in the following example, which is worked out two different ways:</p>
+      <p>A few exponent properties deal with exponents that are not positive. The first is considered in the following example, which is worked out two different ways:</p>
       <example>
         <title>Investigate Zero Power</title>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 214 pg 183-->
@@ -1159,11 +1168,11 @@ sets, collected together.</p>
         </md>
         When we combine the two solutions we get:
         <md>
-          <mrow>\text{} \amp\amp\amp a^0=1 \amp\amp\amp \text{Our Final Result}\checkmark \amp\amp\amp \text{ }</mrow>
+          <mrow>\text{ } \amp\amp\amp a^0=1 \amp\amp\amp \text{ }</mrow>
         </md>
       </p>
       </example>
-      <p>This final result is an important property known as the
+      <p>This result is an important property known as the
         <term>Zero Power Rule of Exponents</term>:
 
       <mdn>
@@ -1172,7 +1181,7 @@ sets, collected together.</p>
         </mrow>
       </mdn>
 
-      Any number or expression raised to the zero power will always be
+      Any number (except <m>0</m>) or expression raised to the zero power will always be
         <m>1</m>. This is illustrated in the following example.</p>
         <example>
         <title>Zero Power Rule of Exponents</title>
@@ -1186,7 +1195,7 @@ sets, collected together.</p>
       </example>
       <p>Another property we will consider here deals with negative exponents. Again we will solve the following example two ways.</p>
       <example>
-        <title>Investigate Negative Exponents</title>
+        <title>Negative Exponents</title>
         <p>
           <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 216 pg 184-->
         <md>
@@ -1197,48 +1206,64 @@ sets, collected together.</p>
           <mrow>\text{ } \amp\amp\amp \text{ } \amp\amp\amp \dfrac{1}{aa} \amp\amp\amp \text{Simplify to exponents}</mrow>
           <mrow>\text{ } \amp\amp\amp \text{ } \amp\amp\amp \dfrac{1}{a^2} \amp\amp\amp \text{Method 2 Solution}</mrow>
         </md>
-        Since both expressions are solutions, they must be equal:
+        Both expressdions represent the same thing so they must be equal:
         <md>
-          <mrow>\text{} \amp\amp\amp a^{-2}=\dfrac{1}{a^2} \amp\amp\amp \text{Our Final Result}\checkmark\amp\amp\amp \text{ }</mrow>
+          <mrow>\text{} \amp\amp\amp a^{-2}=\dfrac{1}{a^2} \amp\amp\amp \text{}</mrow>
         </md>
       </p>
       </example>
-      <p>This example illustrates an important property of exponents. Negative exponents yield the reciprocal of the base. Once we take the reciprocal the exponent is now positive. Also, it is important to note a negative exponent does not mean the expression is negative, only that we need the reciprocal of the base.  The next example simplifies a fraction raised to a negative exponent.</p>
+      <p>This example illustrates an important property of exponents. 
+      <mdn>
+        <mrow xml:id="exponents-negative-power-rule"> \text{Negative Power Rule of Exponents: }
+          a^{-n}= \frac{1}{a^n} \text{ if } a \neq 0
+        </mrow>
+      </mdn>
+       It is important to note that a negative exponent does not mean the expression is negative.</p>
       <example>
         <title>Simplify a Fraction with a Negative Exponent</title>
           <!-- New one-->
         <p>Simplify.
         <md>
-          <mrow>\left(\dfrac{5}{3} \right)^{-2} \amp\amp\amp \text{Negative exponents yield the reciprocal of the base}</mrow>
+          <mrow>\left(\dfrac{5}{3} \right)^{-2} \amp\amp\amp \text{Negative exponents tell us to take the reciprocal}</mrow>
           <mrow>\left(\dfrac{3}{5} \right)^2 \amp\amp\amp \text{The reciprocal has a positive exponent, now power rule}</mrow>
           <mrow>\dfrac{3^2}{5^2} \amp\amp\amp \text{Evaluate}</mrow>
           <mrow>\dfrac{9}{25} \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
       </example>
-      <p>Following are the rules of negative exponents: </p>
-      <table>
+      <p>
+        In the example above, we simplified the reciprocal of the fraction by using the method for dividing fractions,
+        <md>
+          <mrow>\frac{1}{frac{a}{b}} = 1 \cdot \frac{b}{a} = \frac{b}{a} \amp\amp\amp \text{}</mrow>
+        </md>        
+      </p>
+      <p>Following is the rule for negative exponents: </p>
+<!--      <table> -->
         <tabular top="major" halign="center">
             <col halign="center" />
             <!--  -->
             <row bottom="minor" halign="center">
-              <cell>Rules of Negative Exponents</cell>
+              <cell>Rule of Negative Exponents</cell>
             </row>
-            <row>
+<!--            <row>
               <cell><m>a^0=1</m><xref ref="exponents-zero-power-rule" /></cell>
             </row>
+-->
             <row>
               <cell><m>a^{-m}=\dfrac{1}{a^m}</m></cell>
             </row>
+<!--
             <row>
               <cell><m>\dfrac{1}{a^{-m}}= a^m</m></cell>
             </row>
             <row>
               <cell><m>\left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}</m></cell>
             </row>
+-->
           </tabular>
-        </table>
-        <p>Negative exponents can be combined in several different ways. As a general rule if we think of our expression as a fraction, bases with negative exponents in the numerator must be moved to the denominator with a positive exponent.  Likewise, bases with negative exponents in the denominator need to be moved to the numerator. When the base with exponent moves, the exponent is now positive.</p>
+<!--        </table>  -->
+<!--        <p>Negative exponents can be combined in several different ways. As a general rule if we think of our expression as a fraction, bases with negative exponents in the numerator must be moved to the denominator with a positive exponent.  Likewise, bases with negative exponents in the denominator need to be moved to the numerator. When the base with exponent moves, the exponent is now positive.</p>
+-->
         <!--This is illustrated in the following example. </p>
             
             
@@ -1263,7 +1288,7 @@ sets, collected together.</p>
             
             </center> </p><p>As we simplified our fraction we took special care to move the bases that had a negative exponent, but the expression itself did not become negative because of those exponents. Also, it is important to remember that exponents only effect what they are attached to. The $2$ in the denominator of the above example does not have an explicit exponent (which is an exponent of positive $1$), so it does not move to the numerator with the $d$. </p>-->
       <p>We now have the following nine properties of exponents. It is important that we are very familiar with all of them. </p>
-      <table>
+<!--      <table>  -->
         <tabular top="major" halign="center">
             <col halign="center" />
             <col halign="center" />
@@ -1288,7 +1313,7 @@ sets, collected together.</p>
               <cell><m>\left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}</m></cell>
             </row>
           </tabular>
-        </table>
+<!--        </table>  -->
         <historical>
     <title>World View Note</title>
     <p>Nicolas Chuquet, the French mathematician of the 15th century wrote <m>12^{1\overline{m}}</m> to indicate <m>12x^{-1}</m>. This was the first known use of the negative exponent.</p>

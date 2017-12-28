@@ -42,7 +42,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <mrow>9^{1/2}\amp = ??</mrow>
         </md>
         You can't <q>multiply <m>9</m> by itself half a time</q> or <q>multiply <m>5</m> by itself <m>-4</m> times.</q> We need a different way of considering the exponent in these cases.</p>
-    <table>
+<!--    <table>  -->
       <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
         <col right="minor" width="20%" />
         <col right="minor" width="20%" />
@@ -60,7 +60,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         </row>
         <row bottom = "minor">
           <cell><p>Always <m>1</m></p></cell>
-          <cell><p>Go in the denominator</p></cell>
+          <cell><p>Indicate the reciprocal</p></cell>
           <cell><p>Act as a radical</p></cell>
           <cell><p><m>m</m> is an exponent,</p>
           <p><m>n</m> is a radical</p></cell>
@@ -79,7 +79,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <cell><p><m>8^{3/2} = \sqrt{8^3}</m> or <m>(\sqrt{8})^3</m></p></cell>
         </row>
       </tabular>
-    </table>
+<!--    </table>  -->
     <p>Note that you can combine these definitions. For instance, <m>8^{-2/3}</m> is a negative, fractional exponent. The negative exponent means, as always, "put me in the denominator." So we can write:
       <md>
         <mrow>8^{-2/3} = \frac{1}{8^{2/3}} = \frac{1}{(\sqrt[3]{8})^2} = \frac{1}{2^2} = \frac{1}{4}</mrow>
@@ -111,7 +111,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
             </ul>
           </p>
           <p>The proofs given below all follow this pattern. They use the laws of exponents to rewrite expressions such as <m>\frac{4^2}{4^2}</m> , and go on to show how zero, negative, and fractional exponents must be defined. We started with the definition of an exponent for a positive integer, <m>10^6 = 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10</m>. From there, we developed the laws of exponents. Now we find that, if we want those same laws to apply to other kinds of exponents, there is only one correct way to define those other kinds of exponents.</p>
-    <table>
+<!--    <table>  -->
       <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
         <col right="minor" width="20%" />
         <col right="minor" width="30%" />
@@ -149,7 +149,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <p>or <m>8^{\frac{2}{3}}=(8^2)^{\frac{1}{3}}=\sqrt[3]{8^2}</m></p></cell>
         </row>
       </tabular>
-    </table>
+<!--    </table>  -->
     <p>Hence, we may use radicals and rational exponents interchangably:</p>
       <p><term>Radicals and Rational Exponents</term>:
         <mdn>
@@ -352,7 +352,7 @@ equation, it's vital to check your answer(s)!</p>
         <ol label="a.">
           <li><p>For <m>f(x) = \dfrac{1}{x^{2/3}}</m>, we notice <m>f</m> may be rewritten as <m>f(x) = \sqrt[3]{\dfrac{1}{x^2}}</m> and any number squared is positive. Taking the cube root of a positive number poses no problem and always results in a positive number. The only problem will be at <m>x=0</m> since division by zero is not defined.  Hence, the domain is <m>x \lt 0</m> or <m>x \gt 0</m> or equivalently <m>(-\infty,0)\cup (0,\infty)</m>.</p>
           <p>Next, let's consider the range: Since the numerator of the fraction is <m>1</m>, there is no way to make the fraction equal zero.  Hence, zero is not in the range.  At first glance, it would seem the range should be numbers between <m>0</m> and <m>1</m> excluding zero, but we have to consider all possible values to use for <m>x</m>. Let's try a variety of values for <m>x</m> to get an idea of the kind of output values the function makes:</p>
-          <table>
+<!--          <table>  -->
             <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
               <col right="minor" halign="right"/>
               <col right="minor" />
@@ -403,7 +403,7 @@ equation, it's vital to check your answer(s)!</p>
                 <cell><m>0.0464</m></cell>
               </row>
             </tabular>
-          </table>
+<!--          </table>  -->
           <p>Is this enough to convince you that the function can output any positive number? If not, try a few more values, or better yet, graph <m>y = f(x)</m> to see that the range is <m>y \gt 0</m> or equivalently <m>(0,\infty)</m>.</p></li>
           <li><p>For <m>g(x) =\sqrt{x + 1},</m> the domain consists of all real numbers which may be evaluated in the function.  This means <m>x+1\ge 0</m>  hence the domain is <m>x \ge -1</m> or equivalently <m>[-1,\infty)</m>. The range is the set of numbers which can be produced by <m>g(x).</m>  Notice that we can make very small positive numbers numbers by letting <m>x</m> be values close to <m>-1</m> and we can make zero by substituting <m>x = -1.</m>  The larger <m>x</m> is, the larger the output value will be, but since the square root is always a nonnegative number, the range is <m>y \ge 0</m> or equivalently <m>[0,\infty).\checkmark</m></p></li>
         </ol>
@@ -431,7 +431,8 @@ equation, it's vital to check your answer(s)!</p>
           <sidebyside>
             <p>Let's start with the graph of <m>f(x) = \sqrt{x}:</m>
             </p>
-            <figure xml:id="figure-graph-sqrt-x"> <!--set3C-Radical_Functions_01.png-->
+ <!--           <figure xml:id="figure-graph-sqrt-x"> -->
+ <!--set3C-Radical_Functions_01.png-->
               <image xml:id="graph-sqrt-x">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
@@ -446,7 +447,7 @@ equation, it's vital to check your answer(s)!</p>
                   \node at (1.75, 2.5) {\Large $f(x)=\sqrt{x}$}; 
                 \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
           </sidebyside>
           <sidebyside>
             <paragraphs>
@@ -454,7 +455,8 @@ equation, it's vital to check your answer(s)!</p>
               <p>flips it on the horizontal axis:
               </p>
             </paragraphs>
-            <figure xml:id="figure-graph-3-minus-sqrt-x-minus-2"> <!--set3C-Radical_Functions_02.png-->
+<!--            <figure xml:id="figure-graph-3-minus-sqrt-x-minus-2"> -->
+<!--set3C-Radical_Functions_02.png-->
               <image xml:id="graph-3-minus-sqrt-x-minus-2">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
@@ -472,7 +474,7 @@ equation, it's vital to check your answer(s)!</p>
                   \node at (2, 3.5) {\Large $g(x)=3-\sqrt{x-2}$}; 
                 \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
           </sidebyside>
           <sidebyside>
             <paragraphs>
@@ -480,7 +482,8 @@ equation, it's vital to check your answer(s)!</p>
               <p>shifts it <m>1</m> to the right and <m>2</m> down:
               </p>
             </paragraphs>
-            <figure xml:id="figure-graph-sqrt-1-minus-x-minus-2"> <!-- set3C-Radical_Functions_03.png-->
+<!--            <figure xml:id="figure-graph-sqrt-1-minus-x-minus-2"> -->
+<!-- set3C-Radical_Functions_03.png-->
               <image xml:id="graph-sqrt-1-minus-x-minus-2">
                 <latex-image-code><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
@@ -498,7 +501,7 @@ equation, it's vital to check your answer(s)!</p>
                   \node at (-3, -1.5) {\Large $h(x)=\sqrt{1-x}-2$}; 
                 \end{tikzpicture}]]></latex-image-code>
               </image>
-            </figure>
+<!--            </figure>  -->
           </sidebyside>
         </sbsgroup>
     </example>
