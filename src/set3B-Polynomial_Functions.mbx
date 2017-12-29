@@ -163,7 +163,7 @@ Saylor.org,  pages 192-193-->
 <!--        <figure xml:id="figure-distributive-property"> -->
 <!--NEEDS TO BE formatted set3B-Polynomial-Functions-01.png-->
           <image xml:id="distributive-property">
-            <latex-image-code><![CDATA[\begin{tikzpicture}
+            <latex-image><![CDATA[\begin{tikzpicture}
               \node (a) at (0,0) {\LARGE $(4x$};
               \node (b) at (1,0) {\LARGE $+3)$};
               \node (c) at (2,0) {\LARGE$(3x$};
@@ -172,7 +172,7 @@ Saylor.org,  pages 192-193-->
               \draw[->,shorten >=5pt,shorten <=5pt,out=60,in=110,distance=0.5cm,red] (a.north) to (c.north);
               \draw[->,shorten >=1pt,shorten <=2pt,out=-70,in=-110,distance=0.5cm,blue,] (b.south) to (d.south);
               \draw[->,shorten >=1pt,shorten <=2pt,out=-60,in=-110,distance=0.25cm,blue] (b.south) to (c.south);
-  \end{tikzpicture}]]></latex-image-code>
+  \end{tikzpicture}]]></latex-image>
           </image>
 <!--        </figure>  -->
         <ul>
@@ -221,7 +221,7 @@ Saylor.org,  pages 192-193-->
         <sidebyside>
 <!--          <figure xml:id="figure-graph-4-polynomials-1">  -->
             <image xml:id="graph-4-polynomials-1">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image><![CDATA[\begin{tikzpicture} 
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -231,12 +231,12 @@ Saylor.org,  pages 192-193-->
                 \node at (-.3,5) {$10$};
                 \draw[line width=0.75mm, domain=-1.5:1.5,smooth,variable=\x,red] plot ({\x},{2*(\x*\x)+.5});
                 \node at (0,-6) {\Large $f(x)=x^2+1$};
-              \end{tikzpicture}]]></latex-image-code>
+              \end{tikzpicture}]]></latex-image>
             </image>
 <!--          </figure>  -->
 <!--          <figure xml:id="figure-graph-4-polynomials-2">  -->
             <image xml:id="graph-4-polynomials-2">i
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image><![CDATA[\begin{tikzpicture} 
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -246,14 +246,14 @@ Saylor.org,  pages 192-193-->
                 \node at (-.3,5) {$10$};
                 \draw[line width=0.75mm, domain=-2.:1.5,smooth,variable=\x,red] plot ({\x},{-2*(\x*\x)-\x+1});
                 \node at (0,-6) {\Large $g(x)=-x^2-x+2$};
-              \end{tikzpicture}]]></latex-image-code>
+              \end{tikzpicture}]]></latex-image>
             </image>
 <!--          </figure>  -->
         </sidebyside>
         <sidebyside>
 <!--          <figure xml:id="figure-graph-4-polynomials-3"> -->
             <image xml:id="graph-4-polynomials-3">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image><![CDATA[\begin{tikzpicture} 
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -263,12 +263,12 @@ Saylor.org,  pages 192-193-->
                 \node at (-.3,5) {$10$};
                 \draw[line width=0.75mm, domain=-1.81:1.96,smooth,variable=\x,red] plot ({\x},{8/7*(\x*\x*\x)-2/7*\x*\x-1.5*\x});
                 \node at (0,-6) {\Large $h(x)=\frac{2}{7}x^3-\frac{1}{7}x^2-3x$};
-              \end{tikzpicture}]]></latex-image-code>
+              \end{tikzpicture}]]></latex-image>
             </image>
 <!--          </figure>  -->
 <!--          <figure xml:id="figure-graph-4-polynomials-4"> -->
             <image xml:id="graph-4-polynomials-4">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image><![CDATA[\begin{tikzpicture} 
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -278,7 +278,7 @@ Saylor.org,  pages 192-193-->
                 \node at (-.3,5) {$10$};
                 \draw[line width=0.75mm, domain=-.807:1.512,smooth,variable=\x,red] plot ({\x},{8*(\x*\x*\x*\x)-8*\x*\x*\x-4*\x*\x});
                 \node at (0,-6) {\Large $k(x)=x^4-2x^3-2x^2$};
-              \end{tikzpicture}]]></latex-image-code>
+              \end{tikzpicture}]]></latex-image>
             </image>
 <!--          </figure>  -->
           
@@ -330,7 +330,7 @@ Saylor.org,  pages 192-193-->
 <!--        <figure xml:id="figure-graph-xsq-plus-1"> -->
 <!--set3B-Polynomial_Functions_03.png-->
           <image xml:id="graph-xsq-plus-1">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image><![CDATA[\begin{tikzpicture} 
               \draw[step=1cm,gray,very thin] (-5.9,-1.9) grid (5.9,5.9);;
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
               \draw[line width=0.55mm,black,<->] (0,-1.9) -- (0,5.9);          
@@ -348,7 +348,7 @@ Saylor.org,  pages 192-193-->
               \fill (0,1) circle (.1cm);
               \fill (1,2) circle (.1cm);
               \fill (2,5) circle (.1cm); 
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}]]></latex-image>
           </image>
 <!--        </figure>  -->
         </sidebyside>
@@ -402,7 +402,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
 <!--          <figure xml:id="figure-graph-negative-xsq-minus-x-plus-2"> -->
 <!--set3B-Polynomial_Functions_04.png-->
               <image xml:id="graph--negative-xsq-minus-x-plus-2">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-4.9) grid (5.9,4.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
                   \draw[line width=0.55mm,black,<->] (0,-4.9) -- (0,4.9);
@@ -420,7 +420,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \fill (-2,0) circle (.1cm);
                   \fill (0,2) circle (.1cm);
                   \fill (1,0) circle (.1cm); 
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -444,7 +444,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
 <!--          <figure xml:id="figure-graph-cubic"> -->
 <!--set3B-Polynomial_Functions_05.png-->
               <image xml:id="graph-cubic">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-4.9) grid (5.9,4.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
                   \draw[line width=0.55mm,black,<->] (0,-4.9) -- (0,4.9);
@@ -462,7 +462,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \fill (-3,0) circle (.1cm);
                   \fill (0,2) circle (.1cm);
                   \fill (3.5,0) circle (.1cm); 
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -502,7 +502,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
 <!--          <figure xml:id="figure-graph-quartic"> -->
 <!--set3B-Polynomial_Functions_06.png-->
               <image xml:id="graph-quartic">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-8.9) grid (5.9,1.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
                   \draw[line width=0.55mm,black,<->] (0,-8.9) -- (0,1.9);
@@ -520,7 +520,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \fill (-.732,0) circle (.1cm);
                   \fill (0,0) circle (.1cm);
                   \fill (2.732,0) circle (.1cm); 
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -570,7 +570,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
 <!--    <figure xml:id="figure-graph-sine-approx"> -->
 <!--set3B-Polynomial_Functions_07.png-->
               <image xml:id="graph-sine-approx">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                   \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0);
                   \draw[line width=0.55mm,black,<->] (0,-4) -- (0,4);
                   \foreach [evaluate=\x as \z using int(2*\x)] \x in {-5,...,5}
@@ -581,7 +581,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \draw[dashed, line width=0.75mm, blue](-5.5, .5) cos (-4.71,0) sin (-3.93,-.5) cos (-3.14,0) sin (-2.36,.5) cos (-1.57,0) sin (-.785,-.5) cos (0,0) sin (.785,.5) cos (1.57,0) sin (2.36,-.5) cos (3.14,0) sin (3.93,.5) cos (4.71,0) sin (5.5, -.5);
                   \node at (4,3.2) {\Large $f(x)=x - \frac{1}{6}x^3 + \frac{1}{120}x^5$};
                   \node at (4, -1) {\Large $g(x)=\sin(x)$}; 
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
   </subsection>

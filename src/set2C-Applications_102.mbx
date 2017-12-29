@@ -198,7 +198,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         </paragraphs>
 <!--    <figure xml:id="figure-graph-break-even">  --> <!--set2C-Applications_01.png-->
               <image xml:id="graph-break-even">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.55mm,black,<->] (-.5,0) -- (10,0) node[anchor=north west] {b};
                       \draw[line width=0.55mm,black,<->] (0,-0.5) -- (0,10) node[anchor=south east] {money};
                       \foreach [evaluate=\x as \z using int(10*\x)] \x in {1.5,3,4.5,6,7.5,9}
@@ -209,7 +209,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                       \node at (3,6) {\Large $C(x)=100+2b$};
                       \draw[line width=0.75mm,green] (0,0)--(10,7.5);
                       \node at (7,4) {\Large $R(b)=15b$}; 
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>

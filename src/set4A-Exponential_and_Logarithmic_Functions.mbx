@@ -60,7 +60,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
 <!--        <figure xml:id="figure-graph-2-to-the-x"> -->
 <!--set4A-Exponential_and_Logarithmic_Functions_01.png-->
           <image xml:id="graph-2-to-the-x">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image><![CDATA[\begin{tikzpicture} 
               \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,10.9);
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
               \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,10.9) node[anchor=south east] {$y$};
@@ -77,7 +77,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
               \fill[black] (2,4) circle (.15cm);
               \fill[black] (3,8) circle (.15cm);
               \node at (-2.2, 2.5) {\LARGE $f(x)=2^x$}; 
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}]]></latex-image>
           </image>
 <!--        </figure>b -->
         </sidebyside>
@@ -100,7 +100,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
 <!--      <figure xml:id="figure-graph-2-to-x">  -->
 <!--set4A-Exponential_and_Logarithmic_Functions_01.png-->
         <image xml:id="graph-2-to-x">
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image><![CDATA[\begin{tikzpicture} 
             \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,10.9);
             \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
             \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,10.9) node[anchor=south east] {$y$};
@@ -117,7 +117,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
             \fill[black] (2,4) circle (.15cm);
             \fill[black] (3,8) circle (.15cm);
             \node at (-2.2, 2.5) {\LARGE $f(x)=2^x$}; 
-          \end{tikzpicture}]]></latex-image-code>
+          \end{tikzpicture}]]></latex-image>
         </image>
 <!--      </figure> -->
       <paragraphs>
@@ -130,7 +130,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
 <!--      <figure xml:id="figure-graph-2-to-neg-x"> -->
 <!--set4A-Exponential_and_Logarithmic_Functions_02.png-->
         <image xml:id="graph-2-to-neg-x">
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image><![CDATA[\begin{tikzpicture} 
             \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,10.9);
             \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
             \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,10.9) node[anchor=south east] {$y$};
@@ -147,7 +147,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
             \fill[black] (2,.25) circle (.15cm);
             \fill[black] (3,.125) circle (.15cm);
             \node at (0.5, 7.5) {\LARGE $g(x)=2^{-x}=\left(\frac{1}{2}\right)^x$};
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
         </image>
 <!--      </figure>  -->
     </sidebyside>
@@ -182,7 +182,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
 <!--        <figure xml:id="figure-graph-b-to-x"> -->
 <!--set4A-Exponential_and_Logarithmic_Functions_03.png-->
           <image xml:id="graph-b-to-x">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image><![CDATA[\begin{tikzpicture} 
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
               \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,5.9);
               \node at (-.1, -.3) {$0$};
@@ -190,13 +190,13 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
               \fill[black] (0,1) circle (.15cm);
               \node at (4, 2.75) {\LARGE $y=b^x$};
                \node at (4, 2) {\LARGE $b>1$}; 
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}]]></latex-image>
           </image>
  <!--       </figure>  -->
  <!--       <figure xml:id="figure-graph-b-to-neg-x"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_04.png-->
           <image xml:id="graph-b-to-neg-x">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image><![CDATA[\begin{tikzpicture} 
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
               \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,5.9);
               \node at (-.3, -.3) {$0$};
@@ -204,7 +204,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
               \fill[black] (0,1) circle (.15cm);
               \node at (2.5, 1.75) {\LARGE $y=b^x$};
                \node at (3, 1) {\LARGE $0<b<1$}; 
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}]]></latex-image>
           </image>
  <!--       </figure>  -->
       </sidebyside>
@@ -232,7 +232,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--           <figure xml:id="figure-graph-point-8-to-x"> -->
  <!-- set4A-Exponential_and_Logarithmic_Functions_05.png-->
               <image xml:id="graph-point-8-to-x">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,6.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
                   \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,6.9) node[anchor=south east] {$y$};
@@ -245,7 +245,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \fill[black] (0,1) circle (.15cm);
                   \fill[black] (1,.8) circle (.15cm);
                   \node at (-2.5, 3.5) {\LARGE $f(x) = \left(\frac{4}{5}\right)^x$};
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
               </image>
  <!--           </figure>  -->
             <paragraphs>
@@ -258,7 +258,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--           <figure xml:id="figure-graph-point-8-to-neg-x"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_06.png-->
               <image xml:id="graph-point-8-to-neg-x">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,6.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
                   \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,6.9) node[anchor=south east] {$y$};
@@ -271,7 +271,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \fill[black] (0,5) circle (.15cm);
                   \fill[black] (1,4) circle (.15cm);
                   \node at (-2.75, 3.5) {\LARGE $V(x) = 25f(x)$}; 
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
               </image>
  <!--           </figure>  -->
           </sidebyside>
@@ -375,7 +375,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--           <figure xml:id="figure-graph-e-to-x"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_07.png-->
               <image xml:id="graph-e-to-x">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-3.9,-.9) grid (3.9,5.9);
                   \draw[line width=0.55mm,black,<->] (-3.9,0) -- (3.9,0) node[anchor=north west] {$t$};
                   \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,5.9);
@@ -386,7 +386,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \fill[black] (0,.5) circle (.15cm);
                   \fill[black] (1,1.36) circle (.15cm);
                   \node at (-2.5, 1.5) {\LARGE $f(t)=e^t$}; 
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
               </image>
  <!--           </figure> -->
             <paragraphs>
@@ -398,7 +398,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--           <figure xml:id="figure-graph-coffee"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_08.png-->
               <image xml:id="graph-coffee">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-1.9,-.9) grid (3.9,5.9);
                   \draw[line width=0.55mm,black,<->] (-1.9,0) -- (3.9,0) node[anchor=north west] {$t$};
                   \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,5.9) node[anchor=south east] {$y$};
@@ -413,7 +413,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \fill[black] (0,3.2) circle (.15cm);
                   \fill[black] (2,2) circle (.15cm);
                   \node at (-1.15, 1.4) {\Large $y=70$};
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
               </image>
  <!--           </figure>  -->
           </sidebyside>
@@ -517,7 +517,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--       <figure xml:id="figure-graph-log-b-x"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_09.png-->
           <image xml:id="graph-log-b-x">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image><![CDATA[\begin{tikzpicture} 
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
               \draw[line width=0.55mm,black,<->] (0,-2.9) -- (0,3.9);
               \node at (-.3, -.3) {$0$};
@@ -525,13 +525,13 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
               \fill[black] (1,0) circle (.15cm);
               \node at (4, 2.75) {\LARGE $y=\log_b(x)$};
                \node at (4, 2) {\LARGE $b>1$};
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}]]></latex-image>
           </image>
  <!--       </figure>  -->
  <!--       <figure xml:id="figure-graph-log-b-small-x"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_10.png-->
           <image xml:id="graph-log-b-small-x">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image><![CDATA[\begin{tikzpicture} 
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
               \draw[line width=0.55mm,black,<->] (0,-2.9) -- (0,3.9);
               \node at (-.3, -.3) {$0$};
@@ -539,7 +539,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
               \fill[black] (1,0) circle (.15cm);
               \node at (4, 2.75) {\LARGE $y=\log_b(x)$};
                \node at (4, 2) {\LARGE $0<b<1$};
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}]]></latex-image>
           </image>
  <!--       </figure>  -->
       </sidebyside>

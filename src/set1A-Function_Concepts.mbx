@@ -58,7 +58,7 @@ instance, <q>Double and then add <m>6</m></q> is a function. If you put a <m>4</
 the other side where numbers come out.</p></introduction>
 <!-- <figure xml:id="figure-function-box"> -->
           <image xml:id="function-box"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image><![CDATA[\begin{tikzpicture} 
             \node (a) at (-3,1) {\LARGE $5$};
             \node (b) at (-1.5,1) {};
             \draw[thick,-open triangle 90] (a) -- (b);
@@ -68,7 +68,7 @@ the other side where numbers come out.</p></introduction>
             \node (d) at (6,1) {\LARGE $14$};
             \draw[thick,-open triangle 90] (c) -- (d); 
             \end{tikzpicture}]]>
-            </latex-image-code>
+            </latex-image>
           </image>
 <!--        </figure>  -->
   <p>A number goes in. A number comes out. The <term>function</term> is the <q>process</q> that turns <m>5</m> into <m>14</m>.</p>

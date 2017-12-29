@@ -87,7 +87,7 @@ before you can predict her bank account on any given day.</p>
   </p>
 <!--  <figure xml:id="figure-graph-Alice">  -->
         <image xml:id="graph-Alice"> <!--set2A-Linear_Functions_00.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image><![CDATA[\begin{tikzpicture} 
           \draw[line width=0.55mm,black,<->] (-.5,0) -- (10.5,0) node[anchor=north west] {d};
           \draw[line width=0.55mm,black,<->] (0,-0.5) -- (0,9.5) node[anchor=south east] {A};
           \foreach \x in {1,...,10}
@@ -98,7 +98,7 @@ before you can predict her bank account on any given day.</p>
           \fill[color=red] (0,3.75) circle (.1cm);
           \node at (7,5) {$A(d)=100d+750$};
           \end{tikzpicture}]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 <!--      </figure>  -->
       </sidebyside>
@@ -162,11 +162,11 @@ before you can predict her bank account on any given day.</p>
           </p>
 <!--          <figure xml:id="figure-graph-slope-1">--> <!--set2A-Linear_Functions_02a.png-->
               <image xml:id="graph-slope-1">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
                       \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
                       \draw[line width=0.75mm,red] (-5,-2)--(2,5); 
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
           </sidebyside>
@@ -175,11 +175,11 @@ before you can predict her bank account on any given day.</p>
           </p>
 <!--          <figure xml:id="figure-graph-slope-steep"> --> <!--set2A-Linear_Functions_02b.png-->
               <image xml:id="graph-slope-steep">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                         \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
                         \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
                         \draw[line width=0.75mm, blue] (-1.33,-5)--(2,5);
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -188,11 +188,11 @@ before you can predict her bank account on any given day.</p>
           </p>
 <!--          <figure xml:id="figure-graph-slope-gentle"> --> <!--set2A-Linear_Functions_02c.png-->
               <image xml:id="graph-slope-gentle">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
                       \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
                       \draw[line width=0.75mm,green] (-5,-2)--(5,1.5);
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -204,11 +204,11 @@ before you can predict her bank account on any given day.</p>
          </paragraphs>
 <!--          <figure xml:id="figure-graph-slope-horizontal"> --> <!--NEEDS TO BE UPDATED set2A-Linear_Functions_02d.png-->
               <image xml:id="graph-slope-horizontal">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
                       \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
                       \draw[line width=0.75mm,red] (-5,3)--(5,3);
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -219,11 +219,11 @@ before you can predict her bank account on any given day.</p>
          </paragraphs>
 <!--        <figure xml:id="figure-graph-slope-negative"> --> <!--set2A-Linear_Functions_02e.png-->
               <image xml:id="graph-slope-negative">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
                       \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
                       \draw[line width=0.75mm,blue] (-2,5)--(3,-5); 
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}]]></latex-image>
               </image>
  <!--           </figure>  -->
         </sidebyside>
@@ -236,11 +236,11 @@ before you can predict her bank account on any given day.</p>
           </paragraphs>
 <!--          <figure xml:id="figure-graph-slope-vertical"> --> <!--set2A-Linear_Functions_02f.png-->
               <image xml:id="graph-slope-vertical">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
                       \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
                       \draw[line width=0.75mm,green] (-3,-5)--(-3,5); 
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -259,7 +259,7 @@ before you can predict her bank account on any given day.</p>
         </paragraphs>
 <!--    <figure xml:id="figure-graph-slope-line"> --> <!--set2A-Linear_Functions_01.png-->
               <image xml:id="graph-slope-line">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                       \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
                       \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$x$};
                       \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$y$};
@@ -272,7 +272,7 @@ before you can predict her bank account on any given day.</p>
                       \draw[dashed, line width=0.75mm,black,->] (2,2) -- (2,4) node[shift={(.6,-.75)}] {\Large $+2$};
                       \draw[dashed, line width=0.75mm,black,->] (-1,-2) -- (-2,-2) node[shift={(.5,0.5)}] {\Large $-1$};
                       \draw[dashed, line width=0.75mm,black,->] (-2,-2) -- (-2,-4) node[shift={(-.6,.75)}] {\Large $-2$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -320,7 +320,7 @@ before you can predict her bank account on any given day.</p>
   </paragraphs>
 <!--    <figure xml:id="figure-graph-equation-line"> --> <!--set2A-Linear_Functions_01.png-->
               <image xml:id="graph-equation-line">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                       \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
                       \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$x$};
                       \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$y$};
@@ -333,7 +333,7 @@ before you can predict her bank account on any given day.</p>
                       \draw[dashed, line width=0.75mm,black,->] (2,2) -- (2,4) node[shift={(.6,-.75)}] {\Large $+2$};
                       \draw[dashed, line width=0.75mm,black,->] (-1,-2) -- (-2,-2) node[shift={(.5,0.5)}] {\Large $-1$};
                       \draw[dashed, line width=0.75mm,black,->] (-2,-2) -- (-2,-4) node[shift={(-.6,.75)}] {\Large $-2$}; 
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
