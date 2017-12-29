@@ -275,7 +275,7 @@ variable is said to <q>depend on</q> or <q>be a function of</q> the independent 
         <li><p><q>The time depends on the height of the ball.</q></p></li>
       </ul>
       <p>The first of these two examples is by far the most common. It is simply not true. There may be a relationship between these two quantities-for instance, the sum of these two variables might be the total number of soldiers, and the difference between these two quantities might suggest whether the battle will be a fair one. But there is no dependency relationship-that is, no way to say <q>If you tell me the number of Greek soldiers, I will tell you the number of Trojan soldiers</q>-so this is not a function.</p>
-      <p>The second example is subtler: it confuses the dependent and the independent variables. The height depends on the time, not the other way around. More on this in <xref ref="subsection-inverse-functions" autoname="yes" />.</p>
+      <p>The second example is subtler: it confuses the dependent and the independent variables. The height depends on the time, not the other way around. More on this in <xref ref="subsection-inverse-functions" text="type-global" />.</p>
     </example>
 -->
   </subsection>

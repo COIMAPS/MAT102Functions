@@ -262,8 +262,8 @@ substitution and elimination.</p>
       <example xml:id="example-graphing-no-solution">
         <title>Solving by Graphing: No Solution</title>
         <p>Recall
-          <xref ref="example-elimination-no-solution" autoname="yes" />and
-          <xref ref="example-substitution-no-solution" autoname="yes" />.  We found no solution to the system
+          <xref ref="example-elimination-no-solution" text="type-global" />and
+          <xref ref="example-substitution-no-solution" text="type-global" />.  We found no solution to the system
           <md>
             <mrow>2x+3y &amp;= 8</mrow>
             <mrow>4x+6y &amp;= -3</mrow>
@@ -295,7 +295,7 @@ substitution and elimination.</p>
       <example xml:id="example-graphing-infinite-solutions">
         <title>Solving by Graphing: Infinite Solutions</title>
         <p>Recall
-          <xref ref="example-elimination-infinite-solutions" autoname="yes" />. We found many solutions to the system
+          <xref ref="example-elimination-infinite-solutions" text="type-global" />. We found many solutions to the system
           <md>
             <mrow>2x+3y &amp;= 8</mrow>
             <mrow>4x+6y &amp;= 16</mrow>

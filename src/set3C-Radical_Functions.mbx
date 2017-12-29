@@ -334,7 +334,7 @@ equation, it's vital to check your answer(s)!</p>
             <mrow>25 = 25\text{, which is true!}</mrow>
           </md>
           So squaring both sides of a false equation can produce a true equation.</p>
-          <p>To see how this affects our equations, try plugging <m>x = -1</m> into the various steps of <xref ref="example-rewrite-radical-2" autoname="yes" />:</p>
+          <p>To see how this affects our equations, try plugging <m>x = -1</m> into the various steps of <xref ref="example-rewrite-radical-2" text="type-global" />:</p>
           <md>
             <mrow>\sqrt{x + 2} + 3x\amp = 5x + 1\amp\amp\text{Does \(x = -1\) work here? No, it does not.}</mrow>
             <mrow>\sqrt{x + 2}\amp = 2x + 1\amp\amp\text{How about here? No, \(x = -1\) produces the false equation \(1 = -1\).}</mrow>
@@ -423,7 +423,7 @@ equation, it's vital to check your answer(s)!</p>
           </li>
         </ol>
     </example>
-    <p>In <xref ref="section-1C-graphs" autoname="yes" />, we considered transformations of functions. We will now review these concepts.</p>
+    <p>In <xref ref="section-1C-graphs" text="type-global" />, we considered transformations of functions. We will now review these concepts.</p>
     <example xml:id="example-sqrt-x-transformations">
         <title>Transformations of a Radical Function</title>
         <p>Consider graphs of transformations of <m>f(x)=\sqrt{x}.</m></p>
