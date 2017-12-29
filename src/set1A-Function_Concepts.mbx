@@ -58,7 +58,7 @@ instance, <q>Double and then add <m>6</m></q> is a function. If you put a <m>4</
 the other side where numbers come out.</p></introduction>
 <!-- <figure xml:id="figure-function-box"> -->
           <image xml:id="function-box"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image><![CDATA[\begin{tikzpicture} 
             \node (a) at (-3,1) {\LARGE $5$};
             \node (b) at (-1.5,1) {};
             \draw[thick,-open triangle 90] (a) -- (b);
@@ -68,7 +68,7 @@ the other side where numbers come out.</p></introduction>
             \node (d) at (6,1) {\LARGE $14$};
             \draw[thick,-open triangle 90] (c) -- (d); 
             \end{tikzpicture}]]>
-            </latex-image-code>
+            </latex-image>
           </image>
 <!--        </figure>  -->
   <p>A number goes in. A number comes out. The <term>function</term> is the <q>process</q> that turns <m>5</m> into <m>14</m>.</p>
@@ -275,7 +275,7 @@ variable is said to <q>depend on</q> or <q>be a function of</q> the independent 
         <li><p><q>The time depends on the height of the ball.</q></p></li>
       </ul>
       <p>The first of these two examples is by far the most common. It is simply not true. There may be a relationship between these two quantities-for instance, the sum of these two variables might be the total number of soldiers, and the difference between these two quantities might suggest whether the battle will be a fair one. But there is no dependency relationship-that is, no way to say <q>If you tell me the number of Greek soldiers, I will tell you the number of Trojan soldiers</q>-so this is not a function.</p>
-      <p>The second example is subtler: it confuses the dependent and the independent variables. The height depends on the time, not the other way around. More on this in <xref ref="subsection-inverse-functions" autoname="yes" />.</p>
+      <p>The second example is subtler: it confuses the dependent and the independent variables. The height depends on the time, not the other way around. More on this in <xref ref="subsection-inverse-functions" text="type-global" />.</p>
     </example>
 -->
   </subsection>

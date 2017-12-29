@@ -10,7 +10,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <li><p>Solve simultaneous equation word problems by creating and solving two simultaneous linear equations.</p></li>
     </ul>
   <p>Many students approach math with the attitude that <q>I can do the equations, but I'm just not a <sq>word problems</sq> person.</q> No offense, but that's like saying <q>I'm pretty good at handling a tennis racket, as long as there's no ball involved.</q> The only point of handling the tennis racket is to hit the ball. The only point of math equations is to solve problems. So if you find yourself in that category, try this sentence instead: <q>I've never been good at word problems. There must be something about them I don't understand, so I'll try to learn it.</q></p>
-  <p>Actually, many of the key ideas of understanding word problems were discussed in the very beginning of <xref ref="section-1A-function-concepts" autoname="yes" />, in the discussion of variable descriptions. So this might be a good time to quickly re-read that section. If you can correctly identify the variables, you're half-way through the hard part of a word problem.  The other half is translating the sentences of the problem into equations that use those variables.</p>
+  <p>Actually, many of the key ideas of understanding word problems were discussed in the very beginning of <xref ref="section-1A-function-concepts" text="type-global" />, in the discussion of variable descriptions. So this might be a good time to quickly re-read that section. If you can correctly identify the variables, you're half-way through the hard part of a word problem.  The other half is translating the sentences of the problem into equations that use those variables.</p>
 </introduction>
 <subsection>
   <title>Linear Models</title>
@@ -198,7 +198,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         </paragraphs>
 <!--    <figure xml:id="figure-graph-break-even">  --> <!--set2C-Applications_01.png-->
               <image xml:id="graph-break-even">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                       \draw[line width=0.55mm,black,<->] (-.5,0) -- (10,0) node[anchor=north west] {b};
                       \draw[line width=0.55mm,black,<->] (0,-0.5) -- (0,10) node[anchor=south east] {money};
                       \foreach [evaluate=\x as \z using int(10*\x)] \x in {1.5,3,4.5,6,7.5,9}
@@ -209,7 +209,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                       \node at (3,6) {\Large $C(x)=100+2b$};
                       \draw[line width=0.75mm,green] (0,0)--(10,7.5);
                       \node at (7,4) {\Large $R(b)=15b$}; 
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>

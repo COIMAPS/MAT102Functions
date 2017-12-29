@@ -334,7 +334,7 @@ equation, it's vital to check your answer(s)!</p>
             <mrow>25 = 25\text{, which is true!}</mrow>
           </md>
           So squaring both sides of a false equation can produce a true equation.</p>
-          <p>To see how this affects our equations, try plugging <m>x = -1</m> into the various steps of <xref ref="example-rewrite-radical-2" autoname="yes" />:</p>
+          <p>To see how this affects our equations, try plugging <m>x = -1</m> into the various steps of <xref ref="example-rewrite-radical-2" text="type-global" />:</p>
           <md>
             <mrow>\sqrt{x + 2} + 3x\amp = 5x + 1\amp\amp\text{Does \(x = -1\) work here? No, it does not.}</mrow>
             <mrow>\sqrt{x + 2}\amp = 2x + 1\amp\amp\text{How about here? No, \(x = -1\) produces the false equation \(1 = -1\).}</mrow>
@@ -423,7 +423,7 @@ equation, it's vital to check your answer(s)!</p>
           </li>
         </ol>
     </example>
-    <p>In <xref ref="section-1C-graphs" autoname="yes" />, we considered transformations of functions. We will now review these concepts.</p>
+    <p>In <xref ref="section-1C-graphs" text="type-global" />, we considered transformations of functions. We will now review these concepts.</p>
     <example xml:id="example-sqrt-x-transformations">
         <title>Transformations of a Radical Function</title>
         <p>Consider graphs of transformations of <m>f(x)=\sqrt{x}.</m></p>
@@ -434,7 +434,7 @@ equation, it's vital to check your answer(s)!</p>
  <!--           <figure xml:id="figure-graph-sqrt-x"> -->
  <!--set3C-Radical_Functions_01.png-->
               <image xml:id="graph-sqrt-x">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
                   \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
@@ -445,7 +445,7 @@ equation, it's vital to check your answer(s)!</p>
                   \draw[line width=0.75mm, domain=0:5.9,smooth,variable=\x,red] plot ({\x},{sqrt(\x)});
                   \fill[color=red] (0,0) circle (.15cm);
                   \node at (1.75, 2.5) {\Large $f(x)=\sqrt{x}$}; 
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
           </sidebyside>
@@ -458,7 +458,7 @@ equation, it's vital to check your answer(s)!</p>
 <!--            <figure xml:id="figure-graph-3-minus-sqrt-x-minus-2"> -->
 <!--set3C-Radical_Functions_02.png-->
               <image xml:id="graph-3-minus-sqrt-x-minus-2">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
                   \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
@@ -472,7 +472,7 @@ equation, it's vital to check your answer(s)!</p>
                   \draw[line width=0.75mm, domain=2:5.9,smooth,variable=\x,blue] plot ({\x},{3-sqrt(\x-2)});
                   \fill[color=blue] (2,3) circle (.15cm);
                   \node at (2, 3.5) {\Large $g(x)=3-\sqrt{x-2}$}; 
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
           </sidebyside>
@@ -485,7 +485,7 @@ equation, it's vital to check your answer(s)!</p>
 <!--            <figure xml:id="figure-graph-sqrt-1-minus-x-minus-2"> -->
 <!-- set3C-Radical_Functions_03.png-->
               <image xml:id="graph-sqrt-1-minus-x-minus-2">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image><![CDATA[\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
                   \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
@@ -499,7 +499,7 @@ equation, it's vital to check your answer(s)!</p>
                   \draw[line width=0.75mm, domain=-5.9:1,smooth,variable=\x,green] plot ({\x},{sqrt(1-\x)-2});
                   \fill[color=green] (1,-2) circle (.15cm);
                   \node at (-3, -1.5) {\Large $h(x)=\sqrt{1-x}-2$}; 
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}]]></latex-image>
               </image>
 <!--            </figure>  -->
           </sidebyside>

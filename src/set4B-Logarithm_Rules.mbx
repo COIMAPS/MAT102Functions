@@ -6,7 +6,7 @@
       <li><p>Expand logarithmic expressions using the rules of logarithms.</p></li>
       <li><p>Combine logarithmic expressions using the rules of logarithms.</p></li>
     </ul>
-  <p>In <xref ref="section-4A-exponential-and-logarithmic-functions" autoname="yes" />, we introduced the logarithmic functions as inverses of exponential functions and discussed a few of their functional properties from that perspective. In this module, we explore the algebraic properties (or rules) of logarithms. Historically, these have played a huge role in the scientific development of our society since, among other things, they were used to develop analog computing devices called <em>slide rules</em> which enabled scientists and engineers to perform accurate calculations leading to such things as space travel and the moon landing. As we shall see shortly, logs have properties similar to all of the properties of exponents. We first restate the definition of a logarithm and the fact that it is the inverse of an exponential function.</p>
+  <p>In <xref ref="section-4A-exponential-and-logarithmic-functions" text="type-global" />, we introduced the logarithmic functions as inverses of exponential functions and discussed a few of their functional properties from that perspective. In this module, we explore the algebraic properties (or rules) of logarithms. Historically, these have played a huge role in the scientific development of our society since, among other things, they were used to develop analog computing devices called <em>slide rules</em> which enabled scientists and engineers to perform accurate calculations leading to such things as space travel and the moon landing. As we shall see shortly, logs have properties similar to all of the properties of exponents. We first restate the definition of a logarithm and the fact that it is the inverse of an exponential function.</p>
   <p><alert>Definition of Logarithm:</alert>  Let <m>b \gt 0</m> with <m>b \neq 1</m>. If <m>a</m> and <m>c</m> are numbers
   <ul>
     <li><m>\log_b(c) = a</m> means <m>b^a = c</m></li>
@@ -116,7 +116,7 @@
  <!--   <figure xml:id="figure-graph-log-2-of-x"> -->
  <!--set4B-Logarithm_Rules_01.png-->
       <image xml:id="graph-log-2-of-x">
-        <latex-image-code><![CDATA[\begin{tikzpicture}
+        <latex-image><![CDATA[\begin{tikzpicture}
           \draw[step=1cm,gray,very thin] (-.9,-5.9) grid (10.9,5.9);
           \draw[line width=0.55mm,black,<->] (-.9,0) -- (10.9,0) node[anchor=north west] {$x$};
           \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
@@ -133,7 +133,7 @@
           \fill[black] (4,2) circle (.15cm);
           \fill[black] (8,3) circle (.15cm);
           \node at (1.9, 2.5) {\LARGE $f(x)=\log_2(x)$};
-        \end{tikzpicture}]]></latex-image-code>
+        \end{tikzpicture}]]></latex-image>
       </image>
 <!--    </figure>  -->
     </sidebyside>
@@ -152,7 +152,7 @@
  <!--     <figure xml:id="figure-deaths"> -->
  <!--set4B-Logarithm_Rules_02.png-->
       <image xml:id="deaths">
-        <latex-image-code><![CDATA[\begin{tikzpicture}
+        <latex-image><![CDATA[\begin{tikzpicture}
             \draw (0,0) -- (10,0);
             \draw (0,-.25)--(0,.25);
             \draw (10,-.25)--(10,.25);
@@ -164,7 +164,7 @@
             \node  at (5.5,1.75) {\small into a tiny area down here, almost};
             \node  at (5.5,1.35) {\small too small to see.};
             \draw[<-,line width=.5mm] (0.1,0.1) -- (2,1);
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}]]></latex-image>
       </image>
  <!--   </figure>  -->
     <p>As you can see from the chart above, working with these numbers is extremely difficult: on a scale from <m>0</m> to <m>10</m> Million, there is no visible difference between (say) 1 and 100,000. Richardson solved this problem by taking the common log of the number of deaths. So a conflict with 1,000 deaths is given a magnitude of <m>\log(1000) = 3.</m> On this scale, which is now the standard for conflict measurement, the magnitudes of all wars can be easily represented.</p>
@@ -172,7 +172,7 @@
  <!--   <figure xml:id="figure-deaths-log"> -->
  <!--set4B-Logarithm_Rules_03.png-->
       <image xml:id="deaths-log">
-        <latex-image-code><![CDATA[\begin{tikzpicture}
+        <latex-image><![CDATA[\begin{tikzpicture}
             \draw (0,0) -- (7,0);
             \draw (0,-.25)--(0,.25);
             \draw (1,-.25)--(1,.25);
@@ -200,7 +200,7 @@
             \draw[->,line width=.5mm] (7,-1) -- (7,-1.5);
             \node at (7, -1.7) {10 Million deaths};
             \node at (7, -2.15) {(either World War)};
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}]]></latex-image>
       </image>
  <!--   </figure>  -->
     <p>Richardson's scale makes it practical to chart, discuss, and compare wars and battles from the smallest to the biggest. For instance, he discovered that each time you move up by one on the scale<ndash />that is, each time the number of deaths multiplies by <m>10</m><ndash />the number of conflicts drops by a third. (So there are roughly three times as many <q>magnitude <m>5</m></q>wars as <q>magnitude <m>6</m>,</q>and so on.)</p>
