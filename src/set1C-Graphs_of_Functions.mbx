@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="section-1C-graphs">
   <title>Graphs of Functions</title>
 <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
@@ -13,18 +14,18 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
    <p>Consider the following graph:</p>
 <!--   <figure xml:id="figure-graph-x-sq">  -->
         <image xml:id="graph-x-sq"> 
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-1.5) grid (4.5,5.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-1.5) -- (0,5.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-1.5) -- (0,5.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-1,...,5}
               \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
           \draw[line width=0.75mm, domain=-2.35:2.35,smooth,variable=\x,red] plot ({\x},{\x*\x});
           \node at (3,4.5) {\LARGE $y=x^2$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
       <p>If you were told to <q>Draw the graph of <m>y = x^2</m></q> you would probably remember how to plot points and draw the shape.</p>
@@ -39,9 +40,9 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <p>For instance, recall the function that describes Alice's money as a function of her hours worked. Since Alice makes <m>\$12</m> per hour, her financial function is <m>m(t) = 12t</m>. We can graph it like this.</p>
 <!--    <figure xml:id="figure-graph-12t">  -->
         <image xml:id="graph-12t"> 
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
-          \draw[line width=0.55mm,black,<->] (-.5,0) -- (5.5,0) node[anchor=north west] {time};
-          \draw[line width=0.55mm,black,<->] (0,-0.5) -- (0,5.5) node[anchor=south east] {money};
+          <latex-image>\begin{tikzpicture} 
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-.5,0) -- (5.5,0) node[anchor=north west] {time};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-0.5) -- (0,5.5) node[anchor=south east] {money};
           \foreach \x in {1,...,5}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \draw[line width=0.55mm,black] (3pt,2 cm) -- (-3pt,2 cm) node[shift={(-.3,0.05)}] {$10$};
@@ -49,9 +50,9 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \draw[line width=0.75mm, domain=-2.35:2.35,smooth,variable=\x,red] (0,0)--(2.29,5.5);
           \fill[color=red] (2,4.8) circle (.1cm);
           \node at (2.75,4.) {$(2,24)$};
-          \draw[<-,line width=.5mm] (2.1,4.7) -- (2.75,4.2);
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \draw[&lt;-,line width=.5mm] (2.1,4.7) -- (2.75,4.2);
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--        </figure>  -->
           <p>This simple graph has a great deal to tell us about Alice's job, if we read it correctly.</p>
@@ -63,9 +64,9 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
 
 <!--      <figure xml:id="figure-graph-hair-length">  -->
         <image xml:id="graph-hair-length">
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
-          \draw[line width=0.55mm,black,<->] (-0.5,0) -- (5.,0) node[anchor=north west] {time};
-          \draw[line width=0.55mm,black,<->] (0,-0.5) -- (0,5.5) node[anchor=north west] {Hair length};
+          <latex-image>\begin{tikzpicture} 
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-0.5,0) -- (5.,0) node[anchor=north west] {time};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-0.5) -- (0,5.5) node[anchor=north west] {Hair length};
           \draw[line width=0.55mm,black] (3pt,3 cm) -- (-3pt,3 cm) node[shift={(-.3,0.05)}] {$12$};
           \draw[line width=0.55mm,black] (3pt,5 cm) -- (-3pt,5 cm) node[shift={(-.3,0.05)}] {$18$};
           \draw[line width=0.55mm,red] (0,3)--(1,5);
@@ -77,8 +78,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \draw[line width=0.55mm,red] (3,3)--(4,5);
           \draw[line width=0.55mm,red] (4,5)--(4,3);
           \draw[line width=0.55mm,red] (4,3)--(5,5);
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
         
@@ -91,10 +92,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         <p>Certain points on the graph of a function have special characteristics.  Intercepts are points on the graph which are on an axis.  In the graph of <m>y = f(x),</m> the <m>x</m>-intercepts are <m>(-4,0),</m> <m>(1,0)</m> and <m>(3.5,0).</m>  There is only one <m>y</m>-intercept at <m>(0,-2).</m></p>
 <!--      <figure xml:id="figure-graph-intercepts">  -->
         <image xml:id="graph-intercepts">
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-5.5,-5.5) grid (5.5,5.5);
-          \draw[line width=0.55mm,black,<->] (-5.5,0) -- (5.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-5.5) -- (0,5.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-5.5,0) -- (5.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-5.5) -- (0,5.5) node[anchor=south east] {$y$};
           \foreach \x in {-5,...,5}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-5,...,5}
@@ -106,39 +107,39 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \fill[color=red] (1,0) circle (.1cm);
           \fill[color=red] (3.5,0) circle (.1cm);
           \fill[color=red] (0,-2) circle (.1cm);
-          \draw[line width=0.55mm, dashed,->] (x) -- (-3.9,.1);
-          \draw[line width=0.55mm, dashed,->] (x) -- (1,.1);
-          \draw[line width=0.55mm, dashed,->] (x) -- (3.5,.1);
+          \draw[line width=0.55mm, dashed,-&gt;] (x) -- (-3.9,.1);
+          \draw[line width=0.55mm, dashed,-&gt;] (x) -- (1,.1);
+          \draw[line width=0.55mm, dashed,-&gt;] (x) -- (3.5,.1);
           \node (y) at (2,-3.3) {\Large $y$-intercept};
-          \draw[line width=0.55mm, dashed,->] (y) -- (.1,-2.1);
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \draw[line width=0.55mm, dashed,-&gt;] (y) -- (.1,-2.1);
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
           <p>Functions don't always have both kinds of intercepts. The graph of <m>y = h(x)</m> shown below has only a <m>y</m>-intercept at the point <m>(0,1)</m> and no <m>x</m>-intercepts.</p>
 <!--      <figure xml:id="figure-graph-no-x-intercepts">  -->
         <image xml:id="graph-no-x-intercepts"> 
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-1.5) grid (4.5,5.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-1.5) -- (0,5.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-1.5) -- (0,5.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-1,...,5}
               \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
           \draw[line width=0.75mm, domain=-3:3,smooth,variable=\x,red] plot ({\x},{\x*\x/2+1});
           \node at (3,4.5) {\LARGE $y=h(x)$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
           <p>Sometimes the intercepts are at the same point. In the graph shown below, the point <m>(0,0)</m> is both a <m>y</m>-intercept and an <m>x</m>-intercept for the function <m>g(x).</m></p>
 <!--      <figure xml:id="figure-graph-origin-intercept">  -->
         <image xml:id="graph-origin-intercept"> 
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-3.5) grid (4.5,3.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-3.5) -- (0,3.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-3.5) -- (0,3.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-3,...,3}
@@ -147,8 +148,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \draw[line width=0.75mm, domain=-4.5:0,smooth,variable=\x,red] plot ({\x},{-sqrt(-\x)});
           \node at (3,2.5) {\LARGE $y=g(x)$};
           \fill[color=red] (0,0) circle (.15cm);
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
           <p>To determine intercepts from the algebraic expression of the function, notice from the graphs given above that the <m>x</m>-intercepts are the values of <m>x</m> which produce <m>y = 0</m>. So, to find an <m>x</m>-intercept (or the intercept on the horizontal axis if the independent variable is called something other than <m>x</m>) set the function equal to <m>0</m> and solve for the independent variable.</p>
@@ -180,10 +181,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <p>Consider the following graph:</p>
 <!--      <figure xml:id="figure-graph-inconsistent">  -->
         <image xml:id="graph-inconsistent"> 
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-.5,-3.5) grid (9.5,3.5);
-          \draw[line width=0.55mm,black,<->] (-.5,0) -- (9.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-3.5) -- (0,3.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-.5,0) -- (9.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-3.5) -- (0,3.5) node[anchor=south east] {$y$};
           \foreach \x in {1,...,9}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-3,...,-1,1,2,...,3}
@@ -191,8 +192,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \draw[line width=0.75mm, domain=0:9.5,smooth,variable=\x,red] plot ({\x},{sqrt(\x)});
           \draw[line width=0.75mm, domain=0:9.5,smooth,variable=\x,red] plot ({\x},{-sqrt(\x)});
           \fill[color=red] (0,0) circle (.15cm);
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
           <p>This is our earlier <q>U</q> shaped graph (<m>y = x^2</m>) turned on its side. This might seem like a small change. But ask this question: what is <m>y</m> when <m>x = 3</m>? This question has two answers. This graph contains the points <m>(3,-9)</m> and <m>(3, 9)</m>. So when <m>x = 3</m>, <m>y</m> is both <m>9</m> and <m>-9</m> on this graph.</p>
@@ -209,10 +210,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         <p>Suppose the following is the graph of the function <m>y = f(x)</m>.</p>
 <!--      <figure xml:id="figure-graph-f">  -->
         <image xml:id="graph-f"> <!--set1C-Graphs_of_Functions_05.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -223,43 +224,43 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \fill[color=red] (0,2) circle (.15cm);
           \fill[color=red] (4,0) circle (.15cm);
           \node at (-2, 2.5) {$y=f(x)$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
           <p>We can see from the graph that the domain of the graph is <m>-2 \leq x \leq 4</m> and the range is <m>-1 \leq y \leq 2</m>.</p>
           <p>Question: What does the graph of <m>y = f (x) + 2</m> look like?</p>
           <p>This might seem an impossible question, since we do not even know what the function <m>f(x)</m> is. But we don't need to know that in order to plot a few points.</p>
 <!--    <table>  -->
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" />
-        <col right="minor" />
-        <col right="minor" />
-        <col right="minor" />
-        <col />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor"/>
+        <col right="minor"/>
+        <col right="minor"/>
+        <col right="minor"/>
+        <col/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell><m>x</m></cell>
             <cell><m>f(x)</m></cell>
             <cell><m>f(x)+2</m></cell>
             <cell>so <m>y=f(x)</m> contains this point</cell>
             <cell>and <m>y=f(x)+2</m> contains this point</cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>-2</m></cell>
           <cell><m>2</m></cell>
           <cell><m>4</m></cell>
           <cell><m>(-2,2)</m></cell>
           <cell><m>(-2,4)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>-1</m></cell>
           <cell><m>-1</m></cell>
           <cell><m>1</m></cell>
           <cell><m>(-1,-1)</m></cell>
           <cell><m>(-1,1)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>0</m></cell>
           <cell><m>2</m></cell>
           <cell><m>4</m></cell>
@@ -278,10 +279,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <p>If you plot these points on a graph, the pattern should become clear. Each point on the graph is moving up by two. This comes as no surprise: since you added <m>2</m> to each <m>y</m>-value, and adding <m>2</m> to a <m>y</m>-value moves any point up by <m>2</m>. So the new graph will look identical to the old, only moved up by <m>2</m>.</p>
 <!--      <figure xml:id="figure-graph-f-plus-2">  -->
         <image xml:id="graph-f-plus-2"> <!--set1C-Graphs_of_Functions_05a.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -298,18 +299,18 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \fill[color=blue] (0,4) circle (.15cm);
           \fill[color=blue] (4,2) circle (.15cm);
           \node at (-2.9, 3.7) {$f(x)+2$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
   <p>In a similar way, it should be obvious that if you subtract <m>10</m> from a function, the graph moves down by <m>10</m>. Note that, in either case, the domain of the function is the same, but the range has changed.</p>
   <p>These translations work for any function. Hence, given the graph of the function <m>y = \sqrt{x}</m> below (which you could generate by plotting points), you can produce the other two graphs without plotting points, simply by moving the first graph up and down.</p>
 <!--  <figure xml:id="figure-graph-sqrt-plus-1-and-minus-3">  -->
         <image xml:id="graph-sqrt-plus-1-and-minus-3"> <!--set1C-Graphs_of_Functions_06.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -323,8 +324,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \draw[line width=0.75mm, domain=0:4.5,smooth,variable=\x,green] plot ({\x},{sqrt(\x)-3});
           \fill[color=green] (0,-3) circle (.15cm);
           \node at (2.7, -1.8) {$\sqrt{x}-3$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure> -->
   </subsubsection>
@@ -334,10 +335,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <p>For instance, what does doubling a function do to a graph? Let's return to our original function:</p>
 <!--  <figure xml:id="figure-graph-f2">  -->
     <image xml:id="graph-f2"> <!--set1C-Graphs_of_Functions_05.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -348,38 +349,38 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \fill[color=red] (0,2) circle (.15cm);
           \fill[color=red] (4,0) circle (.15cm);
           \node at (-2, 2.5) {$y=f(x)$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
     <p>What does the graph <m>y = 2f(x)</m> look like? We can make a table similar to the one we made before.</p>
 <!--    <table>  -->
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" />
-        <col right="minor" />
-        <col right="minor" />
-        <col right="minor" />
-        <col />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor"/>
+        <col right="minor"/>
+        <col right="minor"/>
+        <col right="minor"/>
+        <col/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell><m>x</m></cell>
             <cell><m>f(x)</m></cell>
             <cell><m>2f(x)</m></cell>
             <cell>so <m>y=2f(x)</m> contains this point</cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>-2</m></cell>
           <cell><m>2</m></cell>
           <cell><m>4</m></cell>
           <cell><m>(-2,4)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>-1</m></cell>
           <cell><m>-1</m></cell>
           <cell><m>-2</m></cell>
           <cell><m>(-1,-2)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>0</m></cell>
           <cell><m>2</m></cell>
           <cell><m>4</m></cell>
@@ -396,10 +397,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <p>In general, the high points move higher; the low points move lower. The entire graph is vertically stretched, with each point moving farther away from the <m>x</m>-axis.</p>
 <!--    <figure xml:id="figure-graph-2f">  -->
         <image xml:id="graph-2f"> <!--set1C-Graphs_of_Functions_05b.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -416,17 +417,17 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \fill[color=blue] (0,4) circle (.15cm);
           \fill[color=blue] (4,0) circle (.15cm);
           \node at (-2.5, 4.5) {$2f(x)$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
           <p>Similarly, <m>y = \frac{1}{2}f(x)</m> yields a graph that is vertically compressed, with each point moving toward the <m>x</m>-axis.</p>
 <!--      <figure xml:id="figure-graph-half-f">  -->
         <image xml:id="graph-half-f"> <!--set1C-Graphs_of_Functions_05c.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -443,17 +444,17 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \fill[color=green] (0,1) circle (.15cm);
           \fill[color=green] (4,0) circle (.15cm);
           \node at (-2.5, .5) {$\frac{1}{2}f(x)$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
           <p>Finally, what does <m>y = -f(x)</m> look like? All the positive values become negative, and the negative values become positive. So, point by point, the entire graph flips over the <m>x</m>-axis.</p>
 <!--      <figure xml:id="figure-graph-negative-f">  -->
         <image xml:id="graph-negative-f"> <!--set1C-Graphs_of_Functions_05d.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -470,8 +471,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \fill[color=black] (0,-2) circle (.15cm);
           \fill[color=black] (4,0) circle (.15cm);
           \node at (-2.5, -2.5) {$-f(x)$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image> 
 <!--      </figure>  -->
 </subsubsection>
@@ -481,10 +482,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
   <p>Let's return to our original function <m>y = f(x)</m>.</p>
 <!--  <figure xml:id="figure-graph-f3">  -->
         <image xml:id="graph-f3"> <!--set1C-Graphs_of_Functions_05.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -495,8 +496,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \fill[color=red] (0,2) circle (.15cm);
           \fill[color=red] (4,0) circle (.15cm);
           \node at (-2, 2.5) {$y=f(x)$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
           <p>Suppose you were asked to graph <m>y = f(x + 2)</m>. Note that this is not the same as <m>f(x) + 2</m>! The latter is an instruction to run the function, and then add 2 to all results. But <m>y = f(x + 2)</m> is an instruction to add <m>2</m> to every <m>x</m>-value before plugging it into the function.</p>
@@ -504,32 +505,32 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <p><m>f(x + 2)</m> changes the input <m>x</m>, and therefore shifts the graph horizontally.</p>
           <p>But which way? In analogy to the vertical translations, you might expect that adding two would shift the graph to the right. But let's make a table of values again.</p>
 <!--    <table>  -->
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" />
-        <col right="minor" />
-        <col right="minor" />
-        <col right="minor" />
-        <col />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor"/>
+        <col right="minor"/>
+        <col right="minor"/>
+        <col right="minor"/>
+        <col/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell><m>x</m></cell>
             <cell><m>x+2</m></cell>
             <cell><m>f(x+2)</m></cell>
             <cell>so <m>y=f(x+2)</m> contains this point</cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>-4</m></cell>
           <cell><m>-2</m></cell>
           <cell><m>f(-2)=2</m></cell>
           <cell><m>(-4,2)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>-3</m></cell>
           <cell><m>-1</m></cell>
           <cell><m>f(-1)=-1</m></cell>
           <cell><m>(-3,-1)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>-2</m></cell>
           <cell><m>0</m></cell>
           <cell><m>f(0)=2</m></cell>
@@ -547,10 +548,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <p><alert>NOTE:</alert> The original graph <m>f(x)</m> contains the point <m>(-2, 2)</m>; therefore, <m>f(x + 2)</m> contains the point <m>(-4, 2)</m>. The point has moved two spaces to the left.</p>
 <!--    <figure xml:id="figure-graph-f-of-x-plus-2">  -->
         <image xml:id="graph-f-of-x-plus-2"> <!--set1C-Graphs_of_Functions_05e.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -567,8 +568,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \fill[color=blue] (-2,2) circle (.15cm);
           \fill[color=blue] (2,0) circle (.15cm);
           \node at (-4, 2.5) {$f(x+2)$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
           <p>You see what I mean when I say horizontal translations <q>often do the opposite of what it naturally seems they should</q>? Adding two moves the graph to the left.</p>
@@ -579,32 +580,32 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <title>Other Horizontal Translations</title>
           <p>Recall that <m>y = 2 f(x)</m> vertically stretches a graph; <m>y = \frac{1}{2}f(x)</m> vertically compresses. Just as with addition and subtraction, we will find that the horizontal equivalents work backward.</p>
 <!--          <table>  -->
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" />
-        <col right="minor" />
-        <col right="minor" />
-        <col right="minor" />
-        <col />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor"/>
+        <col right="minor"/>
+        <col right="minor"/>
+        <col right="minor"/>
+        <col/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell><m>x</m></cell>
             <cell><m>2x</m></cell>
             <cell><m>f(2x)</m></cell>
             <cell>so <m>y=f(2x)</m> contains this point</cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>-1</m></cell>
           <cell><m>-2</m></cell>
           <cell><m>2</m></cell>
           <cell><m>(-1,2)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>-\frac{1}{2}</m></cell>
           <cell><m>-1</m></cell>
           <cell><m>-1</m></cell>
           <cell><m>\left(-\frac{1}{2},-1\right)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>0</m></cell>
           <cell><m>0</m></cell>
           <cell><m>2</m></cell>
@@ -621,10 +622,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <p>The original graph <m>f(x)</m> contains the point <m>(4, 0)</m>; therefore, <m>f(2x)</m> contains the point <m>(2, 0)</m>. Similarly, <m>(-1,-1)</m> becomes <m>\left(-\frac{1}{2},-1\right)</m>. Each point is closer to the <m>y</m>-axis; the graph has horizontally compressed.</p>
 <!--    <figure xml:id="figure-graph-f-of-2x">  -->
         <image xml:id="graph-f-of-2x"> <!--set1C-Graphs_of_Functions_05f.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -641,18 +642,18 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \fill[color=green] (0,2) circle (.15cm);
           \fill[color=green] (2,0) circle (.15cm);
           \node at (-1.5, 2.5) {$f(2x)$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
           <p>We can explain this the same way we explained <m>f(x+2)</m>. In this case, <m>f(2x)</m> is an instruction that says to each point, <q>Look outward, at the <m>x</m>-value that is double yours, and copy what the original function is doing there.</q> At <m>x = 2</m> it does what <m>f(x)</m> does at <m>x = 4</m>. At <m>x = -\frac{1}{2}</m>, it copies <m>f(-1)</m>. And so on. Because it is always copying <m>f(x)</m> outside itself, this graph ends up being a copy of <m>f(x)</m> moved inward; ie a compression. Similarly, <m>f(\frac{1}{2}x)</m> causes each point to look inward toward the y-axis, so it winds up being a horizontally stretched version of the original.</p>
           <p>Finally, <m>y = f(-x)</m> does precisely what you would expect: it flips the graph around the y-axis. <m>f(2)</m> is the old <m>f(-2)</m> and so on.</p>
 <!--      <figure xml:id="figure-graph-f-of-negative-x">  -->
         <image xml:id="graph-f-of-negative-x"> <!--set1C-Graphs_of_Functions_05g.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -669,8 +670,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \fill[color=black] (0,2) circle (.15cm);
           \fill[color=black] (2,2) circle (.15cm);
           \node at (2.5, 2.5) {$f(-x)$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
           <p>All of these translations do not need to be memorized: only the general principles need to be understood. But once they are properly understood, even a complex graph such as <m>y = -2 (x + 3)^2 + 5</m> can be graphed easily. You take the (known) graph of <m>y = x^2</m>, flip it over the <m>x</m>-axis (because of the negative sign), stretch it vertically (the <m>2</m>), move it to the left by <m>3</m>, and move it up <m>5</m>.</p>
@@ -679,10 +680,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
 
 <!--      <figure xml:id="figure-graph-sqrt-translations">  -->
         <image xml:id="graph-sqrt-translations"> <!--set1C-Graphs_of_Functions_07.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
           \draw[step=1cm,gray,very thin] (-4.5,-4.5) grid (4.5,4.5);
-          \draw[line width=0.55mm,black,<->] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-4.5,0) -- (4.5,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.5) -- (0,4.5) node[anchor=south east] {$y$};
           \foreach \x in {-4,...,-1,1,2,...,4}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-4,...,-1,1,2,...,4}
@@ -696,8 +697,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \draw[line width=0.75mm, domain=1:4.5,smooth,variable=\x,green] plot ({\x},{-1*sqrt(\x-1)-2});
           \fill[color=green] (1,-2) circle (.15cm);
           \node at (2.6, -2.4) {$-\sqrt{x-1}-2$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
 <!--      </figure>  -->
         </subsubsection>

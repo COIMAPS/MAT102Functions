@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="section-2B-simultaneous-equations">
   <title>Simultaneous Equations</title>
 <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
@@ -16,7 +17,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
   To express the same question in terms of functions: What values can you hand the functions <m>2\sqrt{x}</m> and <m>x + \frac{1}{2}</m> that will make these two functions produce the same answer?</p>
 <!-- <figure xml:id="figure-simultaneous-function-boxes"> --> <!--NEEDS TO BE UPDATED set2B-Simultaneous_Equations_00.png-->
     <image xml:id="simultaneous-function-boxes">
-      <latex-image-code><![CDATA[\begin{tikzpicture} 
+      <latex-image>\begin{tikzpicture} 
             \node (a) at (-3,0) {\LARGE $x$};
             \node (b) at (-1.5,1) {};
             \draw[thick,-open triangle 90] (a) -- (b);
@@ -31,7 +32,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
             \draw[thick,black] (1,-1) node {\LARGE $x+\frac{1}{2}$};
             \node (cc) at (3.5,-1) {};
             \draw[thick,-open triangle 90] (cc) -- (d); 
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}</latex-image>
     </image>
 <!--  </figure>  -->
 </introduction>
@@ -43,10 +44,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
   <sidebyside widths="40% 55%" valign="middle">
 <!--    <figure xml:id="figure-graph-simultaneous"> -->  <!--set2B-Simultaneous_Equations_01.png-->
               <image xml:id="graph-simultaneous">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image>\begin{tikzpicture} 
                       \draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
-                      \draw[line width=0.55mm,black,<->] (-1.9,0) -- (5.9,0) node[anchor=north west] {$x$};
-                      \draw[line width=0.55mm,black,<->] (0,-1.9) -- (0,5.9) node[anchor=south east] {$y$};
+                      \draw[line width=0.55mm,black,&lt;-&gt;] (-1.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+                      \draw[line width=0.55mm,black,&lt;-&gt;] (0,-1.9) -- (0,5.9) node[anchor=south east] {$y$};
                       \foreach \x in {1,...,5}
                           \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
                       \foreach \y in {1,...,5}
@@ -56,7 +57,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                       \node at (4.5, 3.5) {$2\sqrt{x}$};
                       \draw[line width=0.75mm, domain=-1.9:5.5,smooth,variable=\x,blue] plot ({\x},{\x)+.5});
                       \node at (3.5, 5.5) {$x+\frac{1}{2}$}; 
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure>  -->
   <paragraphs>
@@ -262,8 +263,8 @@ substitution and elimination.</p>
       <example xml:id="example-graphing-no-solution">
         <title>Solving by Graphing: No Solution</title>
         <p>Recall
-          <xref ref="example-elimination-no-solution" autoname="yes" />and
-          <xref ref="example-substitution-no-solution" autoname="yes" />.  We found no solution to the system
+          <xref ref="example-elimination-no-solution" text="type-global"/>and
+          <xref ref="example-substitution-no-solution" text="type-global"/>.  We found no solution to the system
           <md>
             <mrow>2x+3y &amp;= 8</mrow>
             <mrow>4x+6y &amp;= -3</mrow>
@@ -273,17 +274,17 @@ substitution and elimination.</p>
 <!--          <figure xml:id="figure-graph-simultaneous-no-solution"> -->
             <!--NEEDS TO BE UPDATED set2B-Simultaneous_Equations_02.png-->
             <image xml:id="graph-simultaneous-no-solution">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image>\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
-                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
-                  \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
                   \foreach \x in {-5,...,-1,1,2,...,5}
                       \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
                   \foreach \y in {-5,...,-1,1,2,...,5}
                       \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
                   \draw[line width=0.75mm, domain=-5.0:5.9,smooth,variable=\x,red] plot ({\x},{2.67-.67*\x});
                   \draw[line width=0.75mm, domain=-5.9:5.9,smooth,variable=\x,blue] plot ({\x},{-.5-.67*\x}); 
-                  \end{tikzpicture}]]></latex-image-code>
+                  \end{tikzpicture}</latex-image>
             </image>
 <!--          </figure>  -->
           <paragraphs>
@@ -295,7 +296,7 @@ substitution and elimination.</p>
       <example xml:id="example-graphing-infinite-solutions">
         <title>Solving by Graphing: Infinite Solutions</title>
         <p>Recall
-          <xref ref="example-elimination-infinite-solutions" autoname="yes" />. We found many solutions to the system
+          <xref ref="example-elimination-infinite-solutions" text="type-global"/>. We found many solutions to the system
           <md>
             <mrow>2x+3y &amp;= 8</mrow>
             <mrow>4x+6y &amp;= 16</mrow>
@@ -305,17 +306,17 @@ substitution and elimination.</p>
 <!--          <figure xml:id="figure-graph-simultaneous-infinite-solutions">  -->
             <!--set2B-Simultaneous_Equations_03.png-->
             <image xml:id="graph-simultaneous-infinite-solutions">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image>\begin{tikzpicture} 
                 \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
-                \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
-                \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
+                \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+                \draw[line width=0.55mm,black,&lt;-&gt;] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
                 \foreach \x in {-5,...,-1,1,2,...,5}
                     \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
                 \foreach \y in {-5,...,-1,1,2,...,5}
                     \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
                 \draw[line width=0.75mm, domain=-5.05:5.9,smooth,variable=\x,red] plot ({\x},{2.57-.67*\x});
                 \draw[line width=0.75mm, domain=-5.0:5.9,smooth,variable=\x,blue] plot ({\x},{2.66-.67*\x});
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
             </image>
 <!--          </figure>  -->
           <paragraphs>

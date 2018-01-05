@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="section-1B-function-notation">
   <title>Function Notation, Composition and Inverses</title>
 <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
@@ -32,12 +33,12 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       </md></p>
 <!--      <figure xml:id="figure-function-box-x-sq-plus-3x">  -->
           <image xml:id="function-box-x-sq-plus-3x"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image>\begin{tikzpicture} 
             \draw[line width=1mm, fill = red] (-1,0) rectangle(4,2);
             \draw[thick,white] (1.5,1.2) node {\LARGE FUNCTION};
             \draw[thick] (1.5, .5) node {\LARGE $x^2+3x$}; 
-            \end{tikzpicture}]]>
-            </latex-image-code>
+            \end{tikzpicture}
+            </latex-image>
           </image>
 <!--        </figure>  -->
       <p><md>
@@ -93,10 +94,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
             </paragraphs>
 <!--            <figure xml:id="figure-graph-gt">  -->
                 <image xml:id="function-graph-gt"> 
-                  <latex-image-code><![CDATA[\begin{tikzpicture} 
+                  <latex-image>\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9); 
-                  \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$t$}; 
-                  \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$y$}; 
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-6,0) -- (6,0) node[anchor=north west] {$t$}; 
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-6) -- (0,6) node[anchor=south east] {$y$}; 
                   \foreach \x in {-4,-2,2,4} 
                       \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$}; 
                   \foreach \y in {-4,-2,2,4} 
@@ -104,8 +105,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                   \fill[color=red] (1,3) circle (.15cm); 
                   \draw[line width=0.75mm, domain=-3.15:3.15,smooth,variable=\x,red] plot ({\x},{-\x*\x+4});
                   \node at (-3,3.5) {\LARGE $y=g(t)$}; 
-                  \end{tikzpicture}]]>
-                  </latex-image-code>
+                  \end{tikzpicture}
+                  </latex-image>
                 </image>
 <!--              </figure>  -->
                 </sidebyside>
@@ -125,23 +126,23 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <title>Operations on Functions</title>
     <p>We may create new functions by combining two or more functions by addition, subtraction, multiplication, division or composition. The first four operations on functions are very similar to these operations for numbers. Mainly, it's a matter of getting used to the notation.  For functions <m>f</m> and <m>g</m>:</p>
 <!--    <table>  -->
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" halign="left" />
-        <col />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor" halign="left"/>
+        <col/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell>Terminology</cell>
             <cell>Notation and Definition</cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell>Sum: <m>f + g</m></cell>
           <cell><m>(f+g)(x) = f(x) + g(x)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell>Difference: <m>f - g</m></cell>
           <cell><m>(f-g)(x) = f(x) - g(x)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell>Product: <m>f g</m></cell>
           <cell><m>(fg)(x) = f(x) g(x)</m></cell>
         </row>
@@ -185,7 +186,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <p>The principal walks up to you at the beginning of the year and says <q>We're considering expanding the school. If we expand to <m>70</m> classes, how much money do we need to budget? What if we expand to <m>75</m>? How about <m>80</m>?</q> For each of these numbers, you have to calculate each number from the previous one, until you find the final budget number.</p>
 <!--      <figure xml:id="figure-function-chain">  -->
           <image xml:id="function-chain"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image>\begin{tikzpicture} 
               \node (a) at (0,0) {Classes};
               \node (b) at (1.3,0) {};
               \draw[thick,-open triangle 90] (a) -- (b);
@@ -212,14 +213,14 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
 
               \node (j) at (14.1,0) {Budget};
               \draw[thick,-open triangle 90] (i) -- (j);         
-              \end{tikzpicture}]]>
-              </latex-image-code>
+              \end{tikzpicture}
+              </latex-image>
             </image>
 <!--          </figure>  -->
     <p>But going through this process each time is tedious. What you want is one function that puts the entire chain together: <q>You tell me the number of classes, and I will tell you the budget.</q></p>
 <!--    <figure xml:id="figure-function-box-pb">  -->
           <image xml:id="function-box-pb"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image>\begin{tikzpicture} 
                 \node (a) at (-3,1) {Classes};
                 \node (b) at (-1.25,1) {};
                 \draw[thick,-open triangle 90] (a) -- (b);
@@ -228,8 +229,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                 \node (c) at (3,1) {};
                 \node (d) at (5,1) {\$\$ Budget};
                 \draw[thick,-open triangle 90] (c) -- (d);
-            \end{tikzpicture}]]>
-            </latex-image-code>
+            \end{tikzpicture}
+            </latex-image>
           </image>
 <!--        </figure>  -->
             <p>This is a composite function-a function that represents in one function, the results of an entire chain of dependent functions. Since such chains are very common in real life, finding composite functions is an important skill.</p>
@@ -286,7 +287,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                   </p>
                 </li>
               </ol>
-            </example><p>There is a different notation that is sometimes used for composite functions. The notation <m></m> very naturally conveys the idea of <q>plugging <m>g(x)</m> into <m>f(x)</m>.</q> However, you will sometimes see the same thing written as <m>(f \circ g)(x)</m>, which represents the idea of <q>doing one function, and then the other, in sequence.</q> The two notations mean the same thing.  That is:
+            </example><p>There is a different notation that is sometimes used for composite functions. The notation <m/> very naturally conveys the idea of <q>plugging <m>g(x)</m> into <m>f(x)</m>.</q> However, you will sometimes see the same thing written as <m>(f \circ g)(x)</m>, which represents the idea of <q>doing one function, and then the other, in sequence.</q> The two notations mean the same thing.  That is:
           <aside>
             Composition Notation
             <md>
@@ -404,11 +405,11 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       </md></p>
 <!--      <figure xml:id="figure-function-box-x-sq">  -->
           <image xml:id="function-box-x-sq"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image>\begin{tikzpicture} 
             \draw[line width=1mm, fill = red] (0,0) rectangle(4,2);
             \node at (2,1) {\LARGE $f(x)=x^2$}; 
-            \end{tikzpicture}]]>
-            </latex-image-code>
+            \end{tikzpicture}
+            </latex-image>
           </image>
 <!--        </figure>  -->
       <p><md>
@@ -430,11 +431,11 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       </md></p>
 <!--      <figure xml:id="figure-function-f-inverse">  -->
           <image xml:id="function-f-inverse"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image>\begin{tikzpicture} 
             \draw[line width=1mm, fill = yellow] (0,0) rectangle(4,2);
             \node at (2,1) {\LARGE $f^{-1}(x)$}; 
-            \end{tikzpicture}]]>
-            </latex-image-code>
+            \end{tikzpicture}
+            </latex-image>
           </image>
 <!--        </figure>  -->
       <p><md>
@@ -453,19 +454,19 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <p><q>Max threw a ball. The height of the ball depends on how many seconds it has been in the air.</q> The two variables here are <m>h</m> (the height of the ball) and <m>t</m> (the number of seconds it has been in the air). The function <m>h(t)</m> enables us to answer questions such as <q>After <m>3</m> seconds, where is the ball?</q></p>
     <p>The inverse question would be <q>At what time was the ball <m>10</m> feet in the air?</q> The problem with that question is, it may well have two answers!</p>
 <!--    <table>  -->
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" halign="left" />
-        <col />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor" halign="left"/>
+        <col/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell>The ball is here...</cell>
             <cell>...after this much time has elapsed</cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>10</m> ft</cell>
           <cell><m>2</m> seconds (*on the way up)</cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>10</m> ft</cell>
           <cell><m>5</m> seconds (*on the way back down)</cell>
         </row>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="section-1A-function-concepts">
   <title>Function Concepts</title>
 <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
@@ -58,7 +59,7 @@ instance, <q>Double and then add <m>6</m></q> is a function. If you put a <m>4</
 the other side where numbers come out.</p></introduction>
 <!-- <figure xml:id="figure-function-box"> -->
           <image xml:id="function-box"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image>\begin{tikzpicture} 
             \node (a) at (-3,1) {\LARGE $5$};
             \node (b) at (-1.5,1) {};
             \draw[thick,-open triangle 90] (a) -- (b);
@@ -67,8 +68,8 @@ the other side where numbers come out.</p></introduction>
             \node (c) at (4.5,1) {};
             \node (d) at (6,1) {\LARGE $14$};
             \draw[thick,-open triangle 90] (c) -- (d); 
-            \end{tikzpicture}]]>
-            </latex-image-code>
+            \end{tikzpicture}
+            </latex-image>
           </image>
 <!--        </figure>  -->
   <p>A number goes in. A number comes out. The <term>function</term> is the <q>process</q> that turns <m>5</m> into <m>14</m>.</p>
@@ -114,12 +115,12 @@ will recur in different forms throughout the text.</p>
     <p>The second restriction is, you are not allowed to divide by zero. This can also restrict the domain of functions. For instance, the function <m>y = \dfrac{1}{x^2-4}</m> has as its domain all numbers except <m>x = 2</m> and <m>x = -2</m>. These two numbers both cause the function to attempt to divide by <m>0</m>, and hence fail. If you ask a calculator to plug <m>x = 2</m> into this function, you will get an error message.</p>
     <p>So: if you are given a function, how can you find its domain? Look for any number that puts a negative number under the square root; these numbers are not in the domain. Look for any number that causes the function to divide by zero; these numbers are not in the domain. All other numbers are in the domain. Consider the following function examples.</p>
 <!--     <table>  -->
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" />
-        <col right="minor" />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor"/>
+        <col right="minor"/>
         <col halign="left" width="50%"/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell>Function</cell>
             <cell>Domain</cell>
             <cell><p>Comments</p></cell>
@@ -178,12 +179,12 @@ will recur in different forms throughout the text.</p>
         </ul>
         <p>This is easiest to explain with examples.</p>
 <!--    <table>  -->
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" />
-        <col halign="left" right="minor" width="50%" />
-        <col />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor"/>
+        <col halign="left" right="minor" width="50%"/>
+        <col/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell>This notation...</cell>
             <cell><p>...means this...</p></cell>
             <cell>...or in other words</cell>
@@ -237,11 +238,11 @@ will recur in different forms throughout the text.</p>
         </ul>
         <p>In each case, there are two variables. Given enough information about the scenario, you could assert that if you tell me this variable, I will tell you that one. For instance, suppose you know that Alice makes <m>\$100</m> per day. Then we could make a chart like this.</p>
 <!--    <table>  -->
-      <tabular top="major" bottom = "major" halign="center" left="minor">
-        <col right="minor" />
+      <tabular top="major" bottom="major" halign="center" left="minor">
+        <col right="minor"/>
         <col right="minor"/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
           <cell>If Alice works this many days...</cell>
           <cell>...she makes this many dollars</cell>
         </row>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <docinfo>
     <brandlogo source="images/seal.jpg"/> <!--see sample article about 176x240 pixels brand logo-->
@@ -62,38 +62,38 @@
             <email>kyoshiwara@hotmail.com</email>
         </author>
         <date>
-            <today />
+            <today/>
         </date>
     </titlepage>
 </frontmatter>
 
 <chapter xml:id="chapter-0-preliminaries">
     <title>Preliminaries</title>
-    <xi:include href="./set00_Preliminaries_102.mbx" />
+    <xi:include href="./set00_Preliminaries_102.mbx"/>
 </chapter>
 <chapter xml:id="chapter-1-function-fundamentals">
     <title>Function Concepts, Notation, and Graphs</title>
 
-<xi:include href="./set1A-Function_Concepts.mbx" />
-<xi:include href="./set1B-Function_Notation.mbx" />
-<xi:include href="./set1C-Graphs_of_Functions.mbx" />
+<xi:include href="./set1A-Function_Concepts.mbx"/>
+<xi:include href="./set1B-Function_Notation.mbx"/>
+<xi:include href="./set1C-Graphs_of_Functions.mbx"/>
 </chapter>
 <chapter xml:id="chapter-2-equations-intervals-inequalities">
     <title>Linear Functions, Simultaneous Equations, and Applications</title>
-<xi:include href="./set2A-Linear_Functions.mbx" />
-<xi:include href="./set2B-Simultaneous_Equations.mbx" />
-<xi:include href="./set2C-Applications_102.mbx" />
+<xi:include href="./set2A-Linear_Functions.mbx"/>
+<xi:include href="./set2B-Simultaneous_Equations.mbx"/>
+<xi:include href="./set2C-Applications_102.mbx"/>
 </chapter><chapter xml:id="chapter-3-piecewise-polynomial-radical">
     <title>Piecewise, Polynomial, and Radical Functions</title>
-<xi:include href="./set3A-Absolute_Value_and_Piecewise_Functions.mbx" />
-<xi:include href="./set3B-Polynomial_Functions.mbx" />
-<xi:include href="./set3C-Radical_Functions.mbx" />
+<xi:include href="./set3A-Absolute_Value_and_Piecewise_Functions.mbx"/>
+<xi:include href="./set3B-Polynomial_Functions.mbx"/>
+<xi:include href="./set3C-Radical_Functions.mbx"/>
 </chapter>
 <chapter xml:id="chapter-4-exponential-and-log-functions">
     <title>Exponential and Logarithmic Functions</title>
-<xi:include href="./set4A-Exponential_and_Logarithmic_Functions.mbx" />
-<xi:include href="./set4B-Logarithm_Rules.mbx" />
-<xi:include href="./set4C-Exponential_and_Logarithmic_Equations.mbx" />
+<xi:include href="./set4A-Exponential_and_Logarithmic_Functions.mbx"/>
+<xi:include href="./set4B-Logarithm_Rules.mbx"/>
+<xi:include href="./set4C-Exponential_and_Logarithmic_Equations.mbx"/>
 </chapter>
 </book>
 </mathbook>

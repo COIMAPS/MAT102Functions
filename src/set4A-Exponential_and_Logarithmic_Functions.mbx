@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="section-4A-exponential-and-logarithmic-functions">
   <title>Exponential and Logarithmic Functions</title>
 <!-- Cite College Algebra by Carl Stitz (Lakeland Community College) and Jeff Zeager (Lorain County Community College), is licensed under a Creative Commons
@@ -19,35 +20,35 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
       <p>We start our exploration of these functions with <m>f(x) = 2^x.</m> We make a table of values, plot the points and connect the dots.</p>
       <sidebyside widths="30% 65%" valign="middle">
 <!--          <table>  -->
-      <tabular halign="center" >
-        <col right="major" halign="right" />
-        <col />
+      <tabular halign="center">
+        <col right="major" halign="right"/>
+        <col/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell><m>x</m></cell>
             <cell><m>f(x)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>-3</m></cell>
             <cell><m>2^{-3} = \frac{1}{8}</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>-2</m></cell>
             <cell><m>2^{-2} = \frac{1}{4}</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>-1</m></cell>
             <cell><m>2^{-1} = \frac{1}{2}</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>0</m></cell>
             <cell><m>2^0 = 1</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>1</m></cell>
             <cell><m>2^1 = 2</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>2</m></cell>
             <cell><m>2^2 = 4</m></cell>
         </row>
@@ -60,10 +61,10 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
 <!--        <figure xml:id="figure-graph-2-to-the-x"> -->
 <!--set4A-Exponential_and_Logarithmic_Functions_01.png-->
           <image xml:id="graph-2-to-the-x">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image>\begin{tikzpicture} 
               \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,10.9);
-              \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
-              \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,10.9) node[anchor=south east] {$y$};
+              \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+              \draw[line width=0.55mm,black,&lt;-&gt;] (0,-.9) -- (0,10.9) node[anchor=south east] {$y$};
               \foreach \x in {-5,0,5}
                   \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
               \foreach \y in {0,5,10}
@@ -77,18 +78,18 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
               \fill[black] (2,4) circle (.15cm);
               \fill[black] (3,8) circle (.15cm);
               \node at (-2.2, 2.5) {\LARGE $f(x)=2^x$}; 
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}</latex-image>
           </image>
 <!--        </figure>b -->
         </sidebyside>
-    <p>A few remarks about the graph of <m>f(x) = 2^x</m> are in order. First, note that from what we discovered about exponents in <xref ref="section-3C-radical-functions" autoname="yes" /> 3C-Radical Functions, any real number may be an input for <m>f(x) = 2^x</m>.  Thus, the domain is all real numbers. If we consider <q>large</q> negative values of <m>x</m>  like <m>x = -100</m> or <m>x = -1000,</m> the function <m>f(x) = 2^x</m> takes on values like <m>f(-100) = 2^{-100} = \frac{1}{2^{100}}</m>  or  <m>f(-1000) = 2^{-1000} = \frac{1}{2^{1000}}</m>. In other words, as <m>x</m> takes on increasingly <q>larger</q> negative values, this is what happens in the function:
+    <p>A few remarks about the graph of <m>f(x) = 2^x</m> are in order. First, note that from what we discovered about exponents in <xref ref="section-3C-radical-functions" text="type-global"/> 3C-Radical Functions, any real number may be an input for <m>f(x) = 2^x</m>.  Thus, the domain is all real numbers. If we consider <q>large</q> negative values of <m>x</m>  like <m>x = -100</m> or <m>x = -1000,</m> the function <m>f(x) = 2^x</m> takes on values like <m>f(-100) = 2^{-100} = \frac{1}{2^{100}}</m>  or  <m>f(-1000) = 2^{-1000} = \frac{1}{2^{1000}}</m>. In other words, as <m>x</m> takes on increasingly <q>larger</q> negative values, this is what happens in the function:
     <md>
       <mrow>2^x \approx \frac{1}{\text{very big positive number}} \approx \text{very small positive number}</mrow>
     </md>
     So, <m>f(x) = 2^x</m> is getting very close to zero. This is represented graphically using the <m>x</m>-axis (the line <m>y = 0</m>) as a <term>horizontal asymptote</term>.  A horizontal asymptote is a guiding line for the graph. The graph eventually follows along the asymptote.</p>
     <p>On the flip side, if we consider large positive values for <m>x</m> , we find <m>f(100) = 2^{100}</m>, <m>f(1000) = 2^{1000}</m>, and so on, thus <m>2^x</m> gets larger as we use larger values for <m>x</m>. As a result, our graph suggests the range of <m>f</m> is <m>(0, \infty).\checkmark</m></p>
   </example>
-  <p>It is important to note that the exponential function's output values do not repeat<ndash />for <m>f(x) = 2^x</m>, each value of <m>x</m> produces a unique output. Exponential functions have inverses.  We will consider what an inverse function for an exponential should be after exploring exponential functions further.</p>
+  <p>It is important to note that the exponential function's output values do not repeat<ndash/>for <m>f(x) = 2^x</m>, each value of <m>x</m> produces a unique output. Exponential functions have inverses.  We will consider what an inverse function for an exponential should be after exploring exponential functions further.</p>
 </subsection>
 <subsection>
   <title>Properties of Exponential Functions</title>
@@ -100,10 +101,10 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
 <!--      <figure xml:id="figure-graph-2-to-x">  -->
 <!--set4A-Exponential_and_Logarithmic_Functions_01.png-->
         <image xml:id="graph-2-to-x">
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
             \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,10.9);
-            \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
-            \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,10.9) node[anchor=south east] {$y$};
+            \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+            \draw[line width=0.55mm,black,&lt;-&gt;] (0,-.9) -- (0,10.9) node[anchor=south east] {$y$};
             \foreach \x in {-5,0,5}
                 \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
             \foreach \y in {0,5,10}
@@ -117,7 +118,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
             \fill[black] (2,4) circle (.15cm);
             \fill[black] (3,8) circle (.15cm);
             \node at (-2.2, 2.5) {\LARGE $f(x)=2^x$}; 
-          \end{tikzpicture}]]></latex-image-code>
+          \end{tikzpicture}</latex-image>
         </image>
 <!--      </figure> -->
       <paragraphs>
@@ -130,10 +131,10 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
 <!--      <figure xml:id="figure-graph-2-to-neg-x"> -->
 <!--set4A-Exponential_and_Logarithmic_Functions_02.png-->
         <image xml:id="graph-2-to-neg-x">
-          <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <latex-image>\begin{tikzpicture} 
             \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,10.9);
-            \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
-            \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,10.9) node[anchor=south east] {$y$};
+            \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+            \draw[line width=0.55mm,black,&lt;-&gt;] (0,-.9) -- (0,10.9) node[anchor=south east] {$y$};
             \foreach \x in {-5,0,5}
                 \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
             \foreach \y in {0,5,10}
@@ -147,7 +148,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
             \fill[black] (2,.25) circle (.15cm);
             \fill[black] (3,.125) circle (.15cm);
             \node at (0.5, 7.5) {\LARGE $g(x)=2^{-x}=\left(\frac{1}{2}\right)^x$};
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
         </image>
 <!--      </figure>  -->
     </sidebyside>
@@ -182,29 +183,29 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
 <!--        <figure xml:id="figure-graph-b-to-x"> -->
 <!--set4A-Exponential_and_Logarithmic_Functions_03.png-->
           <image xml:id="graph-b-to-x">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
-              \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
-              \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,5.9);
+            <latex-image>\begin{tikzpicture} 
+              \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0);
+              \draw[line width=0.55mm,black,&lt;-&gt;] (0,-.9) -- (0,5.9);
               \node at (-.1, -.3) {$0$};
               \draw[line width=0.75mm, domain=-5.9:4.38,smooth,variable=\x,red] plot ({\x},{1.5^\x});
               \fill[black] (0,1) circle (.15cm);
               \node at (4, 2.75) {\LARGE $y=b^x$};
-               \node at (4, 2) {\LARGE $b>1$}; 
-            \end{tikzpicture}]]></latex-image-code>
+               \node at (4, 2) {\LARGE $b&gt;1$}; 
+            \end{tikzpicture}</latex-image>
           </image>
  <!--       </figure>  -->
  <!--       <figure xml:id="figure-graph-b-to-neg-x"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_04.png-->
           <image xml:id="graph-b-to-neg-x">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
-              \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
-              \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,5.9);
+            <latex-image>\begin{tikzpicture} 
+              \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0);
+              \draw[line width=0.55mm,black,&lt;-&gt;] (0,-.9) -- (0,5.9);
               \node at (-.3, -.3) {$0$};
               \draw[line width=0.75mm, domain=-4.38:5.9,smooth,variable=\x,red] plot ({\x},{.67^\x});
               \fill[black] (0,1) circle (.15cm);
               \node at (2.5, 1.75) {\LARGE $y=b^x$};
-               \node at (3, 1) {\LARGE $0<b<1$}; 
-            \end{tikzpicture}]]></latex-image-code>
+               \node at (3, 1) {\LARGE $0&lt;b&lt;1$}; 
+            \end{tikzpicture}</latex-image>
           </image>
  <!--       </figure>  -->
       </sidebyside>
@@ -232,10 +233,10 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--           <figure xml:id="figure-graph-point-8-to-x"> -->
  <!-- set4A-Exponential_and_Logarithmic_Functions_05.png-->
               <image xml:id="graph-point-8-to-x">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image>\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,6.9);
-                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
-                  \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,6.9) node[anchor=south east] {$y$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-.9) -- (0,6.9) node[anchor=south east] {$y$};
                   \foreach \x in {-5,0,5}
                       \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
                   \foreach \y in {0,5}
@@ -245,7 +246,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \fill[black] (0,1) circle (.15cm);
                   \fill[black] (1,.8) circle (.15cm);
                   \node at (-2.5, 3.5) {\LARGE $f(x) = \left(\frac{4}{5}\right)^x$};
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
               </image>
  <!--           </figure>  -->
             <paragraphs>
@@ -258,10 +259,10 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--           <figure xml:id="figure-graph-point-8-to-neg-x"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_06.png-->
               <image xml:id="graph-point-8-to-neg-x">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image>\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-5.9,-.9) grid (5.9,6.9);
-                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
-                  \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,6.9) node[anchor=south east] {$y$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-.9) -- (0,6.9) node[anchor=south east] {$y$};
                   \foreach \x in {-5,0,5}
                       \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
                   \draw[line width=0.55mm,black] (3pt, 4 cm) -- (-3pt,4 cm) node[shift={(-.3,0.05)}] {$20$};
@@ -271,7 +272,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \fill[black] (0,5) circle (.15cm);
                   \fill[black] (1,4) circle (.15cm);
                   \node at (-2.75, 3.5) {\LARGE $V(x) = 25f(x)$}; 
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
               </image>
  <!--           </figure>  -->
           </sidebyside>
@@ -280,7 +281,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
         <p><alert>Solution: </alert> We see from the graph of <m>V</m> that its horizontal asymptote is <m>y = 0.</m> (We leave it to reader to verify this analytically by thinking about what happens as we take larger and larger powers of <m>\frac{4}{5}.</m>) This means as the car gets older, its value diminishes to <m>0.</m></p></li>
         </ol>
       </example>
-      <p>The function in the previous example is often called a <term>decay curve</term>. Increasing exponential functions are used to model <term>growth curves</term> and we shall see several different examples of those in <xref ref="section-4C-exp-and-log-equations" autoname="yes" />. For now, we present another common decay curve which will serve as the basis for further study of exponential functions. Although it may look more complicated than the previous example, it is actually just a basic exponential function which has been modified by a few transformations.</p>
+      <p>The function in the previous example is often called a <term>decay curve</term>. Increasing exponential functions are used to model <term>growth curves</term> and we shall see several different examples of those in <xref ref="section-4C-exp-and-log-equations" text="type-global"/>. For now, we present another common decay curve which will serve as the basis for further study of exponential functions. Although it may look more complicated than the previous example, it is actually just a basic exponential function which has been modified by a few transformations.</p>
       <example xml:id="example-newtons-law-of-cooling">
           <title>Newton's Law of Cooling</title>
           <p>According to Newton's Law of Cooling, the temperature of coffee <m>T</m> (in degrees Fahrenheit) <m>t</m> minutes after it is served can be modeled by
@@ -289,31 +290,31 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
             <li><p>Find and interpret <m>T(0)</m>.</p>
             <p><alert>Solution:</alert> To find <m>T(0),</m> we replace every occurrence of the independent variable <m>t</m> with <m>0</m> to obtain <m>T(0) = 70 + 90e^{-0.1(0)} = 160.</m> This means that the coffee was served at <m>160^\circ F.</m></p></li>
             <li><p>Sketch the graph of <m>y = T(t)</m> using transformations.</p>
-            <p><alert>Solution:</alert> To graph <m>y = T(t)</m> using transformations, we start with the basic function, <m>f(t) = e^t.</m>  As we have already remarked, <m>e \approx 2.718 \gt 1</m> so the graph of  <m>f</m> is an increasing exponential with <m>y</m>-intercept <m>(0, 1)</m> and horizontal asymptote <m>y = 0.</m> The points <m>(-1, e^{-1}) \approx  (-1, 0.37)</m> and <m>(1, e) \approx  (1, 2.72)</m> are also on the graph of <m>f(t)</m>. Since the formula <m>T(t)</m> looks rather complicated, we will use the techniques of module <xref ref="section-1C-graphs" autoname="yes" /> 1C-Graphs of Functions to track the changes to the three points <m>(-1, e^{-1})</m>, <m>(0,1)</m> and <m>(-1, e^{-1})</m> as well as the horizontal asymptote. We have
+            <p><alert>Solution:</alert> To graph <m>y = T(t)</m> using transformations, we start with the basic function, <m>f(t) = e^t.</m>  As we have already remarked, <m>e \approx 2.718 \gt 1</m> so the graph of  <m>f</m> is an increasing exponential with <m>y</m>-intercept <m>(0, 1)</m> and horizontal asymptote <m>y = 0.</m> The points <m>(-1, e^{-1}) \approx  (-1, 0.37)</m> and <m>(1, e) \approx  (1, 2.72)</m> are also on the graph of <m>f(t)</m>. Since the formula <m>T(t)</m> looks rather complicated, we will use the techniques of module <xref ref="section-1C-graphs" text="type-global"/> 1C-Graphs of Functions to track the changes to the three points <m>(-1, e^{-1})</m>, <m>(0,1)</m> and <m>(-1, e^{-1})</m> as well as the horizontal asymptote. We have
             <md>
               <mrow>T(t) = 70 + 90e^{-0.1t} = 90e^{-0.1t} + 70 = 90f(-0.1t) + 70.</mrow>
             </md>
             Multiplication of the input to <m>f</m>, <m>t</m>, by <m>-0.1</m> results in a horizontal expansion by a factor of <m>10</m> as well as a flip about the <m>y</m>-axis. Let's see how this affects our three points by evaluating <m>e^{-0.1t}</m> at <m>t=-10, 0, 10:</m></p>
  <!--            <table>  -->
-              <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
+              <tabular top="minor" bottom="minor" halign="center" left="minor" right="minor">
                 <col right="minor" width="15%"/>
-                <col right="minor" width="15%" />
+                <col right="minor" width="15%"/>
                 <col right="minor" width="20%"/>
-                <col halign="left" width="50%" />
+                <col halign="left" width="50%"/>
                 <!--  -->
-                <row bottom = "minor">
+                <row bottom="minor">
                     <cell><p><m>\left(-1, e^{-1}\right)</m></p></cell>
                     <cell><p>moves to</p></cell>
                     <cell><p><m>\left(10, e^{-1}\right)</m></p></cell>
                     <cell><p>Expand the <m>-1</m> horizontally <m>10</m> left, then flip across the <m>y</m>-axis to positive <m>10.</m></p></cell>
                 </row>
-                <row bottom = "minor">
+                <row bottom="minor">
                     <cell><p><m>(0, 1)</m></p></cell>
                     <cell><p>moves to</p></cell>
                     <cell><p><m>(0, 1)</m></p></cell>
                     <cell><p>The intercept is not affected by this transformation.</p></cell>
                 </row>
-                <row bottom = "minor">
+                <row bottom="minor">
                     <cell><p><m>\left(1, e^{1}\right)</m></p></cell>
                     <cell><p>moves to</p></cell>
                     <cell><p><m>\left(-10, e^{1}\right)</m></p></cell>
@@ -323,22 +324,22 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--           </table>  -->
             <p>Next, we see that the output from <m>f</m> is being multiplied by <m>90.</m> This results in a vertical stretch by a factor of <m>90.</m> We multiply the <m>y</m>-coordinates by <m>90</m> to obtain:</p>
  <!--            <table>  -->
-              <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
+              <tabular top="minor" bottom="minor" halign="center" left="minor" right="minor">
                 <col right="minor" width="15%"/>
-                <col right="minor" width="15%" />
+                <col right="minor" width="15%"/>
                 <col right="minor" width="20%"/>
                 <!--  -->
-                <row bottom = "minor">
+                <row bottom="minor">
                     <cell><p><m>\left(10, e^{-1}\right)</m></p></cell>
                     <cell><p>moves to</p></cell>
                     <cell><p><m>\left(10, 90e^{-1}\right)</m></p></cell>
                 </row>
-                <row bottom = "minor">
+                <row bottom="minor">
                     <cell><p><m>(0, 1)</m></p></cell>
                     <cell><p>moves to</p></cell>
                     <cell><p><m>(0, 90)</m></p></cell>
                 </row>
-                <row bottom = "minor">
+                <row bottom="minor">
                     <cell><p><m>\left(-10, e^{1}\right)</m></p></cell>
                     <cell><p>moves to</p></cell>
                     <cell><p><m>\left(-10, 90e^{1}\right)</m></p></cell>
@@ -347,22 +348,22 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--           </table>  -->
             <p>We also multiply the <m>y</m> value of the horizontal asymptote <m>y = 0</m> by <m>90,</m> and it remains <m>y = 0.</m> Finally, we add <m>70</m> to all of the <m>y</m>-coordinates, which shifts the graph upwards to obtain:</p>
  <!--            <table>  -->
-              <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
+              <tabular top="minor" bottom="minor" halign="center" left="minor" right="minor">
                 <col right="minor" width="15%"/>
-                <col right="minor" width="15%" />
+                <col right="minor" width="15%"/>
                 <col right="minor" width="50%"/>
                 <!--  -->
-                <row bottom = "minor">
+                <row bottom="minor">
                     <cell><p><m>\left(10, 90e^{-1}\right)</m></p></cell>
                     <cell><p>moves to</p></cell>
                     <cell><p><m>\left(10, 90e^{-1}+70\right)\approx  (10, 103.11)</m></p></cell>
                 </row>
-                <row bottom = "minor">
+                <row bottom="minor">
                     <cell><p><m>(0, 90)</m></p></cell>
                     <cell><p>moves to</p></cell>
                     <cell><p><m>(0, 90+70)=(0,160)</m></p></cell>
                 </row>
-                <row bottom = "minor">
+                <row bottom="minor">
                     <cell><p><m>\left(-10, 90e^{1}\right)</m></p></cell>
                     <cell><p>moves to</p></cell>
                     <cell><p><m>\left(-10, 90e^{1}+70\right)\approx (-10, 314.64)</m></p></cell>
@@ -375,10 +376,10 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--           <figure xml:id="figure-graph-e-to-x"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_07.png-->
               <image xml:id="graph-e-to-x">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image>\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-3.9,-.9) grid (3.9,5.9);
-                  \draw[line width=0.55mm,black,<->] (-3.9,0) -- (3.9,0) node[anchor=north west] {$t$};
-                  \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,5.9);
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-3.9,0) -- (3.9,0) node[anchor=north west] {$t$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-.9) -- (0,5.9);
                   \foreach \x in {-3,0,3}
                       \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
                   \draw[line width=0.55mm,black] (3pt, 5 cm) -- (-3pt,5 cm) node[shift={(-.3,0.05)}] {$10$};
@@ -386,7 +387,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \fill[black] (0,.5) circle (.15cm);
                   \fill[black] (1,1.36) circle (.15cm);
                   \node at (-2.5, 1.5) {\LARGE $f(t)=e^t$}; 
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
               </image>
  <!--           </figure> -->
             <paragraphs>
@@ -398,10 +399,10 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--           <figure xml:id="figure-graph-coffee"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_08.png-->
               <image xml:id="graph-coffee">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image>\begin{tikzpicture} 
                   \draw[step=1cm,gray,very thin] (-1.9,-.9) grid (3.9,5.9);
-                  \draw[line width=0.55mm,black,<->] (-1.9,0) -- (3.9,0) node[anchor=north west] {$t$};
-                  \draw[line width=0.55mm,black,<->] (0,-.9) -- (0,5.9) node[anchor=south east] {$y$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-1.9,0) -- (3.9,0) node[anchor=north west] {$t$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-.9) -- (0,5.9) node[anchor=south east] {$y$};
                   \draw[line width=0.55mm,black] (1 cm,3pt) -- ( 1 cm,-3pt) node[shift={(0.05,-.3)}] {$5$};
                   \draw[line width=0.55mm,black] (2 cm,3pt) -- ( 2 cm,-3pt) node[shift={(0.05,-.3)}] {$10$};
                   \draw[line width=0.55mm,black] (3 cm,3pt) -- ( 3 cm,-3pt) node[shift={(0.05,-.3)}] {$15$};
@@ -413,7 +414,7 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
                   \fill[black] (0,3.2) circle (.15cm);
                   \fill[black] (2,2) circle (.15cm);
                   \node at (-1.15, 1.4) {\Large $y=70$};
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
               </image>
  <!--           </figure>  -->
           </sidebyside>
@@ -437,34 +438,34 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
   <p>Suppose someone asked you: <q>Exactly what does root mean?</q> You do understand roots, but they are difficult to define. After a few moments, you might come up with a definition very similar to the <q>question</q> definition of logarithms given above. <m>\sqrt[3]{8}</m> means <q>what number cubed is <m>8</m>?</q></p> <p>Now the person asks: <q>How do you find roots?</q> Well <m>\dots</m> you just play around with numbers until you find one that works. If someone asks for <m>\sqrt{25},</m> you just have to know that <m>5^2 = 25</m>. If someone asks for <m>\sqrt{30}</m>, you know that has to be bigger than <m>5</m> and smaller than <m>6</m>; if you need more accuracy, it's time for a calculator.</p>
   <p>All that information about roots applies in a very analogous way to logarithms.</p>
 <!--   <table>  -->
-      <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
+      <tabular top="minor" bottom="minor" halign="center" left="minor" right="minor">
         <col right="minor" width="30%"/>
-        <col right="minor" width="35%" />
+        <col right="minor" width="35%"/>
         <col right="minor" width="35%"/>
         <!--  -->
-        <row bottom = "minor">
-            <cell><p></p></cell>
+        <row bottom="minor">
+            <cell><p/></cell>
             <cell><p>Roots</p></cell>
             <cell><p>Logs</p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><p>The question</p></cell>
             <cell><p><m>\sqrt[a]{x}</m> means <q>what number, raised to the <m>a</m> power, is <m>x</m>?</q></p>
             <p>As an equation, <m>?^a = x</m></p></cell>
             <cell><p><m>\log_a x</m> means <q><m>a</m>, raised to what power, is <m>x?</m></q></p>
             <p>As an equation, <m>a^? = x</m></p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><p>Example that comes out even</p></cell>
             <cell><p><m>\sqrt[3]{8} = 2</m></p></cell>
             <cell><p><m>\log_2 8 = 3</m></p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><p>Example that doesn't</p></cell>
             <cell><p><m>\sqrt[3]{10}</m> is a bit more than <m>2</m></p></cell>
             <cell><p><m>\log_2 10</m> is a bit more than <m>3</m></p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><p>Out of domain example</p></cell>
             <cell><p><m>\sqrt{-4}</m> does not exist</p>
             <p>(<m>x^2</m> will never give <m>-4</m>)</p></cell>
@@ -517,29 +518,29 @@ Based on the file: szca07042013.pdf downloaded, 01/15/2015,  pages -->
  <!--       <figure xml:id="figure-graph-log-b-x"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_09.png-->
           <image xml:id="graph-log-b-x">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
-              \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
-              \draw[line width=0.55mm,black,<->] (0,-2.9) -- (0,3.9);
+            <latex-image>\begin{tikzpicture} 
+              \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0);
+              \draw[line width=0.55mm,black,&lt;-&gt;] (0,-2.9) -- (0,3.9);
               \node at (-.3, -.3) {$0$};
               \draw[line width=0.75mm, domain=.06:5.9,smooth,variable=\x,red] plot ({\x},{ln(\x)});
               \fill[black] (1,0) circle (.15cm);
               \node at (4, 2.75) {\LARGE $y=\log_b(x)$};
-               \node at (4, 2) {\LARGE $b>1$};
-            \end{tikzpicture}]]></latex-image-code>
+               \node at (4, 2) {\LARGE $b&gt;1$};
+            \end{tikzpicture}</latex-image>
           </image>
  <!--       </figure>  -->
  <!--       <figure xml:id="figure-graph-log-b-small-x"> -->
  <!--set4A-Exponential_and_Logarithmic_Functions_10.png-->
           <image xml:id="graph-log-b-small-x">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
-              \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
-              \draw[line width=0.55mm,black,<->] (0,-2.9) -- (0,3.9);
+            <latex-image>\begin{tikzpicture} 
+              \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0);
+              \draw[line width=0.55mm,black,&lt;-&gt;] (0,-2.9) -- (0,3.9);
               \node at (-.3, -.3) {$0$};
               \draw[line width=0.75mm, domain=.08:5.9,smooth,variable=\x,red] plot ({\x},{ln(\x)/ln(.5)});
               \fill[black] (1,0) circle (.15cm);
               \node at (4, 2.75) {\LARGE $y=\log_b(x)$};
-               \node at (4, 2) {\LARGE $0<b<1$};
-            \end{tikzpicture}]]></latex-image-code>
+               \node at (4, 2) {\LARGE $0&lt;b&lt;1$};
+            \end{tikzpicture}</latex-image>
           </image>
  <!--       </figure>  -->
       </sidebyside>
