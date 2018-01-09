@@ -55,7 +55,7 @@ letters in math</q>) and an even more vague understanding of functions (<q>Those
     <p>A function is neither a number nor a variable: it is a <term>process</term> for turning one number into another. For
 instance, <q>Double and then add <m>6</m></q> is a function. If you put a <m>4</m> into that function, it comes out with a <m>14</m>. If you put a <m>1/2</m> into that function, it comes out with a <m>7</m>.</p>
 <p>The traditional image of a function is a machine, with a slot on one side where numbers go in and a slot on
-the other side where numbers come out.</p></introduction>
+the other side where numbers come out.</p>
 <!-- <figure xml:id="figure-function-box"> -->
           <image xml:id="function-box"> 
             <latex-image-code><![CDATA[\begin{tikzpicture} 
@@ -77,10 +77,11 @@ results of the process.  You may think of a function as an algorithm or a rule, 
 <p>A function may describe simple or complicated steps to assign values: <q>Respond with -3 no matter what
 number you are given,</q> or <q>Give back the lowest prime number that is greater than or equal to the number you were given.</q> Students often ask, <q>Can a function do that?</q>  The answer is always yes (with one caveat mentioned below). Expand your idea of what a function can do. Any process that consistently turns numbers into other numbers, is a function.</p>
 <p>By the way-having defined the word <q>function</q> I just want to say something about the word <q>equation.</q> An <term>equation</term> is when you <q>equate</q> two things-that is to say, set them equal. So <m>x^2 - 3</m> is a function, but it is not an equation. <m>x^2-3 = 6</m> is an equation. An <q>equation</q> is not about a process, it is a statement. In this case, the equation is stating that some number squared minus 3 is equal to a particular number, <m>6</m>. The equation is not telling you how to find values for numbers in general.</p>
+    </introduction>
 <subsubsection>
   <title>The Rule of Consistency</title>
-  <introduction>
-  <p>There is only one limitation on what a function can do: a function must be <term>consistent</term>.</p></introduction>
+<!--<introduction>-->
+  <p>There is only one limitation on what a function can do: a function must be <term>consistent</term>.</p>
 <p>For instance, the function in the above drawing is given a <m>5</m>, and gives back a <m>14</m>. That means this particular function turns <m>5</m> into <m>14</m>-always. That particular function can never take in a <m>5</m> and give back a <m>16</m>. This <q>rule of consistency</q> is a very important constraint on the nature of functions.</p>
 <p>NOTE: This rule does not treat the inputs and outputs the same!</p>
 <p>For instance, consider the function <m>y = x^2</m>. This function takes both <m>3</m> and <m>-3</m> and turns them into <m>9</m> (two different inputs, same output). That is allowed. However, it is not reversible! If you take a <m>9</m> and turn it into both a <m>3</m> and a <m>-3</m> (two different outputs, same input), then what you have is not a function.  The issue here is that a function does not allow any ambiguity about what the output should be for a given input.  In this case, which output should go with the <m>9</m>? <m>3</m> or <m>-3</m>?</p>
@@ -103,6 +104,7 @@ will recur in different forms throughout the text.</p>
 </subsection>
 <subsection xml:id="domain-range">
     <title>Domain and Range</title>
+  <introduction>
     <p>Consider the function <m>y = \sqrt{x}</m>. It's output, <m>y</m>, is the positive real number that multiplies itself to get <m>x</m>.  If this function is given a <m>9</m> it hands back a <m>3</m>. If this function is given a <m>2</m> it hands back. . .well, it hands back <m>\sqrt{2}</m>, which is approximately <m>1.4</m>. The answer cannot be specified exactly as a fraction or decimal, but it is a perfectly good answer nonetheless.</p>
     <p>On the other hand, what if this function is handed <m>-4</m>? There is no real number which can multiply itself to get <m>-4</m>, so the function has no number to hand back. If our function is a computer or calculator, it responds with an error message. So we see that this function is able to respond to the numbers <m>9</m> and <m>2,</m> but it is not able to respond in any way to the number <m>-4</m>. Mathematically, we express this by saying that <m>9</m> and <m>2</m> are in the "domain" of the square root function, and <m>-4</m> is not in the domain of this function.</p>
   <aside>
@@ -168,7 +170,7 @@ will recur in different forms throughout the text.</p>
     </aside>
       <p>To illustrate, let us return to the function <m>y = \sqrt{x + 7}</m>. Recall that the domain of this function is all numbers <m>x \geq -7</m>; in other words, you are allowed to put any number greater than or equal to <m>-7</m> into this function.</p>
       <p>What numbers might come out of this function? If you put in <m>-7</m> you get out <m>0.</m> (<m>\sqrt{0} = 0</m>) If you put in <m>-6</m> you get out <m>\sqrt{1} = 1</m>. As you increase the <m>x</m> value, the output values also increase. However, if you put in <m>x = -8</m> nothing comes out at all. Hence, the range of this function is all numbers <m>y</m> such that <m>y \geq 0</m>. That is, this function is capable of handing back <m>0</m> or any positive number, but it will never hand back a negative number.</p>
-
+</introduction>
       <subsubsection>
         <title>Interval Notation for Domains and Ranges</title>
       <p>Domains and ranges above are sometimes expressed as intervals, using the following rules:</p>

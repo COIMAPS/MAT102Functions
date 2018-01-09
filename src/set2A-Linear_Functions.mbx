@@ -3,14 +3,12 @@
   <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
 Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
 Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 50-52-->
-<introduction>
     <ul>
       <li><p>Understand the concepts of linear function, slope, and <m>y</m>-intercept.</p></li>
       <li><p>Give the slope-intercept equation for a line.</p></li>
       <li><p>Give the equation of a line from either a graph, the slope and a point, or two points on the line.</p></li>
       <li><p>Give equations for horizontal and vertical lines.</p></li>
     </ul>
-  </introduction>
   <p>Most students entering this course are already familiar with the basic mechanics of graphing lines. Recapping very briefly: the equation for a line is <m>y = mx + b</m> where <m>b</m> is the <m>y</m>-intercept  and <m>m</m> is the slope.   This form of the equation for a line is sometimes called the <term>slope-intercept</term> form because the slope and vertical intercept are clearly seen.</p>
   <example xml:id="example-linear-equation">
       <title>Determine Slope and Intercept from Linear Equation</title>

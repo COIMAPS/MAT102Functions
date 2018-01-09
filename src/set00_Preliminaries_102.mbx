@@ -156,7 +156,7 @@ For the most part, we will focus on sets whose elements come from the real numbe
   </subsection>
   <subsection xml:id="interval-notation">
     <title>Interval Notation</title>
-    <p><q>Interval notation</q> is a shorthand way of describing an interval.  For example, for real numbers <m>a</m> and <m>b</m>, <q>(a,b)</q> is interval notation for <q> the set of all real numbers <m>x</m> bigger and <m>a</m> and less than <m>b</m></q>.  The table given below displays interval notation for different kinds of intervals.
+    <p><q>Interval notation</q> is a shorthand way of describing an interval.  For example, for real numbers <m>a</m> and <m>b</m>, <q>(a,b)</q> is interval notation for <q> the set of all real numbers <m>x</m> bigger than <m>a</m> and less than <m>b</m></q>.  The table given below displays interval notation for different kinds of intervals.
     </p>
  <!--   <p>Recall that we may visualize
       <m>\mathbb{R}</m> as a line. Segments of this line are called
@@ -433,11 +433,11 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                 </p>
                 <p>
                   <m>(-\infty, 5]</m>
-                </p>
+                </p>  <!-- FIX THIS ON THE GRAPH MAKER FILE SO THE CIRCLE IS FILLED IN. I THINK THE CODE HERE IS NOW CORRECT -->
 <!--                <figure xml:id="figure-interval-less-equal-5">  -->
                     <image xml:id="interval-less-equal-5">
                       <latex-image-code><![CDATA[\begin{tikzpicture} 
-                      \draw[color=red] (3,.5) circle (.1cm);
+                      \fill[color=red] (3,.5) circle (.1cm);
                       \draw[color=red,<-] (0,.5) -- (2.9,.5); 
                       \draw[color=red](1.5,.4) -- (1.5, .6); 
                       \node[anchor=south, color=red] at (1.5,-.1) {$0$}; 
@@ -889,7 +889,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
         <p>Multiply:
         <md>
           <mrow>\left(a^2\right)^3 \amp\amp\amp \text{This means we have three \(a^2\)'s multiplied together}</mrow>
-          <mrow>a^2\cdot a^2 \cdot a^2 \amp\amp\amp \text{Each <m>a^2</m> represent the produce of two <m>a</m>'s' </mrow>
+          <mrow>a^2 \cdot a^2 \cdot a^2 \amp\amp\amp \text{Each <m>a^2</m> represent the produce of two <m>a</m>'s} </mrow>
           <mrow>(aa)(aa)(aa) \amp\amp\amp \text{Three groups of two make six <m>a</m>'s in all multiplied together}</mrow>
           <mrow>a^6 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
@@ -1234,7 +1234,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
       <p>
         In the example above, we simplified the reciprocal of the fraction by using the method for dividing fractions,
         <md>
-          <mrow>\frac{1}{frac{a}{b}} = 1 \cdot \frac{b}{a} = \frac{b}{a} \amp\amp\amp \text{}</mrow>
+          <mrow>\frac{1}{\frac{a}{b}} = 1 \cdot \frac{b}{a} = \frac{b}{a} \amp\amp\amp \text{}</mrow>
         </md>        
       </p>
       <p>Following is the rule for negative exponents: </p>

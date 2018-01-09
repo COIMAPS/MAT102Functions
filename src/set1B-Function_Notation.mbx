@@ -147,7 +147,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         </row>
         <row>
           <cell>Quotient: <m>\dfrac{f}{g}</m></cell>
-          <cell><m>\dfrac{f}{g} = \dfrac{f(x)}{g(x)}</m></cell>
+          <cell><m>\dfrac{f}{g}(x) = \dfrac{f(x)}{g(x)}</m></cell>
         </row>
       </tabular>
 <!--    </table>  -->
