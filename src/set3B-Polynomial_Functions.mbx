@@ -5,16 +5,18 @@ Saylor URL: http://www.saylor.org/courses/ma001/
 Attributed to: Tyler Wallace
 Saylor.org,  pages 192-193-->
 <introduction>
+  <p>
     <ul>
       <li><p>Evaluate, add, subtract and multiply polynomials.</p></li>
       <li><p>Identify graphs of polynomial functions.</p></li>
       <li><p>Determine the degree and  intercepts of polynomial functions.</p></li>
     </ul>
+  </p>
   <p>Many applications in mathematics have to do with what are called polynomials. Polynomials are made up of terms. Terms are a product of numbers and/or variables. For example, <m>5x</m>, <m>2y^3</m>, <m>-4</m>  and <m>ab^3c</m> are all terms. Each term has a <term>coefficient,</term> the number, and a <term>degree,</term> the power of the variable in the term <ndash /> if there is more than one variable, then the degree is the sum of the exponents on the variables.</p>
   <example xml:id="example-term-coefficients-degrees">
       <title>Term Coefficients and Degrees</title>
       <p>Determine the coefficient and the degree of each example term: </p>
-<!--      <table>  -->
+      <sidebyside>
       <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
         <col right="minor" />
         <col right="minor" />
@@ -46,13 +48,13 @@ Saylor.org,  pages 192-193-->
             <cell><m>5</m> since <m>ab^3c = a^1b^3c^1</m> and <m>1+3+1=5\checkmark</m></cell>
         </row>
       </tabular>
-<!--    </table> -->
+    </sidebyside>
   </example>
   <p>Terms are connected to each other by addition or subtraction. Expressions are often named based on the number of terms in them. A <term>monomial</term> has one term, such as <m>3x^2.</m> A  <term>binomial</term> has two terms, such as <m>a^2 - b^2.</m> A <term>trinomial</term> has three terms, such as <m>ax^2 + bx + c.</m> The term <term>polynomial</term> means many terms. Monomials, binomials, trinomials, and expressions with more terms all fall under the umbrella of <q>polynomials.</q> The term with the largest degree is called the <term>leading term</term> of the polynomial and the degree of the leading term is called the <term>degree of the polynomial</term>.</p>
   <example xml:id="example-polynomial-leading-term-degree">
       <title>Polynomial Leading Terms and Degrees</title>
       <p>Determine the leading term and the degree of each example polynomial:</p>
-<!--      <table>  -->
+      <sidebyside>
       <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
         <col right="minor" halign="left" />
         <col right="minor" />
@@ -89,31 +91,35 @@ Saylor.org,  pages 192-193-->
             <cell><m>0</m></cell>
         </row>
       </tabular>
-<!--    </table>  -->
+    </sidebyside>
   </example>
   <p>If we know what the variable in a polynomial represents we can replace the variable with the number and evaluate the polynomial as shown in the following example:</p>
   <example xml:id="example-polynomial-evaluation">
       <title>Polynomial Evaluation</title>
       <p>Evaluate  <m>2x^2 - 4x + 6</m> when <m>x = -4.</m></p>
-      <md>
-        <mrow>2x^2 - 4x + 6\amp\amp\amp\text{Replace variable \(x\) with \(-4\)}</mrow>
-        <mrow>2(-4)^2 - 4(-4) + 6\amp\amp\amp\text{Exponents first}</mrow>
-        <mrow>2(16) - 4(-4) + 6\amp\amp\amp\text{Multiplication (we can do all terms at once)}</mrow>
-        <mrow>32 + 16 + 6\amp\amp\amp\text{Add}</mrow>
-        <mrow>54\amp\amp\amp\text{Our Solution}\checkmark</mrow>
-      </md>
+      <p>
+        <md>
+          <mrow>2x^2 - 4x + 6\amp\amp\amp\text{Replace variable \(x\) with \(-4\)}</mrow>
+          <mrow>2(-4)^2 - 4(-4) + 6\amp\amp\amp\text{Exponents first}</mrow>
+          <mrow>2(16) - 4(-4) + 6\amp\amp\amp\text{Multiplication (we can do all terms at once)}</mrow>
+          <mrow>32 + 16 + 6\amp\amp\amp\text{Add}</mrow>
+          <mrow>54\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
   </example>
   <p>It is important to be careful with negative variables and exponents. Remember that the exponent only affects the number it is physically attached to. This means <m>-3^2 = -9</m> because the exponent is only attached to the <m>3.</m> Also, <m>(-3)^2=9</m> because the exponent is attached to the parentheses and affects everything inside. When we replace a variable with parentheses, as in the previous example, the substituted value is in parentheses. So in the example,  <m>(-4)^2 = 16</m>. However, consider the next example.</p>
   <example xml:id="example-polynomial-evaluation-2">
       <title>Polynomial Evaluation</title>
       <p>Evaluate  <m>-x^2 + 2x + 6</m> when <m>x =3.</m></p>
-      <md>
-        <mrow>-x^2 + 2x + 6\amp\amp\amp\text{Replace variable \(x\) with \(3\)}</mrow>
-        <mrow>-(3)^2 + 2(3) + 6\amp\amp\amp\text{Exponent only on the \(3\), not negative \(3\)}</mrow>
-        <mrow>-9 + 2(3) + 6\amp\amp\amp\text{Multiply}</mrow>
-        <mrow>-9 + 6 + 6\amp\amp\amp\text{Add}</mrow>
-        <mrow>3\amp\amp\amp\text{Our Solution}\checkmark</mrow>
-      </md>
+      <p>
+        <md>
+          <mrow>-x^2 + 2x + 6\amp\amp\amp\text{Replace variable \(x\) with \(3\)}</mrow>
+          <mrow>-(3)^2 + 2(3) + 6\amp\amp\amp\text{Exponent only on the \(3\), not negative \(3\)}</mrow>
+          <mrow>-9 + 2(3) + 6\amp\amp\amp\text{Multiply}</mrow>
+          <mrow>-9 + 6 + 6\amp\amp\amp\text{Add}</mrow>
+          <mrow>3\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
   </example>
   <historical>
     <title>World View Note</title>
@@ -126,33 +132,39 @@ Saylor.org,  pages 192-193-->
   <example xml:id="example-polynomial-addition">
       <title>Polynomial Addition</title>
       <p>Add the two cubic polynomials.</p>
-      <md>
-        <mrow>(4x^3 - 2x + 8) + (3x^3 - 9x^2 - 11)\amp\amp\amp\text{Combine like terms:}</mrow>
-        <mrow>4x^3 + 3x^3 = 7x^3\amp\amp\amp\text{and }8-11=-3</mrow>
-        <mrow>7x^3 - 9x^2 - 2x - 3\amp\amp\amp\text{Our Solution}\checkmark</mrow>
-      </md>
+      <p>
+        <md>
+          <mrow>(4x^3 - 2x + 8) + (3x^3 - 9x^2 - 11)\amp\amp\amp\text{Combine like terms:}</mrow>
+          <mrow>4x^3 + 3x^3 = 7x^3\amp\amp\amp\text{and }8-11=-3</mrow>
+          <mrow>7x^3 - 9x^2 - 2x - 3\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
   </example>
-  <p>Generally final answers for polynomials are written so the exponents on the variable count down. <i>Example 3B-3</i> demonstrates this with the exponent counting down <m>3,</m> <m>2,</m> <m>1,</m> <m>0</m> (recall <m>x^0=1</m>). Note that this is not a rule for writing polynomials <ndash /> just an easy way to organize the terms and to make the degree of the polynomial clear. The polynomial in <xref ref="example-polynomial-addition" autoname="yes" /> could just as well be written as: <m> - 3 - 2x - 9x^2 + 7x^3</m> or <m> - 2x  + 7x^3 - 3 - 9x^2</m>, but then we have to "search" through the terms to determine the degree.</p>
+  <p>Generally final answers for polynomials are written so the exponents on the variable count down. <em>Example 3B-3</em> demonstrates this with the exponent counting down <m>3,</m> <m>2,</m> <m>1,</m> <m>0</m> (recall <m>x^0=1</m>). Note that this is not a rule for writing polynomials <ndash /> just an easy way to organize the terms and to make the degree of the polynomial clear. The polynomial in <xref ref="example-polynomial-addition" autoname="yes" /> could just as well be written as: <m> - 3 - 2x - 9x^2 + 7x^3</m> or <m> - 2x  + 7x^3 - 3 - 9x^2</m>, but then we have to "search" through the terms to determine the degree.</p>
   <p>Subtracting polynomials is almost as fast. One extra step comes from the minus in front of the parentheses. When we have a negative in front of parentheses we distribute it through, changing the signs of everything inside. The same is done for the subtraction sign.</p>
   <example xml:id="example-polynomial-subtraction">
       <title>Polynomial Subtraction</title>
       <p>Subtract the two quadratic polynomials.</p>
-      <md>
-        <mrow>(5x^2 - 2x + 7) - (3x^2 + 6x - 4)\amp\amp\amp\text{Distribute negative through second part}</mrow>
-        <mrow>5x^2 - 2x + 7 - 3x^2 - 6x + 4\amp\amp\amp\text{Combine like terms:}</mrow>
-        <mrow>5x^2 - 3x^2 =2x^2\text{ and }-2x - 6x = -8x\amp\amp\amp\text{and }7 + 4 = 11</mrow>
-        <mrow>2x^2 - 8x + 11\amp\amp\amp\text{Our Solution}\checkmark</mrow>
-      </md>
+      <p>
+        <md>
+          <mrow>(5x^2 - 2x + 7) - (3x^2 + 6x - 4)\amp\amp\amp\text{Distribute negative through second part}</mrow>
+          <mrow>5x^2 - 2x + 7 - 3x^2 - 6x + 4\amp\amp\amp\text{Combine like terms:}</mrow>
+          <mrow>5x^2 - 3x^2 =2x^2\text{ and }-2x - 6x = -8x\amp\amp\amp\text{and }7 + 4 = 11</mrow>
+          <mrow>2x^2 - 8x + 11\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
   </example>
   <p>Addition and subtraction can also be combined into the same problem as shown in this final example:</p>
   <example xml:id="example-polynomial-addition-subtraction">
       <title>Polynomial Addition and Subtraction</title>
       <p>Simplify.</p>
-      <md>
-        <mrow>(2x^2 - 4x + 3) + (5x^2 - 6x + 1) - (x^2 - 9x + 8)\amp\amp\amp\text{Distribute negative through}</mrow>
-        <mrow>2x^2 - 4x + 3 + 5x^2 - 6x + 1 - x^2 + 9x - 8\amp\amp\amp\text{Combine like terms}</mrow>
-        <mrow>6x^2-x-4\amp\amp\amp\text{Our Solution}\checkmark</mrow>
-      </md>
+      <p>
+        <md>
+          <mrow>(2x^2 - 4x + 3) + (5x^2 - 6x + 1) - (x^2 - 9x + 8)\amp\amp\amp\text{Distribute negative through}</mrow>
+          <mrow>2x^2 - 4x + 3 + 5x^2 - 6x + 1 - x^2 + 9x - 8\amp\amp\amp\text{Combine like terms}</mrow>
+          <mrow>6x^2-x-4\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+        </md>
+      </p>
   </example>
   </subsection>
   <subsection>
@@ -184,30 +196,36 @@ Saylor.org,  pages 192-193-->
     <example xml:id="example-polynomial-multiplication-binomials">
         <title>Polynomial Multiplication</title>
         <p>Multiply <m>(4x + 3) (3x - 2).</m></p>
-        <md>
-          <mrow>4x(3x-2) + 3(3x-2)\amp\amp\amp\text{Each term of the first multiplies the second}</mrow>
-          <mrow>12x^2 -8x + 9x - 6\amp\amp\amp\text{Combine like terms}</mrow>
-          <mrow>12x^2 + x - 6\amp\amp\amp\text{Our Solution}\checkmark</mrow>
-        </md>
+        <p>
+          <md>
+            <mrow>4x(3x-2) + 3(3x-2)\amp\amp\amp\text{Each term of the first multiplies the second}</mrow>
+            <mrow>12x^2 -8x + 9x - 6\amp\amp\amp\text{Combine like terms}</mrow>
+            <mrow>12x^2 + x - 6\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+          </md>
+        </p>
     </example>
     <example xml:id="example-polynomial-multiplication-trinomial">
         <title>Polynomial Multiplication</title>
         <p>Multiply <m>(x - 2) (4x^2 - x +5).</m></p>
-        <md>
-          <mrow>x(4x^2 - x +5) - 2(4x^2 - x +5)\amp\amp\amp\text{Each term of the first multiplies the second}</mrow>
-          <mrow>4x^3 - x^2 + 5x -8x^2 + 2x - 10\amp\amp\amp\text{Combine like terms}</mrow>
-          <mrow>4x^3 - 9x^2 + 7x - 10\amp\amp\amp\text{Our Solution}\checkmark</mrow>
-        </md>
+        <p>
+          <md>
+            <mrow>x(4x^2 - x +5) - 2(4x^2 - x +5)\amp\amp\amp\text{Each term of the first multiplies the second}</mrow>
+            <mrow>4x^3 - x^2 + 5x -8x^2 + 2x - 10\amp\amp\amp\text{Combine like terms}</mrow>
+            <mrow>4x^3 - 9x^2 + 7x - 10\amp\amp\amp\text{Our Solution}\checkmark</mrow>
+          </md>
+        </p>
     </example>
     <p>What happens if we multiply in the reverse order?</p>
      <example xml:id="example-polynomial-multiplication-trinomial-reverse">
         <title>Polynomial Multiplication (Reverse Order)</title>
         <p>Multiply <m>(4x^2 - x +5)(x - 2) .</m></p>
-        <md>
-          <mrow>4x^2(x-2) - x(x-2) +5(x-2)\amp\amp\amp\text{Each term of the first multiplies the second}</mrow>
-          <mrow>4x^3 - 8x^2 - x^2 +2x + 5x - 10\amp\amp\amp\text{Combine like terms}</mrow>
-          <mrow>4x^3 - 9x^2 + 7x - 10\amp\amp\amp\text{We got the same thing <ndash /> that's good!}\checkmark</mrow>
-        </md>
+        <p>
+          <md>
+            <mrow>4x^2(x-2) - x(x-2) +5(x-2)\amp\amp\amp\text{Each term of the first multiplies the second}</mrow>
+            <mrow>4x^3 - 8x^2 - x^2 +2x + 5x - 10\amp\amp\amp\text{Combine like terms}</mrow>
+            <mrow>4x^3 - 9x^2 + 7x - 10\amp\amp\amp\text{We got the same thing---that's good!}\checkmark</mrow>
+          </md>
+        </p>
     </example>
     <!--
 <p>You may notice that we are not going to cover dividing with polynomials in this course.  EXPLAIN WHY NOT?
@@ -221,7 +239,7 @@ Saylor.org,  pages 192-193-->
         <sidebyside>
 <!--          <figure xml:id="figure-graph-4-polynomials-1">  -->
             <image xml:id="graph-4-polynomials-1">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image-code><![CDATA[\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -235,8 +253,8 @@ Saylor.org,  pages 192-193-->
             </image>
 <!--          </figure>  -->
 <!--          <figure xml:id="figure-graph-4-polynomials-2">  -->
-            <image xml:id="graph-4-polynomials-2">i
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <image xml:id="graph-4-polynomials-2">
+              <latex-image-code><![CDATA[\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -253,7 +271,7 @@ Saylor.org,  pages 192-193-->
         <sidebyside>
 <!--          <figure xml:id="figure-graph-4-polynomials-3"> -->
             <image xml:id="graph-4-polynomials-3">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image-code><![CDATA[\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -268,7 +286,7 @@ Saylor.org,  pages 192-193-->
 <!--          </figure>  -->
 <!--          <figure xml:id="figure-graph-4-polynomials-4"> -->
             <image xml:id="graph-4-polynomials-4">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image-code><![CDATA[\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -281,7 +299,7 @@ Saylor.org,  pages 192-193-->
               \end{tikzpicture}]]></latex-image-code>
             </image>
 <!--          </figure>  -->
-          
+
         </sidebyside>
       </sbsgroup>
     <p>Each of these graphs looks quite different from the others, but they share some characteristics.
@@ -330,10 +348,10 @@ Saylor.org,  pages 192-193-->
 <!--        <figure xml:id="figure-graph-xsq-plus-1"> -->
 <!--set3B-Polynomial_Functions_03.png-->
           <image xml:id="graph-xsq-plus-1">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image-code><![CDATA[\begin{tikzpicture}
               \draw[step=1cm,gray,very thin] (-5.9,-1.9) grid (5.9,5.9);;
               \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
-              \draw[line width=0.55mm,black,<->] (0,-1.9) -- (0,5.9);          
+              \draw[line width=0.55mm,black,<->] (0,-1.9) -- (0,5.9);
               \draw[line width=0.55mm,black] (-4 cm,3pt) -- (-4 cm,-3pt);
               \draw[line width=0.55mm,black] (4 cm,3pt) -- (4 cm,-3pt);
               \draw[line width=0.55mm,black] (3pt,4 cm) -- (-3pt,4 cm);
@@ -347,7 +365,7 @@ Saylor.org,  pages 192-193-->
               \fill (-1,2) circle (.1cm);
               \fill (0,1) circle (.1cm);
               \fill (1,2) circle (.1cm);
-              \fill (2,5) circle (.1cm); 
+              \fill (2,5) circle (.1cm);
             \end{tikzpicture}]]></latex-image-code>
           </image>
 <!--        </figure>  -->
@@ -402,7 +420,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
 <!--          <figure xml:id="figure-graph-negative-xsq-minus-x-plus-2"> -->
 <!--set3B-Polynomial_Functions_04.png-->
               <image xml:id="graph--negative-xsq-minus-x-plus-2">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-4.9) grid (5.9,4.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
                   \draw[line width=0.55mm,black,<->] (0,-4.9) -- (0,4.9);
@@ -419,7 +437,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \node at (2.2,2.5) {\Large $g(x)=-x^2-x+2$};
                   \fill (-2,0) circle (.1cm);
                   \fill (0,2) circle (.1cm);
-                  \fill (1,0) circle (.1cm); 
+                  \fill (1,0) circle (.1cm);
                 \end{tikzpicture}]]></latex-image-code>
               </image>
 <!--            </figure>  -->
@@ -433,7 +451,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
         <mrow>0 \amp = \frac{2}{7}x^3-\frac{1}{7}x^2-3x</mrow>
         <mrow>\amp  = \frac{1}{7}x(2x^2-x-21)</mrow>
         <mrow>\amp = \frac{1}{7}x(2x- 7)(x+3)</mrow>
-      </md>So, 
+      </md>So,
       <md>
         <mrow>\frac{1}{7}x\amp = 0\amp\amp\text{or}\amp 2x - 7 \amp = 0\amp\amp\text{or}\amp x + 3 \amp = 0</mrow>
         <mrow>x\amp = 0\amp\amp\text{or}\amp x \amp = \frac{7}{2} \amp\amp\text{or}\amp x \amp = -3</mrow>
@@ -444,7 +462,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
 <!--          <figure xml:id="figure-graph-cubic"> -->
 <!--set3B-Polynomial_Functions_05.png-->
               <image xml:id="graph-cubic">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-4.9) grid (5.9,4.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
                   \draw[line width=0.55mm,black,<->] (0,-4.9) -- (0,4.9);
@@ -461,7 +479,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \node at (-3.5,3.5) {\Large $h(x)=\frac{2}{7}x^3-\frac{1}{7}x^2-3x$};
                   \fill (-3,0) circle (.1cm);
                   \fill (0,2) circle (.1cm);
-                  \fill (3.5,0) circle (.1cm); 
+                  \fill (3.5,0) circle (.1cm);
                 \end{tikzpicture}]]></latex-image-code>
               </image>
 <!--            </figure>  -->
@@ -502,7 +520,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
 <!--          <figure xml:id="figure-graph-quartic"> -->
 <!--set3B-Polynomial_Functions_06.png-->
               <image xml:id="graph-quartic">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-8.9) grid (5.9,1.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
                   \draw[line width=0.55mm,black,<->] (0,-8.9) -- (0,1.9);
@@ -519,7 +537,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \node at (-3.5,-6.5) {\Large $k(x)=x^4-2x^3-2x^2$};
                   \fill (-.732,0) circle (.1cm);
                   \fill (0,0) circle (.1cm);
-                  \fill (2.732,0) circle (.1cm); 
+                  \fill (2.732,0) circle (.1cm);
                 \end{tikzpicture}]]></latex-image-code>
               </image>
 <!--            </figure>  -->
@@ -567,10 +585,10 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
         </p>
     </example>
     <p><alert>Note:</alert> Why study polynomials?  What are they good for?  Many functions are difficult to calculate without a calculator or computer, for example, trigonometric functions.  How <em>DO</em> calculators or computers calculate values for these functions? The answer  is based on polynomials which are easier to calculate since they only involve multiplying and addition/subtraction. The graph  below shows how the polynomial <m>f(x) = x - \frac{1}{6}x^3 + \frac{1}{120}x^5</m> approximates the function <m>g(x) = \sin(x)</m> for <m>-3 \leq x \leq3</m>.</p>
-<!--    <figure xml:id="figure-graph-sine-approx"> -->
+    <sidebyside>
 <!--set3B-Polynomial_Functions_07.png-->
               <image xml:id="graph-sine-approx">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                   \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0);
                   \draw[line width=0.55mm,black,<->] (0,-4) -- (0,4);
                   \foreach [evaluate=\x as \z using int(2*\x)] \x in {-5,...,5}
@@ -580,9 +598,9 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \draw[line width=0.75mm, domain=-2.4:2.3,smooth,variable=\x,red] plot ({\x},{\x-2*\x*\x*\x/3+2*\x*\x*\x*\x*\x/15});
                   \draw[dashed, line width=0.75mm, blue](-5.5, .5) cos (-4.71,0) sin (-3.93,-.5) cos (-3.14,0) sin (-2.36,.5) cos (-1.57,0) sin (-.785,-.5) cos (0,0) sin (.785,.5) cos (1.57,0) sin (2.36,-.5) cos (3.14,0) sin (3.93,.5) cos (4.71,0) sin (5.5, -.5);
                   \node at (4,3.2) {\Large $f(x)=x - \frac{1}{6}x^3 + \frac{1}{120}x^5$};
-                  \node at (4, -1) {\Large $g(x)=\sin(x)$}; 
+                  \node at (4, -1) {\Large $g(x)=\sin(x)$};
                 \end{tikzpicture}]]></latex-image-code>
               </image>
-<!--            </figure>  -->
+            </sidebyside>
   </subsection>
 </section>
