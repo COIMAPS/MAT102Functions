@@ -4,10 +4,11 @@
 Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
 Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 77-83-->
 <introduction>
-  <ul>
-    <li>Solve two simultaneous linear equations graphically, by substitution, and by elimination.</li>
-  </ul>
-  <p>Consider the equation <m>y = 2\sqrt{x}</m>. How many <m>(x, y)</m> pairs are there that satisfy this equation? Answer: <m>(0, 0)</m>, <m>(1, 2)</m>, <m>(4, 4)</m>, and <m>(9, 6)</m> are all solutions; and there is an infinite number of other solutions. (And don't forget non-integer solutions, such as <m>(\frac{1}{4}, 1)</m>!)</p>
+  <p>
+    <ul>
+      <li>Solve two simultaneous linear equations graphically, by substitution, and by elimination.</li>
+    </ul>
+  Consider the equation <m>y = 2\sqrt{x}</m>. How many <m>(x, y)</m> pairs are there that satisfy this equation? Answer: <m>(0, 0)</m>, <m>(1, 2)</m>, <m>(4, 4)</m>, and <m>(9, 6)</m> are all solutions; and there is an infinite number of other solutions. (And don't forget non-integer solutions, such as <m>(\frac{1}{4}, 1)</m>!)</p>
   <p>Now, consider the equation <m>y = x + \frac{1}{2}.</m> How many pairs satisfy this equation? Once again, an infinite number. Most equations that relate two variables have an infinite number of solutions.</p>
   <p>To consider these two equations <q>simultaneously</q> is to ask the question:
   <md>
@@ -15,8 +16,9 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
   </md>
   To express the same question in terms of functions: What values can you hand the functions <m>2\sqrt{x}</m> and <m>x + \frac{1}{2}</m> that will make these two functions produce the same answer?</p>
 <!-- <figure xml:id="figure-simultaneous-function-boxes"> --> <!--NEEDS TO BE UPDATED set2B-Simultaneous_Equations_00.png-->
+  <sidebyside>
     <image xml:id="simultaneous-function-boxes">
-      <latex-image-code><![CDATA[\begin{tikzpicture} 
+      <latex-image-code><![CDATA[\begin{tikzpicture}
             \node (a) at (-3,0) {\LARGE $x$};
             \node (b) at (-1.5,1) {};
             \draw[thick,-open triangle 90] (a) -- (b);
@@ -30,10 +32,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
             \draw[line width=1mm, fill=green] (-1,-0.5) rectangle(3,-1.5);
             \draw[thick,black] (1,-1) node {\LARGE $x+\frac{1}{2}$};
             \node (cc) at (3.5,-1) {};
-            \draw[thick,-open triangle 90] (cc) -- (d); 
+            \draw[thick,-open triangle 90] (cc) -- (d);
             \end{tikzpicture}]]></latex-image-code>
     </image>
-<!--  </figure>  -->
+  </sidebyside>
 </introduction>
 <subsection>
   <title>Simultaneous Equations by Graphing</title>
@@ -43,7 +45,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
   <sidebyside widths="40% 55%" valign="middle">
 <!--    <figure xml:id="figure-graph-simultaneous"> -->  <!--set2B-Simultaneous_Equations_01.png-->
               <image xml:id="graph-simultaneous">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                       \draw[step=1cm,gray,very thin] (-1.9,-1.9) grid (5.9,5.9);
                       \draw[line width=0.55mm,black,<->] (-1.9,0) -- (5.9,0) node[anchor=north west] {$x$};
                       \draw[line width=0.55mm,black,<->] (0,-1.9) -- (0,5.9) node[anchor=south east] {$y$};
@@ -55,7 +57,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                       \fill[color=red] (0,0) circle (.1cm);
                       \node at (4.5, 3.5) {$2\sqrt{x}$};
                       \draw[line width=0.75mm, domain=-1.9:5.5,smooth,variable=\x,blue] plot ({\x},{\x)+.5});
-                      \node at (3.5, 5.5) {$x+\frac{1}{2}$}; 
+                      \node at (3.5, 5.5) {$x+\frac{1}{2}$};
                       \end{tikzpicture}]]></latex-image-code>
               </image>
 <!--            </figure>  -->
@@ -127,7 +129,7 @@ substitution and elimination.</p>
                 <mrow>3x + 8x - 32 &amp;= 1</mrow>
                 <mrow>11x &amp;= 33</mrow>
                 <mrow>x &amp;= 3</mrow>
-              </md>        
+              </md>
             </p></li>
             <li>
               <p>Finally, we take the equation from step 1, <m>y = 2x - 8</m>, and use it to find <m>y</m>:
@@ -237,7 +239,7 @@ substitution and elimination.</p>
       <p>Once again, we attempt to solve the system by elimination, but the result is different. First multiply the first equation by <m>2</m>:
         <md>
           <mrow>2(2x + 3y &amp; = 8)</mrow>
-          <morw>4x + 6y  &amp;= 16</morw>
+          <mrow>4x + 6y  &amp;= 16</mrow>
         </md>
         Subtract the second from the first:
         <md>
@@ -273,7 +275,7 @@ substitution and elimination.</p>
 <!--          <figure xml:id="figure-graph-simultaneous-no-solution"> -->
             <!--NEEDS TO BE UPDATED set2B-Simultaneous_Equations_02.png-->
             <image xml:id="graph-simultaneous-no-solution">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image-code><![CDATA[\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
                   \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
                   \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
@@ -282,7 +284,7 @@ substitution and elimination.</p>
                   \foreach \y in {-5,...,-1,1,2,...,5}
                       \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
                   \draw[line width=0.75mm, domain=-5.0:5.9,smooth,variable=\x,red] plot ({\x},{2.67-.67*\x});
-                  \draw[line width=0.75mm, domain=-5.9:5.9,smooth,variable=\x,blue] plot ({\x},{-.5-.67*\x}); 
+                  \draw[line width=0.75mm, domain=-5.9:5.9,smooth,variable=\x,blue] plot ({\x},{-.5-.67*\x});
                   \end{tikzpicture}]]></latex-image-code>
             </image>
 <!--          </figure>  -->
@@ -305,7 +307,7 @@ substitution and elimination.</p>
 <!--          <figure xml:id="figure-graph-simultaneous-infinite-solutions">  -->
             <!--set2B-Simultaneous_Equations_03.png-->
             <image xml:id="graph-simultaneous-infinite-solutions">
-              <latex-image-code><![CDATA[\begin{tikzpicture} 
+              <latex-image-code><![CDATA[\begin{tikzpicture}
                 \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
                 \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
                 \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
