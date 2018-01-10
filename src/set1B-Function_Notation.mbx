@@ -4,11 +4,13 @@
 Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
 Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 31-32, 52-59-->
 <introduction>
+    <p>
       <ul>
         <li><p>Use function notation.</p></li>
         <li><p>Perform function operations including addition, subtraction, multiplication, and division.</p></li>
         <li><p>Recognize and create composite and inverse functions.</p></li>
       </ul>
+    </p>
    </introduction>
    <subsection xml:id="function-notation">
     <title>Function Notation</title>
@@ -31,11 +33,11 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <mrow>\rightarrow</mrow>
       </md></p>
 <!--      <figure xml:id="figure-function-box-x-sq-plus-3x">  -->
-          <image xml:id="function-box-x-sq-plus-3x"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <image xml:id="function-box-x-sq-plus-3x">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
             \draw[line width=1mm, fill = red] (-1,0) rectangle(4,2);
             \draw[thick,white] (1.5,1.2) node {\LARGE FUNCTION};
-            \draw[thick] (1.5, .5) node {\LARGE $x^2+3x$}; 
+            \draw[thick] (1.5, .5) node {\LARGE $x^2+3x$};
             \end{tikzpicture}]]>
             </latex-image-code>
           </image>
@@ -92,18 +94,18 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
               <p>So, <m>g(1) = 3.\checkmark</m></p>
             </paragraphs>
 <!--            <figure xml:id="figure-graph-gt">  -->
-                <image xml:id="function-graph-gt"> 
-                  <latex-image-code><![CDATA[\begin{tikzpicture} 
-                  \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9); 
-                  \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$t$}; 
-                  \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$y$}; 
-                  \foreach \x in {-4,-2,2,4} 
-                      \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$}; 
-                  \foreach \y in {-4,-2,2,4} 
-                      \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$}; 
-                  \fill[color=red] (1,3) circle (.15cm); 
+                <image xml:id="function-graph-gt">
+                  <latex-image-code><![CDATA[\begin{tikzpicture}
+                  \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
+                  \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$t$};
+                  \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$y$};
+                  \foreach \x in {-4,-2,2,4}
+                      \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
+                  \foreach \y in {-4,-2,2,4}
+                      \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
+                  \fill[color=red] (1,3) circle (.15cm);
                   \draw[line width=0.75mm, domain=-3.15:3.15,smooth,variable=\x,red] plot ({\x},{-\x*\x+4});
-                  \node at (-3,3.5) {\LARGE $y=g(t)$}; 
+                  \node at (-3,3.5) {\LARGE $y=g(t)$};
                   \end{tikzpicture}]]>
                   </latex-image-code>
                 </image>
@@ -123,8 +125,9 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
   </subsection>
   <subsection xml:id="function-operations">
     <title>Operations on Functions</title>
+    <introduction>
     <p>We may create new functions by combining two or more functions by addition, subtraction, multiplication, division or composition. The first four operations on functions are very similar to these operations for numbers. Mainly, it's a matter of getting used to the notation.  For functions <m>f</m> and <m>g</m>:</p>
-<!--    <table>  -->
+    <sidebyside>
       <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
         <col right="minor" halign="left" />
         <col />
@@ -150,10 +153,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <cell><m>\dfrac{f}{g} = \dfrac{f(x)}{g(x)}</m></cell>
         </row>
       </tabular>
-<!--    </table>  -->
+    </sidebyside>
     <example>
       <title>Function Operations</title>
-      <p>Consider the functions 
+      <p>Consider the functions
         <md>
           <mrow>f(x) = 3x+1\text{ and }g(x) = x^2-5.</mrow>
           </md>
@@ -167,6 +170,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         </md>
       </p>
     </example>
+  </introduction>
     <subsubsection>
       <title>Composite Functions</title>
     <p>Consider the following situation:
@@ -183,9 +187,9 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <p>
       Each sentence in this little story involves a function. Mathematically, if <m>c</m> is the number of classes and <m>h</m> is the number of children, then the first sentence asserts the existence of a function <m>h=f(c)</m>.</p>
       <p>The principal walks up to you at the beginning of the year and says <q>We're considering expanding the school. If we expand to <m>70</m> classes, how much money do we need to budget? What if we expand to <m>75</m>? How about <m>80</m>?</q> For each of these numbers, you have to calculate each number from the previous one, until you find the final budget number.</p>
-<!--      <figure xml:id="figure-function-chain">  -->
-          <image xml:id="function-chain"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+      <sidebyside>
+          <image xml:id="function-chain">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
               \node (a) at (0,0) {Classes};
               \node (b) at (1.3,0) {};
               \draw[thick,-open triangle 90] (a) -- (b);
@@ -206,20 +210,20 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
 
               \node (h) at (10.8,0) {lbs PB};
               \draw[thick,-open triangle 90] (g) -- (h);
-              
+
               \node (i) at (12.4,0) {$\color{green}{\framebox{F4}}$};
               \draw[thick,-open triangle 90] (h) -- (i);
 
               \node (j) at (14.1,0) {Budget};
-              \draw[thick,-open triangle 90] (i) -- (j);         
+              \draw[thick,-open triangle 90] (i) -- (j);
               \end{tikzpicture}]]>
               </latex-image-code>
             </image>
-<!--          </figure>  -->
+          </sidebyside>
     <p>But going through this process each time is tedious. What you want is one function that puts the entire chain together: <q>You tell me the number of classes, and I will tell you the budget.</q></p>
-<!--    <figure xml:id="figure-function-box-pb">  -->
-          <image xml:id="function-box-pb"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+    <sidebyside>
+          <image xml:id="function-box-pb">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
                 \node (a) at (-3,1) {Classes};
                 \node (b) at (-1.25,1) {};
                 \draw[thick,-open triangle 90] (a) -- (b);
@@ -231,7 +235,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
             \end{tikzpicture}]]>
             </latex-image-code>
           </image>
-<!--        </figure>  -->
+        </sidebyside>
             <p>This is a composite function-a function that represents in one function, the results of an entire chain of dependent functions. Since such chains are very common in real life, finding composite functions is an important skill.</p>
           </subsubsection>
           <subsubsection>
@@ -245,7 +249,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
               <md>
                 <mrow>3 \rightarrow \text{Susan} \rightarrow S(3)=18 \rightarrow \text{Al} \rightarrow A(18) = 9</mrow>
               </md>
-            In this example, we are plugging <m>S(3)</m>-in other words, <m>18</m>- into Al's function. In general, for any <m>x</m> that comes in, we are plugging <m>S(x)</m> into <m>A</m>. So we could represent the entire process as <m>A(S(x))</m>. This notation for composite functions is really nothing new: it means that you are plugging <m>S(x)</m> into the <m>A</m> function.</p>
+            In this example, we are plugging <m>S(3)</m><mdash/>in other words, <m>18</m><mdash/>into Al's function. In general, for any <m>x</m> that comes in, we are plugging <m>S(x)</m> into <m>A</m>. So we could represent the entire process as <m>A(S(x))</m>. This notation for composite functions is really nothing new: it means that you are plugging <m>S(x)</m> into the <m>A</m> function.</p>
             <p>But in this case, recall that <m>S(x) = 4x + 6</m>. So we can write:
               <md>
                 <mrow>A(S(x)) = \frac{S(x)}{2} = \frac{4x + 6}{2}= 2x + 3</mrow>
@@ -265,6 +269,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                   </md>
                   Determine and test the composite function <m>f(g(x))</m>
                 </p>
+                <p>
                 <ol label="a.">
                   <li><p>To determine the composite, plug <m>g(x)</m> into <m>f(x)</m>, just as you would with any number, then simplify.
                     <md>
@@ -286,18 +291,21 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                   </p>
                 </li>
               </ol>
-            </example><p>There is a different notation that is sometimes used for composite functions. The notation <m></m> very naturally conveys the idea of <q>plugging <m>g(x)</m> into <m>f(x)</m>.</q> However, you will sometimes see the same thing written as <m>(f \circ g)(x)</m>, which represents the idea of <q>doing one function, and then the other, in sequence.</q> The two notations mean the same thing.  That is:
-          <aside>
-            Composition Notation
-            <md>
-              <mrow>(f \circ g)(x)=f(g(x))</mrow>
-            </md>
-          </aside>
-            </p> 
+            </p>
+            </example><p>There is a different notation that is sometimes used for composite functions. The notation <m></m> very naturally conveys the idea of <q>plugging <m>g(x)</m> into <m>f(x)</m>.</q> However, you will sometimes see the same thing written as <m>(f \circ g)(x)</m>, which represents the idea of <q>doing one function, and then the other, in sequence.</q> The two notations mean the same thing.  That is:</p>
+          <assemblage>
+            <title>Composition Notation</title>
+            <p>
+              <md>
+                <mrow>(f \circ g)(x)=f(g(x))</mrow>
+              </md>
+            </p>
+          </assemblage>
           </subsubsection>
   </subsection>
   <subsection xml:id="subsection-inverse-functions">
     <title>Inverse Functions</title>
+    <introduction>
     <p>Let's go back to Alice, who makes <m>\$100</m> each day. We know how to answer questions such as <q>After <m>3</m> days, how much money has Alice made?</q> We use the function <m>m(t) = 100t</m>.</p>
     <p>But suppose we want to ask the reverse question: <q>If Alice has made <m>\$300</m>, how many hours has she worked?</q> This is the job of an inverse function. It gives the same relationship, but reverses the dependent and independent variables: <m>t(m) = m/100</m>. Given the amount of money Alice earned, divide it by <m>100</m> to find how many days she has worked.</p>
     <p>Consider the following exampls:
@@ -307,6 +315,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         <li><p>If a function answers the question: <q>How many hours of music fit on <m>12</m> CDs?</q> then its inverse answers the question: <q>How many CDs do you need for <m>3</m> hours of music?</q></p></li>
       </ul>
     </p>
+  </introduction>
     <subsubsection>
       <title>How do you recognize an inverse function?</title>
     <p>Let's consider Alice's functions above:
@@ -366,8 +375,9 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <example xml:id="example-building-inverse">
           <title>Building and Testing an Inverse Function</title>
           <p>Determine and test the inverse function of <m>f(x) = \dfrac{2x-3}{5}.</m></p>
+          <p>
           <ol>
-            <li><p>Determine the inverse function of <m>f(x) = \dfrac{2x-3}{5}:</m></p>
+            <li><p>Determine the inverse function of <m>f(x) = \dfrac{2x-3}{5}:</m>
             <ol>
               <li><p>Write the function as <m>y = \dfrac{2x-3}{5}</m></p></li>
               <li><p>Switch the <m>x</m> and <m>y</m> variables: <m>x = \dfrac{2y-3}{5}</m></p></li>
@@ -378,13 +388,14 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                   <mrow>\dfrac{5x+3}{2} &amp;= y</mrow>
                 </md>
                 So <m>f^{-1}(x) = \dfrac{5x+3}{2}</m></p></li>
-            </ol></li>
-            <li><p>Test to make sure this solution satisfies the definition of an inverse function:</p>
+            </ol></p></li>
+            <li><p>Test to make sure this solution satisfies the definition of an inverse function:
             <ol>
               <li><p>Pick a number, and plug it into the original function: <m>9 \rightarrow f(x) \rightarrow 3.</m></p></li>
               <li><p>See if the inverse function reverses this process: <m>3 \rightarrow  f^{-1}(x) \rightarrow 9. \checkmark</m> It worked!</p></li>
-            </ol></li>
+            </ol></p></li>
           </ol>
+        </p>
       </example>
       <p>Were you surprised by the answer? At first glance, it seems that the numbers in the original function (the <m>2</m>, <m>3</m>, and <m>5</m>) have been rearranged almost at random.</p>
       <p>But with more thought, the solution becomes very intuitive. The original function <m>f(x)</m> described the following process: double a number, then subtract <m>3</m>, then divide by <m>5</m>. To reverse this process, we need to reverse each step in order: multiply by <m>5</m>, then add <m>3</m>, then half the result. This is just what the inverse function does.</p>
@@ -393,7 +404,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <title>Some Functions Have No Inverse Function</title>
       <p>Some functions have no inverse function. The reason is the rule of consistency.</p>
       <p>For instance, consider the function <m>y = x^2</m>. This function takes both <m>3</m> and <m>-3</m> and turns them into <m>9</m>. No problem: a function is allowed to turn different inputs into the same output. However, what does that say about the inverse of this particular function? In order to fulfill the requirement of an inverse function, it would have to take <m>9</m>, and turn it into both <m>3</m> and <m>-3</m>-which is the one and only thing that functions are not allowed to do. Hence, the inverse of this function would not be a function at all!</p>
-      <sidebyside widths="5% 5% 25% 5% 5%" valign="middle" haligns="center center left center center" margins="20%">
+      <sidebyside widths="5% 5% 25% 5% 5%" valign="middle" margins="20%">
+        <!-- haligns="center center left center center" -->
       <p><md>
           <mrow>3&amp;</mrow>
           <mrow>-3&amp;</mrow>
@@ -403,10 +415,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <mrow>\rightarrow</mrow>
       </md></p>
 <!--      <figure xml:id="figure-function-box-x-sq">  -->
-          <image xml:id="function-box-x-sq"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <image xml:id="function-box-x-sq">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
             \draw[line width=1mm, fill = red] (0,0) rectangle(4,2);
-            \node at (2,1) {\LARGE $f(x)=x^2$}; 
+            \node at (2,1) {\LARGE $f(x)=x^2$};
             \end{tikzpicture}]]>
             </latex-image-code>
           </image>
@@ -421,7 +433,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       </md></p>
       </sidebyside>
       <p>If <m>3</m> goes in, <m>9</m> comes out. If <m>-3</m> goes in, <m>9</m> also comes out. No problem. Now, consider the situation for the inverse:</p>
-      <sidebyside widths="5% 5% 25% 5% 5%" valign="middle" haligns="center center left center center" margins="20%">
+      <sidebyside widths="5% 5% 25% 5% 5%" valign="middle" margins="20%">
+        <!-- haligns="center center left center center"  -->
       <p><md>
           <mrow>9</mrow>
       </md></p>
@@ -429,10 +442,10 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <mrow>\rightarrow</mrow>
       </md></p>
 <!--      <figure xml:id="figure-function-f-inverse">  -->
-          <image xml:id="function-f-inverse"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+          <image xml:id="function-f-inverse">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
             \draw[line width=1mm, fill = yellow] (0,0) rectangle(4,2);
-            \node at (2,1) {\LARGE $f^{-1}(x)$}; 
+            \node at (2,1) {\LARGE $f^{-1}(x)$};
             \end{tikzpicture}]]>
             </latex-image-code>
           </image>
@@ -452,7 +465,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <p>Consider this example:</p>
     <p><q>Max threw a ball. The height of the ball depends on how many seconds it has been in the air.</q> The two variables here are <m>h</m> (the height of the ball) and <m>t</m> (the number of seconds it has been in the air). The function <m>h(t)</m> enables us to answer questions such as <q>After <m>3</m> seconds, where is the ball?</q></p>
     <p>The inverse question would be <q>At what time was the ball <m>10</m> feet in the air?</q> The problem with that question is, it may well have two answers!</p>
-<!--    <table>  -->
+    <sidebyside>
       <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
         <col right="minor" halign="left" />
         <col />
@@ -470,7 +483,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <cell><m>5</m> seconds (*on the way back down)</cell>
         </row>
       </tabular>
-<!--    </table>  -->
+    </sidebyside>
     <p>So what does that mean? Does it mean we can't ask that question? Of course not. We can ask that question, and we can expect to find the answer, or answers mathematically-by knowing how to solve  quadratic equations. However, it <em>does</em> mean that time is not a function of height because such a <q>function</q> would not be consistent: one question would produce multiple answers.</p>
   </subsubsection>
   </subsection>
