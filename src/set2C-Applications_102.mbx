@@ -4,23 +4,26 @@
 Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/)
 Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 83-85-->
 <introduction>
-    <ul>
-      <li><p>Solve problems by creating and solving a linear equation.</p></li>
-      <li><p>Solve problems involving cost, revenue, and profit by creating and solving a linear equation.</p></li>
-      <li><p>Solve simultaneous equation word problems by creating and solving two simultaneous linear equations.</p></li>
-    </ul>
+    <p>
+      <ul>
+        <li><p>Solve problems by creating and solving a linear equation.</p></li>
+        <li><p>Solve problems involving cost, revenue, and profit by creating and solving a linear equation.</p></li>
+        <li><p>Solve simultaneous equation word problems by creating and solving two simultaneous linear equations.</p></li>
+      </ul>
+    </p>
   <p>Many students approach math with the attitude that <q>I can do the equations, but I'm just not a <sq>word problems</sq> person.</q> No offense, but that's like saying <q>I'm pretty good at handling a tennis racket, as long as there's no ball involved.</q> The only point of handling the tennis racket is to hit the ball. The only point of math equations is to solve problems. So if you find yourself in that category, try this sentence instead: <q>I've never been good at word problems. There must be something about them I don't understand, so I'll try to learn it.</q></p>
   <p>Actually, many of the key ideas of understanding word problems were discussed in the very beginning of <xref ref="section-1A-function-concepts" autoname="yes" />, in the discussion of variable descriptions. So this might be a good time to quickly re-read that section. If you can correctly identify the variables, you're half-way through the hard part of a word problem.  The other half is translating the sentences of the problem into equations that use those variables.</p>
 </introduction>
 <subsection>
   <title>Linear Models</title>
+  <introduction>
   <p>In this section we focus on linear models. Linear means the equation which we use to model the situation is a line. A equation for a line has two components: slope and the vertical intercept. How do the slope and intercept apply to a situation? Let's work through a few examples, very carefully.</p>
   <example xml:id="example-model-drive">
       <title>Distance, Rate, and Time</title>
       <p>Suppose your grandmother is driving to Pocatello from Caldwell on a Sunday afternoon. There won't be any slow downs for road work or rush hour traffic, so you figure she will be able to drive a steady <m>65</m> miles per hour once she's on the freeway.</p>
       <p><ol label="a.">
-        <li><p>Let's write a linear function that models the distance she's travelled after leaving Caldwell. First, let's figure out what the variables should be. They should be the quantities we don't know, pertain to the problem and help get the model we are asked to find.  It's also a good idea to list what we know about the situation.
-<!--          <table>  -->
+        <li><p>Let's write a linear function that models the distance she's travelled after leaving Caldwell. First, let's figure out what the variables should be. They should be the quantities we don't know, pertain to the problem and help get the model we are asked to find.  It's also a good idea to list what we know about the situation.</p>
+          <sidebyside>
             <tabular top="minor" bottom = "minor" halign="left" left="minor" right="minor">
               <col right="minor" width="50%" halign="right" />
               <col width="50%"/>
@@ -37,8 +40,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                   <cell colspan="2"><p>She will drive about <m>65</m> miles per hour.</p></cell>
               </row>
             </tabular>
-<!--          </table>  -->
-          Now, consider the situation. If you travel <m>65</m> miles per hour for <m>2</m> hours, how far do you go? A little common sense will tell you that the answer is <m>130</m> miles. This relationship is captured in the following equation: 
+          </sidebyside>
+          <p>Now, consider the situation. If you travel <m>65</m> miles per hour for <m>2</m> hours, how far do you go? A little common sense will tell you that the answer is <m>130</m> miles. This relationship is captured in the following equation:
           <md>
             <mrow>d = rt</mrow>
           </md>
@@ -65,8 +68,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <p>
         <ol label="a.">
           <li><p>Find the function which models the value of the house <m>t</m> years since it was purchased.</p>
-          <p>Solution: If you didn't  notice that this function is supposed to be a line, you were not paying attention-read the problem over again!  Now, let's get to work.  There are two variables in this problem:
-<!--            <table>  -->
+          <p>Solution: If you didn't  notice that this function is supposed to be a line, you were not paying attention-read the problem over again!  Now, let's get to work.  There are two variables in this problem:</p>
+          <sidebyside>
             <tabular top="minor" bottom = "minor" halign="left" left="minor" right="minor">
               <col right="minor" width="50%" halign="right" />
               <col width="50%" />
@@ -80,8 +83,8 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                   <cell><p><m>t =</m> The number of years</p></cell>
               </row>
             </tabular>
-<!--          </table>  -->
-          Since the value depends on the amount of time after purchase, <m>V</m> is the dependent variable and <m>t</m> is the independent variable.  The slope may be calculated from two points on the line. Note that <m>t=0</m> represents when the house was purchased which gives us one point on the line: <m>(0,150000)</m>. Four years later we have another value, so a second point is <m>(4,155450)</m>.  We are pretty much set after we do the usual calculations to find the equation for a line:
+          </sidebyside>
+          <p>Since the value depends on the amount of time after purchase, <m>V</m> is the dependent variable and <m>t</m> is the independent variable.  The slope may be calculated from two points on the line. Note that <m>t=0</m> represents when the house was purchased which gives us one point on the line: <m>(0,150000)</m>. Four years later we have another value, so a second point is <m>(4,155450)</m>.  We are pretty much set after we do the usual calculations to find the equation for a line:
           <md>
             <mrow>\text{slope} = \frac{155450 - 150000}{4 - 0} = 1362.5</mrow>
           </md>
@@ -149,15 +152,20 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         </ol>
       </p>
   </example>
+</introduction>
   <subsubsection>
     <title>Cost, Revenue and Profit</title>
     <p>Three types of functions are central to many business models:
       <ul>
-        <li><term>Cost functions:</term> The amount of money required to produce a product.  Cost funtions   usually consist of two parts.</li>
-        <ul>
-          <li>Fixed costs: Costs which don't change, such as the rent paid for office space.</li>
-          <li>Variable costs: Costs that depend on how many items are made, such as the cost of the raw materials.</li>
-        </ul>
+        <li>
+          <p>
+            <term>Cost functions:</term> The amount of money required to produce a product.  Cost funtions   usually consist of two parts.
+            <ul>
+              <li>Fixed costs: Costs which don't change, such as the rent paid for office space.</li>
+              <li>Variable costs: Costs that depend on how many items are made, such as the cost of the raw materials.</li>
+            </ul>
+          </p>
+        </li>
         <li><term>Revenue:</term> The amount of money earned from selling a product. Usually, it's calculated by <m>(\text{Price of item } \times \text{ Number of items sold})</m>.</li>
         <li><term>Profit:</term> The difference between the Revenue and Cost <ndash /> what you get to <q>take home</q>: <m>\text{Revenue} - \text{Cost}</m></li>
       </ul></p>
@@ -198,7 +206,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         </paragraphs>
 <!--    <figure xml:id="figure-graph-break-even">  --> <!--set2C-Applications_01.png-->
               <image xml:id="graph-break-even">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                       \draw[line width=0.55mm,black,<->] (-.5,0) -- (10,0) node[anchor=north west] {b};
                       \draw[line width=0.55mm,black,<->] (0,-0.5) -- (0,10) node[anchor=south east] {money};
                       \foreach [evaluate=\x as \z using int(10*\x)] \x in {1.5,3,4.5,6,7.5,9}
@@ -208,7 +216,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                       \draw[line width=0.75mm,red] (0,5)--(10,6);
                       \node at (3,6) {\Large $C(x)=100+2b$};
                       \draw[line width=0.75mm,green] (0,0)--(10,7.5);
-                      \node at (7,4) {\Large $R(b)=15b$}; 
+                      \node at (7,4) {\Large $R(b)=15b$};
                       \end{tikzpicture}]]></latex-image-code>
               </image>
 <!--            </figure>  -->
@@ -228,7 +236,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <!-- Note that the break-even point is also the $b$ intercept#where the graph
 of the Profit function intersects the horizontal axis. ADD BACK IN IF WE CREATE A SEPARATE PROFIT GRAPH-->
       <p>Remember, most of the time, the key to doing word problems for linear functions is to find what you need for the slope and vertical intercept. Now let's step it up by solving word problems involving simultaneous equations.</p>
-  </subsubsection> 
+  </subsubsection>
 </subsection>
 <subsection>
   <title>Simultaneous Equation Word Problems</title>
@@ -238,21 +246,26 @@ of the Profit function intersects the horizontal axis. ADD BACK IN IF WE CREATE 
       <p>A pile of dimes and quarters lies on the table in front of you. There are three more quarters than dimes. But the quarters are worth three times the amount that the dimes are worth. How many of each do you have?</p>
       <p>
         <ol>
-          <li><p><em>Identify and label the variables:</em></p>
-          <p>
-          Let's try it this way:
-            <ul>
-              <li><m>d</m> is the number of dimes</li>
-              <li><m>q</m> is the number of quarters</li>
-            </ul></p></li>
-            <li><p><em>Translate the sentences in the problem into equations:</em></p>
+          <li>
+            <p><em>Identify and label the variables:</em></p>
+            <p>
+              Let's try it this way:
+              <ul>
+                <li><m>d</m> is the number of dimes</li>
+                <li><m>q</m> is the number of quarters</li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p><em>Translate the sentences in the problem into equations:</em>
               <ul>
                 <li><q>There are three more quarters than dimes</q><m>\dashrightarrow q = d + 3</m></li>
                 <li><q>The quarters are worth three times the amount that the dimes are worth</q><m>\dashrightarrow 25q = 3 (10d)</m></li>
-                <li>This second equation relies on the fact that if you have <m>q</m> quarters, they are
-                      worth a total of <m>25q</m> cents and the <m>d</m> dimes are worth <m>10d</m> cents.</li>
-              </ul></li>
-            <li><p><em>Solve:</em></p>
+                <li>This second equation relies on the fact that if you have <m>q</m> quarters, they are worth a total of <m>25q</m> cents and the <m>d</m> dimes are worth <m>10d</m> cents.</li>
+              </ul>
+            </p>
+          </li>
+          <li><p><em>Solve:</em></p>
             <p>We can do this by elimination or substitution. Since the first equation is already solved for <m>q</m>, we substitute that into the second equation and then solve:
               <md>
                 <mrow>25 (d + 3) = 3 (10d)</mrow>
@@ -265,15 +278,18 @@ of the Profit function intersects the horizontal axis. ADD BACK IN IF WE CREATE 
                 <mrow>q = 15 + 3 = 18.</mrow>
               </md>
               So, our answer to the question is: <q>You have <m>15</m> dimes and <m>18</m> quarters.</q>
-            </p></li>
-            <li><p><em>So, did it work?</em></p>
-            <p>The surest check is to go all the way back to the original problem-not the equations, but the words. We have concluded that there are <m>15</m> dimes and <m>18</m> quarters.</p>
-            <ul>
-              <li><p><q>There are three more quarters than dimes.</q> <m>\checkmark</m></p></li>
-              <li><p><q>The quarters are worth three times the amount that the dimes are worth.</q><m>\dashrightarrow</m> Well, the quarters are worth <m>18 \cdot 25 = \$4.50.</m> The dimes are worth <m>15 \cdot 10 = \$1.50.\checkmark</m></p></li>
-            </ul>
+            </p>
           </li>
-        </ol></p>
+          <li><p><em>So, did it work?</em></p>
+            <p>The surest check is to go all the way back to the original problem-not the equations, but the words. We have concluded that there are <m>15</m> dimes and <m>18</m> quarters.
+              <ul>
+                <li><p><q>There are three more quarters than dimes.</q> <m>\checkmark</m></p></li>
+                <li><p><q>The quarters are worth three times the amount that the dimes are worth.</q><m>\dashrightarrow</m> Well, the quarters are worth <m>18 \cdot 25 = \$4.50.</m> The dimes are worth <m>15 \cdot 10 = \$1.50.\checkmark</m></p></li>
+              </ul>
+            </p>
+          </li>
+        </ol>
+      </p>
   </example>
   <example xml:id="example-simultaneous-investments">
       <title>Simultaneous Investments</title>
@@ -450,4 +466,4 @@ plug any pair of simultaneous equations into to find the answer at once. This fo
 very easy, for instance, to program a computer to solve simultaneous equations (computers are terrible at
 figuring things out, but they're great at formulas).</p>-->
 </subsection>
-</section> 
+</section>
