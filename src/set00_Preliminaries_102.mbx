@@ -158,7 +158,7 @@ For the most part, we will focus on sets whose elements come from the real numbe
   </subsection>
   <subsection xml:id="interval-notation">
     <title>Interval Notation</title>
-    <p><q>Interval notation</q> is a shorthand way of describing an interval.  For example, for real numbers <m>a</m> and <m>b</m>, <q>(a,b)</q> is interval notation for <q> the set of all real numbers <m>x</m> bigger and <m>a</m> and less than <m>b</m></q>.  The table given below displays interval notation for different kinds of intervals.
+    <p><q>Interval notation</q> is a shorthand way of describing an interval.  For example, for real numbers <m>a</m> and <m>b</m>, <q>(a,b)</q> is interval notation for <q> the set of all real numbers <m>x</m> bigger than <m>a</m> and less than <m>b</m></q>.  The table given below displays interval notation for different kinds of intervals.
     </p>
  <!--   <p>Recall that we may visualize
       <m>\mathbb{R}</m> as a line. Segments of this line are called
@@ -434,7 +434,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                 </p>
                 <p>
                   <m>(-\infty, 5]</m>
-                </p>
+                </p>  <!-- FIX THIS ON THE GRAPH MAKER FILE SO THE CIRCLE IS FILLED IN. I THINK THE CODE HERE IS NOW CORRECT -->
 <!--                <figure xml:id="figure-interval-less-equal-5">  -->
                     <image xml:id="interval-less-equal-5">
                       <latex-image-code><![CDATA[\begin{tikzpicture}

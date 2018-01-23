@@ -198,6 +198,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           \end{tikzpicture}]]>
           </latex-image-code>
         </image>
+<!--      </figure>  -->
 </sidebyside>
           <p>This is our earlier <q>U</q> shaped graph (<m>y = x^2</m>) turned on its side. This might seem like a small change. But ask this question: what is <m>y</m> when <m>x = 3</m>? This question has two answers. This graph contains the points <m>(3,-9)</m> and <m>(3, 9)</m>. So when <m>x = 3</m>, <m>y</m> is both <m>9</m> and <m>-9</m> on this graph.</p>
           <p>This violates the only restriction on functions-the rule of consistency. Remember that the <m>x</m>-axis is the independent variable, the <m>y</m>-axis the dependent. In this case, one <q>input</q> value (<m>3</m>) is leading to two different <q>output</q> values (<m>-9</m>, <m>9</m>) We can therefore conclude that this graph does not represent a function at all. No function, no matter how simple or complicated, could produce this graph.</p>
