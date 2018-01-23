@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="section-4C-exp-and-log-equations">
   <title>Exponential and Logarithmic Equations</title>
   <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/) Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  NEEDS PAGES-->
@@ -29,7 +30,7 @@
     </p>
     <p>Check our answer: <m>2^{7.011227} \approx 128.9999.\checkmark</m></p>
   </example>
-  <p>Note that if we had used the common log instead of the natural log our last step would have been <m>x = \dfrac{\log(129)}{\log(2)}</m> and punching this into a calculator gives <m>x \approx 7.011227</m>.  Using either base <m>e</m> or base <m>10</m> gives the same answer<ndash />what a comforting thought!</p>
+  <p>Note that if we had used the common log instead of the natural log our last step would have been <m>x = \dfrac{\log(129)}{\log(2)}</m> and punching this into a calculator gives <m>x \approx 7.011227</m>.  Using either base <m>e</m> or base <m>10</m> gives the same answer<ndash/>what a comforting thought!</p>
   <p>We'll work a few more examples of solving exponential equations and then move on to solving equations involving logs.</p>
   <example xml:id="example-solve-using-log">
       <title>Solve an Exponential Equation Using the Common Logarithm</title>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="section-2C-applications-102">
   <title>Applications</title>
 <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
@@ -12,7 +13,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       </ul>
     </p>
   <p>Many students approach math with the attitude that <q>I can do the equations, but I'm just not a <sq>word problems</sq> person.</q> No offense, but that's like saying <q>I'm pretty good at handling a tennis racket, as long as there's no ball involved.</q> The only point of handling the tennis racket is to hit the ball. The only point of math equations is to solve problems. So if you find yourself in that category, try this sentence instead: <q>I've never been good at word problems. There must be something about them I don't understand, so I'll try to learn it.</q></p>
-  <p>Actually, many of the key ideas of understanding word problems were discussed in the very beginning of <xref ref="section-1A-function-concepts" autoname="yes" />, in the discussion of variable descriptions. So this might be a good time to quickly re-read that section. If you can correctly identify the variables, you're half-way through the hard part of a word problem.  The other half is translating the sentences of the problem into equations that use those variables.</p>
+  <p>Actually, many of the key ideas of understanding word problems were discussed in the very beginning of <xref ref="section-1A-function-concepts" text="type-global"/>, in the discussion of variable descriptions. So this might be a good time to quickly re-read that section. If you can correctly identify the variables, you're half-way through the hard part of a word problem.  The other half is translating the sentences of the problem into equations that use those variables.</p>
 </introduction>
 <subsection>
   <title>Linear Models</title>
@@ -24,19 +25,19 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
       <p><ol label="a.">
         <li><p>Let's write a linear function that models the distance she's travelled after leaving Caldwell. First, let's figure out what the variables should be. They should be the quantities we don't know, pertain to the problem and help get the model we are asked to find.  It's also a good idea to list what we know about the situation.</p>
           <sidebyside>
-            <tabular top="minor" bottom = "minor" halign="left" left="minor" right="minor">
-              <col right="minor" width="50%" halign="right" />
+            <tabular top="minor" bottom="minor" halign="left" left="minor" right="minor">
+              <col right="minor" width="50%" halign="right"/>
               <col width="50%"/>
               <!--  -->
-              <row bottom = "minor">
+              <row bottom="minor">
                   <cell><p>We want to know the distance traveled:</p></cell>
                   <cell><p>Let <m>d</m> be her distance from Caldwell</p></cell>
               </row>
-              <row bottom = "minor">
+              <row bottom="minor">
                   <cell><p>The distance depends on how long she's been driving:</p></cell>
                   <cell><p>Let <m>t</m> be the number of hours driven</p></cell>
               </row>
-              <row bottom = "minor">
+              <row bottom="minor">
                   <cell colspan="2"><p>She will drive about <m>65</m> miles per hour.</p></cell>
               </row>
             </tabular>
@@ -52,7 +53,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           </md>
           Notice this is a linear equation and since it is an equation for a line, we might ask: What is the <m>d</m>-intercept?   In this case, the distance she's travelled at the start of her trip (when <m>t=0</m>) is zero. Finally we have the equation for Granny's distance from Caldwell after <m>t</m> hours on the freeway: <m>d= 65t</m>.
         </p></li>
-        <li><p>Let's find out how far she will be after <m>3\frac{1}{2}</m> hours on the road <ndash /> assuming she doesn't make any stops along the way. Let <m>t = 3.5</m> and calculuate <m>d</m>:
+        <li><p>Let's find out how far she will be after <m>3\frac{1}{2}</m> hours on the road <ndash/> assuming she doesn't make any stops along the way. Let <m>t = 3.5</m> and calculuate <m>d</m>:
           <md>
             <mrow>d = 65(3.5) = 227.5</mrow>
           </md>
@@ -70,15 +71,15 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           <li><p>Find the function which models the value of the house <m>t</m> years since it was purchased.</p>
           <p>Solution: If you didn't  notice that this function is supposed to be a line, you were not paying attention-read the problem over again!  Now, let's get to work.  There are two variables in this problem:</p>
           <sidebyside>
-            <tabular top="minor" bottom = "minor" halign="left" left="minor" right="minor">
-              <col right="minor" width="50%" halign="right" />
-              <col width="50%" />
+            <tabular top="minor" bottom="minor" halign="left" left="minor" right="minor">
+              <col right="minor" width="50%" halign="right"/>
+              <col width="50%"/>
               <!--  -->
-              <row bottom = "minor">
+              <row bottom="minor">
                   <cell><p>The value of the house:</p></cell>
                   <cell><p><m>V=</m> The value of the house</p></cell>
               </row>
-              <row bottom = "minor">
+              <row bottom="minor">
                   <cell><p>The number of years since the house was purchased:</p></cell>
                   <cell><p><m>t =</m> The number of years</p></cell>
               </row>
@@ -167,13 +168,13 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           </p>
         </li>
         <li><term>Revenue:</term> The amount of money earned from selling a product. Usually, it's calculated by <m>(\text{Price of item } \times \text{ Number of items sold})</m>.</li>
-        <li><term>Profit:</term> The difference between the Revenue and Cost <ndash /> what you get to <q>take home</q>: <m>\text{Revenue} - \text{Cost}</m></li>
+        <li><term>Profit:</term> The difference between the Revenue and Cost <ndash/> what you get to <q>take home</q>: <m>\text{Revenue} - \text{Cost}</m></li>
       </ul></p>
       <example xml:id="example-cost-revenue-profit">
           <title>Cost, Revenue, and Profit</title>
           <p>
             <ol label="a.">
-              <li><p>Suppose you are selling tomatoes at a local farmer's market. Your fixed costs are <m>\$1000</m> and it costs <m>\$2</m> to produce each box of tomatoes, which you plan to sell for <m>\$15</m> per box. Clearly, your cost function is <ndash /> wait a minute, we need a variable for the number of boxes of tomatoes, say <m>b</m>:
+              <li><p>Suppose you are selling tomatoes at a local farmer's market. Your fixed costs are <m>\$1000</m> and it costs <m>\$2</m> to produce each box of tomatoes, which you plan to sell for <m>\$15</m> per box. Clearly, your cost function is <ndash/> wait a minute, we need a variable for the number of boxes of tomatoes, say <m>b</m>:
               <md>
                 <mrow>C(b) = 1000 + 2b</mrow>
               </md>
@@ -206,9 +207,9 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         </paragraphs>
 <!--    <figure xml:id="figure-graph-break-even">  --> <!--set2C-Applications_01.png-->
               <image xml:id="graph-break-even">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
-                      \draw[line width=0.55mm,black,<->] (-.5,0) -- (10,0) node[anchor=north west] {b};
-                      \draw[line width=0.55mm,black,<->] (0,-0.5) -- (0,10) node[anchor=south east] {money};
+                <latex-image>\begin{tikzpicture}
+                      \draw[line width=0.55mm,black,&lt;-&gt;] (-.5,0) -- (10,0) node[anchor=north west] {b};
+                      \draw[line width=0.55mm,black,&lt;-&gt;] (0,-0.5) -- (0,10) node[anchor=south east] {money};
                       \foreach [evaluate=\x as \z using int(10*\x)] \x in {1.5,3,4.5,6,7.5,9}
                           \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\z$};
                       \foreach [evaluate=\x as \y using int(200*\x)] \x in {2.5,5,7.5}
@@ -217,7 +218,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
                       \node at (3,6) {\Large $C(x)=100+2b$};
                       \draw[line width=0.75mm,green] (0,0)--(10,7.5);
                       \node at (7,4) {\Large $R(b)=15b$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>

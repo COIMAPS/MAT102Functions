@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="section-3B-polynomial-functions">
   <title>Polynomial Functions</title>
 <!-- Source URL: http://www.wallace.ccfaculty.org/book/Beginning_and_Intermediate_Algebra.pdf
@@ -12,37 +13,37 @@ Saylor.org,  pages 192-193-->
       <li><p>Determine the degree and  intercepts of polynomial functions.</p></li>
     </ul>
   </p>
-  <p>Many applications in mathematics have to do with what are called polynomials. Polynomials are made up of terms. Terms are a product of numbers and/or variables. For example, <m>5x</m>, <m>2y^3</m>, <m>-4</m>  and <m>ab^3c</m> are all terms. Each term has a <term>coefficient,</term> the number, and a <term>degree,</term> the power of the variable in the term <ndash /> if there is more than one variable, then the degree is the sum of the exponents on the variables.</p>
+  <p>Many applications in mathematics have to do with what are called polynomials. Polynomials are made up of terms. Terms are a product of numbers and/or variables. For example, <m>5x</m>, <m>2y^3</m>, <m>-4</m>  and <m>ab^3c</m> are all terms. Each term has a <term>coefficient,</term> the number, and a <term>degree,</term> the power of the variable in the term <ndash/> if there is more than one variable, then the degree is the sum of the exponents on the variables.</p>
   <example xml:id="example-term-coefficients-degrees">
       <title>Term Coefficients and Degrees</title>
       <p>Determine the coefficient and the degree of each example term: </p>
       <sidebyside>
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" />
-        <col right="minor" />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor"/>
+        <col right="minor"/>
         <col halign="left"/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell>Term</cell>
             <cell>Coefficient</cell>
             <cell>Degree</cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>5x</m></cell>
             <cell><m>5</m></cell>
             <cell><m>1</m> since <m>x=x^1</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>2y^3</m></cell>
             <cell><m>2</m></cell>
             <cell><m>3</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>-4</m></cell>
             <cell><m>-4</m></cell>
             <cell><m>0</m> since <m>-4=-4(1)</m> and <m>1=x^0</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>ab^3 c</m></cell>
             <cell><m>1</m> (why?)</cell>
             <cell><m>5</m> since <m>ab^3c = a^1b^3c^1</m> and <m>1+3+1=5\checkmark</m></cell>
@@ -55,37 +56,37 @@ Saylor.org,  pages 192-193-->
       <title>Polynomial Leading Terms and Degrees</title>
       <p>Determine the leading term and the degree of each example polynomial:</p>
       <sidebyside>
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" halign="left" />
-        <col right="minor" />
-        <col />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor" halign="left"/>
+        <col right="minor"/>
+        <col/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell>Polynomial</cell>
             <cell>Leading Term</cell>
             <cell>Degree</cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>1.12x^2 + 5.4x - 1.7</m></cell>
             <cell><m>1.12x^2</m></cell>
             <cell><m>2</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>21 + 3w^4-w^2</m></cell>
             <cell><m>3w^4</m></cell>
             <cell><m>4</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>10+2x+4xy- 7xy^2</m></cell>
             <cell><m>7xy^2</m></cell>
             <cell><m>3</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>5x+2</m></cell>
             <cell><m>5x</m></cell>
             <cell><m>1</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>-4</m></cell>
             <cell><m>-4</m></cell>
             <cell><m>0</m></cell>
@@ -140,7 +141,7 @@ Saylor.org,  pages 192-193-->
         </md>
       </p>
   </example>
-  <p>Generally final answers for polynomials are written so the exponents on the variable count down. <em>Example 3B-3</em> demonstrates this with the exponent counting down <m>3,</m> <m>2,</m> <m>1,</m> <m>0</m> (recall <m>x^0=1</m>). Note that this is not a rule for writing polynomials <ndash /> just an easy way to organize the terms and to make the degree of the polynomial clear. The polynomial in <xref ref="example-polynomial-addition" autoname="yes" /> could just as well be written as: <m> - 3 - 2x - 9x^2 + 7x^3</m> or <m> - 2x  + 7x^3 - 3 - 9x^2</m>, but then we have to "search" through the terms to determine the degree.</p>
+  <p>Generally final answers for polynomials are written so the exponents on the variable count down. <em>Example 3B-3</em> demonstrates this with the exponent counting down <m>3,</m> <m>2,</m> <m>1,</m> <m>0</m> (recall <m>x^0=1</m>). Note that this is not a rule for writing polynomials <ndash/> just an easy way to organize the terms and to make the degree of the polynomial clear. The polynomial in <xref ref="example-polynomial-addition" text="type-global"/> could just as well be written as: <m> - 3 - 2x - 9x^2 + 7x^3</m> or <m> - 2x  + 7x^3 - 3 - 9x^2</m>, but then we have to "search" through the terms to determine the degree.</p>
   <p>Subtracting polynomials is almost as fast. One extra step comes from the minus in front of the parentheses. When we have a negative in front of parentheses we distribute it through, changing the signs of everything inside. The same is done for the subtraction sign.</p>
   <example xml:id="example-polynomial-subtraction">
       <title>Polynomial Subtraction</title>
@@ -169,22 +170,22 @@ Saylor.org,  pages 192-193-->
   </subsection>
   <subsection>
     <title>Multiplying Polynomials</title>
-    <p>Adding or subtracting polynomials is pretty straight forward <ndash /> just combine terms which have the same variables with the same degrees. Multiplying polynomials may seem complicated, but the basic idea is that you must <q>thoroughly</q> multiply them together <ndash /> every term in one must multiply every term in the other.</p>
+    <p>Adding or subtracting polynomials is pretty straight forward <ndash/> just combine terms which have the same variables with the same degrees. Multiplying polynomials may seem complicated, but the basic idea is that you must <q>thoroughly</q> multiply them together <ndash/> every term in one must multiply every term in the other.</p>
     <p>There are <m>4</m> multiplications when multiplying <m>(4x + 3) (3x - 2)</m>:</p>
     <sidebyside widths="30% 65%" valign="middle">
 <!--        <figure xml:id="figure-distributive-property"> -->
 <!--NEEDS TO BE formatted set3B-Polynomial-Functions-01.png-->
           <image xml:id="distributive-property">
-            <latex-image-code><![CDATA[\begin{tikzpicture}
+            <latex-image>\begin{tikzpicture}
               \node (a) at (0,0) {\LARGE $(4x$};
               \node (b) at (1,0) {\LARGE $+3)$};
               \node (c) at (2,0) {\LARGE$(3x$};
               \node (d) at (3,0) {\LARGE$-2)$};
-              \draw[->,shorten >=5pt,shorten <=5pt,out=70,in=110,distance=0.75cm,red,] (a.north) to (d.north);
-              \draw[->,shorten >=5pt,shorten <=5pt,out=60,in=110,distance=0.5cm,red] (a.north) to (c.north);
-              \draw[->,shorten >=1pt,shorten <=2pt,out=-70,in=-110,distance=0.5cm,blue,] (b.south) to (d.south);
-              \draw[->,shorten >=1pt,shorten <=2pt,out=-60,in=-110,distance=0.25cm,blue] (b.south) to (c.south);
-  \end{tikzpicture}]]></latex-image-code>
+              \draw[-&gt;,shorten &gt;=5pt,shorten &lt;=5pt,out=70,in=110,distance=0.75cm,red,] (a.north) to (d.north);
+              \draw[-&gt;,shorten &gt;=5pt,shorten &lt;=5pt,out=60,in=110,distance=0.5cm,red] (a.north) to (c.north);
+              \draw[-&gt;,shorten &gt;=1pt,shorten &lt;=2pt,out=-70,in=-110,distance=0.5cm,blue,] (b.south) to (d.south);
+              \draw[-&gt;,shorten &gt;=1pt,shorten &lt;=2pt,out=-60,in=-110,distance=0.25cm,blue] (b.south) to (c.south);
+  \end{tikzpicture}</latex-image>
           </image>
 <!--        </figure>  -->
         <ul>
@@ -239,7 +240,7 @@ Saylor.org,  pages 192-193-->
         <sidebyside>
 <!--          <figure xml:id="figure-graph-4-polynomials-1">  -->
             <image xml:id="graph-4-polynomials-1">
-              <latex-image-code><![CDATA[\begin{tikzpicture}
+              <latex-image>\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -249,12 +250,12 @@ Saylor.org,  pages 192-193-->
                 \node at (-.3,5) {$10$};
                 \draw[line width=0.75mm, domain=-1.5:1.5,smooth,variable=\x,red] plot ({\x},{2*(\x*\x)+.5});
                 \node at (0,-6) {\Large $f(x)=x^2+1$};
-              \end{tikzpicture}]]></latex-image-code>
+              \end{tikzpicture}</latex-image>
             </image>
 <!--          </figure>  -->
 <!--          <figure xml:id="figure-graph-4-polynomials-2">  -->
             <image xml:id="graph-4-polynomials-2">
-              <latex-image-code><![CDATA[\begin{tikzpicture}
+              <latex-image>\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -264,14 +265,14 @@ Saylor.org,  pages 192-193-->
                 \node at (-.3,5) {$10$};
                 \draw[line width=0.75mm, domain=-2.:1.5,smooth,variable=\x,red] plot ({\x},{-2*(\x*\x)-\x+1});
                 \node at (0,-6) {\Large $g(x)=-x^2-x+2$};
-              \end{tikzpicture}]]></latex-image-code>
+              \end{tikzpicture}</latex-image>
             </image>
 <!--          </figure>  -->
         </sidebyside>
         <sidebyside>
 <!--          <figure xml:id="figure-graph-4-polynomials-3"> -->
             <image xml:id="graph-4-polynomials-3">
-              <latex-image-code><![CDATA[\begin{tikzpicture}
+              <latex-image>\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -281,12 +282,12 @@ Saylor.org,  pages 192-193-->
                 \node at (-.3,5) {$10$};
                 \draw[line width=0.75mm, domain=-1.81:1.96,smooth,variable=\x,red] plot ({\x},{8/7*(\x*\x*\x)-2/7*\x*\x-1.5*\x});
                 \node at (0,-6) {\Large $h(x)=\frac{2}{7}x^3-\frac{1}{7}x^2-3x$};
-              \end{tikzpicture}]]></latex-image-code>
+              \end{tikzpicture}</latex-image>
             </image>
 <!--          </figure>  -->
 <!--          <figure xml:id="figure-graph-4-polynomials-4"> -->
             <image xml:id="graph-4-polynomials-4">
-              <latex-image-code><![CDATA[\begin{tikzpicture}
+              <latex-image>\begin{tikzpicture}
                 \draw[line width=0.55mm,black] (-5,0) -- (5,0);
                 \draw[line width=0.55mm,black] (0,-5) -- (0,5);
                 \node at (-5,-.2) {$-10$};
@@ -296,7 +297,7 @@ Saylor.org,  pages 192-193-->
                 \node at (-.3,5) {$10$};
                 \draw[line width=0.75mm, domain=-.807:1.512,smooth,variable=\x,red] plot ({\x},{8*(\x*\x*\x*\x)-8*\x*\x*\x-4*\x*\x});
                 \node at (0,-6) {\Large $k(x)=x^4-2x^3-2x^2$};
-              \end{tikzpicture}]]></latex-image-code>
+              \end{tikzpicture}</latex-image>
             </image>
 <!--          </figure>  -->
 
@@ -315,11 +316,11 @@ Saylor.org,  pages 192-193-->
         <p>Consider the graph of <m>f(x) = x^2+1</m>. We'll use the low tech but effective method of plotting points: </p>
         <sidebyside widths="30% 65%" valign="middle">
 <!--          <table>  -->
-      <tabular halign="center" >
-        <col right="minor" halign="right" />
-        <col />
+      <tabular halign="center">
+        <col right="minor" halign="right"/>
+        <col/>
         <!--  -->
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>x</m></cell>
             <cell><m>y</m></cell>
         </row>
@@ -348,10 +349,10 @@ Saylor.org,  pages 192-193-->
 <!--        <figure xml:id="figure-graph-xsq-plus-1"> -->
 <!--set3B-Polynomial_Functions_03.png-->
           <image xml:id="graph-xsq-plus-1">
-            <latex-image-code><![CDATA[\begin{tikzpicture}
+            <latex-image>\begin{tikzpicture}
               \draw[step=1cm,gray,very thin] (-5.9,-1.9) grid (5.9,5.9);;
-              \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
-              \draw[line width=0.55mm,black,<->] (0,-1.9) -- (0,5.9);
+              \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0);
+              \draw[line width=0.55mm,black,&lt;-&gt;] (0,-1.9) -- (0,5.9);
               \draw[line width=0.55mm,black] (-4 cm,3pt) -- (-4 cm,-3pt);
               \draw[line width=0.55mm,black] (4 cm,3pt) -- (4 cm,-3pt);
               \draw[line width=0.55mm,black] (3pt,4 cm) -- (-3pt,4 cm);
@@ -366,7 +367,7 @@ Saylor.org,  pages 192-193-->
               \fill (0,1) circle (.1cm);
               \fill (1,2) circle (.1cm);
               \fill (2,5) circle (.1cm);
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}</latex-image>
           </image>
 <!--        </figure>  -->
         </sidebyside>
@@ -420,10 +421,10 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
 <!--          <figure xml:id="figure-graph-negative-xsq-minus-x-plus-2"> -->
 <!--set3B-Polynomial_Functions_04.png-->
               <image xml:id="graph--negative-xsq-minus-x-plus-2">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-4.9) grid (5.9,4.9);
-                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
-                  \draw[line width=0.55mm,black,<->] (0,-4.9) -- (0,4.9);
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0);
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.9) -- (0,4.9);
                   \draw[line width=0.55mm,black] (-4 cm,3pt) -- (-4 cm,-3pt);
                   \draw[line width=0.55mm,black] (4 cm,3pt) -- (4 cm,-3pt);
                   \draw[line width=0.55mm,black] (3pt,4 cm) -- (-3pt,4 cm);
@@ -438,7 +439,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \fill (-2,0) circle (.1cm);
                   \fill (0,2) circle (.1cm);
                   \fill (1,0) circle (.1cm);
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -462,10 +463,10 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
 <!--          <figure xml:id="figure-graph-cubic"> -->
 <!--set3B-Polynomial_Functions_05.png-->
               <image xml:id="graph-cubic">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-4.9) grid (5.9,4.9);
-                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
-                  \draw[line width=0.55mm,black,<->] (0,-4.9) -- (0,4.9);
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0);
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4.9) -- (0,4.9);
                   \draw[line width=0.55mm,black] (-4 cm,3pt) -- (-4 cm,-3pt);
                   \draw[line width=0.55mm,black] (4 cm,3pt) -- (4 cm,-3pt);
                   \draw[line width=0.55mm,black] (3pt,4 cm) -- (-3pt,4 cm);
@@ -480,7 +481,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \fill (-3,0) circle (.1cm);
                   \fill (0,2) circle (.1cm);
                   \fill (3.5,0) circle (.1cm);
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -520,10 +521,10 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
 <!--          <figure xml:id="figure-graph-quartic"> -->
 <!--set3B-Polynomial_Functions_06.png-->
               <image xml:id="graph-quartic">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-8.9) grid (5.9,1.9);
-                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0);
-                  \draw[line width=0.55mm,black,<->] (0,-8.9) -- (0,1.9);
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0);
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-8.9) -- (0,1.9);
                   \draw[line width=0.55mm,black] (-4 cm,3pt) -- (-4 cm,-3pt);
                   \draw[line width=0.55mm,black] (4 cm,3pt) -- (4 cm,-3pt);
                   \draw[line width=0.55mm,black] (3pt,-4 cm) -- (-3pt,-4 cm);
@@ -538,7 +539,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \fill (-.732,0) circle (.1cm);
                   \fill (0,0) circle (.1cm);
                   \fill (2.732,0) circle (.1cm);
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -588,9 +589,9 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
     <sidebyside>
 <!--set3B-Polynomial_Functions_07.png-->
               <image xml:id="graph-sine-approx">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
-                  \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0);
-                  \draw[line width=0.55mm,black,<->] (0,-4) -- (0,4);
+                <latex-image>\begin{tikzpicture}
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-6,0) -- (6,0);
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-4) -- (0,4);
                   \foreach [evaluate=\x as \z using int(2*\x)] \x in {-5,...,5}
                       \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\z$};
                   \foreach [evaluate=\x as \y using int(2*\x)] \x in {-3,...,3}
@@ -599,7 +600,7 @@ on the left side of NOT SURE WHETHER TO GO INTO THIS HERE OR IF THIS IS THE RIGH
                   \draw[dashed, line width=0.75mm, blue](-5.5, .5) cos (-4.71,0) sin (-3.93,-.5) cos (-3.14,0) sin (-2.36,.5) cos (-1.57,0) sin (-.785,-.5) cos (0,0) sin (.785,.5) cos (1.57,0) sin (2.36,-.5) cos (3.14,0) sin (3.93,.5) cos (4.71,0) sin (5.5, -.5);
                   \node at (4,3.2) {\Large $f(x)=x - \frac{1}{6}x^3 + \frac{1}{120}x^5$};
                   \node at (4, -1) {\Large $g(x)=\sin(x)$};
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
               </image>
             </sidebyside>
   </subsection>

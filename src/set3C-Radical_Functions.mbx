@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="section-3C-radical-functions">
   <title>Radical Functions</title>
 <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
@@ -46,36 +47,36 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
         </md>
         You can't <q>multiply <m>9</m> by itself half a time</q> or <q>multiply <m>5</m> by itself <m>-4</m> times.</q> We need a different way of considering the exponent in these cases.</p>
         <sidebyside>
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" width="20%" />
-        <col right="minor" width="20%" />
-        <col right="minor" width="30%" />
-        <col  width="30%"/>
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor" width="20%"/>
+        <col right="minor" width="20%"/>
+        <col right="minor" width="30%"/>
+        <col width="30%"/>
         <!--  -->
-        <row bottom = "major">
-            <cell colspan = "4"><p>Definitions: When the exponent is not a positive integer</p></cell>
+        <row bottom="major">
+            <cell colspan="4"><p>Definitions: When the exponent is not a positive integer</p></cell>
         </row>
-        <row bottom = "major">
+        <row bottom="major">
             <cell><p>Zero Exponents</p></cell>
             <cell><p>Negative Exponents</p></cell>
             <cell><p>Fractional Exponents</p><p>(<m>1/n</m>)</p></cell>
             <cell><p>Fractional Exponents</p><p>(<m>m/n</m>)</p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><p>Always <m>1</m></p></cell>
           <cell><p>Indicate the reciprocal</p></cell>
           <cell><p>Act as a radical</p></cell>
           <cell><p><m>m</m> is an exponent,</p>
           <p><m>n</m> is a radical</p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><p><m>7^0 = 1</m></p></cell>
           <cell><p><m>7^{-3} = \frac{1}{7^3} = \frac{1}{343}</m></p></cell>
           <cell><p><m>9^{1/2} = \sqrt{9} = 3</m></p></cell>
           <cell><p><m>8^{2/3}=\sqrt[3]{8^2}=4</m> or <m>(\sqrt[3]{8})^2=4</m></p>
           <p>The order doesn't matter.</p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><p><m>9^0=1</m></p></cell>
           <cell><p><m>x^{-5} = \frac{1}{x^5}</m></p></cell>
           <cell><p><m>2^{1/2} = \sqrt{2}</m></p></cell>
@@ -116,29 +117,29 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           </p>
           <p>The proofs given below all follow this pattern. They use the laws of exponents to rewrite expressions such as <m>\frac{4^2}{4^2}</m> , and go on to show how zero, negative, and fractional exponents must be defined. We started with the definition of an exponent for a positive integer, <m>10^6 = 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10</m>. From there, we developed the laws of exponents. Now we find that, if we want those same laws to apply to other kinds of exponents, there is only one correct way to define those other kinds of exponents.</p>
           <sidebyside>
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" width="20%" />
-        <col right="minor" width="30%" />
-        <col right="minor" width="25%" />
-        <col  width="25%"/>
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor" width="20%"/>
+        <col right="minor" width="30%"/>
+        <col right="minor" width="25%"/>
+        <col width="25%"/>
         <!--  -->
-        <row bottom = "major">
-            <cell colspan = "4"><p>Definitions: When the exponent is not a positive integer</p></cell>
+        <row bottom="major">
+            <cell colspan="4"><p>Definitions: When the exponent is not a positive integer</p></cell>
         </row>
-        <row bottom = "major">
+        <row bottom="major">
             <cell><p>Zero Exponents</p></cell>
             <cell><p>Negative Exponents</p></cell>
             <cell><p>Fractional Exponents</p><p>(<m>1/n</m>)</p></cell>
             <cell><p>Fractional Exponents</p><p>(<m>m/n</m>)</p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><p>Always <m>1</m></p></cell>
           <cell><p>Go in the denominator</p></cell>
           <cell><p>Act as a radical</p></cell>
           <cell><p><m>m</m> is an exponent,</p>
           <p><m>n</m> is a radical</p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><p><m>\frac{4^2}{4^2} = 4^{2-2} = 0</m></p>
           <p>but <m>\frac{4^2}{4^2} =\frac{16}{16} = 1</m></p>
           <p>so <m>4^0</m> must be <m>1</m>!</p></cell>
@@ -228,7 +229,7 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
     <title>Radical Equations</title>
     <introduction>
     <p>When solving equations that involve radicals, begin by asking yourself: is there an <m>x</m> under the square root? The answer to this question will determine the way you approach the problem.</p>
-    <p>If there is not an <m>x</m> under the square root <ndash /> if only numbers are under the radicals <ndash /> you can solve much the same way you would solve with no radicals at all.</p>
+    <p>If there is not an <m>x</m> under the square root <ndash/> if only numbers are under the radicals <ndash/> you can solve much the same way you would solve with no radicals at all.</p>
     <example xml:id="example-solve-radical-equation">
         <title>Solve a Radical Equation</title>
         <p>Solve a radical equation with no variables under square root.</p>
@@ -243,11 +244,11 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
           </md>
         </p>
     </example>
-    <p>The key thing to note about such problems is that you do not have to square both sides of the equation. <m>\sqrt{ 2}</m> may look ugly, but it is just a number<ndash />you could find it on your calculator if you wanted to<ndash />it functions in the equation just the way that the number <m>10</m>, or <m>\frac{1}{3}</m> , or <m>\pi</m> would.</p>
+    <p>The key thing to note about such problems is that you do not have to square both sides of the equation. <m>\sqrt{ 2}</m> may look ugly, but it is just a number<ndash/>you could find it on your calculator if you wanted to<ndash/>it functions in the equation just the way that the number <m>10</m>, or <m>\frac{1}{3}</m> , or <m>\pi</m> would.</p>
     <p>If there is an <m>x</m> under the square root, the problem is completely different. You will have to square both sides to get rid of the radical. However, there are two important notes about this kind of problem.
       <ol>
         <li>If possible, always get the radical alone, on one side of the equation, before squaring.</li>
-        <li>Squaring both sides can introduce false answers<ndash />so it is important to check your answers after solving!</li>
+        <li>Squaring both sides can introduce false answers<ndash/>so it is important to check your answers after solving!</li>
       </ol>
       Both of these principles are demonstrated in the following example.</p>
       <example xml:id="example-solve-radical-equation-2">
@@ -343,7 +344,7 @@ equation, it's vital to check your answer(s)!</p>
   </introduction>
       <subsubsection>
         <title>When Good Math Leads to Bad Answers</title>
-        <p>Why is it that<ndash />when squaring both sides of an equation<ndash />perfectly good algebra can lead to invalid solutions? The answer is in the redundancy of squaring. Consider the following equation:
+        <p>Why is it that<ndash/>when squaring both sides of an equation<ndash/>perfectly good algebra can lead to invalid solutions? The answer is in the redundancy of squaring. Consider the following equation:
           <md>
             <mrow>-5 = 5\text{, is false.}</mrow>
           </md>
@@ -352,7 +353,7 @@ equation, it's vital to check your answer(s)!</p>
             <mrow>25 = 25\text{, which is true!}</mrow>
           </md>
           So squaring both sides of a false equation can produce a true equation.</p>
-          <p>To see how this affects our equations, try plugging <m>x = -1</m> into the various steps of <xref ref="example-rewrite-radical-2" autoname="yes" />:</p>
+          <p>To see how this affects our equations, try plugging <m>x = -1</m> into the various steps of <xref ref="example-rewrite-radical-2" text="type-global"/>:</p>
           <p>
             <md>
               <mrow>\sqrt{x + 2} + 3x\amp = 5x + 1\amp\amp\text{Does \(x = -1\) work here? No, it does not.}</mrow>
@@ -375,26 +376,26 @@ equation, it's vital to check your answer(s)!</p>
               <p>For <m>f(x) = \dfrac{1}{x^{2/3}}</m>, we notice <m>f</m> may be rewritten as <m>f(x) = \sqrt[3]{\dfrac{1}{x^2}}</m> and any number squared is positive. Taking the cube root of a positive number poses no problem and always results in a positive number. The only problem will be at <m>x=0</m> since division by zero is not defined.  Hence, the domain is <m>x \lt 0</m> or <m>x \gt 0</m> or equivalently <m>(-\infty,0)\cup (0,\infty)</m>.</p>
               <p>Next, let's consider the range: Since the numerator of the fraction is <m>1</m>, there is no way to make the fraction equal zero.  Hence, zero is not in the range.  At first glance, it would seem the range should be numbers between <m>0</m> and <m>1</m> excluding zero, but we have to consider all possible values to use for <m>x</m>. Let's try a variety of values for <m>x</m> to get an idea of the kind of output values the function makes:</p>
               <sidebyside>
-            <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
+            <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
               <col right="minor" halign="right"/>
-              <col right="minor" />
-              <col right="minor"  />
-              <col right="minor"  />
-              <col right="minor"  />
-              <col right="minor"  />
-              <col right="minor" />
-              <col right="minor"  />
-              <col right="minor"  />
-              <col right="minor"  />
-              <col right="minor"  />
-              <col right="minor" />
-              <col right="minor"  />
-              <col right="minor"  />
-              <col right="minor"  />
-              <col right="minor"  />
-              <col />
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col right="minor"/>
+              <col/>
               <!-- -->
-              <row bottom = "minor">
+              <row bottom="minor">
                 <cell><m>x = </m></cell>
                 <cell><m>-100</m></cell>
                 <cell><m>-10</m></cell>
@@ -448,7 +449,7 @@ equation, it's vital to check your answer(s)!</p>
           </ol>
         </p>
     </example>
-    <p>In <xref ref="section-1C-graphs" autoname="yes" />, we considered transformations of functions. We will now review these concepts.</p>
+    <p>In <xref ref="section-1C-graphs" text="type-global"/>, we considered transformations of functions. We will now review these concepts.</p>
     <example xml:id="example-sqrt-x-transformations">
         <title>Transformations of a Radical Function</title>
         <p>Consider graphs of transformations of <m>f(x)=\sqrt{x}.</m></p>
@@ -459,10 +460,10 @@ equation, it's vital to check your answer(s)!</p>
  <!--           <figure xml:id="figure-graph-sqrt-x"> -->
  <!--set3C-Radical_Functions_01.png-->
               <image xml:id="graph-sqrt-x">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
-                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
-                  \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
                   \foreach \x in {-5,...,-1,1,2,...,5}
                       \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
                   \foreach \y in {-5,...,-1,1,2,...,5}
@@ -470,7 +471,7 @@ equation, it's vital to check your answer(s)!</p>
                   \draw[line width=0.75mm, domain=0:5.9,smooth,variable=\x,red] plot ({\x},{sqrt(\x)});
                   \fill[color=red] (0,0) circle (.15cm);
                   \node at (1.75, 2.5) {\Large $f(x)=\sqrt{x}$};
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure>  -->
           </sidebyside>
@@ -483,10 +484,10 @@ equation, it's vital to check your answer(s)!</p>
 <!--            <figure xml:id="figure-graph-3-minus-sqrt-x-minus-2"> -->
 <!--set3C-Radical_Functions_02.png-->
               <image xml:id="graph-3-minus-sqrt-x-minus-2">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
-                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
-                  \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
                   \foreach \x in {-5,...,-1,1,2,...,5}
                       \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
                   \foreach \y in {-5,...,-1,1,2,...,5}
@@ -497,7 +498,7 @@ equation, it's vital to check your answer(s)!</p>
                   \draw[line width=0.75mm, domain=2:5.9,smooth,variable=\x,blue] plot ({\x},{3-sqrt(\x-2)});
                   \fill[color=blue] (2,3) circle (.15cm);
                   \node at (2, 3.5) {\Large $g(x)=3-\sqrt{x-2}$};
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure>  -->
           </sidebyside>
@@ -510,10 +511,10 @@ equation, it's vital to check your answer(s)!</p>
 <!--            <figure xml:id="figure-graph-sqrt-1-minus-x-minus-2"> -->
 <!-- set3C-Radical_Functions_03.png-->
               <image xml:id="graph-sqrt-1-minus-x-minus-2">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                   \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
-                  \draw[line width=0.55mm,black,<->] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
-                  \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (-5.9,0) -- (5.9,0) node[anchor=north west] {$x$};
+                  \draw[line width=0.55mm,black,&lt;-&gt;] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
                   \foreach \x in {-5,...,-1,1,2,...,5}
                       \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
                   \foreach \y in {-5,...,-1,1,2,...,5}
@@ -524,7 +525,7 @@ equation, it's vital to check your answer(s)!</p>
                   \draw[line width=0.75mm, domain=-5.9:1,smooth,variable=\x,green] plot ({\x},{sqrt(1-\x)-2});
                   \fill[color=green] (1,-2) circle (.15cm);
                   \node at (-3, -1.5) {\Large $h(x)=\sqrt{1-x}-2$};
-                \end{tikzpicture}]]></latex-image-code>
+                \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure>  -->
           </sidebyside>

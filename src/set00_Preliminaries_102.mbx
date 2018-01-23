@@ -1,4 +1,5 @@
-﻿<section xml:id="section-00-preliminaries">
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="section-00-preliminaries">
   <title>Preliminaries</title>
   <!-- Adapted from: College Algebra
   Version bc
@@ -201,13 +202,13 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           </p>
 <!--          <figure xml:id="figure-interval-open-a-to-open-b"> -->
               <image xml:id="interval-open-a-to-open-b">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                       \draw[color=red] (0,.5) circle (.1cm);
                       \draw[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$a$};
                       \node[anchor=south, color=red] at (3,-.1) {$b$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure> -->
         </sidebyside>
@@ -221,13 +222,13 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
 <!--          <figure xml:id="figure-interval-closed-a-to-open-b"> -->
               <image xml:id="interval-closed-a-to-open-b">
 
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                       \fill[color=red] (0,.5) circle (.1cm);
                       \draw[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$a$};
                       \node[anchor=south, color=red] at (3,-.1) {$b$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure> -->
         </sidebyside>
@@ -240,13 +241,13 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           </p>
 <!--          <figure xml:id="figure-interval-open-a-to-closed-b"> -->
               <image xml:id="interval-open-a-to-closed-b">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                       \draw[color=red] (0,.5) circle (.1cm);
                       \fill[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$a$};
                       \node[anchor=south, color=red] at (3,-.1) {$b$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure> -->
         </sidebyside>
@@ -259,13 +260,13 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           </p>
 <!--          <figure xml:id="figure-interval-closed-a-to-closed-b">  -->
               <image xml:id="interval-closed-a-to-closed-b">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                       \fill[color=red] (0,.5) circle (.1cm);
                       \fill[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$a$};
                       \node[anchor=south, color=red] at (3,-.1) {$b$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
 <!--            </figure>  -->
         </sidebyside>
@@ -278,10 +279,10 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           </p>
 <!--          <figure xml:id="figure-interval-to-open-b">  -->
               <image xml:id="interval-to-open-b">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                       \draw[color=red] (3,.5) circle (.1cm);
                       \draw[color=red,
-                  <-] (0,.5) -- (2.9,.5); \node[anchor=south, color=red] at (3,-.1) {$b$}; \end{tikzpicture}]]></latex-image-code>
+                  &lt;-] (0,.5) -- (2.9,.5); \node[anchor=south, color=red] at (3,-.1) {$b$}; \end{tikzpicture}</latex-image>
                 </image>
 <!--              </figure>  -->
           </sidebyside>
@@ -294,10 +295,10 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
             </p>
 <!--            <figure xml:id="figure-interval-to-closed-b">  -->
                 <image xml:id="interval-to-closed-b">
-                  <latex-image-code><![CDATA[\begin{tikzpicture}
+                  <latex-image>\begin{tikzpicture}
                       \fill[color=red] (3,.5) circle (.1cm);
                       \draw[color=red,
-                    <-] (0,.5) -- (2.9,.5); \node[anchor=south, color=red] at (3,-.1) {$b$}; \end{tikzpicture}]]></latex-image-code>
+                    &lt;-] (0,.5) -- (2.9,.5); \node[anchor=south, color=red] at (3,-.1) {$b$}; \end{tikzpicture}</latex-image>
                   </image>
 <!--                </figure>  -->
             </sidebyside>
@@ -310,11 +311,11 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
               </p>
 <!--              <figure xml:id="figure-interval-from-open-a">  -->
                   <image xml:id="interval-from-open-a">
-                    <latex-image-code><![CDATA[\begin{tikzpicture}
+                    <latex-image>\begin{tikzpicture}
                       \draw[color=red] (0,.5) circle (.1cm);
-                      \draw[color=red, ->] (0.1,.5) -- (3,.5);
+                      \draw[color=red, -&gt;] (0.1,.5) -- (3,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$a$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                   </image>
 <!--                </figure>  -->
             </sidebyside>
@@ -327,11 +328,11 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
               </p>
 <!--              <figure xml:id="figure-interval-from-closed-a">  -->
                   <image xml:id="interval-from-closed-a">
-                    <latex-image-code><![CDATA[\begin{tikzpicture}
+                    <latex-image>\begin{tikzpicture}
                       \fill[color=red] (0,.5) circle (.1cm);
-                      \draw[color=red, ->] (0.1,.5) -- (3,.5);
+                      \draw[color=red, -&gt;] (0.1,.5) -- (3,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$a$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                   </image>
 <!--                </figure>  -->
             </sidebyside>
@@ -344,12 +345,12 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
               </p>
 <!--              <figure xml:id="figure-interval-all-reals">  -->
                   <image xml:id="interval-all-reals">
-                    <latex-image-code><![CDATA[\begin{tikzpicture}
+                    <latex-image>\begin{tikzpicture}
                       \draw[color=red,
-                      <->] (0,.5) -- (3,.5);
+                      &lt;-&gt;] (0,.5) -- (3,.5);
                       \draw[color=red](1.5,.4) -- (1.5, .6);
                       \node[anchor=south, color=red] at (1.5,-.1) {$0$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                     </image>
 <!--                  </figure>  -->
               </sidebyside>
@@ -399,13 +400,13 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                 </p>
 <!--                <figure xml:id="figure-interval-closed-1-to-open-3">  -->
                     <image xml:id="interval-closed-1-to-open-3">
-                      <latex-image-code><![CDATA[\begin{tikzpicture}
+                      <latex-image>\begin{tikzpicture}
                       \fill[color=red] (0,.5) circle (.1cm);
                       \draw[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$1$};
                       \node[anchor=south, color=red] at (3,-.1) {$3$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                     </image>
 <!--                  </figure>  -->
               </sidebyside>
@@ -418,13 +419,13 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                 </p>
 <!--                <figure xml:id="figure-interval-closed-neg1-to-closed-4">  -->
                     <image xml:id="interval-closed-neg1-to-closed-4">
-                      <latex-image-code><![CDATA[\begin{tikzpicture}
+                      <latex-image>\begin{tikzpicture}
                       \fill[color=red] (0,.5) circle (.1cm);
                       \fill[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$-1$};
                       \node[anchor=south, color=red] at (3,-.1) {$4$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                     </image>
 <!--                  </figure>  -->
               </sidebyside>
@@ -437,13 +438,13 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                 </p>  <!-- FIX THIS ON THE GRAPH MAKER FILE SO THE CIRCLE IS FILLED IN. I THINK THE CODE HERE IS NOW CORRECT -->
 <!--                <figure xml:id="figure-interval-less-equal-5">  -->
                     <image xml:id="interval-less-equal-5">
-                      <latex-image-code><![CDATA[\begin{tikzpicture}
+                      <latex-image>\begin{tikzpicture}
                       \fill[color=red] (3,.5) circle (.1cm);
-                      \draw[color=red,<-] (0,.5) -- (2.9,.5);
+                      \draw[color=red,&lt;-] (0,.5) -- (2.9,.5);
                       \draw[color=red](1.5,.4) -- (1.5, .6);
                       \node[anchor=south, color=red] at (1.5,-.1) {$0$};
                       \node[anchor=south, color=red] at (3,-.1) {$5$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                       </image>
 <!--                    </figure>  -->
                 </sidebyside>
@@ -456,13 +457,13 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                   </p>
 <!--                  <figure xml:id="figure-interval-greater-neg2">  -->
                     <image xml:id="interval-greater-neg2">
-                      <latex-image-code><![CDATA[\begin{tikzpicture}
+                      <latex-image>\begin{tikzpicture}
                       \draw[color=red] (0,.5) circle (.1cm);
-                      \draw[color=red, ->] (0.1,.5) -- (3,.5);
+                      \draw[color=red, -&gt;] (0.1,.5) -- (3,.5);
                       \draw[color=red](1.2,.4) -- (1.2, .6);
                       \node[anchor=south, color=red] at (1.2,-.1) {$0$};
                       \node[anchor=south, color=red] at (0,-.1) {$-2$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                       </image>
 <!--                    </figure>  -->
                   </sidebyside>
@@ -498,13 +499,13 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                 </p>
 <!--                <figure xml:id="figure-intervals-overlap">  -->
                     <image xml:id="intervals-overlap">
-                      <latex-image-code><![CDATA[\begin{tikzpicture}
+                      <latex-image>\begin{tikzpicture}
                       \fill[color=blue] (-5,1) circle (.1cm);
                       \draw[color=blue] (3,1) circle (.1cm);
                       \draw[color=blue] (-4.9,1)--(2.9,1);
                       \draw[color=green] (1,.5) circle (.1cm);
-                      \draw[green, ->] (1.1,.5) -- (5,.5);
-                      \draw[black, <->] (-5.4,0) -- (5,0);
+                      \draw[green, -&gt;] (1.1,.5) -- (5,.5);
+                      \draw[black, &lt;-&gt;] (-5.4,0) -- (5,0);
                       \draw[black] (-5,-.1)--(-5, .1);
                       \node[black] at (-5, -.5) {$-5$};
                       \draw[black] (1,-.1)--(1, .1);
@@ -513,7 +514,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                       \node[black] at (3, -.5) {$3$};
                       \node[color=blue] at (-3,-1) {$A=[-5,3)$};
                       \node[color=green] at (2,-1) {$B=(1,\infty)$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                     </image>
 <!--                  </figure>  -->
               </sidebyside>
@@ -522,14 +523,14 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                 </p>
 <!--                <figure xml:id="figure-intervals-overlap-intersection">  -->
                     <image xml:id="intervals-overlap-intersection">
-                      <latex-image-code><![CDATA[\begin{tikzpicture}
+                      <latex-image>\begin{tikzpicture}
                       \fill[color=blue] (-5,1) circle (.1cm);
                       \draw[color=blue] (3,1) circle (.1cm);
                       \draw[color=blue] (-4.9,1)--(2.9,1);
                       \draw[color=green] (1,.5) circle (.1cm);
-                      \draw[green, ->] (1.1,.5) -- (5,.5);
-                      \draw[black, <-] (-5.4,0) -- (.9,0);
-                      \draw[black, ->] (3.1,0) -- (5,0);
+                      \draw[green, -&gt;] (1.1,.5) -- (5,.5);
+                      \draw[black, &lt;-] (-5.4,0) -- (.9,0);
+                      \draw[black, -&gt;] (3.1,0) -- (5,0);
                       \draw[black] (-5,-.1)--(-5, .1);
                       \node[black] at (-5, -.5) {$-5$};
                       \node[black] at (1, -.5) {$1$};
@@ -538,7 +539,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                       \draw[red] (3,0) circle (.1cm);
                       \draw[red] (1.1,0)--(2.9,0);
                       \node[red] at (2,-1) {$A\cap B =(1,3)$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                     </image>
  <!--                 </figure> -->
               </sidebyside>
@@ -547,23 +548,23 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                 </p>
 <!--                <figure xml:id="figure-intervals-overlap-union">  -->
                     <image xml:id="intervals-overlap-union">
-                      <latex-image-code><![CDATA[\begin{tikzpicture}
+                      <latex-image>\begin{tikzpicture}
                       \fill[color=blue] (-5,1) circle (.1cm);
                       \draw[color=blue] (3,1) circle (.1cm);
                       \draw[color=blue] (-4.9,1)--(2.9,1);
                       \draw[color=green] (1,.5) circle (.1cm);
-                      \draw[green, ->] (1.1,.5) -- (5,.5);
-                      \draw[black, <-] (-5.4,0) -- (-4.9,0);
+                      \draw[green, -&gt;] (1.1,.5) -- (5,.5);
+                      \draw[black, &lt;-] (-5.4,0) -- (-4.9,0);
                       \draw[black] (-5,-.1)--(-5, .1);
                       \node[black] at (-5, -.5) {$-5$};
                       \draw[black] (1,-.1)--(1, .1);
                       \node[black] at (1, -.5) {$1$};
                       \draw[black] (3,-.1)--(3, .1);
                       \node[black] at (3, -.5) {$3$};
-                      \draw[red,->] (-5, 0) -- (5,0);
+                      \draw[red,-&gt;] (-5, 0) -- (5,0);
                       \fill[color=red] (-5,0) circle (.1cm);
                       \node[red] at (0,-1) {$A\cup B =[-5,\infty)$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                     </image>
 <!--                  </figure>  -->
               </sidebyside>
@@ -589,15 +590,15 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                 </p>
 <!--                <figure xml:id="figure-interval-less-neg2-great-2">  -->
                     <image xml:id="interval-less-neg2-great-2">
-                      <latex-image-code><![CDATA[\begin{tikzpicture}
+                      <latex-image>\begin{tikzpicture}
                       \fill[color=red] (-1.0,0) circle (.1cm);
                       \fill[color=red] (1,0) circle (.1cm);
-                      \draw[red, <-] (-2,0) -- (-1,0);
-                      \draw[red, ->] (1,0) -- (2,0);
+                      \draw[red, &lt;-] (-2,0) -- (-1,0);
+                      \draw[red, -&gt;] (1,0) -- (2,0);
                       \draw[black] (-.9,0) -- (.9,0);
                       \node[black] at (-1.2, -.5) {$-2$};
                       \node[black] at (1, -.5) {$2$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                     </image>
 <!--                  </figure>  -->
               </sidebyside>
@@ -610,12 +611,12 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                 </p>
 <!--                <figure xml:id="figure-interval-neq-3">  -->
                     <image xml:id="interval-neq-3">
-                      <latex-image-code><![CDATA[\begin{tikzpicture}
+                      <latex-image>\begin{tikzpicture}
                       \draw[color=red] (0.0,0) circle (.1cm);
-                      \draw[red, <-] (-2,0) -- (-.1,0);
-                      \draw[red, ->] (.1,0) -- (2,0);
+                      \draw[red, &lt;-] (-2,0) -- (-.1,0);
+                      \draw[red, -&gt;] (.1,0) -- (2,0);
                       \node[black] at (0, -.5) {$3$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
                     </image>
 <!--                  </figure>  -->
               </sidebyside>
@@ -642,9 +643,9 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
       <p>Imagine two real number lines crossing at a right angle at <m>0</m> as drawn below.</p>
       <sidebyside>
           <image xml:id="axes-no-grid">
-            <latex-image-code><![CDATA[\begin{tikzpicture}
-            \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
-            \draw[black,<->] (0,-5) -- (0,5) node[anchor=south east] {$y$};
+            <latex-image>\begin{tikzpicture}
+            \draw[black,&lt;-&gt;] (-5,0) -- (5,0) node[anchor=north west] {$x$};
+            \draw[black,&lt;-&gt;] (0,-5) -- (0,5) node[anchor=south east] {$y$};
             \foreach \x in {-4,...,-1}
                 \draw[black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
             \foreach \x in {1,...,4}
@@ -653,16 +654,16 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                 \draw[black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
             \foreach \y in {1,...,4}
                 \draw[black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}</latex-image>
           </image>
         </sidebyside>
       <p>The horizontal number line is usually called the <m>x</m>-axis while the vertical number line is usually called the <m>y</m>-axis. As with the usual number line, we imagine these axes extending off indefinitely in both directions. Having two number lines enables us to locate the positions of points off of the number lines as well as points on the lines themselves.</p>
       <p>For example, consider the point <m>P</m> shown below:</p>
       <sidebyside>
           <image xml:id="axes-no-grid-P">
-            <latex-image-code><![CDATA[\begin{tikzpicture}
-            \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
-            \draw[black,<->] (0,-5) -- (0,5) node[anchor=south east] {$y$};
+            <latex-image>\begin{tikzpicture}
+            \draw[black,&lt;-&gt;] (-5,0) -- (5,0) node[anchor=north west] {$x$};
+            \draw[black,&lt;-&gt;] (0,-5) -- (0,5) node[anchor=south east] {$y$};
             \foreach \x in {-4,...,-1}
                 \draw[black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
             \foreach \x in {1,...,4}
@@ -675,8 +676,8 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
             \draw[red, dashed] (2,0) -- (2,-4);
             \fill[red] (2,-4) circle (.15cm);
             \node[red] at (2.5,-4) {\LARGE $P$};
-            \end{tikzpicture}]]>
-            </latex-image-code>
+            \end{tikzpicture}
+            </latex-image>
           </image>
         </sidebyside>
         <p>To use the numbers on the axes to label this  point, imagine dropping a vertical line from the <m>x</m>-axis to <m>P</m> and extending a horizontal line from the <m>y</m>-axis to <m>P</m>. This process is sometimes called <q>projecting</q> the point <m>P</m> to the <m>x</m>- (respectively <m>y</m>-) axis. We then locate the point <m>P</m> using the ordered pair <m>(2,-4).</m> The first number in the ordered pair is the <m>x</m>-coordinate and the second is the <m>y</m>-coordinate. Taken together, the ordered pair <m>(2, -4)</m> gives the position of the point <m>P</m> with respect to the <m>x</m> and <m>y</m> axes.
@@ -684,9 +685,9 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
       <p>Notice that the order in the ordered pair is important: if we wish to plot the point <m>(-4, 2),</m> we would move to the left <m>4</m> units from the origin and then move upwards <m>2</m> units.</p>
       <sidebyside>
           <image xml:id="axes-no-grid-P-Q">
-            <latex-image-code><![CDATA[\begin{tikzpicture}
-            \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
-            \draw[black,<->] (0,-5) -- (0,5) node[anchor=south east] {$y$};
+            <latex-image>\begin{tikzpicture}
+            \draw[black,&lt;-&gt;] (-5,0) -- (5,0) node[anchor=north west] {$x$};
+            \draw[black,&lt;-&gt;] (0,-5) -- (0,5) node[anchor=south east] {$y$};
             \foreach \x in {-4,...,-1}
                 \draw[black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
             \foreach \x in {1,...,4}
@@ -703,17 +704,17 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
             \draw[red, dashed] (0,2) -- (-4,2);
             \fill[red] (-4,2) circle (.15cm);
             \node[red] at (-4,2.5) {\LARGE $(-4,2)$};
-            \end{tikzpicture}]]>
-            </latex-image-code>
+            \end{tikzpicture}
+            </latex-image>
           </image>
         </sidebyside>
           <p>The axes divide the plane into four regions called <term>quadrants</term>. They are labeled <m>Q1, Q2, Q3</m> and <m>Q4</m> and proceed counterclockwise around the plane as shown in the graph below. Note that point <m>P</m> is in quadrant 4, <m>Q4,</m> and <m>Q</m> is in quadrant 2, <m>Q2.</m>
         </p>
         <sidebyside>
           <image xml:id="axes-no-grid-P-Q-quadrants"> <!--NEEDS TO BE UPDATED-->
-            <latex-image-code><![CDATA[\begin{tikzpicture}
-            \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
-            \draw[black,<->] (0,-5) -- (0,5) node[anchor=south east] {$y$};
+            <latex-image>\begin{tikzpicture}
+            \draw[black,&lt;-&gt;] (-5,0) -- (5,0) node[anchor=north west] {$x$};
+            \draw[black,&lt;-&gt;] (0,-5) -- (0,5) node[anchor=south east] {$y$};
             \foreach \x in {-4,...,-1}
                 \draw[black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
             \foreach \x in {1,...,4}
@@ -730,8 +731,8 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
             \draw[thick,red] (-3,3) node {\LARGE $Q2$};
             \draw[thick,red] (-3,-3) node {\LARGE $Q3$};
             \draw[thick,red] (3,-3) node {\LARGE $Q4$};
-            \end{tikzpicture}]]>
-            </latex-image-code>
+            \end{tikzpicture}
+            </latex-image>
           </image>
         </sidebyside>
     </subsection>
@@ -1017,31 +1018,31 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
 
       <sidebyside>
         <tabular top="major" halign="center">
-            <col halign="left" />
-            <col halign="right" />
+            <col halign="left"/>
+            <col halign="right"/>
             <!--  -->
             <row bottom="minor" halign="center">
               <cell colspan="2">Rules of Exponents</cell>
             </row>
             <row>
               <cell>Product Rule of Exponents</cell>
-              <cell><m>a^m a^n=a^{m+n}</m><xref ref="exponents-product-rule" /></cell>
+              <cell><m>a^m a^n=a^{m+n}</m><xref ref="exponents-product-rule"/></cell>
             </row>
             <row>
               <cell>Quotient Rule of Exponents</cell>
-              <cell><m>\frac{a^m}{a^n} =a^{m-n}</m><xref ref="exponents-quotient-rule" /></cell>
+              <cell><m>\frac{a^m}{a^n} =a^{m-n}</m><xref ref="exponents-quotient-rule"/></cell>
             </row>
             <row>
               <cell>Power of a Power Rule of Exponents</cell>
-              <cell><m>(a^m)^n=a^{mn}</m><xref ref="exponents-power-of-a-power-rule" /></cell>
+              <cell><m>(a^m)^n=a^{mn}</m><xref ref="exponents-power-of-a-power-rule"/></cell>
             </row>
             <row>
               <cell>Power of a Product Rule of Exponents</cell>
-              <cell><m>(ab)^m=a^m b^m</m><xref ref="exponents-power-of-a-product-rule" /></cell>
+              <cell><m>(ab)^m=a^m b^m</m><xref ref="exponents-power-of-a-product-rule"/></cell>
             </row>
             <row bottom="major">
               <cell>Power of a Quotient Rule of Exponents</cell>
-              <cell><m>\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}</m><xref ref="exponents-power-of-a-quotient-rule" /></cell>
+              <cell><m>\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}</m><xref ref="exponents-power-of-a-quotient-rule"/></cell>
             </row>
           </tabular>
         </sidebyside>
@@ -1234,7 +1235,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
       <p>Following is the rule for negative exponents: </p>
       <sidebyside>
         <tabular top="major" halign="center">
-            <col halign="center" />
+            <col halign="center"/>
             <!--  -->
             <row bottom="minor" halign="center">
               <cell>Rule of Negative Exponents</cell>
@@ -1284,9 +1285,9 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
       <p>We now have the following nine properties of exponents. It is important that we are very familiar with all of them. </p>
       <sidebyside>
         <tabular top="major" halign="center">
-            <col halign="center" />
-            <col halign="center" />
-            <col halign="center" />
+            <col halign="center"/>
+            <col halign="center"/>
+            <col halign="center"/>
             <!--  -->
             <row bottom="minor">
               <cell colspan="3">Properties of Exponents</cell>
