@@ -8,21 +8,23 @@
   Lakeland Community College Lorain County Community College
   July 4, 2013 pdf generated January 26, 2015,  pages 1-25-->
   <introduction>
-      <ul>
-        <li>
-          <p>Inequalities and interval notation.</p>
-        </li>
-        <li>
-          <p>Cartesian coordinate system.</p>
-        </li>
-        <li>
-          <p>Mathematical expressions with variables.</p>
-        </li>
-        <!--  Consider adding these Objectives later:
-          <li>Fractions and decimals.</li>
-          <li>Exponent properties. </li>
-          -->
-      </ul>
+      <p>
+        <ul>
+          <li>
+            <p>Inequalities and interval notation.</p>
+          </li>
+          <li>
+            <p>Cartesian coordinate system.</p>
+          </li>
+          <li>
+            <p>Mathematical expressions with variables.</p>
+          </li>
+          <!--  Consider adding these Objectives later:
+            <li>Fractions and decimals.</li>
+            <li>Exponent properties. </li>
+            -->
+        </ul>
+      </p>
   </introduction>
   <subsection xml:id="sets-of-numbers">
     <title>Sets of Numbers</title>
@@ -31,7 +33,7 @@
     </p>
     <p>A
       <term>set</term> is a collection of objects which are called the
-      <term>elements</term> of the set. 
+      <term>elements</term> of the set.
     </p>
     <p>For example, the collection of letters that make up the word
       <q>coyote</q> is a set. Here are three ways to describe sets:
@@ -71,7 +73,7 @@
             </p>
             <p>A roster description of
               <m>S</m> would be
-              <m>\{c,o,y,t,e\}</m>. Note that we listed 
+              <m>\{c,o,y,t,e\}</m>. Note that we listed
               '<m>o</m>' only once, even though it appears twice in
               <q>coyote</q>.  The order of the elements doesn't matter, so
               <m>\{t,e,y,o,c\}</m> also is a roster description of
@@ -94,14 +96,14 @@
         </ul>
       </p>
     </example>
-    <p>In each of the above cases, we may use the familiar equals sign 
+    <p>In each of the above cases, we may use the familiar equals sign
       '<m>=</m>' and write
       <m>S = \{c,o,t,e,y\}</m> or
       <m>T = \{x \; | \; x </m> is a positive integer with <m> x \lt 10 \}</m>. Clearly
       <m>t</m> is in
       <m>S</m> and
       <m>3</m> is not in
-      <m>S</m>.  Here are several famous sets of numbers. 
+      <m>S</m>.  Here are several famous sets of numbers.
     </p>
     <!-- We express these sentiments mathematically by writing <m>t \in S</m> and <m>q \notin S.</m>-->
     <p>
@@ -183,7 +185,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
       <m>b</m>.
     </p>
   -->
-    <p>
+    <!-- <p> -->
       <sbsgroup widths="25% 25% 45%" valign="middle">
         <sidebyside>
           <p>Set of Real Numbers</p>
@@ -199,12 +201,12 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           </p>
 <!--          <figure xml:id="figure-interval-open-a-to-open-b"> -->
               <image xml:id="interval-open-a-to-open-b">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                       \draw[color=red] (0,.5) circle (.1cm);
                       \draw[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$a$};
-                      \node[anchor=south, color=red] at (3,-.1) {$b$}; 
+                      \node[anchor=south, color=red] at (3,-.1) {$b$};
                       \end{tikzpicture}]]></latex-image-code>
               </image>
 <!--            </figure> -->
@@ -218,13 +220,13 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           </p>
 <!--          <figure xml:id="figure-interval-closed-a-to-open-b"> -->
               <image xml:id="interval-closed-a-to-open-b">
-              
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                       \fill[color=red] (0,.5) circle (.1cm);
                       \draw[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$a$};
-                      \node[anchor=south, color=red] at (3,-.1) {$b$}; 
+                      \node[anchor=south, color=red] at (3,-.1) {$b$};
                       \end{tikzpicture}]]></latex-image-code>
               </image>
 <!--            </figure> -->
@@ -238,12 +240,12 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           </p>
 <!--          <figure xml:id="figure-interval-open-a-to-closed-b"> -->
               <image xml:id="interval-open-a-to-closed-b">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                       \draw[color=red] (0,.5) circle (.1cm);
                       \fill[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$a$};
-                      \node[anchor=south, color=red] at (3,-.1) {$b$}; 
+                      \node[anchor=south, color=red] at (3,-.1) {$b$};
                       \end{tikzpicture}]]></latex-image-code>
               </image>
 <!--            </figure> -->
@@ -257,12 +259,12 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
           </p>
 <!--          <figure xml:id="figure-interval-closed-a-to-closed-b">  -->
               <image xml:id="interval-closed-a-to-closed-b">
-                <latex-image-code><![CDATA[\begin{tikzpicture} 
+                <latex-image-code><![CDATA[\begin{tikzpicture}
                       \fill[color=red] (0,.5) circle (.1cm);
                       \fill[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$a$};
-                      \node[anchor=south, color=red] at (3,-.1) {$b$}; 
+                      \node[anchor=south, color=red] at (3,-.1) {$b$};
                       \end{tikzpicture}]]></latex-image-code>
               </image>
 <!--            </figure>  -->
@@ -292,7 +294,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
             </p>
 <!--            <figure xml:id="figure-interval-to-closed-b">  -->
                 <image xml:id="interval-to-closed-b">
-                  <latex-image-code><![CDATA[\begin{tikzpicture} 
+                  <latex-image-code><![CDATA[\begin{tikzpicture}
                       \fill[color=red] (3,.5) circle (.1cm);
                       \draw[color=red,
                     <-] (0,.5) -- (2.9,.5); \node[anchor=south, color=red] at (3,-.1) {$b$}; \end{tikzpicture}]]></latex-image-code>
@@ -308,10 +310,10 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
               </p>
 <!--              <figure xml:id="figure-interval-from-open-a">  -->
                   <image xml:id="interval-from-open-a">
-                    <latex-image-code><![CDATA[\begin{tikzpicture} 
+                    <latex-image-code><![CDATA[\begin{tikzpicture}
                       \draw[color=red] (0,.5) circle (.1cm);
                       \draw[color=red, ->] (0.1,.5) -- (3,.5);
-                      \node[anchor=south, color=red] at (0,-.1) {$a$}; 
+                      \node[anchor=south, color=red] at (0,-.1) {$a$};
                       \end{tikzpicture}]]></latex-image-code>
                   </image>
 <!--                </figure>  -->
@@ -325,10 +327,10 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
               </p>
 <!--              <figure xml:id="figure-interval-from-closed-a">  -->
                   <image xml:id="interval-from-closed-a">
-                    <latex-image-code><![CDATA[\begin{tikzpicture} 
+                    <latex-image-code><![CDATA[\begin{tikzpicture}
                       \fill[color=red] (0,.5) circle (.1cm);
                       \draw[color=red, ->] (0.1,.5) -- (3,.5);
-                      \node[anchor=south, color=red] at (0,-.1) {$a$}; 
+                      \node[anchor=south, color=red] at (0,-.1) {$a$};
                       \end{tikzpicture}]]></latex-image-code>
                   </image>
 <!--                </figure>  -->
@@ -342,21 +344,21 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
               </p>
 <!--              <figure xml:id="figure-interval-all-reals">  -->
                   <image xml:id="interval-all-reals">
-                    <latex-image-code><![CDATA[\begin{tikzpicture} 
+                    <latex-image-code><![CDATA[\begin{tikzpicture}
                       \draw[color=red,
                       <->] (0,.5) -- (3,.5);
                       \draw[color=red](1.5,.4) -- (1.5, .6);
-                      \node[anchor=south, color=red] at (1.5,-.1) {$0$}; 
+                      \node[anchor=south, color=red] at (1.5,-.1) {$0$};
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
 <!--                  </figure>  -->
               </sidebyside>
             </sbsgroup>
-          </p>
-      <aside> 
+          <!-- </p> -->
+      <aside>
         <p>Square brackets <q><m> [ </m></q> or <q><m> ] </m></q> indicate that an endpoint is included in the interval; round parentheses <q><m> ( </m></q> or <q><m> ) </m></q> indicate that an endpoint is not included.
       </p>
-      </aside> 
+      </aside>
         <assemblage>
           <title>WeBWorK: Entering Infinity and Inequalities</title>
           <p>Type
@@ -378,11 +380,10 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
         </assemblage>
         <p>Note that we could write the inequality
           <m>1 &lt; x &lt; 3</m> as
-          <m>3 &gt; x &gt; 1</m> and still have the same set. An easy way to remember which inequality symbol to use is that the smaller (pointy) end of the inequality sign points to the smaller number and conversely the wide end is next to the larger value.  
+          <m>3 &gt; x &gt; 1</m> and still have the same set. An easy way to remember which inequality symbol to use is that the smaller (pointy) end of the inequality sign points to the smaller number and conversely the wide end is next to the larger value.
         </p>
         <example xml:id="example-describing-specific-sets">
           <title>Describing Specific Sets</title>
-          <p>
             <sbsgroup widths="25% 25% 45%" valign="middle">
               <sidebyside>
                 <p>Set of Real Numbers</p>
@@ -398,12 +399,12 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                 </p>
 <!--                <figure xml:id="figure-interval-closed-1-to-open-3">  -->
                     <image xml:id="interval-closed-1-to-open-3">
-                      <latex-image-code><![CDATA[\begin{tikzpicture} 
+                      <latex-image-code><![CDATA[\begin{tikzpicture}
                       \fill[color=red] (0,.5) circle (.1cm);
                       \draw[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$1$};
-                      \node[anchor=south, color=red] at (3,-.1) {$3$}; 
+                      \node[anchor=south, color=red] at (3,-.1) {$3$};
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
 <!--                  </figure>  -->
@@ -417,12 +418,12 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                 </p>
 <!--                <figure xml:id="figure-interval-closed-neg1-to-closed-4">  -->
                     <image xml:id="interval-closed-neg1-to-closed-4">
-                      <latex-image-code><![CDATA[\begin{tikzpicture} 
+                      <latex-image-code><![CDATA[\begin{tikzpicture}
                       \fill[color=red] (0,.5) circle (.1cm);
                       \fill[color=red] (3,.5) circle (.1cm);
                       \draw[color=red] (0.1,.5) -- (2.9,.5);
                       \node[anchor=south, color=red] at (0,-.1) {$-1$};
-                      \node[anchor=south, color=red] at (3,-.1) {$4$}; 
+                      \node[anchor=south, color=red] at (3,-.1) {$4$};
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
 <!--                  </figure>  -->
@@ -436,12 +437,12 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                 </p>  <!-- FIX THIS ON THE GRAPH MAKER FILE SO THE CIRCLE IS FILLED IN. I THINK THE CODE HERE IS NOW CORRECT -->
 <!--                <figure xml:id="figure-interval-less-equal-5">  -->
                     <image xml:id="interval-less-equal-5">
-                      <latex-image-code><![CDATA[\begin{tikzpicture} 
+                      <latex-image-code><![CDATA[\begin{tikzpicture}
                       \fill[color=red] (3,.5) circle (.1cm);
-                      \draw[color=red,<-] (0,.5) -- (2.9,.5); 
-                      \draw[color=red](1.5,.4) -- (1.5, .6); 
-                      \node[anchor=south, color=red] at (1.5,-.1) {$0$}; 
-                      \node[anchor=south, color=red] at (3,-.1) {$5$}; 
+                      \draw[color=red,<-] (0,.5) -- (2.9,.5);
+                      \draw[color=red](1.5,.4) -- (1.5, .6);
+                      \node[anchor=south, color=red] at (1.5,-.1) {$0$};
+                      \node[anchor=south, color=red] at (3,-.1) {$5$};
                       \end{tikzpicture}]]></latex-image-code>
                       </image>
 <!--                    </figure>  -->
@@ -455,7 +456,7 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
                   </p>
 <!--                  <figure xml:id="figure-interval-greater-neg2">  -->
                     <image xml:id="interval-greater-neg2">
-                      <latex-image-code><![CDATA[\begin{tikzpicture} 
+                      <latex-image-code><![CDATA[\begin{tikzpicture}
                       \draw[color=red] (0,.5) circle (.1cm);
                       \draw[color=red, ->] (0.1,.5) -- (3,.5);
                       \draw[color=red](1.2,.4) -- (1.2, .6);
@@ -466,7 +467,6 @@ arrow to indicate that the interval extends indefinitely in one (or both) direct
 <!--                    </figure>  -->
                   </sidebyside>
                 </sbsgroup>
-              </p>
             </example>
 <p>We will need to combine sets. Intersection and union are two basic ways to combine sets. We define both of these concepts below.</p>
 
@@ -487,19 +487,18 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
     <m>A \cup B = \{1, 2, 3, 4, 6\}.</m>
   </p>
 </example>
-            
+
             <example xml:id="example-intersection-union-intervals">
             <title>Interval Intersection and Union</title>
             <p>If <m>A = [-5, 3)</m> and <m>B=(1,\infty),</m> then we can find <m>A \cap B</m> and
             <m>A \cup B</m> graphically.</p>
-            <p>
             <sbsgroup widths="45% 50%" valign="middle">
               <sidebyside>
                 <p>First, sketch the graphs of <m>A</m> and <m>B</m>.
                 </p>
 <!--                <figure xml:id="figure-intervals-overlap">  -->
                     <image xml:id="intervals-overlap">
-                      <latex-image-code><![CDATA[\begin{tikzpicture} 
+                      <latex-image-code><![CDATA[\begin{tikzpicture}
                       \fill[color=blue] (-5,1) circle (.1cm);
                       \draw[color=blue] (3,1) circle (.1cm);
                       \draw[color=blue] (-4.9,1)--(2.9,1);
@@ -513,7 +512,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                       \draw[black] (3,-.1)--(3, .1);
                       \node[black] at (3, -.5) {$3$};
                       \node[color=blue] at (-3,-1) {$A=[-5,3)$};
-                      \node[color=green] at (2,-1) {$B=(1,\infty)$}; 
+                      \node[color=green] at (2,-1) {$B=(1,\infty)$};
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
 <!--                  </figure>  -->
@@ -523,7 +522,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                 </p>
 <!--                <figure xml:id="figure-intervals-overlap-intersection">  -->
                     <image xml:id="intervals-overlap-intersection">
-                      <latex-image-code><![CDATA[\begin{tikzpicture} 
+                      <latex-image-code><![CDATA[\begin{tikzpicture}
                       \fill[color=blue] (-5,1) circle (.1cm);
                       \draw[color=blue] (3,1) circle (.1cm);
                       \draw[color=blue] (-4.9,1)--(2.9,1);
@@ -538,7 +537,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                       \draw[red] (1,0) circle (.1cm);
                       \draw[red] (3,0) circle (.1cm);
                       \draw[red] (1.1,0)--(2.9,0);
-                      \node[red] at (2,-1) {$A\cap B =(1,3)$}; 
+                      \node[red] at (2,-1) {$A\cap B =(1,3)$};
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
  <!--                 </figure> -->
@@ -548,7 +547,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                 </p>
 <!--                <figure xml:id="figure-intervals-overlap-union">  -->
                     <image xml:id="intervals-overlap-union">
-                      <latex-image-code><![CDATA[\begin{tikzpicture} 
+                      <latex-image-code><![CDATA[\begin{tikzpicture}
                       \fill[color=blue] (-5,1) circle (.1cm);
                       \draw[color=blue] (3,1) circle (.1cm);
                       \draw[color=blue] (-4.9,1)--(2.9,1);
@@ -563,20 +562,18 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                       \node[black] at (3, -.5) {$3$};
                       \draw[red,->] (-5, 0) -- (5,0);
                       \fill[color=red] (-5,0) circle (.1cm);
-                      \node[red] at (0,-1) {$A\cup B =[-5,\infty)$}; 
+                      \node[red] at (0,-1) {$A\cup B =[-5,\infty)$};
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
 <!--                  </figure>  -->
-              </sidebyside>  
+              </sidebyside>
               </sbsgroup>
-              </p>
               </example>
               <p>Here are slightly more complicated situations where the set is in two separate pieces.</p>
-            
+
             <example xml:id="example-more-intervals">
-            <title>More Intervals</title> 
+            <title>More Intervals</title>
             <p>Express the following sets of numbers using interval notation:</p>
-            <p>
             <sbsgroup widths="25% 25% 45%" valign="middle">
               <sidebyside>
                 <p>Set of Real Numbers</p>
@@ -592,14 +589,14 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                 </p>
 <!--                <figure xml:id="figure-interval-less-neg2-great-2">  -->
                     <image xml:id="interval-less-neg2-great-2">
-                      <latex-image-code><![CDATA[\begin{tikzpicture} 
+                      <latex-image-code><![CDATA[\begin{tikzpicture}
                       \fill[color=red] (-1.0,0) circle (.1cm);
-                      \fill[color=red] (1,0) circle (.1cm);      
+                      \fill[color=red] (1,0) circle (.1cm);
                       \draw[red, <-] (-2,0) -- (-1,0);
                       \draw[red, ->] (1,0) -- (2,0);
                       \draw[black] (-.9,0) -- (.9,0);
                       \node[black] at (-1.2, -.5) {$-2$};
-                      \node[black] at (1, -.5) {$2$}; 
+                      \node[black] at (1, -.5) {$2$};
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
 <!--                  </figure>  -->
@@ -613,17 +610,16 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
                 </p>
 <!--                <figure xml:id="figure-interval-neq-3">  -->
                     <image xml:id="interval-neq-3">
-                      <latex-image-code><![CDATA[\begin{tikzpicture} 
+                      <latex-image-code><![CDATA[\begin{tikzpicture}
                       \draw[color=red] (0.0,0) circle (.1cm);
                       \draw[red, <-] (-2,0) -- (-.1,0);
                       \draw[red, ->] (.1,0) -- (2,0);
-                      \node[black] at (0, -.5) {$3$}; 
+                      \node[black] at (0, -.5) {$3$};
                       \end{tikzpicture}]]></latex-image-code>
                     </image>
 <!--                  </figure>  -->
               </sidebyside>
             </sbsgroup>
-          </p>
         </example>
           <assemblage>
           <title>WeBWorK: Entering Union <m>\cup</m> and Not Equal <m>\neq</m></title>
@@ -643,10 +639,10 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
   <subsection xml:id="cartesian-coordinates">
     <title>The Cartesian Coordinate Plane</title>
       <p>Math became far more intuitive and powerful when people learned to marry the precision of algebra to the visual intuition of geometry. Simply put, we seek to find a way to draw algebraic things. Let's start with the Cartesian Coordinate Plane, named in honor of the 17th century philosopher, mathematician and scientist, Rene Decartes.</p>
-      <p>Imagine two real number lines crossing at a right angle at <m>0</m> as drawn below.
-<!--        <figure xml:id="figure-axes-no-grid">  -->
+      <p>Imagine two real number lines crossing at a right angle at <m>0</m> as drawn below.</p>
+      <sidebyside>
           <image xml:id="axes-no-grid">
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image-code><![CDATA[\begin{tikzpicture}
             \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
             \draw[black,<->] (0,-5) -- (0,5) node[anchor=south east] {$y$};
             \foreach \x in {-4,...,-1}
@@ -656,16 +652,15 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
             \foreach \y in {-4,...,-1}
                 \draw[black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
             \foreach \y in {1,...,4}
-                \draw[black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$}; 
+                \draw[black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
             \end{tikzpicture}]]></latex-image-code>
           </image>
-<!--        </figure>  -->
-      </p>
+        </sidebyside>
       <p>The horizontal number line is usually called the <m>x</m>-axis while the vertical number line is usually called the <m>y</m>-axis. As with the usual number line, we imagine these axes extending off indefinitely in both directions. Having two number lines enables us to locate the positions of points off of the number lines as well as points on the lines themselves.</p>
-      <p>For example, consider the point <m>P</m> shown below:
-<!--      <figure xml:id="figure-axes-no-grid-P">  -->
-          <image xml:id="axes-no-grid-P"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+      <p>For example, consider the point <m>P</m> shown below:</p>
+      <sidebyside>
+          <image xml:id="axes-no-grid-P">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
             \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
             \draw[black,<->] (0,-5) -- (0,5) node[anchor=south east] {$y$};
             \foreach \x in {-4,...,-1}
@@ -680,16 +675,16 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
             \draw[red, dashed] (2,0) -- (2,-4);
             \fill[red] (2,-4) circle (.15cm);
             \node[red] at (2.5,-4) {\LARGE $P$};
-            \end{tikzpicture}]]>        
+            \end{tikzpicture}]]>
             </latex-image-code>
           </image>
-<!--        </figure>  -->
-       To use the numbers on the axes to label this  point, imagine dropping a vertical line from the <m>x</m>-axis to <m>P</m> and extending a horizontal line from the <m>y</m>-axis to <m>P</m>. This process is sometimes called <q>projecting</q> the point <m>P</m> to the <m>x</m>- (respectively <m>y</m>-) axis. We then locate the point <m>P</m> using the ordered pair <m>(2,-4).</m> The first number in the ordered pair is the <m>x</m>-coordinate and the second is the <m>y</m>-coordinate. Taken together, the ordered pair <m>(2, -4)</m> gives the position of the point <m>P</m> with respect to the <m>x</m> and <m>y</m> axes.
+        </sidebyside>
+        <p>To use the numbers on the axes to label this  point, imagine dropping a vertical line from the <m>x</m>-axis to <m>P</m> and extending a horizontal line from the <m>y</m>-axis to <m>P</m>. This process is sometimes called <q>projecting</q> the point <m>P</m> to the <m>x</m>- (respectively <m>y</m>-) axis. We then locate the point <m>P</m> using the ordered pair <m>(2,-4).</m> The first number in the ordered pair is the <m>x</m>-coordinate and the second is the <m>y</m>-coordinate. Taken together, the ordered pair <m>(2, -4)</m> gives the position of the point <m>P</m> with respect to the <m>x</m> and <m>y</m> axes.
       </p>
-      <p>Notice that the order in the ordered pair is important: if we wish to plot the point <m>(-4, 2),</m> we would move to the left <m>4</m> units from the origin and then move upwards <m>2</m> units.
- <!--     <figure xml:id="figure-axes-no-grid-P-Q">  -->
-          <image xml:id="axes-no-grid-P-Q"> 
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+      <p>Notice that the order in the ordered pair is important: if we wish to plot the point <m>(-4, 2),</m> we would move to the left <m>4</m> units from the origin and then move upwards <m>2</m> units.</p>
+      <sidebyside>
+          <image xml:id="axes-no-grid-P-Q">
+            <latex-image-code><![CDATA[\begin{tikzpicture}
             \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
             \draw[black,<->] (0,-5) -- (0,5) node[anchor=south east] {$y$};
             \foreach \x in {-4,...,-1}
@@ -711,12 +706,12 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
             \end{tikzpicture}]]>
             </latex-image-code>
           </image>
-<!--        </figure>  -->
-          </p>
+        </sidebyside>
           <p>The axes divide the plane into four regions called <term>quadrants</term>. They are labeled <m>Q1, Q2, Q3</m> and <m>Q4</m> and proceed counterclockwise around the plane as shown in the graph below. Note that point <m>P</m> is in quadrant 4, <m>Q4,</m> and <m>Q</m> is in quadrant 2, <m>Q2.</m>
-<!--          <figure xml:id="figure-axes-no-grid-P-Q-quadrants">  -->
+        </p>
+        <sidebyside>
           <image xml:id="axes-no-grid-P-Q-quadrants"> <!--NEEDS TO BE UPDATED-->
-            <latex-image-code><![CDATA[\begin{tikzpicture} 
+            <latex-image-code><![CDATA[\begin{tikzpicture}
             \draw[black,<->] (-5,0) -- (5,0) node[anchor=north west] {$x$};
             \draw[black,<->] (0,-5) -- (0,5) node[anchor=south east] {$y$};
             \foreach \x in {-4,...,-1}
@@ -738,21 +733,20 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
             \end{tikzpicture}]]>
             </latex-image-code>
           </image>
-<!--        </figure>  -->
-      </p>
+        </sidebyside>
     </subsection>
     <subsection xml:id="math-expressions">
     <title>Mathematical expressions</title>
     <p>You should have be able to simplify basic mathematical expressions with variables and know how to solve an equation for a variable.  Below are a few examples for your review.</p>
     <example xml:id="example-evaluate-expression">
-      <title>Evaluate an Expression</title> 
+      <title>Evaluate an Expression</title>
       <p>Evaluate <m>2p + \dfrac{r^2}{3}</m> for <m>p = -1</m> and <m>r = 4</m>.</p>
       <p>Solution: Substitute <m>-1</m> for <m>p</m> and <m>4</m> for <m>r</m>, and simplify:
       <me>2(-1) + \frac{4^2}{3} = -2 + \frac{16}{3} = \frac{-6}{3} + \frac{16}{3} = \frac{10}{3}\checkmark</me>
       </p>
     </example>
   <example xml:id="example-simplify-expression">
-    <title>Simplify an Expression</title> 
+    <title>Simplify an Expression</title>
     <p>Combine like terms: <m>3(2x+5)-4x</m>.</p>
     <p>In this case one may remove the parentheses by multiplying out the expression <m>3(2x+5)</m> so that the like terms may be combined.
     <md>
@@ -765,7 +759,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
   </p>
 </example>
 <example xml:id="example-solve-for-x">
-  <title>Solve an Equation</title> 
+  <title>Solve an Equation</title>
   <p>Solve for <m>x</m>: <m>\dfrac{x}{3}+2=\dfrac{x}{4}</m></p>
   <p>There are many ways to start this problem.  If you don't like fractions you may "clear" the denominators by multiplying through both sides of the equation by <m>12</m>.  Then proceed to combine the <m>x</m>'s on one side.
   <md>
@@ -779,7 +773,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
 </p>
 </example>
 <example xml:id="example-solve-for-C">
-  <title>Solve an Equation</title> 
+  <title>Solve an Equation</title>
   <p>Solve for <m>C</m>: <m>S = C + rC</m></p>
   <p>The equation needs to be rearranged so that <m>C</m> is isolated. This can be done by factoring <m>C</m> out of the right side then dividing by <m>1+r</m>:
   <md>
@@ -803,20 +797,20 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
       <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 196 pg 177-->
       <p>Multipy <m>a^3</m> times <m>a^2</m>:
         <md>
-          <mrow>a^3a^2 \amp\amp\amp \text{Represent <m>a^4</m> and <m>a^2</m> as products}</mrow>
+          <mrow>a^3a^2 \amp\amp\amp \text{Represent }a^4\text{ and }a^2\text{ as products}</mrow>
           <mrow>(aaa)(aa) \amp\amp\amp \text{Regroup}</mrow>
           <mrow>(aaaaa) \amp\amp\amp \text{Represent the product with an exponent}</mrow>
           <mrow>a^5\amp\amp\amp\text{Our Solution} \checkmark</mrow>
         </md>
       </p>
       </example>
-      <p>The example shows that <m>a^3</m> times <m>a^2</m> just represents <m>3+2</m> <m>a</m>'s multiplied together.  Similarly, <m>(a^m)(a^n)</m> just represents <m>(m+n)</m> <m>a</m>'s multiplied together. This is known as the <term>product rule of exponents</term>: </p>
+      <p>The example shows that <m>a^3</m> times <m>a^2</m> just represents <m>3+2</m> <m>a</m>'s multiplied together.  Similarly, <m>(a^m)(a^n)</m> just represents <m>(m+n)</m> <m>a</m>'s multiplied together. This is known as the <term>product rule of exponents</term>:
       <mdn>
         <mrow xml:id="exponents-product-rule">\text{Product Rule of Exponents: }
           a^m a^n=a^{m+n}
         </mrow>
       </mdn>
-      Note: In the expression <m>a^n</m>, <m>n</m> is called the <b>exponent</b> and <m>a</m> is called the <b>base</b>.
+      Note: In the expression <m>a^n</m>, <m>n</m> is called the <term>exponent</term> and <m>a</m> is called the <term>base</term>.</p>
       <assemblage>
         <title>WeBWorK: Entering Exponents</title>
         <p>Type
@@ -858,29 +852,31 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
         </md>
       </p>
       </example>
-      <p>Because the two <m>a</m>''s represented by <m>a^2</m> cancel two of the five <m>a</m>'s represented by <m>a^5</m>, there are <m>5-2=3</m> <m>a</m>'s left after cancelling.  Thus, dividing <m>a^5</m> by <m>a^2</m> just amounts to subtracting the exponents <m>\dfrac{a^5}{a^2} = a^{5-2}= a^3</m>. In a similar way, <m>\dfrac{a^m}{a^n} = a^{m-n}</m>. This is known as the <term>quotient rule of exponents</term>:</p>
+      <p>Because the two <m>a</m>''s represented by <m>a^2</m> cancel two of the five <m>a</m>'s represented by <m>a^5</m>, there are <m>5-2=3</m> <m>a</m>'s left after cancelling.  Thus, dividing <m>a^5</m> by <m>a^2</m> just amounts to subtracting the exponents <m>\dfrac{a^5}{a^2} = a^{5-2}= a^3</m>. In a similar way, <m>\dfrac{a^m}{a^n} = a^{m-n}</m>. This is known as the <term>quotient rule of exponents</term>:
       <mdn>
         <mrow xml:id="exponents-quotient-rule"> \text{Quotient Rule of Exponents: }
           \frac{a^m}{ a^n} =a^{m-n}
         </mrow>
       </mdn>
-
+    </p>
       <example>
         <title>Quotient Rule of Exponents</title>
-        <p>Divide:</p>
+        <p>Divide:
         <md>
           <mrow>\dfrac{7^5 x^8}{7^4 x^3} \amp\amp\amp \text{Subtract the exponents on like bases, \(5-4 = 1\) and \(8-3=5\)}</mrow>
           <mrow>7^1x^5 \amp\amp\amp \text{Note that \(7^1 = 7\) since there is only one \(7\) to multiply.}</mrow>
           <mrow>7x^5 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
+      </p>
       </example>
       <example>
         <title>Quotient Rule of Exponents</title>
-        <p>Simplify:</p>
+        <p>Simplify:
         <md>
           <mrow>\dfrac{5a^3 b^5 c^2}{2ab^3 c} \amp\amp\amp \text{Subtract exponents on \(a, b\) and \(c\)}</mrow>
           <mrow>\frac{5}{2} a^2 b^2 c\amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
+      </p>
       </example>
       <p>A third property we will look at will have an exponent problem raised to a second exponent. This is investigated in the following example:</p>
        <example>
@@ -889,18 +885,19 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
         <p>Multiply:
         <md>
           <mrow>\left(a^2\right)^3 \amp\amp\amp \text{This means we have three \(a^2\)'s multiplied together}</mrow>
-          <mrow>a^2 \cdot a^2 \cdot a^2 \amp\amp\amp \text{Each <m>a^2</m> represent the produce of two <m>a</m>'s} </mrow>
-          <mrow>(aa)(aa)(aa) \amp\amp\amp \text{Three groups of two make six <m>a</m>'s in all multiplied together}</mrow>
+          <mrow>a^2 \cdot a^2 \cdot a^2 \amp\amp\amp \text{Each }a^2\text{ represent the produce of two }a\text{'s}</mrow>
+          <mrow>(aa)(aa)(aa) \amp\amp\amp \text{Three groups of two make six }a\text{'s in all multiplied together}</mrow>
           <mrow>a^6 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
       </p>
       </example>
-      <p>Since three groups of two is <m>3 \cdot 2 = 6</m>, a quicker method to arrive at the solution is to just multiply the exponents, <m>(a^2)^3 = a^{2\cdot 3} = a^6</m>. This is known as the <term>power of a power rule of exponents</term>: </p>
+      <p>Since three groups of two is <m>3 \cdot 2 = 6</m>, a quicker method to arrive at the solution is to just multiply the exponents, <m>(a^2)^3 = a^{2\cdot 3} = a^6</m>. This is known as the <term>power of a power rule of exponents</term>:
       <mdn>
         <mrow xml:id="exponents-power-of-a-power-rule"> \text{Power of a Power Rule of Exponents: }
           (a^m)^n=a^{mn}
         </mrow>
       </mdn>
+    </p>
       <p>This property is often combined with two other properties which we will investigate now.</p>
       <example>
         <title>Powers of Products</title>
@@ -918,20 +915,18 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
         <m>3,</m> and put it on each factor in parentheses,
         <m>(ab)^3 = a^3b^3</m>. This is known as the
         <term>power of a product rule of exponents</term>:
-      </p>
-
       <mdn>
         <mrow xml:id="exponents-power-of-a-product-rule"> \text{Power of a Product Rule of Exponents: }
           (ab)^m=a^m b^m
         </mrow>
       </mdn>
-
+    </p>
       <p>It is important to be careful to only use the power of a product rule with multiplication inside parentheses. This property does NOT work if there is addition or subtraction inside the parentheses.</p>
-      <aside>
-      <alert>WARNING:</alert>
+      <assemblage>
+      <title>WARNING:</title>
       <!-- All but the last line was written by rac.  Cite Beginning and Intermediate Algebra by Tyler Wallace Warning 204 pg 179-->
-      <p>The Power of a Product Rule only applies to products.  It does <b>not</b> apply to sums for any exponent not equal to <m>1</m>. For example, 
-      <md> 
+      <p>The Power of a Product Rule only applies to products.  It does <term>not</term> apply to sums for any exponent not equal to <m>1</m>. For example,
+      <md>
         <mrow>(1+2)^2 = 3^2 = 9 \amp\amp \text{But,}</mrow>
         <mrow>1^2+2^2 = 1+4 = 5 \amp\amp \text{So, }</mrow>
         <mrow>(1+2)^2 \neq 1^2+2^2 \amp\amp \text{The rule does not hold for a sum.}</mrow>
@@ -940,7 +935,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
           <mrow>(a+b)^m\ne a^m+b^m \amp\amp\amp \text{These are NOT equal if \(m\ne 1\), beware of this error!}</mrow>
         </md>
       </p>
-    </aside>
+    </assemblage>
       <p>Another property that is very similar to the power of a product rule is considered next.</p>
       <example>
         <title>Powers of Quotients</title>
@@ -957,21 +952,20 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
       <p>A quicker method to arrive at the solution is to put the exponent on every factor in both the numerator and denominator,
         <m>\left(\frac{a}{b} \right)^3=\frac{a^3}{b^3}</m>. This is known as the
         <term>power of a quotient rule of exponents</term>:
-      </p>
-
       <mdn>
         <mrow xml:id="exponents-power-of-a-quotient-rule"> \text{Power of a Quotient Rule of Exponents: }
           \left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}
         </mrow>
       </mdn>
-      
+      </p>
+
       <p>The power of a power, product and quotient rules are often used together to simplify expressions. This is shown in the following examples:</p>
       <example>
         <title>Simplify Exponents</title>
         <!-- Cite Beginning and Intermediate Algebra by Tyler Wallace Example 206 pg 179-->
         <p>Simplify.
         <md>
-          <mrow>(x^3y)^4 \amp\amp\amp \text{Apply the exponent <m>4</m> to each factor}</mrow>
+          <mrow>(x^3y)^4 \amp\amp\amp \text{Apply the exponent }4\text{ to each factor}</mrow>
           <mrow>(x^3)^4 y^4 \amp\amp\amp \text{Multiply powers}</mrow>
           <mrow>x^{12} y^4 \amp\amp\amp \text{Our Solution}\checkmark</mrow>
         </md>
@@ -1021,7 +1015,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
       </p>
       <p>In this lesson we have discussed five different exponent properties. These rules are summarized in the following table:</p>
 
-<!--      <table>  -->
+      <sidebyside>
         <tabular top="major" halign="center">
             <col halign="left" />
             <col halign="right" />
@@ -1050,7 +1044,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
               <cell><m>\left(\frac{a}{b} \right)^m=\frac{a^m}{b^m}</m><xref ref="exponents-power-of-a-quotient-rule" /></cell>
             </row>
           </tabular>
-<!--        </table>  -->
+        </sidebyside>
         <p>These five properties are often mixed up in the same problem. Often there is a bit of flexibility as to which property is used first. However, order of operations still applies to a problem. For this reason it is our suggestion to simplify inside any parentheses first, then simplify any exponents (using power rules), and finally simplify any multiplication or division (using product and quotient rules). This is illustrated in the next few examples. </p>
         <example>
         <title>Simplify Exponents</title>
@@ -1089,68 +1083,68 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
       <p>These problems can quickly become quite involved. Remember to follow order of operations as a guide, simplify inside parenthesis first, then power rules, then product and quotient rules.</p>
     </subsection>
 
-            
+
 <!--             <b>Example 3A-16:</b>
             <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 212 pg 181
             <br>
-            
+
             <center>
             <table class = "center">
-            
+
               <tr>
                 <td align="right">$\dfrac{3m^8 n^{12}}{(m^2 n^3)^3}$</td>
                 <td>Use power rule in denominator</td>
-            
+
               </tr>
               <tr>
                 <td>$\dfrac{3m^8 n^{12}}{m^6 n^9}$</td>
                 <td>Use quotient rule</td>
-            
+
               </tr>
              <tr>
                 <td>$3m^2 n^3$</td>
                 <td>Our solution</td>
-            
+
               </tr>
             </table>
-            
+
             </center> </p>
-            
+
             <b>Example 3A-17:</b>
             <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 213 pg 181
             <br>
-            
+
             <center>
             <table class = "center">
-            
+
               <tr>
                 <td align="right">$\left(\dfrac{3a b^2(2a^4 b^2)^3}{6a^5 b^7}\right)^2$</td>
                 <td>Simplify inside parenthesis first, using power rule in numerator</td>
-            
+
               </tr>
               <tr>
                 <td align="right">$\left(\dfrac{3a b^2(8a^{12} b^6)}{6a^5 b^7}\right)^2$</td>
                 <td>Simplify numerator using product rule</td>
-            
+
               </tr>
               <tr>
                 <td align="right">$\left(\dfrac{24a^{13} b^8)}{6a^5 b^7}\right)^2$</td>
                 <td>Simplify using the quotient rule</td>
-            
+
               </tr>
               <tr>
                 <td align="right">$(4a^8 b)^2$</td>
                 <td>Now that the parenthesis are simplified, use the power rules</td>
-            
+
               </tr>
             <tr>
                 <td align="right">$16a^{16}b^2$</td>
                 <td>Our Solution</td>
-            
+
               </tr>
-            
+
             </table>
-            
+
             </center> </p> ##>-->
            <subsection>
       <title>Negative Exponents</title>
@@ -1212,7 +1206,7 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
         </md>
       </p>
       </example>
-      <p>This example illustrates an important property of exponents. 
+      <p>This example illustrates an important property of exponents.
       <mdn>
         <mrow xml:id="exponents-negative-power-rule"> \text{Negative Power Rule of Exponents: }
           a^{-n}= \frac{1}{a^n} \text{ if } a \neq 0
@@ -1235,10 +1229,10 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
         In the example above, we simplified the reciprocal of the fraction by using the method for dividing fractions,
         <md>
           <mrow>\frac{1}{\frac{a}{b}} = 1 \cdot \frac{b}{a} = \frac{b}{a} \amp\amp\amp \text{}</mrow>
-        </md>        
+        </md>
       </p>
       <p>Following is the rule for negative exponents: </p>
-<!--      <table> -->
+      <sidebyside>
         <tabular top="major" halign="center">
             <col halign="center" />
             <!--  -->
@@ -1261,34 +1255,34 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
             </row>
 -->
           </tabular>
-<!--        </table>  -->
+        </sidebyside>
 <!--        <p>Negative exponents can be combined in several different ways. As a general rule if we think of our expression as a fraction, bases with negative exponents in the numerator must be moved to the denominator with a positive exponent.  Likewise, bases with negative exponents in the denominator need to be moved to the numerator. When the base with exponent moves, the exponent is now positive.</p>
 -->
         <!--This is illustrated in the following example. </p>
-            
-            
+
+
             <b>Example 3A-21:</b>
             <!## Cite Beginning and Intermediate Algebra by Tyler Wallace Example 217 pg 184
             <br>
-            
+
             <center>
             <table class = "center">
-            
+
               <tr>
                 <td align="right">$\dfrac{a^3b^{-2}c}{2d^{-1}e^{-4}f^2}$</td>
                 <td>Negative exponents on $b, d$, and $e$ need to "flip"</td>
-            
+
               </tr>
               <tr>
                 <td align="right">$\dfrac{a^3 c d e^4}{2 b^2 f^2}$</td>
                 <td>Our Solution</td>
-            
+
               </tr>
             </table>
-            
+
             </center> </p><p>As we simplified our fraction we took special care to move the bases that had a negative exponent, but the expression itself did not become negative because of those exponents. Also, it is important to remember that exponents only effect what they are attached to. The $2$ in the denominator of the above example does not have an explicit exponent (which is an exponent of positive $1$), so it does not move to the numerator with the $d$. </p>-->
       <p>We now have the following nine properties of exponents. It is important that we are very familiar with all of them. </p>
-<!--      <table>  -->
+      <sidebyside>
         <tabular top="major" halign="center">
             <col halign="center" />
             <col halign="center" />
@@ -1313,46 +1307,46 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
               <cell><m>\left( \dfrac{a}{b}\right)^{-m}=\dfrac{b^m}{a^m}</m></cell>
             </row>
           </tabular>
-<!--        </table>  -->
+        </sidebyside>
         <historical>
     <title>World View Note</title>
     <p>Nicolas Chuquet, the French mathematician of the 15th century wrote <m>12^{1\overline{m}}</m> to indicate <m>12x^{-1}</m>. This was the first known use of the negative exponent.</p>
   </historical>
       </subsection>
-            
-            
-            
-            
- <!--     
-           
-            
-            
+
+
+
+
+ <!--
+
+
+
             <!##ADD A PROBLEM ABOUT FACTORING: GUESS AND CHECK METHOD, THEN ADD A FEW PROBLEMS TO THE WW SET##>
-            
+
             <!##
             <p>Important Facts about the Cartesian Coordinate Plane</p>
-            
+
             <p><center><table>
               <tr>
                 <td>(a; b) and (c; d) represent the same point in the plane if and only if a = c and b = d.</td>
-            
+
               </tr>
               <tr>
                 <td>(x; y) lies on the x-axis if and only if y = 0.</td>
-            
+
               </tr>
             <tr>
                 <td>(x; y) lies on the y-axis if and only if x = 0.</td>
-            
+
               </tr>
             <tr>
                 <td>The origin is the point (0; 0). It is the only point common to both axes.</td>
-            
+
               </tr>
             </table>
             </center></p>
-            
-            
+
+
             <p>Example 1.1.2. Plot the following points: A(5; 8), B
             􀀀
             􀀀5
@@ -1363,79 +1357,79 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
             positive; to the left if it is negative. Next, we move up if the y-coordinate is positive or down if it
             is negative. If the x-coordinate is 0, we start at the origin and move along the y-axis only. If the
             y-coordinate is 0 we move along the x-axis only.</p>
-            
+
             <p>GRAPH</p>
-            
+
             <p>The axes divide the plane into four regions called quadrants. They are labeled with Roman
             numerals and proceed counterclockwise around the plane:</p>
-            
+
             <p>GRAPH</p>
-            
+
             <p>1.1 Sets of Real Numbers and the Cartesian Coordinate Plane</p>
-            
+
             <p>For example, (1; 2) lies in Quadrant I, (􀀀1; 2) in Quadrant II, (􀀀1;􀀀2) in Quadrant III and (1;􀀀2)
             in Quadrant IV. If a point other than the origin happens to lie on the axes, we typically refer to
             that point as lying on the positive or negative x-axis (if y = 0) or on the positive or negative y-axis
             (if x = 0). For example, (0; 4) lies on the positive y-axis whereas (􀀀117; 0) lies on the negative
             x-axis. Such points do not belong to any of the four quadrants.</p>
-            
-            
-            
+
+
+
             <p>One of the most important concepts in all of Mathematics is symmetry.11 There are many types of
             symmetry in Mathematics, but three of them can be discussed easily using Cartesian Coordinates.</p>
-            
+
             <p>Definition 1.3. Two points (a; b) and (c; d) in the plane are said to be</p>
             <p><center><table>
               <tr>
                 <td>symmetric about the x-axis if a = c and b = 􀀀d</td>
-            
+
               </tr>
               <tr>
                 <td>symmetric about the y-axis if a = 􀀀c and b = d</td>
-            
+
               </tr>
             <tr>
                 <td>symmetric about the origin if a = 􀀀c and b = 􀀀d</td>
-            
+
               </tr>
             </table>
             </center></p>
-            
-            
+
+
             <p>Schematically,</p>
-            
+
             <p>GRAPH</p>
-            
+
             <p>In the above figure, P and S are symmetric about the x-axis, as are Q and R; P and Q are
             symmetric about the y-axis, as are R and S; and P and R are symmetric about the origin, as are
             Q and S.</p>
             <p>Example 1.1.3. Let P be the point (􀀀2; 3). Find the points which are symmetric to P about the:</p>
-            
+
             <p><center><table>
               <tr>
                 <td>1. x-axis</td>
                 <td>2. y-axis</td>
                 <td>3. origin</td>
               </tr>
-            
+
             </table>
             </center></p>
-            
-            
-            
+
+
+
             <p>Check your answer by plotting the points.</p>
             <p>Solution. The figure after Definition 1.3 gives us a good way to think about finding symmetric
             points in terms of taking the opposites of the x- and/or y-coordinates of P(􀀀2; 3).</p>
-            
+
             <p>1. To find the point symmetric about the x-axis, we replace the y-coordinate with its opposite
             to get (􀀀2;􀀀3).</p>
             <p>2. To find the point symmetric about the y-axis, we replace the x-coordinate with its opposite
             to get (2; 3).</p>
             <p>3. To find the point symmetric about the origin, we replace the x- and y-coordinates with their
             opposites to get (2;􀀀3).</p>
-            
+
             <p>GRAPH</p>
-            
+
             <p>One way to visualize the processes in the previous example is with the concept of a re
             ection. If
             we start with our point (􀀀2; 3) and pretend that the x-axis is a mirror, then the re
@@ -1446,24 +1440,24 @@ Said differently, the intersection of two sets is the overlap of the two sets-al
             ect across the x-axis and then the y-axis, we
             would go from (􀀀2; 3) to (􀀀2;􀀀3) then to (2;􀀀3), and so we would end up at the point symmetric
             to (􀀀2; 3) about the origin. We summarize and generalize this process below.</p>
-            
-            
+
+
             <p>Reflections</p>
             <p>To re
             ect a point (x; y) about the:</p>
-            
+
             <p><center><table>
               <tr>
                 <td>x-axis, replace y with 􀀀y.</td>
-            
+
               </tr>
               <tr>
                 <td>y-axis, replace x with 􀀀x.</td>
-            
+
               </tr>
             <tr>
                 <td>origin, replace x with 􀀀x and y with 􀀀y.</td>
-            
+
               </tr>
             </table>
             </center></p>
