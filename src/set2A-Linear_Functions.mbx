@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="section-2A-linear-functions">
   <title>Linear Functions</title>
   <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons
@@ -28,42 +29,42 @@ Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generat
   <p>There are two purposes of reintroducing this material in this course. The first is to frame the discussion as linear functions modeling behavior. The second is to deepen your understanding of the important concept of slope.</p>
   <p>Consider the following examples. Sam is a salesman-he earns a commission for each sale. Alice is a technical support representative-she earns <m>\$100</m> each day. The chart below shows their bank accounts over the week.</p>
 <sidebyside>
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" />
-        <col right="minor" />
-        <col />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor"/>
+        <col right="minor"/>
+        <col/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell>After this many days (<m>d</m>)</cell>
             <cell>Sam's bank account (<m>S</m>)</cell>
             <cell>Alice's bank account (<m>A</m>)</cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>0</m> (*what they started with)</cell>
             <cell><m>\$75</m></cell>
             <cell><m>\$750</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>1</m></cell>
             <cell><m>\$275</m></cell>
             <cell><m>\$850</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>2</m></cell>
             <cell><m>\$275</m></cell>
             <cell><m>\$950</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>3</m></cell>
             <cell><m>\$450</m></cell>
             <cell><m>\$1,050</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>4</m></cell>
             <cell><m>\$480</m></cell>
             <cell><m>\$1,150</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><m>5</m></cell>
             <cell><m>\$530</m></cell>
             <cell><m>\$1,250</m></cell>
@@ -88,9 +89,9 @@ before you can predict her bank account on any given day.
   </md>
   </p>
         <image xml:id="graph-Alice"> <!--set2A-Linear_Functions_00.png-->
-          <latex-image-code><![CDATA[\begin{tikzpicture}
-          \draw[line width=0.55mm,black,<->] (-.5,0) -- (10.5,0) node[anchor=north west] {d};
-          \draw[line width=0.55mm,black,<->] (0,-0.5) -- (0,9.5) node[anchor=south east] {A};
+          <latex-image>\begin{tikzpicture}
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-.5,0) -- (10.5,0) node[anchor=north west] {d};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-0.5) -- (0,9.5) node[anchor=south east] {A};
           \foreach \x in {1,...,10}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach [evaluate=\x as \y using int(200*\x)] \x in {1,...,9}
@@ -98,11 +99,11 @@ before you can predict her bank account on any given day.
           \draw[line width=0.75mm, domain=0:10.5,smooth,variable=\x,red] (0,3.75)--(10.5,9);
           \fill[color=red] (0,3.75) circle (.1cm);
           \node at (7,5) {$A(d)=100d+750$};
-          \end{tikzpicture}]]>
-          </latex-image-code>
+          \end{tikzpicture}
+          </latex-image>
         </image>
       </sidebyside>
-      <p>The <m>y</m>-intercept is relatively easy to understand. As discussed in <xref ref="subsubsection-intercepts" autoname="yes" />, the vertical intercept may be calculated from the formula of a line by evaluating the formula at <m>0</m>. Verbally, it is the dependent value when the independent variable is <m>0</m>; graphically, it is where the line crosses the <m>y</m>-axis. </p>
+      <p>The <m>y</m>-intercept is relatively easy to understand. As discussed in <xref ref="subsubsection-intercepts" text="type-global"/>, the vertical intercept may be calculated from the formula of a line by evaluating the formula at <m>0</m>. Verbally, it is the dependent value when the independent variable is <m>0</m>; graphically, it is where the line crosses the <m>y</m>-axis. </p>
       <example xml:id="example-determine-y-intercept">
           <title>Determine <m>y</m>-intercept Two Ways</title>
           <p>Determine the $y$-intercept for the line defined by the equation, $x + 3y = 6$.</p>
@@ -123,33 +124,33 @@ before you can predict her bank account on any given day.
       <title>But what about slope?</title>
       <p>One of the best ways to understand the idea of slope is to convince yourself that all of the following definitions of slope are actually the same.</p>
 <sidebyside>
-      <tabular top="major" bottom = "major" halign="center" left="minor" right="minor">
-        <col right="minor" width="30%" />
-        <col right="minor" width="30%" />
+      <tabular top="major" bottom="major" halign="center" left="minor" right="minor">
+        <col right="minor" width="30%"/>
+        <col right="minor" width="30%"/>
         <col width="30%"/>
         <!--  -->
-        <row bottom = "major" >
+        <row bottom="major">
           <cell colspan="3"><p><term>Definitions of Slope</term></p></cell>
         </row>
-        <row bottom = "major">
+        <row bottom="major">
             <cell><p>In our example</p></cell>
             <cell><p>In general</p></cell>
             <cell><p>On a graph</p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><p>Each day, Alice's bank account increases by <m>100</m>.</p>
           <p>So the slope is <m>100</m>.</p></cell>
           <cell><p>Each time the independent variable increases by <m>1</m>, the dependent variable increases by the slope.</p></cell>
           <cell><p>Each time you move to the right by <m>1</m>, the graph goes up (or down) by the slope.</p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><p>Between days <m>2</m> and <m>5</m>, Alice earns <m>\$300</m> in <m>3</m> days. <m>300/3=100</m>.</p>
           <p>Between days <m>1</m> and <m>3</m>, she earns <m>\$200</m> in <m>2</m> days. <m>200/2=100</m>.</p></cell>
           <cell><p>Take any two values of the independent variable with their corresponding values in the dependent variable, divide the change in the dependent variable's values by the change in the independent variable. This is the slope.</p></cell>
           <cell><p>Take any two points on the line.  The change in <m>y</m> divided by the change in <m>x</m> is the slope.</p>
           <p>This is often written as <m>m = \dfrac{\Delta y}{\Delta x}= \dfrac{y_2 - y_1}{x_2-x_1}</m> , or as <m>m = \dfrac{\mbox{rise}}{\mbox{run}}</m></p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
           <cell><p>The higher the slope, the faster Alice is making money.</p></cell>
           <cell><p>The higher the slope, the faster the dependent variable increases.</p></cell>
           <cell><p>The higher the slope, the faster the graph rises as you move to the right.</p></cell>
@@ -162,33 +163,33 @@ before you can predict her bank account on any given day.
           <p>A slope of <m>1</m>: each time you go over <m>1</m>, you also go up <m>1</m>.
           </p>
               <image xml:id="graph-slope-1">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
-                      \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
-                      \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
+                <latex-image>\begin{tikzpicture}
+                      \draw[line width=0.35mm,black,&lt;-&gt;] (-5,0) -- (5,0);
+                      \draw[line width=0.35mm,black,&lt;-&gt;] (0,-5) -- (0,5);
                       \draw[line width=0.75mm,red] (-5,-2)--(2,5);
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
           </sidebyside>
         <sidebyside>
           <p>A steep slope of perhaps <m>3</m> or <m>4</m>.
           </p>
               <image xml:id="graph-slope-steep">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
-                        \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
-                        \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
+                <latex-image>\begin{tikzpicture}
+                        \draw[line width=0.35mm,black,&lt;-&gt;] (-5,0) -- (5,0);
+                        \draw[line width=0.35mm,black,&lt;-&gt;] (0,-5) -- (0,5);
                         \draw[line width=0.75mm, blue] (-1.33,-5)--(2,5);
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
         </sidebyside>
         <sidebyside>
           <p>A gentle slope of perhaps <m>\frac{1}{2}</m>.
           </p>
               <image xml:id="graph-slope-gentle">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
-                      \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
-                      \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
+                <latex-image>\begin{tikzpicture}
+                      \draw[line width=0.35mm,black,&lt;-&gt;] (-5,0) -- (5,0);
+                      \draw[line width=0.35mm,black,&lt;-&gt;] (0,-5) -- (0,5);
                       \draw[line width=0.75mm,green] (-5,-2)--(5,1.5);
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
         </sidebyside>
         <sidebyside>
@@ -198,11 +199,11 @@ before you can predict her bank account on any given day.
            of a horizontal line is: <m>y = 0x + b</m> and simplified: <m>y = b</m>.</p>
          </paragraphs>
               <image xml:id="graph-slope-horizontal">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
-                      \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
-                      \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
+                <latex-image>\begin{tikzpicture}
+                      \draw[line width=0.35mm,black,&lt;-&gt;] (-5,0) -- (5,0);
+                      \draw[line width=0.35mm,black,&lt;-&gt;] (0,-5) -- (0,5);
                       \draw[line width=0.75mm,red] (-5,3)--(5,3);
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
         </sidebyside>
         <sidebyside>
@@ -211,11 +212,11 @@ before you can predict her bank account on any given day.
           <p>So the slope is negative. It is steep: maybe a <m>-2</m>.</p>
          </paragraphs>
               <image xml:id="graph-slope-negative">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
-                      \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
-                      \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
+                <latex-image>\begin{tikzpicture}
+                      \draw[line width=0.35mm,black,&lt;-&gt;] (-5,0) -- (5,0);
+                      \draw[line width=0.35mm,black,&lt;-&gt;] (0,-5) -- (0,5);
                       \draw[line width=0.75mm,blue] (-2,5)--(3,-5);
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
         </sidebyside>
         <sidebyside>
@@ -226,11 +227,11 @@ before you can predict her bank account on any given day.
           <p>The equation for a vertical line is just $x = c$ where $c$ is the $x$-intercept of the line.</p>
           </paragraphs>
               <image xml:id="graph-slope-vertical">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
-                      \draw[line width=0.35mm,black,<->] (-5,0) -- (5,0);
-                      \draw[line width=0.35mm,black,<->] (0,-5) -- (0,5);
+                <latex-image>\begin{tikzpicture}
+                      \draw[line width=0.35mm,black,&lt;-&gt;] (-5,0) -- (5,0);
+                      \draw[line width=0.35mm,black,&lt;-&gt;] (0,-5) -- (0,5);
                       \draw[line width=0.75mm,green] (-3,-5)--(-3,5);
-                      \end{tikzpicture}]]></latex-image-code>
+                      \end{tikzpicture}</latex-image>
               </image>
         </sidebyside>
       </sbsgroup>
@@ -247,20 +248,20 @@ before you can predict her bank account on any given day.
           <p>slope <m>= \frac{2}{1} = \frac{-2}{-1} = 2.\checkmark</m></p>
         </paragraphs>
               <image xml:id="graph-slope-line">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                       \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
-                      \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$x$};
-                      \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$y$};
+                      \draw[line width=0.55mm,black,&lt;-&gt;] (-6,0) -- (6,0) node[anchor=north west] {$x$};
+                      \draw[line width=0.55mm,black,&lt;-&gt;] (0,-6) -- (0,6) node[anchor=south east] {$y$};
                       \foreach \x in {-5,...,-1,1,2,...,5}
                           \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
                       \foreach \y in {-5,...,-1,1,2,...,5}
                           \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
                       \draw[line width=0.75mm,red] (-2.95,-5.9)--(2.95,5.9);
-                      \draw[dashed, line width=0.75mm,black,->] (1,2) -- (2,2) node[shift={(-.5,-0.5)}] {\Large $+1$};
-                      \draw[dashed, line width=0.75mm,black,->] (2,2) -- (2,4) node[shift={(.6,-.75)}] {\Large $+2$};
-                      \draw[dashed, line width=0.75mm,black,->] (-1,-2) -- (-2,-2) node[shift={(.5,0.5)}] {\Large $-1$};
-                      \draw[dashed, line width=0.75mm,black,->] (-2,-2) -- (-2,-4) node[shift={(-.6,.75)}] {\Large $-2$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \draw[dashed, line width=0.75mm,black,-&gt;] (1,2) -- (2,2) node[shift={(-.5,-0.5)}] {\Large $+1$};
+                      \draw[dashed, line width=0.75mm,black,-&gt;] (2,2) -- (2,4) node[shift={(.6,-.75)}] {\Large $+2$};
+                      \draw[dashed, line width=0.75mm,black,-&gt;] (-1,-2) -- (-2,-2) node[shift={(.5,0.5)}] {\Large $-1$};
+                      \draw[dashed, line width=0.75mm,black,-&gt;] (-2,-2) -- (-2,-4) node[shift={(-.6,.75)}] {\Large $-2$};
+                      \end{tikzpicture}</latex-image>
               </image>
         </sidebyside>
     </example>
@@ -306,20 +307,20 @@ before you can predict her bank account on any given day.
     </p>
   </paragraphs>
               <image xml:id="graph-equation-line">
-                <latex-image-code><![CDATA[\begin{tikzpicture}
+                <latex-image>\begin{tikzpicture}
                       \draw[step=1cm,gray,very thin] (-5.9,-5.9) grid (5.9,5.9);
-                      \draw[line width=0.55mm,black,<->] (-6,0) -- (6,0) node[anchor=north west] {$x$};
-                      \draw[line width=0.55mm,black,<->] (0,-6) -- (0,6) node[anchor=south east] {$y$};
+                      \draw[line width=0.55mm,black,&lt;-&gt;] (-6,0) -- (6,0) node[anchor=north west] {$x$};
+                      \draw[line width=0.55mm,black,&lt;-&gt;] (0,-6) -- (0,6) node[anchor=south east] {$y$};
                       \foreach \x in {-5,...,-1,1,2,...,5}
                           \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
                       \foreach \y in {-5,...,-1,1,2,...,5}
                           \draw[line width=0.55mm,black] (3pt,\y cm) -- (-3pt,\y cm) node[shift={(-.3,0.05)}] {$\y$};
                       \draw[line width=0.75mm,red] (-2.95,-5.9)--(2.95,5.9);
-                      \draw[dashed, line width=0.75mm,black,->] (1,2) -- (2,2) node[shift={(-.5,-0.5)}] {\Large $+1$};
-                      \draw[dashed, line width=0.75mm,black,->] (2,2) -- (2,4) node[shift={(.6,-.75)}] {\Large $+2$};
-                      \draw[dashed, line width=0.75mm,black,->] (-1,-2) -- (-2,-2) node[shift={(.5,0.5)}] {\Large $-1$};
-                      \draw[dashed, line width=0.75mm,black,->] (-2,-2) -- (-2,-4) node[shift={(-.6,.75)}] {\Large $-2$};
-                      \end{tikzpicture}]]></latex-image-code>
+                      \draw[dashed, line width=0.75mm,black,-&gt;] (1,2) -- (2,2) node[shift={(-.5,-0.5)}] {\Large $+1$};
+                      \draw[dashed, line width=0.75mm,black,-&gt;] (2,2) -- (2,4) node[shift={(.6,-.75)}] {\Large $+2$};
+                      \draw[dashed, line width=0.75mm,black,-&gt;] (-1,-2) -- (-2,-2) node[shift={(.5,0.5)}] {\Large $-1$};
+                      \draw[dashed, line width=0.75mm,black,-&gt;] (-2,-2) -- (-2,-4) node[shift={(-.6,.75)}] {\Large $-2$};
+                      \end{tikzpicture}</latex-image>
               </image>
         </sidebyside>
         <p>Therefore, the equation for the line is <m>y = 2x.\checkmark</m>

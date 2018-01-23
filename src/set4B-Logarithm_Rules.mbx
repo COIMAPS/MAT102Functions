@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="section-4B-logarithm-rules">
   <title>Logarithm Rules</title>
 <!-- Cite Advanced Algebra II: Conceptual Explanations by Kenny M. Felder is licensed under a Creative Commons Attribution License 2.0 (http://creativecommons.org/licenses/by/2.0/) Based on the file: abvanced-algebra-II-conceptual-explanations-15.10.pdf generated February 21, 2014,  pages 123-130 -->
@@ -8,7 +9,7 @@
         <li><p>Combine logarithmic expressions using the rules of logarithms.</p></li>
       </ul>
     </p>
-  <p>In <xref ref="section-4A-exponential-and-logarithmic-functions" autoname="yes" />, we introduced the logarithmic functions as inverses of exponential functions and discussed a few of their functional properties from that perspective. In this module, we explore the algebraic properties (or rules) of logarithms. Historically, these have played a huge role in the scientific development of our society since, among other things, they were used to develop analog computing devices called <em>slide rules</em> which enabled scientists and engineers to perform accurate calculations leading to such things as space travel and the moon landing. As we shall see shortly, logs have properties similar to all of the properties of exponents. We first restate the definition of a logarithm and the fact that it is the inverse of an exponential function.</p>
+  <p>In <xref ref="section-4A-exponential-and-logarithmic-functions" text="type-global"/>, we introduced the logarithmic functions as inverses of exponential functions and discussed a few of their functional properties from that perspective. In this module, we explore the algebraic properties (or rules) of logarithms. Historically, these have played a huge role in the scientific development of our society since, among other things, they were used to develop analog computing devices called <em>slide rules</em> which enabled scientists and engineers to perform accurate calculations leading to such things as space travel and the moon landing. As we shall see shortly, logs have properties similar to all of the properties of exponents. We first restate the definition of a logarithm and the fact that it is the inverse of an exponential function.</p>
   <p><alert>Definition of Logarithm:</alert>  Let <m>b \gt 0</m> with <m>b \neq 1</m>. If <m>a</m> and <m>c</m> are numbers
   <ul>
     <li><m>\log_b(c) = a</m> means <m>b^a = c</m></li>
@@ -17,55 +18,55 @@
 </p>
 <p><alert>A few quick examples to review logarithms:</alert></p>
 <sidebyside>
-  <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
+  <tabular top="minor" bottom="minor" halign="center" left="minor" right="minor">
     <col right="minor" width="15%"/>
-    <col right="minor" width="35%" />
+    <col right="minor" width="35%"/>
     <col right="minor" width="25%"/>
     <col right="minor" width="25%"/>
     <!--  -->
-    <row bottom = "minor">
+    <row bottom="minor">
       <cell><p>Problem:</p></cell>
       <cell><p>Means:</p></cell>
       <cell><p>The answer is:</p></cell>
       <cell><p>Because:</p></cell>
     </row>
-    <row bottom = "minor">
+    <row bottom="minor">
       <cell><p><m>\log_2 8</m></p></cell>
       <cell><p><m>2</m> to what power is <m>8</m>?</p></cell>
       <cell><p><m>3</m></p></cell>
       <cell><p><m>2^3</m> is <m>8</m></p></cell>
     </row>
-    <row bottom = "minor">
+    <row bottom="minor">
       <cell><p><m>\log_2 16</m></p></cell>
       <cell><p><m>2</m> to what power is <m>16</m>?</p></cell>
       <cell><p><m>4</m></p></cell>
       <cell><p><m>2^4</m> is <m>16</m></p></cell>
     </row>
-    <row bottom = "minor">
+    <row bottom="minor">
       <cell><p><m>\log_2 10</m></p></cell>
       <cell><p><m>2</m> to what power is <m>10</m>?</p></cell>
       <cell><p>somewhere between</p><p><m>3</m> and <m>4</m></p></cell>
       <cell><p><m>2^3 = 8</m> and <m>2^4 = 16</m></p></cell>
     </row>
-    <row bottom = "minor">
+    <row bottom="minor">
       <cell><p><m>\log_8 2</m></p></cell>
       <cell><p><m>8</m> to what power is <m>2</m>?</p></cell>
       <cell><p><m>\frac{1}{3}</m></p></cell>
       <cell><p><m>8^{\frac{1}{3}}= \sqrt[3]{8} = 2</m></p></cell>
     </row>
-    <row bottom = "minor">
+    <row bottom="minor">
       <cell><p><m>\log_{10} 10,000</m></p></cell>
       <cell><p><m>10</m> to what power is <m>10,000</m>?</p></cell>
       <cell><p><m>4</m></p></cell>
       <cell><p><m>10^4 = 10, 000</m></p></cell>
     </row>
-    <row bottom = "minor">
+    <row bottom="minor">
       <cell><p><m>\log_{10}  \frac{1}{100}</m></p></cell>
       <cell><p><m>10</m> to what power is <m> =\frac{1}{100}</m>?</p></cell>
       <cell><p><m>-2</m></p></cell>
       <cell><p><m>10^{-2} = \frac{1}{10^2} = \frac{1}{100}</m></p></cell>
     </row>
-    <row bottom = "minor">
+    <row bottom="minor">
       <cell><p><m>\log_5 0</m></p></cell>
       <cell><p><m>5</m> to what power is <m>0</m>?</p></cell>
       <cell><p>There is no answer</p></cell>
@@ -77,35 +78,35 @@
 <p>The graph of any logarithm function with base greater than <m>1</m> has the same basic shape.  We plot a few well chosen points to graph <m>f(x) = \log_2(x)</m>:</p>
 <sidebyside widths="30% 65%" valign="middle">
  <!--   <table>  -->
-      <tabular halign="center" >
-        <col right="major" halign="right" />
-        <col />
+      <tabular halign="center">
+        <col right="major" halign="right"/>
+        <col/>
         <!--  -->
-        <row bottom = "major">
+        <row bottom="major">
             <cell><m>x</m></cell>
             <cell><m>y = \log_2(x)</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>\frac{1}{8}</m></cell>
             <cell><m>-3</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>\frac{1}{4}</m></cell>
             <cell><m>-2</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>\frac{1}{2}</m></cell>
             <cell><m>-1</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>1</m></cell>
             <cell><m>0</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>2</m></cell>
             <cell><m>1</m></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><m>4</m></cell>
             <cell><m>2</m></cell>
         </row>
@@ -118,10 +119,10 @@
  <!--   <figure xml:id="figure-graph-log-2-of-x"> -->
  <!--set4B-Logarithm_Rules_01.png-->
       <image xml:id="graph-log-2-of-x">
-        <latex-image-code><![CDATA[\begin{tikzpicture}
+        <latex-image>\begin{tikzpicture}
           \draw[step=1cm,gray,very thin] (-.9,-5.9) grid (10.9,5.9);
-          \draw[line width=0.55mm,black,<->] (-.9,0) -- (10.9,0) node[anchor=north west] {$x$};
-          \draw[line width=0.55mm,black,<->] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (-.9,0) -- (10.9,0) node[anchor=north west] {$x$};
+          \draw[line width=0.55mm,black,&lt;-&gt;] (0,-5.9) -- (0,5.9) node[anchor=south east] {$y$};
           \foreach \x in {0,5,10}
               \draw[line width=0.55mm,black] (\x cm,3pt) -- (\x cm,-3pt) node[shift={(0.05,-.3)}] {$\x$};
           \foreach \y in {-5,5}
@@ -135,16 +136,16 @@
           \fill[black] (4,2) circle (.15cm);
           \fill[black] (8,3) circle (.15cm);
           \node at (1.9, 2.5) {\LARGE $f(x)=\log_2(x)$};
-        \end{tikzpicture}]]></latex-image-code>
+        \end{tikzpicture}</latex-image>
       </image>
 <!--    </figure>  -->
     </sidebyside>
     <p>As always, you can learn a great deal about the log function by reading the graph.
       <ul>
-        <li> The domain is <m>x \gt 0.</m> (You can't take the log of <m>0</m> or a negative number <ndash /> do you remember why?).</li>
+        <li> The domain is <m>x \gt 0.</m> (You can't take the log of <m>0</m> or a negative number <ndash/> do you remember why?).</li>
         <li> The range, on the other hand, is all numbers. Of course, all this inverses the function <m>2^x</m>, which has a domain of all numbers and a range of <m>y \gt 0.</m></li>
         <li> As <m>x</m> gets closer and closer to <m>0,</m> the function dives down to smaller and smaller negative numbers. So the <m>y</m>-axis serves as an <q>asymptote</q> for the graph, meaning a line that the graph approaches closer and closer as a guiding line.</li>
-        <li> As <m>x</m> moves to the right, the graph grows<ndash />but more and more slowly. As <m>x</m> goes from <m>4</m> to <m>8,</m> the graph goes up by <m>1.</m> As <m>x</m> goes from <m>8</m> to <m>16,</m> the graph goes up by another <m>1.</m> It doesn't make it up another <m>1</m> until <m>x</m> reaches <m>32\dots </m> and so on.</li>
+        <li> As <m>x</m> moves to the right, the graph grows<ndash/>but more and more slowly. As <m>x</m> goes from <m>4</m> to <m>8,</m> the graph goes up by <m>1.</m> As <m>x</m> goes from <m>8</m> to <m>16,</m> the graph goes up by another <m>1.</m> It doesn't make it up another <m>1</m> until <m>x</m> reaches <m>32\dots </m> and so on.</li>
       </ul>
       </p>
       <p><alert>Using the log to model a real world problem</alert></p>
@@ -154,7 +155,7 @@
       <sidebyside>
  <!--set4B-Logarithm_Rules_02.png-->
       <image xml:id="deaths">
-        <latex-image-code><![CDATA[\begin{tikzpicture}
+        <latex-image>\begin{tikzpicture}
             \draw (0,0) -- (10,0);
             \draw (0,-.25)--(0,.25);
             \draw (10,-.25)--(10,.25);
@@ -165,14 +166,14 @@
             \node  at (5.5,2.15) {\small Everything below 100,000 is squeezed};
             \node  at (5.5,1.75) {\small into a tiny area down here, almost};
             \node  at (5.5,1.35) {\small too small to see.};
-            \draw[<-,line width=.5mm] (0.1,0.1) -- (2,1);
-            \end{tikzpicture}]]></latex-image-code>
+            \draw[&lt;-,line width=.5mm] (0.1,0.1) -- (2,1);
+            \end{tikzpicture}</latex-image>
       </image>
     </sidebyside>
     <sidebyside>
  <!--set4B-Logarithm_Rules_03.png-->
       <image xml:id="deaths-log">
-        <latex-image-code><![CDATA[\begin{tikzpicture}
+        <latex-image>\begin{tikzpicture}
             \draw (0,0) -- (7,0);
             \draw (0,-.25)--(0,.25);
             \draw (1,-.25)--(1,.25);
@@ -190,53 +191,53 @@
             \node at (5,-.75) {$5$};
             \node at (6,-.75) {$6$};
             \node at (7,-.75) {$7$};
-            \draw[->,line width=.5mm] (0,-1) -- (-.5,-1.5);
+            \draw[-&gt;,line width=.5mm] (0,-1) -- (-.5,-1.5);
             \node at (-1.25, -1.7) {1 death:};
             \node at (-2.55, -2.05) {an individual homicide};
-            \draw[->,line width=.5mm] (1,-1) -- (0,-2.5);
+            \draw[-&gt;,line width=.5mm] (1,-1) -- (0,-2.5);
             \node at (-.25, -2.7) {10 deaths};
-            \draw[->,line width=.5mm] (2,-1) -- (1.5,-3);
+            \draw[-&gt;,line width=.5mm] (2,-1) -- (1.5,-3);
             \node at (1, -3.2) {100 deaths};
-            \draw[->,line width=.5mm] (7,-1) -- (7,-1.5);
+            \draw[-&gt;,line width=.5mm] (7,-1) -- (7,-1.5);
             \node at (7, -1.7) {10 Million deaths};
             \node at (7, -2.15) {(either World War)};
-            \end{tikzpicture}]]></latex-image-code>
+            \end{tikzpicture}</latex-image>
       </image>
     </sidebyside>
-    <p>Richardson's scale makes it practical to chart, discuss, and compare wars and battles from the smallest to the biggest. For instance, he discovered that each time you move up by one on the scale<ndash />that is, each time the number of deaths multiplies by <m>10</m><ndash />the number of conflicts drops by a third. (So there are roughly three times as many <q>magnitude <m>5</m></q>wars as <q>magnitude <m>6</m>,</q>and so on.)</p>
-    <p>The log is useful here because the logarithm function itself grows so slowly that it compresses the entire 1 to 10,000,000 range into a <m>0</m> to <m>7</m> scale. The same trick is used<ndash />for the same reason<ndash />to study topics ranging from earthquakes to sound waves.</p>
+    <p>Richardson's scale makes it practical to chart, discuss, and compare wars and battles from the smallest to the biggest. For instance, he discovered that each time you move up by one on the scale<ndash/>that is, each time the number of deaths multiplies by <m>10</m><ndash/>the number of conflicts drops by a third. (So there are roughly three times as many <q>magnitude <m>5</m></q>wars as <q>magnitude <m>6</m>,</q>and so on.)</p>
+    <p>The log is useful here because the logarithm function itself grows so slowly that it compresses the entire 1 to 10,000,000 range into a <m>0</m> to <m>7</m> scale. The same trick is used<ndash/>for the same reason<ndash/>to study topics ranging from earthquakes to sound waves.</p>
   </introduction>
   <subsection>
     <title>Rules of Logarithms</title>
     <p>Just as there are fundamental rules of exponents, there are corresponding fundamental rules of logarithms.</p>
     <p>For <m>b\gt 0</m>, <m>b \neq 1</m> and real numbers <m>m</m>, <m>n</m>, <m>M</m> and <m>N</m>, the exponent and logarithm rules are:</p>
     <sidebyside>
-      <tabular top="minor" bottom = "minor" halign="center" left="minor" right="minor">
+      <tabular top="minor" bottom="minor" halign="center" left="minor" right="minor">
         <col right="minor" halign="left" width="20%"/>
         <col right="minor" width="30%"/>
         <col width="40%"/>
         <!--  -->
-        <row bottom = "major">
-            <cell><p></p></cell>
+        <row bottom="major">
+            <cell><p/></cell>
             <cell><p>Rules for Exponents:</p></cell>
             <cell><p>Rules for Logarithms:</p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><p>Product Rule</p></cell>
             <cell><p><m>b^m b^n = b^{m+n}</m></p></cell>
             <cell><p><m>\log_b (MN) = \log_b M + \log_b N</m></p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><p>Quotient Rule</p></cell>
             <cell><p><m>\dfrac{b^m}{b^n} = b^{m-n}</m></p></cell>
             <cell><p><m>\log_b \dfrac{M}{N} = \log_b M - \log_b N</m></p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><p>Power Rule</p></cell>
             <cell><p><m>(b^m)^n = b^{mn}</m></p></cell>
             <cell><p><m>\log_b M^n= n\log_b M</m></p></cell>
         </row>
-        <row bottom = "minor">
+        <row bottom="minor">
             <cell><p>Zero Rule</p></cell>
             <cell><p><m>b^0 = 1</m></p></cell>
             <cell><p><m>\log_b(1) = 0</m></p></cell>
